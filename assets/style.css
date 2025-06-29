@@ -309,7 +309,15 @@ br {
   font-size: 1.5rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  width: 100%;
+  z-index: 10;
 }
 
 .scroll-down:hover {
@@ -637,7 +645,6 @@ br {
   margin-bottom: 5px;
   border-radius: 8px;
   transition: width 0.4s var(--transition-normal);
-  box-shadow: 0 0 8px var(--primary-color);
   opacity: 1;
 }
 
