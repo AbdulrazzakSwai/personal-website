@@ -431,9 +431,11 @@ function renderCertifications(certifications) {
         col.className = 'col-lg-4 col-md-6';
         
         const progressPercentage = cert.progress || (cert.upcoming ? 0 : 100);
+        const isCompleted = progressPercentage === 100 && !cert.upcoming;
+        const cardClass = `card portfolio-card animate-on-scroll ${cert.upcoming ? 'upcoming' : ''} ${isCompleted ? 'golden-border-shiny' : ''}`;
         
         col.innerHTML = `
-            <div class="card portfolio-card animate-on-scroll ${cert.upcoming ? 'upcoming' : ''}" data-animation="animate-fade-in-up" data-delay="${index * 75}">
+            <div class="${cardClass}" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body">
                     <h6 class="card-title">${cert.title}</h6>
                     <p class="card-subtitle">${cert.provider}</p>
@@ -752,8 +754,8 @@ document.addEventListener('DOMContentLoaded', function() {
     loadHighlights();
     loadStatistics();
     loadTimeline();
-    loadCourses(); // Fetch courses on page load
-    loadProjects(); // Fetch projects on page load
+    loadCourses();
+    loadProjects();
     initPortfolioTabs();
     loadLastUpdated();
 

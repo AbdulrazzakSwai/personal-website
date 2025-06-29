@@ -1,16 +1,16 @@
 :root {
-  --primary-color: #00f5ff;
-  --secondary-color: #00ff41;
-  --accent-color: #06b6d4;
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
+  --primary-color: #1d4ed8;
+  --secondary-color: #0ea5e9;
+  --accent-color: #0369a1;
+  --bg-primary: #e3e7ef;
+  --bg-secondary: #cbd5e1;
+  --text-primary: #162032;
+  --text-secondary: #334155;
   --text-muted: #64748b;
-  --border-color: #e2e8f0;
+  --border-color: #a3b1c6;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.09), 0 2px 4px -2px rgb(0 0 0 / 0.09);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.12), 0 4px 6px -4px rgb(0 0 0 / 0.12);
 }
 
 [data-theme="dark"] {
@@ -404,7 +404,7 @@ br {
 
 .card {
   background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
+  border: 2.5px solid var(--border-color);
   transition: all 0.3s ease;
   color: var(--text-primary);
 }
@@ -424,7 +424,7 @@ br {
 
 .highlight-card {
   background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
+  border: 2.5px solid var(--border-color);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
@@ -459,7 +459,7 @@ br {
 
 .statistics-card {
   background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
+  border: 2.5px solid var(--border-color);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
@@ -499,7 +499,7 @@ br {
 
 .timeline-card {
   background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
+  border: 2.5px solid var(--border-color);
   border-radius: 1rem;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -577,7 +577,7 @@ br {
 
 .portfolio-card {
   background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
+  border: 2.5px solid var(--border-color);
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -607,6 +607,10 @@ br {
 
 .portfolio-card .text-muted {
   margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-secondary) !important;
+  opacity: 1;
+  letter-spacing: 0.01em;
 }
 
 .portfolio-card .card-text {
@@ -619,28 +623,6 @@ br {
   .mobile-container {
     max-width: 90% !important;
     margin: 0 auto;
-  }
-}
-
-@media (min-width: 1025px) {
-  .portfolio-card.upcoming {
-    filter: blur(2px);
-    transition: all 0.3s ease;
-  }
-  
-  .portfolio-card.upcoming:hover {
-    filter: blur(0) !important;
-    opacity: 0 !important;
-  }
-  
-  .portfolio-card.upcoming.animate-on-scroll {
-    opacity: 0;
-    filter: blur(0);
-  }
-  
-  .portfolio-card.upcoming.animate-fade-in-up {
-    opacity: 1 !important;
-    filter: blur(2px);
   }
 }
 
@@ -673,7 +655,7 @@ br {
 .skill-tag {
   display: inline-block;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: #000;
+  color: var(--bg-primary);
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
   font-size: 0.8rem;
@@ -838,6 +820,31 @@ br {
 footer {
   background-color: var(--bg-primary) !important;
   color: var(--text-secondary) !important;
+}
+
+.golden-border-shiny {
+    border: 2.5px solid #FFD700;
+    box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
+    position: relative;
+    animation: shiny-gold 3.5s ease-in-out infinite;
+}
+
+.golden-border-shiny.portfolio-card:hover {
+  transform: none;
+  box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
+  border-color: #FFD700;
+}
+
+@keyframes shiny-gold {
+    0% {
+        box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
+    }
+    50% {
+        box-shadow: 0 0 16px 3px #FFD70099, 0 0 32px 8px #fff20044 inset;
+    }
+    100% {
+        box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
+    }
 }
 
 @media (max-width: 768px) {
