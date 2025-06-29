@@ -17,6 +17,5 @@ Here, you can explore:
 - HTML5, CSS3, JavaScript
 - Bootstrap 5
 - Font Awesome
-- Google Fonts
 
 View my website here: [https://www.abdulrazzakswai.me](https://www.abdulrazzakswai.me)
