@@ -370,9 +370,22 @@ function initPortfolioTabs() {
             loadTabData(targetTab);
         });
     });
-
+    
     loadTabData('certifications');
 }
+
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            const offsetTop = target.offsetTop - 59;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+});
 
 async function loadTabData(tabName) {
     try {
@@ -739,21 +752,10 @@ document.addEventListener('DOMContentLoaded', function() {
     loadHighlights();
     loadStatistics();
     loadTimeline();
+    loadCourses(); // Fetch courses on page load
+    loadProjects(); // Fetch projects on page load
     initPortfolioTabs();
     loadLastUpdated();
 
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-});
-
-window.addEventListener('load', () => {
-    if (window.location.hash) {
-        const target = document.querySelector(window.location.hash);
-        if (target) {
-            const offsetTop = target.offsetTop - 59;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    }
 });
