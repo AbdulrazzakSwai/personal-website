@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulrazzak Swai | Personal Website</title>
+    <meta name="description" content="Abdulrazzak Swai's personal website. Explore my journey, skills, certifications, projects, and ways to connect." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a" />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+  </head>
+
+  <body data-theme="dark">
+    <nav class="navbar fixed-top" id="mainNavbar">
+      <div class="container-fluid">
+        <div class="navbar-brand d-flex align-items-center">
+          <i class="fas fa-terminal me-2"></i>
+          <span>Abdulrazzak</span>
+        </div>
+        
+        <div class="navbar-nav-container">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <a class="nav-link active" href="#hero">Home</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#highlights">Highlights</a>
+              <a class="nav-link" href="#statistics">Statistics</a>
+              <a class="nav-link" href="#timeline">Timeline</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="d-flex align-items-center">
+          <button class="btn btn-outline-primary me-2" id="theme-toggle">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-12 text-center animate-on-scroll" data-animation="animate-fade-in-up">
+            <h1 class="hero-name display-1 fw-bold mb-4">
+              Hello, I'm <span class="text-primary">Abdulrazzak Swai</span>
+            </h1>
+            <div class="hero-role h3">
+              <span id="typed-text" class="typed-text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll position-absolute bottom-0 start-50 translate-middle-x mb-4 animate-on-scroll" data-animation="animate-fade-in-up">
+          <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5 section-spacing">
+      <div class="container mobile-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
+              <h2 class="display-4 fw-bold mb-3">About Me</h2>
+              <div class="section-line mx-auto mb-3"></div>
+              <p class="lead text-muted">Get to know more about my journey and passion</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="terminal-container animate-on-scroll" data-animation="animate-scale-in" data-delay="200">
+              <div class="terminal rounded-3 overflow-hidden">
+                <div class="terminal-header d-flex align-items-center p-3">
+                  <div class="terminal-buttons d-flex gap-2">
+                    <span class="terminal-btn close"></span>
+                    <span class="terminal-btn minimize"></span>
+                    <span class="terminal-btn maximize"></span>
+                  </div>
+                </div>
+                <div class="terminal-body p-3" id="terminal-body">
+                  <div class="terminal-prompt">
+                    <span class="prompt-user">abdulrazzak</span><span class="prompt-at">@</span><span class="prompt-host">portfolio</span>:<span class="prompt-path">~</span>$ <span class="prompt-command">cat about_me.txt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="py-5 bg-light-section section-spacing">
+      <div class="container mobile-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
+              <h2 class="display-4 fw-bold mb-3">Highlights</h2>
+              <div class="section-line mx-auto mb-3"></div>
+              <p class="lead text-muted">Key milestones and recognitions in my journey</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center" id="highlights-grid">
+        </div>
+      </div>
+    </section>
+
+    <section id="statistics" class="py-5 section-spacing">
+      <div class="container mobile-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
+              <h2 class="display-4 fw-bold mb-3">Statistics</h2>
+              <div class="section-line mx-auto mb-3"></div>
+              <p class="lead text-muted">Numbers that showcase my continuous learning journey</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center" id="statistics-grid">
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="py-5 bg-light-section section-spacing">
+      <div class="container mobile-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
+              <h2 class="display-4 fw-bold mb-3">Timeline</h2>
+              <div class="section-line mx-auto mb-3"></div>
+              <p class="lead text-muted">Recent achievements and upcoming milestones</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div id="timeline-container">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5 section-spacing">
+      <div class="container mobile-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
+              <h2 class="display-4 fw-bold mb-3">Portfolio</h2>
+              <div class="section-line mx-auto mb-3"></div>
+              <p class="lead text-muted">Explore my certifications, courses, and projects</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up" data-delay="200" id="portfolioTabs">
+              <li class="nav-item">
+                <button class="nav-link active me-2" data-tab="certifications">
+                  <i class="fas fa-certificate me-2"></i>Certifications
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link me-2" data-tab="courses">
+                  <i class="fas fa-book me-2"></i>Courses
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-tab="projects">
+                  <i class="fas fa-project-diagram me-2"></i>Projects
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="certifications">
+            <div class="row g-4 justify-content-center" id="certifications-grid">
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="courses">
+            <div class="row g-4 justify-content-center" id="courses-grid">
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="projects">
+            <div class="row g-4 justify-content-center" id="projects-grid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light-section section-spacing">
+      <div class="container mobile-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
+              <h2 class="display-4 fw-bold mb-3">Get In Touch</h2>
+              <div class="section-line mx-auto mb-3"></div>
+              <p class="lead text-muted">Let's connect and discuss opportunities</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center" id="contact-grid">
+          <div class="col-lg-4 col-md-6">
+            <a href="https://linkedin.com/in/abdulrazzakswai/" target="_blank" rel="noopener noreferrer" class="contact-card linkedin d-block h-100 text-decoration-none animate-on-scroll" data-animation="animate-fade-in-left" data-animation-mobile="animate-fade-in-up">
+              <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                <div class="contact-icon mb-3">
+                  <i class="fab fa-linkedin-in fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title">LinkedIn</h5>
+                <p class="card-text text-muted">Connect with me professionally and see my career journey</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <a href="https://github.com/AbdulrazzakSwai" target="_blank" rel="noopener noreferrer" class="contact-card github d-block h-100 text-decoration-none animate-on-scroll" data-animation="animate-fade-in-up" data-animation-mobile="animate-fade-in-up" data-delay="75">
+              <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                <div class="contact-icon mb-3">
+                  <i class="fab fa-github fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title">GitHub</h5>
+                <p class="card-text text-muted">Explore my code repositories and open source contributions</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-md-6">
+            <a href="https://wa.me/971506908136" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp d-block h-100 text-decoration-none animate-on-scroll" data-animation="animate-fade-in-right" data-animation-mobile="animate-fade-in-up" data-delay="150">
+              <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                <div class="contact-icon mb-3">
+                  <i class="fab fa-whatsapp fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title">WhatsApp</h5>
+                <p class="card-text text-muted">Send me a direct message for quick communication</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 text-center">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 Abdulrazzak Swai. All rights reserved.</p>
+        <p class="mb-0" id="last-updated"></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

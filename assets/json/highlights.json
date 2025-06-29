@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Golden Residency Award",
+    "icon": "fas fa-medal",
+    "description": "Awarded a 10-year UAE Golden Residency for consistent academic excellence (valid until 2033)"
+  },
+  {
+    "title": "Critical Security Vulnerabilities Discovery",
+    "icon": "fas fa-bug",
+    "description": "Discovered and reported a critical IDOR vulnerability in the university system exposing all student data; identified a second vulnerability that was patched prior to reporting"
+  },
+  {
+    "title": "University Honor List Recognition",
+    "icon": "fas fa-trophy",
+    "description": "Recognized on the University Honor List for 3 consecutive terms for outstanding academic performance in Cybersecurity"
+  },
+  {
+    "title": "Daily Skill Development",
+    "icon": "fas fa-graduation-cap",
+    "description": "Committed to daily progress through cybersecurity courses, CTF challenges, and project development"
+  },
+  {
+    "title": "Cultural Insight",
+    "icon": "fas fa-globe",
+    "description": "Resided in the UAE for over 20 years, gaining strong cultural insight and deep local familiarity"
+  },
+  {
+    "title": "Licensed Driver",
+    "icon": "fas fa-car",
+    "description": "Held a valid UAE light vehicle license with 3 years of driving experience, ensuring professional mobility"
+  }
+]

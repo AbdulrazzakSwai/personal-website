@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Leading Cybersecurity Curriculum Reform at Al Ain University",
+    "description": "Advocated for a shift from theoretical teaching to practical, hands-on learning using platforms like TryHackMe and Hack The Box.<br>Proposed integrating real-world labs and gamified challenges into coursework.<br>Collaborating with the head of cybersecurity and senior cybersecurity professors to implement reforms.",
+    "skills": ["Curriculum Development", "Advocacy", "Cybersecurity Education", "Practical Learning"],
+    "links": []
+  },
+  {
+    "title": "Custom Cybersecurity Roadmaps & University Talks",
+    "description": "Created free roadmaps guiding learners through TryHackMe, Hack The Box, and TCM Security platforms.<br>Delivered 4 talks at the university to 50+ colleagues, focusing on adopting practical cybersecurity learning methods.",
+    "skills": ["Public Speaking", "Communication", "Curriculum Design", "Cybersecurity Mentorship", "Community Engagement"],
+    "links": [
+      { "url": "https://www.canva.com/design/DAGhac02qTs/Pd41KDxb4p3KMmdmfaCuKQ/edit", "title": "Roadmap 1" },
+      { "url": "https://www.canva.com/design/DAGdaii1VkM/Sw1oYyZW2FlUV1WIw-v8Aw/edit", "title": "Roadmap 2" }
+    ]
+  },
+  {
+    "title": "Critical Security Vulnerabilities Discovery",
+    "description": "Discovered and reported a critical IDOR vulnerability in the university’s course system that exposed all students’ data.<br>Identified a second one that was patched before I had the chance to report it.",
+    "skills": ["Bug Bountry Hunting", "Vulnerability Discovery", "Web Security", "Ethical Hacking", "Responsible Disclosure"],
+    "links": []
+  },
+  {
+    "title": "CTF Participation",
+    "description": "Participated in 42CTF (RedTeam Hacker Academy & 42 Abu Dhabi) and Cybersecurity Awareness Day 4.0 CTF (Abu Dhabi University).<br>Focused on exploitation, threat analysis, and security operations in timed, high-pressure settings.",
+    "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
+    "links": []
+  },
+  {
+    "title": "Active Directory (AD) Home Labs",
+    "description": "Built and configured two home labs with Domain Controllers and connected VMs to simulate enterprise environments.<br>Focused on AD security and exploitation.",
+    "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
+    "links": [
+      { "url": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
+      { "url": "https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course", "title": "AD Hacking Course" }
+    ]
+  },
+  {
+    "title": "Diverse Virtual Machine Lab Environments (20+)",
+    "description": "Built and configured over 20 virtual machines (Linux & Windows) using VirtualBox.<br>Configured NAT networks to simulate internal infrastructure for testing and analysis.",
+    "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
+    "links": []
+  }
+]

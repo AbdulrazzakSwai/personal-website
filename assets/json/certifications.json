@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Practical SOC Analyst Associate (PSAA)",
+    "provider": "TCM Security",
+    "status": "✅ Exam Passed",
+    "date": "April 24, 2025",
+    "progress": 100,
+    "detailsLink": "https://certifications.tcm-sec.com/psaa/",
+    "proofLink": "https://certified.tcm-sec.com/833472ca-8415-4843-aec8-53c8368d47d3",
+    "upcoming": false,
+    "description": "Practical SOC analysis certification focusing on real-world incident response and threat hunting"
+  },
+  {
+    "title": "Responsive Web Design (HTML and CSS)",
+    "provider": "freeCodeCamp",
+    "status": "✅ All Projects Completed",
+    "date": "May 23, 2025",
+    "progress": 100,
+    "detailsLink": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    "proofLink": "https://www.freecodecamp.org/certification/AbdulrazzakSwai/responsive-web-design",
+    "upcoming": false,
+    "description": "Comprehensive web design certification covering HTML, CSS, and responsive design principles"
+  },
+  {
+    "title": "JavaScript Algorithms and Data Structures",
+    "provider": "freeCodeCamp",
+    "status": "✅ All Projects Completed",
+    "date": "June 16, 2025",
+    "progress": 100,
+    "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+    "proofLink": "https://www.freecodecamp.org/certification/AbdulrazzakSwai/javascript-algorithms-and-data-structures-v8",
+    "upcoming": false
+  },
+  {
+    "title": "Practical Junior Penetration Tester (PJPT)",
+    "provider": "TCM Security",
+    "status": "🕐 Awaiting Exam",
+    "date": "Expected: July 2025",
+    "progress": 100,
+    "detailsLink": "https://certifications.tcm-sec.com/pjpt/",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Defensive Security Analyst (CDSA)",
+    "provider": "Hack The Box Academy",
+    "status": "🕐 Awaiting Exam",
+    "date": "Expected: August 2025",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Penetration Testing Specialist (CPTS)",
+    "provider": "Hack The Box Academy",
+    "status": "🕐 Still Learning",
+    "date": "Expected: December 2025",
+    "progress": 55,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Bug Bounty Hunter (CBBH)",
+    "provider": "Hack The Box Academy",
+    "status": "🕐 Awaiting Exam",
+    "date": "Expected: May 2026",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
+    "upcoming": true
+  },
+  {
+    "title": "Artificial Intelligence (AI) Red Teamer",
+    "provider": "Hack The Box Academy & Google",
+    "status": "🕐 Still Learning",
+    "date": "Expected: September 2026",
+    "progress": 2,
+    "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
+    "upcoming": true
+  },
+  {
+    "title": "Burp Suite Certified Practitioner (BSCP)",
+    "provider": "PortSwigger",
+    "status": "🕐 Upcoming",
+    "date": "Expected: December 2026",
+    "progress": 0,
+    "detailsLink": "https://portswigger.net/web-security/certification",
+    "upcoming": true
+  },
+  {
+    "title": "Scientific Computing with Python",
+    "provider": "freeCodeCamp",
+    "status": "🕐 Still Doing Projects",
+    "date": "Expected: July 2025",
+    "progress": 68,
+    "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+    "upcoming": true
+  },
+  {
+    "title": "Relational Database (SQL, Bash, and Git)",
+    "provider": "freeCodeCamp",
+    "status": "🕐 Upcoming",
+    "date": "Expected: August 2025",
+    "progress": 0,
+    "detailsLink": "https://www.freecodecamp.org/learn/relational-database/",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Full Stack Developer",
+    "provider": "freeCodeCamp",
+    "status": "🕐 Upcoming",
+    "date": "Expected: September 2026",
+    "progress": 0,
+    "detailsLink": "https://www.freecodecamp.org/learn/full-stack-developer/",
+    "upcoming": true
+  }
+]

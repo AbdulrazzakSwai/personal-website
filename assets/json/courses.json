@@ -1,0 +1,394 @@
+[
+  {
+    "title": "Security Operations (SOC) 101",
+    "provider": "TCM Security",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.tcm-sec.com/p/security-operations-soc-101",
+    "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_SOC-101.png"
+  },
+  {
+    "title": "Security Monitoring & SIEM Fundamentals",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/security-monitoring--siem-fundamentals",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/211"
+  },
+  {
+    "title": "Security Information and Event Management (SIEM)",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/security-information-event-management",
+    "certificateLink": "https://tryhackme.com/module/security-information-event-management"
+  },
+  {
+    "title": "Detecting Windows Attacks with Splunk",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/detecting-windows-attacks-with-splunk",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/233"
+  },
+  {
+    "title": "Understanding Log Sources & Investigating with Splunk",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/understanding-log-sources--investigating-with-splunk",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/218"
+  },
+  {
+    "title": "Introduction to Threat Hunting & Hunting With Elastic",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-threat-hunting--hunting-with-elastic",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/214"
+  },
+  {
+    "title": "Introduction to Digital Forensics",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/237"
+  },
+  {
+    "title": "Incident Handling Process",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/incident-handling-process",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/148"
+  },
+  {
+    "title": "Introduction to Malware Analysis",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/227"
+  },
+  {
+    "title": "Cyber Threat Intelligence",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/cyber-threat-intelligence",
+    "certificateLink": "https://tryhackme.com/module/cyber-threat-intelligence"
+  },
+  {
+    "title": "YARA & Sigma for SOC Analysts",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/yara--sigma-for-soc-analysts",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/234"
+  },
+  {
+    "title": "Cyber Defense Frameworks",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/cyber-defence-frameworks",
+    "certificateLink": "https://tryhackme.com/module/cyber-defence-frameworks"
+  },
+  {
+    "title": "Windows Attacks & Defense",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-attacks--defense",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/176"
+  },
+  {
+    "title": "Windows Event Logs & Finding Evil",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-event-logs--finding-evil",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/216"
+  },
+  {
+    "title": "Security Incident Reporting",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/security-incident-reporting",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/238"
+  },
+  {
+    "title": "Intro to Network Traffic Analysis",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/81"
+  },
+  {
+    "title": "Intermediate Network Traffic Analysis",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/intermediate-network-traffic-analysis",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/229"
+  },
+  {
+    "title": "Network Security and Traffic Analysis",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/network-security-and-traffic-analysis",
+    "certificateLink": "https://tryhackme.com/module/network-security-and-traffic-analysis"
+  },
+  {
+    "title": "Wireshark",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/wireshark",
+    "certificateLink": "https://tryhackme.com/module/wireshark"
+  },
+  {
+    "title": "Working with IDS/IPS",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/working-with-idsips",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/226"
+  },
+  {
+    "title": "Snort",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/snort",
+    "certificateLink": "https://tryhackme.com/module/snort"
+  },
+  {
+    "title": "Phishing",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/phishing",
+    "certificateLink": "https://tryhackme.com/module/phishing"
+  },
+  {
+    "title": "JavaScript Deobfuscation",
+    "provider": "Hack The Box",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/javascript-deobfuscation",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/41"
+  },
+  {
+    "title": "Practical Ethical Hacking - The Complete Course",
+    "provider": "TCM Security",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course",
+    "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_PEH.png"
+  },
+  {
+    "title": "Penetration Testing Process",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/penetration-testing-process",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/90"
+  },
+  {
+    "title": "Network Enumeration with Nmap",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/network-enumeration-with-nmap",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/19"
+  },
+  {
+    "title": "Information Gathering - Web Edition",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/information-gathering---web-edition",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/144"
+  },
+  {
+    "title": "Vulnerability Assessment",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/vulnerability-assessment",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/108"
+  },
+  {
+    "title": "Using the Metasploit Framework",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/using-the-metasploit-framework",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/39"
+  },
+  {
+    "title": "SQL Injection Fundamentals",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/sql-injection-fundamentals",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/33"
+  },
+  {
+    "title": "SQLMap Essentials",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/sqlmap-essentials",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/58"
+  },
+  {
+    "title": "Cross-Site Scripting (XSS)",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/cross-site-scripting-xss",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/103"
+  },
+  {
+    "title": "Using Web Proxies",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/using-web-proxies",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/110"
+  },
+  {
+    "title": "Hacking Wordpress",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/hacking-wordpress",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/17"
+  },
+  {
+    "title": "Command Injections",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/command-injections",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/109"
+  },
+  {
+    "title": "File Upload Attacks",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/file-upload-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/136"
+  },
+  {
+    "title": "Broken Authentication",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/broken-authentication",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/80"
+  },
+  {
+    "title": "File Inclusion",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/file-inclusion",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/23"
+  },
+  {
+    "title": "Login Brute Forcing",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/login-brute-forcing",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/57"
+  },
+  {
+    "title": "Attacking Web Applications with Ffuf",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/attacking-web-applications-with-ffuf",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/54"
+  },
+  {
+    "title": "Web Fuzzing",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/web-fuzzing",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/280"
+  },
+  {
+    "title": "Web Attacks",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/web-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/134"
+  },
+  {
+    "title": "Server-side Attacks",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/server-side-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/145"
+  },
+  {
+    "title": "Session Security",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/session-security",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/153"
+  },
+  {
+    "title": "Web Service & API Attacks",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/web-service--api-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/160"
+  },
+  {
+    "title": "File Transfers",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/file-transfers",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/24"
+  },
+  {
+    "title": "Bug Bounty Hunting Process",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/bug-bounty-hunting-process",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/161"
+  },
+  {
+    "title": "Getting Started",
+    "provider": "Hack The Box",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/getting-started",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/77"
+  },
+  {
+    "title": "Practical Help Desk",
+    "provider": "TCM Security",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.tcm-sec.com/p/practical-help-desk",
+    "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_Help-Desk.png"
+  },
+  {
+    "title": "Introduction to Active Directory",
+    "provider": "Hack The Box",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-active-directory",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/74"
+  },
+  {
+    "title": "Programming 100: Fundamentals",
+    "provider": "TCM Security",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.tcm-sec.com/p/programming-100-fundamentals",
+    "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_Programming-100.png"
+  },
+  {
+    "title": "Introduction to Web Applications",
+    "provider": "Hack The Box",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-web-applications",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/75"
+  },
+  {
+    "title": "Web Requests",
+    "provider": "Hack The Box",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/web-requests",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/35"
+  },
+  {
+    "title": "Soft Skills for the Job Market",
+    "provider": "TCM Security",
+    "type": "Soft Skills",
+    "detailsLink": "https://academy.tcm-sec.com/p/soft-skills-for-the-job-market",
+    "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_Soft-Skills.png"
+  },
+  {
+    "title": "Learning Process",
+    "provider": "Hack The Box",
+    "type": "Soft Skills",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/learning-process",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/9"
+  },
+  {
+    "title": "Intro to Academy",
+    "provider": "Hack The Box",
+    "type": "General",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/intro-to-academy",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/15"
+  }
+]
