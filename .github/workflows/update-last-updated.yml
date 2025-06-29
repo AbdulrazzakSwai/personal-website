@@ -1,0 +1,38 @@
+name: Update Last Updated Date
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get latest commit date
+        id: get_date
+        run: |
+          LAST_DATE=$(git log -1 --format=%cd --date=format:'%d %B %Y')
+          echo "Last commit date: $LAST_DATE"
+          echo "date=$LAST_DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Write to assets/json/last-updated.json
+        run: |
+          echo "{\"date\": \"${{ steps.get_date.outputs.date }}\"}" > assets/json/last-updated.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/json/last-updated.json
+          git commit -m "Update assets/json/last-updated.json [auto]" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
