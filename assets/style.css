@@ -833,7 +833,7 @@ footer {
     border: 2.5px solid #FFD700;
     box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
     position: relative;
-    animation: shiny-gold 3.5s ease-in-out infinite;
+    animation: shiny-gold 2s ease-in-out infinite;
 }
 
 .golden-border-shiny.portfolio-card:hover {
