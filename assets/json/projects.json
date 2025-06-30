@@ -16,7 +16,7 @@
   {
     "title": "Critical Security Vulnerabilities Discovery",
     "description": "Discovered and reported a critical IDOR vulnerability in the university’s course system that exposed all students’ data.<br>Identified a second one that was patched before I had the chance to report it.",
-    "skills": ["Bug Bountry Hunting", "Vulnerability Discovery", "Web Security", "Ethical Hacking", "Responsible Disclosure"],
+    "skills": ["Bug Bounty Hunting", "Vulnerability Discovery", "Web Security", "Ethical Hacking", "Responsible Disclosure"],
     "links": []
   },
   {
@@ -39,5 +39,14 @@
     "description": "Built and configured over 20 virtual machines (Linux & Windows) using VirtualBox.<br>Configured NAT networks to simulate internal infrastructure for testing and analysis.",
     "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
     "links": []
+  },
+  {
+    "title": "100+ Practical Security Challenges Completed (Red & Blue Teaming)",
+    "description": "Completed over 100 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts. Participated in Splunk BOTS (Boss of the SOC) and other platforms. Authored detailed writeups for select challenges to share insights and methodologies.",
+    "skills": ["Red Teaming", "Blue Teaming", "Technical Writing"],
+    "links": [
+      { "url": "https://security-writeups.notion.site/", "title": "Security Challenge Writeups" },
+      { "url": "https://bots.splunk.com/", "title": "Splunk BOTS" }
+    ]
   }
 ]

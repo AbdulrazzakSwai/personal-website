@@ -8,7 +8,7 @@ let coursesLoaded = 0;
 const COURSES_PER_PAGE = 9;
 
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = 'dark';
     document.body.setAttribute('data-theme', savedTheme);
     updateThemeIcon(savedTheme);
 }
@@ -17,7 +17,6 @@ function toggleTheme() {
     const currentTheme = document.body.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
     updateThemeIcon(newTheme);
 }
 
@@ -324,7 +323,7 @@ function initStatsAnimation() {
 
 function animateStats() {
     const statNumbers = document.querySelectorAll('.statistics-number');
-    const duration = 1500;
+    const duration = 1800;
     
     statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
