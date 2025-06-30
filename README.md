@@ -1,6 +1,6 @@
 # Personal Website - Abdulrazzak Swai
 
-Welcome to my **personal website!** This site serves as a digital portfolio to showcase my **journey, skills, certifications, projects, and ways to connect with me**.
+Welcome to my **personal website!** This site is my digital portfolio, highlighting my **skills, certifications, projects, ways to connect, and more.**.
 
 Here, you can explore:
 
