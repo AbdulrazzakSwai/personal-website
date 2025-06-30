@@ -42,7 +42,7 @@
   },
   {
     "title": "100+ Practical Security Challenges Completed (Red & Blue Teaming)",
-    "description": "Completed over 100 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts. Participated in Splunk BOTS (Boss of the SOC) and other platforms. Authored detailed writeups for select challenges to share insights and methodologies.",
+    "description": "Completed over 100 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts.<br>Participated in Splunk BOTS (Boss of the SOC) and other platforms.<br>Authored detailed writeups for select challenges to share insights and methodologies.",
     "skills": ["Red Teaming", "Blue Teaming", "Technical Writing"],
     "links": [
       { "url": "https://security-writeups.notion.site/", "title": "Security Challenge Writeups" },
