@@ -10,8 +10,7 @@
     "description": "Created free roadmaps guiding learners through TryHackMe, Hack The Box, and TCM Security platforms.<br>Delivered 4 talks at the university to 50+ colleagues, focusing on adopting practical cybersecurity learning methods.",
     "skills": ["Public Speaking", "Communication", "Curriculum Design", "Cybersecurity Mentorship", "Community Engagement"],
     "links": [
-      { "url": "https://www.canva.com/design/DAGhac02qTs/Pd41KDxb4p3KMmdmfaCuKQ/edit", "title": "Roadmap 1" },
-      { "url": "https://www.canva.com/design/DAGdaii1VkM/Sw1oYyZW2FlUV1WIw-v8Aw/edit", "title": "Roadmap 2" }
+      { "url": "https://github.com/AbdulrazzakSwai/free-cybersecurity-paths", "title": "Free Cybersecurity Paths" }
     ]
   },
   {
