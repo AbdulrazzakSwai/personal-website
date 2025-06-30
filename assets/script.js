@@ -436,7 +436,7 @@ function renderCertifications(certifications) {
         col.innerHTML = `
             <div class="${cardClass}" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body">
-                    <h6 class="card-title">${cert.title}</h6>
+                    <h6 class="card-title">${index + 1}. ${cert.title}</h6>
                     <p class="card-subtitle">${cert.provider}</p>
                     <p class="text-muted medium">${cert.status}</p>
                     <p class="text-muted medium">${cert.date}</p>
@@ -529,7 +529,7 @@ function renderCourses(courses, loadMore = false) {
         col.innerHTML = `
             <div class="card portfolio-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body">
-                    <h6 class="card-title">${course.title}</h6>
+                    <h6 class="card-title">${startIndex + index + 1}. ${course.title}</h6>
                     <p class="card-subtitle">${course.provider}</p>
                     <span class="skill-tag ${skillClass}">${course.type}</span>
                     <div class="d-flex flex-wrap gap-2 mt-3">
@@ -650,7 +650,7 @@ function renderProjects(projects) {
         col.innerHTML = `
             <div class="card portfolio-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body">
-                    <h6 class="card-title">${project.title}</h6>
+                    <h6 class="card-title">${index + 1}. ${project.title}</h6>
                     <p class="card-text">${project.description}</p>
                     <div class="mb-3">
                         ${project.skills.map(skill => `<span class="skill-tag me-1 mb-1">${skill}</span>`).join('')}
