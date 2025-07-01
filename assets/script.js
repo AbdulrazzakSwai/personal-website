@@ -6,6 +6,7 @@ const dataCache = {
 };
 let coursesLoaded = 0;
 const COURSES_PER_PAGE = 9;
+let currentCourseFilter = 'all';
 
 function initTheme() {
     const savedTheme = 'dark';
@@ -366,6 +367,9 @@ function initPortfolioTabs() {
             const targetContent = document.getElementById(targetTab);
             targetContent.classList.add('show', 'active');
             
+            currentCourseFilter = 'all';
+            updateCourseFilterVisibility(targetTab);
+            
             loadTabData(targetTab);
         });
     });
@@ -461,13 +465,17 @@ async function loadCourses(loadMore = false) {
     document.getElementById('courses-view-more')?.remove();
     try {
         if (loadMore && dataCache.courses) {
-            renderCourses(dataCache.courses, true);
+            const filteredCourses = getFilteredCourses(dataCache.courses);
+            renderCourses(filteredCourses, true);
             return;
         }
         
         if (dataCache.courses && !loadMore) {
             coursesLoaded = 0;
-            renderCourses(dataCache.courses);
+            createCourseFilter();
+            updateCourseFilterOptions(dataCache.courses);
+            const filteredCourses = getFilteredCourses(dataCache.courses);
+            renderCourses(filteredCourses);
             return;
         }
         
@@ -477,8 +485,11 @@ async function loadCourses(loadMore = false) {
         dataCache.courses = courses;
         if (!loadMore) {
             coursesLoaded = 0;
+            createCourseFilter();
+            updateCourseFilterOptions(courses);
         }
-        renderCourses(courses, loadMore);
+        const filteredCourses = getFilteredCourses(courses);
+        renderCourses(filteredCourses, loadMore);
     } catch (error) {
         console.error('Error loading courses:', error);
     }
@@ -526,10 +537,12 @@ function renderCourses(courses, loadMore = false) {
             skillClass = 'skill-general';
         }
 
+        const courseIndex = startIndex + index + 1;
+
         col.innerHTML = `
             <div class="card portfolio-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body">
-                    <h6 class="card-title">${startIndex + index + 1}. ${course.title}</h6>
+                    <h6 class="card-title">${courseIndex}. ${course.title}</h6>
                     <p class="card-subtitle">${course.provider}</p>
                     <span class="skill-tag ${skillClass}">${course.type}</span>
                     <div class="d-flex flex-wrap gap-2 mt-3">
@@ -607,6 +620,7 @@ function addCoursesViewMoreButton() {
 }
 
 function loadMoreCourses() {
+    const filteredCourses = getFilteredCourses(dataCache.courses);
     loadCourses(true);
 }
 
@@ -757,6 +771,140 @@ document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
     initPortfolioTabs();
     loadLastUpdated();
+    
+    updateCourseFilterVisibility('certifications');
 
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+    createCourseFilter();
 });
+
+function createCourseFilter() {
+    let filterContainer = document.getElementById('course-filter-container');
+    if (filterContainer) {
+        return;
+    }
+
+    filterContainer = document.createElement('div');
+    filterContainer.id = 'course-filter-container';
+    filterContainer.className = 'course-filter-container';
+
+    const filterWrapper = document.createElement('div');
+    filterWrapper.className = 'course-filter-wrapper';
+
+    const select = document.createElement('select');
+    select.id = 'course-filter-select';
+    select.className = 'course-filter-select';
+
+    const arrow = document.createElement('i');
+    arrow.className = 'fas fa-chevron-down course-filter-arrow';
+
+    filterWrapper.appendChild(select);
+    filterWrapper.appendChild(arrow);
+    filterContainer.appendChild(filterWrapper);
+
+    const coursesTab = document.getElementById('courses');
+    const coursesGrid = document.getElementById('courses-grid');
+    coursesTab.insertBefore(filterContainer, coursesGrid);
+
+    select.addEventListener('change', (e) => {
+        currentCourseFilter = e.target.value;
+        coursesLoaded = 0;
+        renderFilteredCourses();
+    });
+}
+
+function updateCourseFilterOptions(courses) {
+    const select = document.getElementById('course-filter-select');
+    if (!select) return;
+
+    const fieldCounts = {
+        all: courses.length,
+        defensive: 0,
+        offensive: 0,
+        it: 0,
+        soft: 0,
+        general: 0
+    };
+
+    courses.forEach(course => {
+        const type = (course.type || '').toLowerCase();
+        if (type.includes('defensive security')) {
+            fieldCounts.defensive++;
+        } else if (type.includes('offensive security')) {
+            fieldCounts.offensive++;
+        } else if (type.includes('information technology')) {
+            fieldCounts.it++;
+        } else if (type.includes('soft skills')) {
+            fieldCounts.soft++;
+        } else {
+            fieldCounts.general++;
+        }
+    });
+
+    const options = [
+        { value: 'all', label: `All (${fieldCounts.all})` },
+        { value: 'defensive', label: `Defensive Security (${fieldCounts.defensive})` },
+        { value: 'offensive', label: `Offensive Security (${fieldCounts.offensive})` },
+        { value: 'it', label: `Information Technology (${fieldCounts.it})` },
+        { value: 'soft', label: `Soft Skills (${fieldCounts.soft})` },
+        { value: 'general', label: `General (${fieldCounts.general})` }
+    ];
+
+    select.innerHTML = '';
+
+    options.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.value = option.value;
+        optionElement.textContent = option.label;
+        if (option.value === currentCourseFilter) {
+            optionElement.selected = true;
+        }
+        select.appendChild(optionElement);
+    });
+}
+
+function updateCourseFilterVisibility(currentTab) {
+    const filterContainer = document.getElementById('course-filter-container');
+    if (!filterContainer) return;
+
+    if (currentTab === 'courses') {
+        filterContainer.classList.add('show');
+    } else {
+        filterContainer.classList.remove('show');
+    }
+}
+
+function getFilteredCourses(courses) {
+    if (currentCourseFilter === 'all') {
+        return courses;
+    }
+
+    return courses.filter(course => {
+        const type = (course.type || '').toLowerCase();
+        switch (currentCourseFilter) {
+            case 'defensive':
+                return type.includes('defensive security');
+            case 'offensive':
+                return type.includes('offensive security');
+            case 'it':
+                return type.includes('information technology');
+            case 'soft':
+                return type.includes('soft skills');
+            case 'general':
+                return !type.includes('defensive security') && 
+                       !type.includes('offensive security') && 
+                       !type.includes('information technology') && 
+                       !type.includes('soft skills');
+            default:
+                return true;
+        }
+    });
+}
+
+function renderFilteredCourses() {
+    if (!dataCache.courses) return;
+    
+    const filteredCourses = getFilteredCourses(dataCache.courses);
+    coursesLoaded = 0;
+    renderCourses(filteredCourses);
+}
