@@ -18,7 +18,7 @@
     "provider": "TryHackMe",
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/security-information-event-management",
-    "certificateLink": "https://tryhackme.com/module/security-information-event-management"
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Detecting Windows Attacks with Splunk",
@@ -67,7 +67,7 @@
     "provider": "TryHackMe",
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/cyber-threat-intelligence",
-    "certificateLink": "https://tryhackme.com/module/cyber-threat-intelligence"
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "YARA & Sigma for SOC Analysts",
@@ -81,7 +81,7 @@
     "provider": "TryHackMe",
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/cyber-defence-frameworks",
-    "certificateLink": "https://tryhackme.com/module/cyber-defence-frameworks"
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Windows Attacks & Defense",
@@ -123,14 +123,14 @@
     "provider": "TryHackMe",
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/network-security-and-traffic-analysis",
-    "certificateLink": "https://tryhackme.com/module/network-security-and-traffic-analysis"
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Wireshark",
     "provider": "TryHackMe",
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/wireshark",
-    "certificateLink": "https://tryhackme.com/module/wireshark"
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Working with IDS/IPS",
@@ -144,14 +144,14 @@
     "provider": "TryHackMe",
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/snort",
-    "certificateLink": "https://tryhackme.com/module/snort"
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Phishing",
     "provider": "TryHackMe",
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/phishing",
-    "certificateLink": "https://tryhackme.com/module/phishing"
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "JavaScript Deobfuscation",
