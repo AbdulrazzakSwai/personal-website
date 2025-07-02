@@ -17,7 +17,7 @@
   {
     "title": "Critical Security Vulnerabilities Discovery",
     "icon": "fas fa-bug",
-    "description": "Discovered and reported a critical IDOR vulnerability in the university system exposing all student data; identified a second vulnerability that was patched prior to reporting"
+    "description": "Discovered and reported a critical IDOR vulnerability in the university system exposing all students' data; identified a second vulnerability that was patched prior to reporting"
   },
   {
     "title": "Cultural Insight",
