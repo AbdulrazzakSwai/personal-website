@@ -27,7 +27,7 @@
   },
   {
     "title": "Active Directory (AD) Home Labs",
-    "description": "Built and configured two home labs with Domain Controllers and connected VMs to simulate enterprise environments.<br>Focused on AD security and exploitation.",
+    "description": "Built and configured 3 Active Directory home labs with Domain Controllers and connected VMs to simulate enterprise environments.<br>Focused on AD security and exploitation.",
     "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
     "links": [
       { "url": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
@@ -35,7 +35,7 @@
     ]
   },
   {
-    "title": "Diverse Virtual Machine Lab Environments (20+)",
+    "title": "20+ Virtual Machine Lab Environments",
     "description": "Built and configured over 20 virtual machines (Linux & Windows) using VirtualBox.<br>Configured NAT networks to simulate internal infrastructure for testing and analysis.",
     "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
     "links": []
