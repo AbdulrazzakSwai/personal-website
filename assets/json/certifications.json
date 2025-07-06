@@ -102,14 +102,5 @@
     "progress": 0,
     "detailsLink": "https://www.freecodecamp.org/learn/relational-database/",
     "upcoming": true
-  },
-  {
-    "title": "Certified Full Stack Developer",
-    "provider": "freeCodeCamp",
-    "status": "🕐 Upcoming",
-    "date": "Expected: September 2026",
-    "progress": 0,
-    "detailsLink": "https://www.freecodecamp.org/learn/full-stack-developer/",
-    "upcoming": true
   }
 ]
