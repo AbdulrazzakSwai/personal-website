@@ -41,21 +41,21 @@
     "upcoming": true
   },
   {
-    "title": "Certified Defensive Security Analyst (CDSA)",
+    "title": "Certified Bug Bounty Hunter (CBBH)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
     "date": "Expected: August 2025",
     "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
     "upcoming": true
   },
   {
-    "title": "Certified Bug Bounty Hunter (CBBH)",
+    "title": "Certified Defensive Security Analyst (CDSA)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
     "date": "Expected: December 2025",
     "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
     "upcoming": true
   },
   {
