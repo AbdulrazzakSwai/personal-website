@@ -41,10 +41,19 @@
     "upcoming": true
   },
   {
-    "title": "Certified Bug Bounty Hunter (CBBH)",
+    "title": "Certified Defensive Security Analyst (CDSA)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
     "date": "Expected: August 2025",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Bug Bounty Hunter (CBBH)",
+    "provider": "Hack The Box Academy",
+    "status": "🕐 Awaiting Exam",
+    "date": "Expected: December 2025",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
     "upcoming": true
@@ -53,18 +62,9 @@
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Still Learning",
-    "date": "Expected: December 2025",
+    "date": "Expected: May 2026",
     "progress": 55,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
-    "upcoming": true
-  },
-  {
-    "title": "Certified Defensive Security Analyst (CDSA)",
-    "provider": "Hack The Box Academy",
-    "status": "🕐 Awaiting Exam",
-    "date": "Expected: May 2026",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
     "upcoming": true
   },
   {
