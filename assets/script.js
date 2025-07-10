@@ -152,7 +152,7 @@ function initTypingAnimation() {
         let typeSpeed = isDeleting ? 50 : 100;
         
         if (!isDeleting && currentCharIndex === currentRole.length) {
-            typeSpeed = 1200;
+            typeSpeed = 1350;
             isDeleting = true;
         } else if (isDeleting && currentCharIndex === 0) {
             isDeleting = false;
