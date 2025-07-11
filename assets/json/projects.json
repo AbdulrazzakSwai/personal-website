@@ -23,8 +23,8 @@
     ]
   },
   {
-    "title": "20+ Virtual Machine Lab Environments",
-    "description": "Built and configured over 20 virtual machines (Linux & Windows) using VirtualBox.<br>Configured NAT networks to simulate internal infrastructure for testing and analysis.",
+    "title": "25+ Virtual Machine Lab Environments",
+    "description": "Built and configured over 25 virtual machines (Linux & Windows) using VirtualBox.<br>Configured NAT networks to simulate internal infrastructure for testing and analysis.",
     "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
     "links": []
   },
