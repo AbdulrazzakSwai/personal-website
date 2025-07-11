@@ -6,11 +6,11 @@
     "links": []
   },
   {
-    "title": "Custom Cybersecurity Roadmaps & University Talks",
-    "description": "Created free roadmaps guiding learners through TryHackMe, Hack The Box, and TCM Security platforms.<br>Delivered 4 talks at the university to 50+ colleagues, focusing on adopting practical cybersecurity learning methods.",
-    "skills": ["Public Speaking", "Communication", "Curriculum Design", "Cybersecurity Mentorship", "Community Engagement"],
+    "title": "Ultimate Cybersecurity Path",
+    "description": "Created a clear and structured cybersecurity learning path that takes learners from beginner to professional.<br>Designed a practical curriculum covering Presecurity, Cybersecurity Fundamentals, Essential Programming, Primary Cybersecurity Fields, Professional & Advanced Certifications, Specialization, and Soft Skills.<br>Built on trusted platforms like TryHackMe, Hack The Box, and TCM Security with focus on affordability and real-world applications.",
+    "skills": ["Curriculum Design", "Educational Planning", "Cybersecurity Mentorship", "Technical Writing", "Community Engagement"],
     "links": [
-      { "url": "https://github.com/AbdulrazzakSwai/free-cybersecurity-paths", "title": "Free Cybersecurity Paths" }
+      { "url": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path", "title": "Ultimate Cybersecurity Path" }
     ]
   },
   {
