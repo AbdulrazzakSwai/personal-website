@@ -14,20 +14,6 @@
     ]
   },
   {
-    "title": "Cybersecurity CTF Writeups Repository",
-    "description": "Created an organized collection of my Capture The Flag (CTF) writeups, documenting my journey in cybersecurity learning and hands-on practice.<br>Detailed the challenges faced, methodologies used, and lessons learned across various CTF challenges.<br>",
-    "skills": ["CTF Participation", "Technical Writing", "Problem Solving", "Cybersecurity Analysis", "Knowledge Sharing"],
-    "links": [
-      { "url": "https://security-writeups.notion.site", "title": "CTF Writeups Repository" }
-    ]
-  },
-  {
-    "title": "CTF Competitions Participation",
-    "description": "Participated in 42CTF (by RedTeam Hacker Academy & 42 Abu Dhabi) and Cybersecurity Awareness Day 4.0 CTF (by Abu Dhabi University).<br>Focused on exploitation, threat analysis, and security operations in timed, high-pressure settings.",
-    "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
-    "links": []
-  },
-  {
     "title": "Active Directory (AD) Home Labs",
     "description": "Built and configured 3 Active Directory home labs with Domain Controllers and connected VMs to simulate enterprise environments.<br>Focused on AD security and exploitation.",
     "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
@@ -43,12 +29,27 @@
     "links": []
   },
   {
-    "title": "100+ Practical Security Challenges Completed (Red & Blue Teaming)",
-    "description": "Completed over 100 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts.<br>Participated in Splunk BOTS (Boss of the SOC) and other platforms.<br>Authored detailed writeups for select challenges to share insights and methodologies.",
-    "skills": ["Red Teaming", "Blue Teaming", "Technical Writing"],
+    "title": "130+ Practical Security Challenges Completed (Red & Blue Teaming)",
+    "description": "Completed over 130 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts.<br>Solved security challenges in Splunk BOTS (Boss of the SOC) and other platforms including TryHackMe and Hack The Box.",
+    "skills": ["Red Teaming", "Blue Teaming", "Hands-on Security", "Splunk", "Problem Solving"],
     "links": [
-      { "url": "https://security-writeups.notion.site/", "title": "Security Challenge Writeups" },
-      { "url": "https://bots.splunk.com/", "title": "Splunk BOTS" }
+      { "url": "https://bots.splunk.com/", "title": "Splunk BOTS" },
+      { "url": "https://tryhackme.com/", "title": "TryHackMe" },
+      { "url": "https://app.hackthebox.com/", "title": "Hack The Box" }
     ]
+  },
+  {
+    "title": "Cybersecurity CTF Writeups Repository",
+    "description": "Created an organized collection of my Capture The Flag (CTF) writeups, documenting my journey in cybersecurity learning and hands-on practice.<br>Detailed the challenges faced, methodologies used, and lessons learned across various CTF challenges.<br>",
+    "skills": ["CTF Participation", "Technical Writing", "Problem Solving", "Cybersecurity Analysis", "Knowledge Sharing"],
+    "links": [
+      { "url": "https://security-writeups.notion.site", "title": "CTF Writeups Repository" }
+    ]
+  },
+  {
+    "title": "CTF Competitions Participation",
+    "description": "Participated in 42CTF (by RedTeam Hacker Academy & 42 Abu Dhabi) and Cybersecurity Awareness Day 4.0 CTF (by Abu Dhabi University).<br>Focused on exploitation, threat analysis, and security operations in timed, high-pressure settings.",
+    "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
+    "links": []
   }
 ]
