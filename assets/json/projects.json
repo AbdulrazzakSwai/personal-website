@@ -14,14 +14,16 @@
     ]
   },
   {
-    "title": "Critical Security Vulnerabilities Discovery",
-    "description": "Discovered and reported a critical IDOR vulnerability in the university’s course system that exposed all students’ data.<br>Identified a second one that was patched before I had the chance to report it.",
-    "skills": ["Bug Bounty Hunting", "Vulnerability Discovery", "Web Security", "Ethical Hacking", "Responsible Disclosure"],
-    "links": []
+    "title": "Cybersecurity CTF Writeups Repository",
+    "description": "Created an organized collection of my Capture The Flag (CTF) writeups, documenting my journey in cybersecurity learning and hands-on practice.<br>Detailed the challenges faced, methodologies used, and lessons learned across various CTF challenges.<br>",
+    "skills": ["CTF Participation", "Technical Writing", "Problem Solving", "Cybersecurity Analysis", "Knowledge Sharing"],
+    "links": [
+      { "url": "https://security-writeups.notion.site", "title": "CTF Writeups Repository" }
+    ]
   },
   {
-    "title": "CTF Participation",
-    "description": "Participated in 42CTF (RedTeam Hacker Academy & 42 Abu Dhabi) and Cybersecurity Awareness Day 4.0 CTF (Abu Dhabi University).<br>Focused on exploitation, threat analysis, and security operations in timed, high-pressure settings.",
+    "title": "CTF Competitions Participation",
+    "description": "Participated in 42CTF (by RedTeam Hacker Academy & 42 Abu Dhabi) and Cybersecurity Awareness Day 4.0 CTF (by Abu Dhabi University).<br>Focused on exploitation, threat analysis, and security operations in timed, high-pressure settings.",
     "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
     "links": []
   },
