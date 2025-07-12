@@ -2,7 +2,8 @@ let statsAnimated = false;
 const dataCache = {
     certifications: null,
     courses: null,
-    projects: null
+    projects: null,
+    about: null
 };
 let coursesLoaded = 0;
 const COURSES_PER_PAGE = 9;
@@ -171,7 +172,15 @@ function initTerminalAnimation() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                loadTerminalData();
+                if (dataCache.about) {
+                    typeTerminalText(dataCache.about.text);
+                } else {
+                    loadAboutData().then(() => {
+                        if (dataCache.about) {
+                            typeTerminalText(dataCache.about.text);
+                        }
+                    });
+                }
                 observer.unobserve(entry.target);
             }
         });
@@ -180,13 +189,17 @@ function initTerminalAnimation() {
     observer.observe(terminalBody);
 }
 
-async function loadTerminalData() {
+async function loadAboutData() {
+    if (dataCache.about) return dataCache.about;
+    
     try {
         const response = await fetch('assets/json/about.json');
         const data = await response.json();
-        typeTerminalText(data.text);
+        dataCache.about = data;
+        return data;
     } catch (error) {
         console.error('Error loading about data:', error);
+        return null;
     }
 }
 
@@ -764,6 +777,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initTypingAnimation();
     initTerminalAnimation();
+    loadAboutData();
     loadHighlights();
     loadStatistics();
     loadTimeline();
