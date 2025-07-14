@@ -29,8 +29,8 @@
     "links": []
   },
   {
-    "title": "130+ Practical Security Challenges Completed (Red & Blue Teaming)",
-    "description": "Completed over 130 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts.<br>Solved security challenges in Splunk BOTS (Boss of the SOC) and other platforms including TryHackMe and Hack The Box.",
+    "title": "135+ Practical Security Challenges Completed (Red & Blue Teaming)",
+    "description": "Completed over 135 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts.<br>Solved security challenges in Splunk BOTS (Boss of the SOC) and other platforms including TryHackMe and Hack The Box.",
     "skills": ["Red Teaming", "Blue Teaming", "Hands-on Security", "Splunk", "Problem Solving"],
     "links": [
       { "url": "https://bots.splunk.com/", "title": "Splunk BOTS" },
