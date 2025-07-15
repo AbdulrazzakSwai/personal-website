@@ -15,11 +15,6 @@
     "description": "Recognized on the University Honor List for 3 consecutive terms for outstanding academic performance in Cybersecurity"
   },
   {
-    "title": "Critical Security Vulnerabilities Discovery",
-    "icon": "fas fa-bug",
-    "description": "Discovered and reported a critical IDOR vulnerability in the university system exposing all students' data; identified a second vulnerability that was patched prior to reporting"
-  },
-  {
     "title": "Cultural Insight",
     "icon": "fas fa-globe",
     "description": "Resided in the UAE for over 20 years, gaining strong cultural insight and deep local familiarity"
