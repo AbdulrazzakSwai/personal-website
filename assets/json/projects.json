@@ -1,21 +1,27 @@
 [
   {
+    "title": "Critical Security Vulnerabilities Discovery",
+    "description": "Discovered and responsibly reported a critical Insecure Direct Object Reference (IDOR) vulnerability in the university's online system, which exposed all students' sensitive data.<br>Identified a second vulnerability that was patched before I had the chance to report it.",
+    "skills": ["Vulnerability Assessment", "Responsible Disclosure", "Web Security", "IDOR"],
+    "links": []
+  },
+  {
     "title": "Leading Cybersecurity Curriculum Reform at Al Ain University",
-    "description": "Advocated for a shift from theoretical teaching to practical, hands-on learning using platforms like TryHackMe and Hack The Box.<br>Proposed integrating real-world labs and gamified challenges into coursework.<br>Collaborating with the head of cybersecurity and senior cybersecurity professors to implement reforms.",
+    "description": "Led an initiative to modernize the cybersecurity curriculum by shifting from theoretical teaching to a hands-on, practical learning approach.<br>Advocated for integrating real-world labs and gamified platforms such as TryHackMe and Hack The Box.<br>Collaborated closely with the head of cybersecurity and senior faculty members to implement these curriculum enhancements.",
     "skills": ["Curriculum Development", "Advocacy", "Cybersecurity Education", "Practical Learning"],
     "links": []
   },
   {
     "title": "Ultimate Cybersecurity Path",
-    "description": "Created a clear and structured cybersecurity learning path that takes learners from beginner to professional.<br>Designed its curriculum to cover Presecurity, Cybersecurity Fundamentals, Essential Programming, Primary Cybersecurity Fields, Professional & Advanced Certifications, Specialization, and Soft Skills.<br>I've built it on reputable platforms like TryHackMe, Hack The Box, and TCM Security with focus on affordability and real-world applications.",
+    "description": "Created a clear and structured cybersecurity learning path that takes learners from beginner to professional level.<br>Designed its curriculum to cover Presecurity, Cybersecurity Fundamentals, Essential Programming, Primary Cybersecurity Fields, Professional & Advanced Certifications, Specialization, and Soft Skills.<br>Built it on reputable platforms like TryHackMe, Hack The Box, and TCM Security with focus on practicality, affordability, and real-world applications.",
     "skills": ["Curriculum Design", "Educational Planning", "Cybersecurity Mentorship", "Community Engagement"],
     "links": [
       { "url": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path", "title": "Ultimate Cybersecurity Path" }
     ]
   },
   {
-    "title": "Active Directory (AD) Home Labs",
-    "description": "Built and configured 3 Active Directory home labs with Domain Controllers and connected VMs to simulate enterprise environments.<br>Focused on AD security and exploitation.",
+    "title": "Active Directory (AD) Home Labs (3)",
+    "description": "Designed and deployed 3 Active Directory home labs simulating real enterprise networks with Domain Controllers and client systems.<br>Practiced advanced Active Directory exploitation techniques using popular tools.",
     "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
     "links": [
       { "url": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
@@ -23,33 +29,34 @@
     ]
   },
   {
-    "title": "25+ Virtual Machine Lab Environments",
-    "description": "Built and configured over 25 virtual machines (Linux & Windows) using VirtualBox.<br>Configured NAT networks to simulate internal infrastructure for testing and analysis.",
+    "title": "Diverse Virtual Machine Lab Environments (25+)",
+    "description": "Built and configured more than 25 virtual machines using VirtualBox, including both Linux and Windows systems.<br>Designed internal networks using NAT to simulate realistic infrastructure for cybersecurity practicing and tool testing.",
     "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
     "links": []
   },
   {
-    "title": "135+ Practical Security Challenges Completed (Red & Blue Teaming)",
-    "description": "Completed over 135 hands-on security challenges covering both red teaming (offensive) and blue teaming (defensive) concepts.<br>Solved security challenges in Splunk BOTS (Boss of the SOC) and other platforms including TryHackMe and Hack The Box.",
+    "title": "140+ Practical Security Challenges Completed with Writeups",
+    "description": "Completed over 140 hands-on cybersecurity challenges across red teaming (offensive security) and blue teaming (defensive operations).<br>Participated in Splunk Boss of the SOC (BOTS) and other real-world simulation platforms.<br>Created an organized collection of challenges' writeups, documenting my journey in cybersecurity learning and hands-on practice.",
     "skills": ["Red Teaming", "Blue Teaming", "Hands-on Security", "Splunk", "Problem Solving"],
     "links": [
+      { "url": "https://security-writeups.notion.site", "title": "Security Writeups" },
       { "url": "https://bots.splunk.com/", "title": "Splunk BOTS" },
       { "url": "https://tryhackme.com/", "title": "TryHackMe" },
       { "url": "https://app.hackthebox.com/", "title": "Hack The Box" }
     ]
   },
   {
-    "title": "Cybersecurity CTF Writeups Repository",
-    "description": "Created an organized collection of my Capture The Flag (CTF) writeups, documenting my journey in cybersecurity learning and hands-on practice.<br>Detailed the challenges faced, methodologies used, and lessons learned across various CTF challenges.<br>",
-    "skills": ["CTF Participation", "Technical Writing", "Problem Solving", "Cybersecurity Analysis", "Knowledge Sharing"],
-    "links": [
-      { "url": "https://security-writeups.notion.site", "title": "CTF Writeups Repository" }
-    ]
-  },
-  {
-    "title": "CTF Competitions Participation",
-    "description": "Participated in 42CTF (by RedTeam Hacker Academy & 42 Abu Dhabi) and Cybersecurity Awareness Day 4.0 CTF (by Abu Dhabi University).<br>Focused on exploitation, threat analysis, and security operations in timed, high-pressure settings.",
+    "title": "Capture the Flag (CTF) Competitions",
+    "description": "42CTF – RedTeam Hacker Academy & 42 Abu Dhabi: Participated in a Capture the Flag event focused on real-world cybersecurity challenges. Gained hands-on experience in offensive security, teamwork, and working under time pressure.<br>Cybersecurity Awareness Day 4.0 CTF – Abu Dhabi University: Engaged in a competitive cybersecurity challenge designed to raise awareness through realistic attack simulations and defensive scenarios. Strengthened skills in threat analysis, forensics, and incident response.",
     "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
     "links": []
+  },
+  {
+    "title": "Personal Website",
+    "description": "Designed and developed a fully responsive personal website to present my cybersecurity journey, skills, certifications, and projects.<br>Built using HTML, CSS, JavaScript, and Bootstrap.<br>The site features dynamic content loading, smooth animations, interactive UI elements, and a clean, modern design focused on accessibility and user experience.",
+    "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
+    "links": [
+      { "url": "https://www.abdulrazzakswai.me", "title": "My Personal Website" }
+    ]
   }
 ]
