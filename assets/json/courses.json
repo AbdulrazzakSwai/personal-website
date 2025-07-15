@@ -385,6 +385,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/9"
   },
   {
+    "title": "Introduction to Cyber Security",
+    "provider": "TryHackMe",
+    "type": "General",
+    "detailsLink": "https://tryhackme.com/module/introduction-to-cyber-security",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Intro to Academy",
     "provider": "Hack The Box Academy",
     "type": "General",
