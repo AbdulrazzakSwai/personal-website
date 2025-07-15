@@ -6,7 +6,7 @@
   },
   {
     "label": "Upcoming Certifications",
-    "value": 8,
+    "value": 10,
     "icon": "fas fa-clock"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "label": "Upcoming Courses",
-    "value": 24,
+    "value": 39,
     "icon": "fas fa-bookmark"
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "label": "Upcoming Projects",
-    "value": 19,
+    "value": 5,
     "icon": "fas fa-rocket"
   }
 ]

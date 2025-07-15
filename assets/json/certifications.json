@@ -41,30 +41,57 @@
     "upcoming": true
   },
   {
-    "title": "Certified Bug Bounty Hunter (CBBH)",
-    "provider": "Hack The Box Academy",
-    "status": "🕐 Awaiting Exam",
-    "date": "Expected: August 2025",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
+    "title": "SOC Level 1",
+    "provider": "TryHackMe",
+    "status": "🕐 Still Learning",
+    "date": "Expected: July 2025",
+    "progress": 81,
+    "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
     "upcoming": true
   },
   {
-    "title": "Certified Defensive Security Analyst (CDSA)",
+    "title": "Junior Penetration Tester",
+    "provider": "TryHackMe",
+    "status": "🕐 Still Learning",
+    "date": "Expected: August 2025",
+    "progress": 0,
+    "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
+    "upcoming": true
+  },
+  {
+    "title": "Web Application Pentesting",
+    "provider": "TryHackMe",
+    "status": "🕐 Still Learning",
+    "date": "Expected: August 2025",
+    "progress": 0,
+    "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Bug Bounty Hunter (CBBH)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
     "date": "Expected: December 2025",
     "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
     "upcoming": true
   },
   {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Still Learning",
-    "date": "Expected: May 2026",
+    "date": "Expected: January 2026",
     "progress": 55,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Defensive Security Analyst (CDSA)",
+    "provider": "Hack The Box Academy",
+    "status": "🕐 Awaiting Exam",
+    "date": "Expected: May 2026",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
     "upcoming": true
   },
   {
@@ -92,15 +119,6 @@
     "date": "Expected: July 2025",
     "progress": 68,
     "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
-    "upcoming": true
-  },
-  {
-    "title": "Relational Database (SQL, Bash, and Git)",
-    "provider": "freeCodeCamp",
-    "status": "🕐 Upcoming",
-    "date": "Expected: August 2025",
-    "progress": 0,
-    "detailsLink": "https://www.freecodecamp.org/learn/relational-database/",
     "upcoming": true
   }
 ]
