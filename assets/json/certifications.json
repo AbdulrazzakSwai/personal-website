@@ -43,7 +43,7 @@
   {
     "title": "SOC Level 1",
     "provider": "TryHackMe",
-    "status": "🕐 Still Learning",
+    "status": "🕐 In Progress",
     "date": "Expected: July 2025",
     "progress": 81,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
@@ -52,7 +52,7 @@
   {
     "title": "Junior Penetration Tester",
     "provider": "TryHackMe",
-    "status": "🕐 Still Learning",
+    "status": "🕐 In Progress",
     "date": "Expected: August 2025",
     "progress": 0,
     "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
@@ -79,7 +79,7 @@
   {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
-    "status": "🕐 Still Learning",
+    "status": "🕐 In Progress",
     "date": "Expected: January 2026",
     "progress": 55,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
@@ -97,7 +97,7 @@
   {
     "title": "Artificial Intelligence (AI) Red Teamer",
     "provider": "Hack The Box Academy & Google",
-    "status": "🕐 Still Learning",
+    "status": "🕐 In Progress",
     "date": "Expected: September 2026",
     "progress": 2,
     "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
@@ -115,7 +115,7 @@
   {
     "title": "Scientific Computing with Python",
     "provider": "freeCodeCamp",
-    "status": "🕐 Still Doing Projects",
+    "status": "🕐 In Progress",
     "date": "Expected: July 2025",
     "progress": 68,
     "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
