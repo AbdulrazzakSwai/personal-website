@@ -609,8 +609,9 @@ br {
 
 .portfolio-card .card-subtitle {
   color: var(--primary-color);
-  font-weight: 500;
+  font-weight: 550;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .portfolio-card .text-muted {
