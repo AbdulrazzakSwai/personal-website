@@ -2,17 +2,22 @@
   {
     "title": "Daily Skill Development",
     "icon": "fas fa-graduation-cap",
-    "description": "Dedicating 5 hours daily for learning and practicing, completing a new course every 3 days, working on a new project every week, and progressing consistently from certification to certification."
+    "description": "Dedicating 5 hours daily for learning and practicing, completing a new course every 3 days, working on a new project every week, and progressing consistently from certification to certification"
+  },
+  {
+    "title": "Top 2% on TryHackMe",
+    "icon": "fas fa-user-shield",
+    "description": "Ranked in the top 2% of players on TryHackMe, demonstrating advanced cybersecurity skills and practical problem-solving abilities"
+  },
+  {
+    "title": "University Honor List Recognition (3 Times)",
+    "icon": "fas fa-trophy",
+    "description": "Recognized on the University Honor List for 3 consecutive terms for outstanding academic performance in Cybersecurity"
   },
   {
     "title": "Golden Residency Award",
     "icon": "fas fa-medal",
     "description": "Awarded a 10-year UAE Golden Residency for consistent academic excellence (valid until 2033)"
-  },
-  {
-    "title": "University Honor List Recognition",
-    "icon": "fas fa-trophy",
-    "description": "Recognized on the University Honor List for 3 consecutive terms for outstanding academic performance in Cybersecurity"
   },
   {
     "title": "Cultural Insight",
