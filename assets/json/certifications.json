@@ -45,7 +45,7 @@
     "provider": "TryHackMe",
     "status": "🕐 In Progress",
     "date": "Expected: August 2025",
-    "progress": 20,
+    "progress": 22,
     "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
     "upcoming": true
   },
@@ -117,7 +117,7 @@
     "provider": "freeCodeCamp",
     "status": "🕐 In Progress",
     "date": "Expected: July 2025",
-    "progress": 68,
+    "progress": 74,
     "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
     "upcoming": true
   }
