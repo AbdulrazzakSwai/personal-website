@@ -38,10 +38,5 @@
     "label": "Finished Mini Projects",
     "value": 60,
     "icon": "fas fa-code"
-  },
-  {
-    "label": "Upcoming Projects",
-    "value": 5,
-    "icon": "fas fa-rocket"
   }
 ]
