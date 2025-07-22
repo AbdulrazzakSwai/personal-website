@@ -189,13 +189,6 @@
     "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_PEH.png"
   },
   {
-    "title": "Penetration Testing Process",
-    "provider": "Hack The Box Academy",
-    "type": "Offensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/penetration-testing-process",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/90"
-  },
-  {
     "title": "Network Enumeration with Nmap",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
@@ -348,6 +341,20 @@
     "type": "Offensive Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/bug-bounty-hunting-process",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/161"
+  },
+  {
+    "title": "Penetration Testing Process",
+    "provider": "Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/penetration-testing-process",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/90"
+  },
+  {
+    "title": "Introduction to Pentesting",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/introduction-to-offensive-pentesting",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Getting Started",
