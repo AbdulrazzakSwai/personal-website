@@ -35,8 +35,8 @@
     "links": []
   },
   {
-    "title": "150+ Practical Security Challenges Completed with Writeups",
-    "description": "Completed over 150 hands-on cybersecurity challenges across red teaming (offensive security) and blue teaming (defensive operations).<br>Participated in Splunk Boss of the SOC (BOTS) and other real-world simulation platforms.<br>Created an organized collection of challenges' writeups, documenting my journey in cybersecurity learning and hands-on practice.",
+    "title": "155+ Practical Security Challenges Completed with Writeups",
+    "description": "Completed over 155 hands-on cybersecurity challenges across red teaming (offensive security) and blue teaming (defensive operations).<br>Participated in Splunk Boss of the SOC (BOTS) and other real-world simulation platforms.<br>Created an organized collection of challenges' writeups, documenting my journey in cybersecurity learning and hands-on practice.",
     "skills": ["Red Teaming", "Blue Teaming", "Hands-on Security", "Splunk", "Problem Solving"],
     "links": [
       { "url": "https://security-writeups.notion.site", "title": "Security Writeups" },

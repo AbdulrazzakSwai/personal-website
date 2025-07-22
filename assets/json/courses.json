@@ -175,6 +175,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/41"
   },
   {
+    "title": "SOC Level 1 Capstone",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/soclevel1-capstone",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Practical Ethical Hacking - The Complete Course",
     "provider": "TCM Security",
     "type": "Offensive Security",

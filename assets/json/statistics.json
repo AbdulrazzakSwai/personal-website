@@ -1,32 +1,32 @@
 [
   {
     "label": "Awarded Certifications",
-    "value": 3,
+    "value": 4,
     "icon": "fas fa-certificate"
   },
   {
     "label": "Upcoming Certifications",
-    "value": 10,
+    "value": 9,
     "icon": "fas fa-clock"
   },
   {
     "label": "Completed Courses",
-    "value": 59,
+    "value": 60,
     "icon": "fas fa-book"
   },
   {
     "label": "Upcoming Courses",
-    "value": 36,
+    "value": 35,
     "icon": "fas fa-bookmark"
   },
   {
     "label": "Solved Security Challenges",
-    "value": 155,
+    "value": 156,
     "icon": "fas fa-flag"
   },
   {
     "label": "Upcoming Challenges",
-    "value": 345,
+    "value": 344,
     "icon": "fas fa-bullseye"
   },
   {
