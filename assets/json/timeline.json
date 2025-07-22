@@ -1,14 +1,14 @@
 [
   {
     "type": "recent",
-    "title": "JavaScript Algorithms and Data Structures Certification",
-    "date": "June 2025",
-    "description": "Received the JavaScript Algorithms and Data Structures certification from freeCodeCamp. Completed 25 hands-on JavaScript projects covering objects, functions, the DOM, object-oriented programming, APIs, and more.",
+    "title": "SOC Level 1 Certification",
+    "date": "July 2025",
+    "description": "Achieved the SOC Level 1 certification from TryHackMe after completing over 70 hands-on labs and defensive-focused rooms.",
     "icon": "fas fa-check"
   },
   {
     "type": "upcoming",
-    "title": "Penetration Tester Certification (PJPT)",
+    "title": "Practical Junior Penetration Tester (PJPT) Certification",
     "date": "August 2025 (Expected)",
     "description": "Preparing for the TCM-Security Practical Junior Penetration Tester (PJPT) certification to validate offensive security proficiency through hands-on exploitation of networks, web applications, and Active Directory in a controlled lab environment.",
     "icon": "fas fa-clock"
