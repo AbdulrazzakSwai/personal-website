@@ -224,6 +224,20 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Using Web Proxies",
+    "provider": "Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/using-web-proxies",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/110"
+  },
+  {
+    "title": "Burp Suite",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/learn-burp-suite",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "SQL Injection Fundamentals",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
@@ -243,20 +257,6 @@
     "type": "Offensive Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/cross-site-scripting-xss",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/103"
-  },
-  {
-    "title": "Using Web Proxies",
-    "provider": "Hack The Box Academy",
-    "type": "Offensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/using-web-proxies",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/110"
-  },
-  {
-    "title": "Hacking Wordpress",
-    "provider": "Hack The Box Academy",
-    "type": "Offensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/hacking-wordpress",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/17"
   },
   {
     "title": "Command Injections",
@@ -336,11 +336,11 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/160"
   },
   {
-    "title": "File Transfers",
+    "title": "Hacking Wordpress",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/file-transfers",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/24"
+    "detailsLink": "https://academy.hackthebox.com/course/preview/hacking-wordpress",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/17"
   },
   {
     "title": "Bug Bounty Hunting Process",
@@ -348,6 +348,13 @@
     "type": "Offensive Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/bug-bounty-hunting-process",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/161"
+  },
+  {
+    "title": "File Transfers",
+    "provider": "Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/file-transfers",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/24"
   },
   {
     "title": "Penetration Testing Process",
