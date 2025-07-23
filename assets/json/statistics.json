@@ -11,22 +11,22 @@
   },
   {
     "label": "Completed Courses",
-    "value": 64,
+    "value": 65,
     "icon": "fas fa-book"
   },
   {
     "label": "Upcoming Courses",
-    "value": 31,
+    "value": 30,
     "icon": "fas fa-bookmark"
   },
   {
     "label": "Solved Security Challenges",
-    "value": 161,
+    "value": 162,
     "icon": "fas fa-flag"
   },
   {
     "label": "Upcoming Security Challenges",
-    "value": 339,
+    "value": 338,
     "icon": "fas fa-bullseye"
   },
   {

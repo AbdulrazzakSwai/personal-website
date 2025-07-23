@@ -217,6 +217,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/108"
   },
   {
+    "title": "Vulnerability Research",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/vulnerability-research",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Information Gathering - Web Edition",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
