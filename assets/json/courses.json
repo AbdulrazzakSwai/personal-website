@@ -217,6 +217,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/39"
   },
   {
+    "title": "Introduction to Web Hacking",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/intro-to-web-hacking",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "SQL Injection Fundamentals",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
