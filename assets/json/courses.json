@@ -189,6 +189,13 @@
     "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_PEH.png"
   },
   {
+    "title": "Network Security",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/network-security",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Network Enumeration with Nmap",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
