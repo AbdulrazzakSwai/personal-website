@@ -60,12 +60,21 @@
     "upcoming": true
   },
   {
-    "title": "Web Application Pentesting",
+    "title": "Web Application Penetration Testing",
     "provider": "TryHackMe",
     "status": "🕐 In Progress",
     "date": "Expected: August 2025",
     "progress": 17,
     "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
+    "upcoming": true
+  },
+  {
+    "title": "Red Teaming",
+    "provider": "TryHackMe",
+    "status": "🕐 In Progress",
+    "date": "Expected: August 2025",
+    "progress": 4,
+    "detailsLink": "https://tryhackme.com/path/outline/redteaming",
     "upcoming": true
   },
   {
