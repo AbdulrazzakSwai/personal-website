@@ -10,12 +10,12 @@
     "icon": "fas fa-clock"
   },
   {
-    "label": "Completed Courses",
+    "label": "Completed Online Courses",
     "value": 68,
     "icon": "fas fa-book"
   },
   {
-    "label": "Upcoming Courses",
+    "label": "Upcoming Online Courses",
     "value": 27,
     "icon": "fas fa-bookmark"
   },
