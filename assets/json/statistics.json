@@ -11,12 +11,12 @@
   },
   {
     "label": "Completed Courses",
-    "value": 66,
+    "value": 68,
     "icon": "fas fa-book"
   },
   {
     "label": "Upcoming Courses",
-    "value": 29,
+    "value": 27,
     "icon": "fas fa-bookmark"
   },
   {

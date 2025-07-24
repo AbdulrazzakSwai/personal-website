@@ -203,6 +203,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/19"
   },
   {
+    "title": "Nmap",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/nmap",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Using the Metasploit Framework",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
@@ -228,6 +235,13 @@
     "provider": "TryHackMe",
     "type": "Offensive Security",
     "detailsLink": "https://tryhackme.com/module/vulnerability-research",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Information Gathering and Vulnerability Scanning",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/information-gathering-and-vulnerability-scanning",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
