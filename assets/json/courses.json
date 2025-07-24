@@ -210,6 +210,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/39"
   },
   {
+    "title": "Metasploit",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/metasploit",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Vulnerability Assessment",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
