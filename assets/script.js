@@ -125,10 +125,9 @@ function initAnimations() {
 function initTypingAnimation() {
     const roles = [
         'Cybersecurity Student',
-        'Cyber Defense Analyst', 
         'Ethical Hacker',
+        'Cyber Defense Analyst', 
         'Web Developer',
-        'Programmer',
         'Continuous Learner'
     ];
 
@@ -337,7 +336,7 @@ function initStatsAnimation() {
 
 function animateStats() {
     const statNumbers = document.querySelectorAll('.statistics-number');
-    const duration = 1500;
+    const duration = 1700;
     
     statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
@@ -538,10 +537,10 @@ function renderCourses(courses, loadMore = false) {
 
         let skillClass = '';
         const type = (course.type || '').toLowerCase();
-        if (type.includes('defensive security')) {
-            skillClass = 'skill-defensive';
-        } else if (type.includes('offensive security')) {
+        if (type.includes('offensive security')) {
             skillClass = 'skill-offensive';
+        } else if (type.includes('defensive security')) {
+            skillClass = 'skill-defensive';
         } else if (type.includes('information technology')) {
             skillClass = 'skill-it';
         } else if (type.includes('soft skills')) {
@@ -833,8 +832,8 @@ function updateCourseFilterOptions(courses) {
 
     const fieldCounts = {
         all: courses.length,
-        defensive: 0,
         offensive: 0,
+        defensive: 0,
         it: 0,
         soft: 0,
         general: 0
@@ -842,10 +841,10 @@ function updateCourseFilterOptions(courses) {
 
     courses.forEach(course => {
         const type = (course.type || '').toLowerCase();
-        if (type.includes('defensive security')) {
-            fieldCounts.defensive++;
-        } else if (type.includes('offensive security')) {
+        if (type.includes('offensive security')) {
             fieldCounts.offensive++;
+        } else if (type.includes('defensive security')) {
+            fieldCounts.defensive++;
         } else if (type.includes('information technology')) {
             fieldCounts.it++;
         } else if (type.includes('soft skills')) {
@@ -857,8 +856,8 @@ function updateCourseFilterOptions(courses) {
 
     const options = [
         { value: 'all', label: `All (${fieldCounts.all})` },
-        { value: 'defensive', label: `Defensive Security (${fieldCounts.defensive})` },
         { value: 'offensive', label: `Offensive Security (${fieldCounts.offensive})` },
+        { value: 'defensive', label: `Defensive Security (${fieldCounts.defensive})` },
         { value: 'it', label: `Information Technology (${fieldCounts.it})` },
         { value: 'soft', label: `Soft Skills (${fieldCounts.soft})` },
         { value: 'general', label: `General (${fieldCounts.general})` }
@@ -896,17 +895,17 @@ function getFilteredCourses(courses) {
     return courses.filter(course => {
         const type = (course.type || '').toLowerCase();
         switch (currentCourseFilter) {
-            case 'defensive':
-                return type.includes('defensive security');
             case 'offensive':
                 return type.includes('offensive security');
+            case 'defensive':
+                return type.includes('defensive security');
             case 'it':
                 return type.includes('information technology');
             case 'soft':
                 return type.includes('soft skills');
             case 'general':
-                return !type.includes('defensive security') && 
-                       !type.includes('offensive security') && 
+                return !type.includes('offensive security') && 
+                       !type.includes('defensive security') && 
                        !type.includes('information technology') && 
                        !type.includes('soft skills');
             default:

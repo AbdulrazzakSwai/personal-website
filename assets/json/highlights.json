@@ -2,31 +2,36 @@
   {
     "title": "Daily Skill Development",
     "icon": "fas fa-graduation-cap",
-    "description": "Dedicating 6 hours daily for learning and practicing, completing a new course every 3 days, working on a new project every week, and progressing consistently from certification to certification"
+    "description": "Dedicating 6 hours daily for learning and practicing, completing a new course every 3 days, working on a new project every week, and progressing consistently from certification to certification."
   },
   {
     "title": "Top 1% on TryHackMe",
     "icon": "fas fa-user-shield",
-    "description": "Ranked in the top 1% of players on TryHackMe, demonstrating advanced cybersecurity skills and practical problem-solving abilities"
+    "description": "Ranked in the top 1% of players on TryHackMe, demonstrating advanced cybersecurity skills and practical problem-solving abilities."
+  },
+  {
+    "title": "Practical Certification Focus",
+    "icon": "fas fa-tools",
+    "description": "Proudly avoid \"HR Filter\" certifications. Only pursuing hands-on, practical cybersecurity certifications."
   },
   {
     "title": "University Honor List Recognition (3 Times)",
     "icon": "fas fa-trophy",
-    "description": "Recognized on the University Honor List for 3 consecutive terms for outstanding academic performance in Cybersecurity"
+    "description": "Recognized on the University Honor List for 3 consecutive semesters for outstanding academic performance in Cybersecurity."
   },
   {
     "title": "Golden Residency Award",
     "icon": "fas fa-medal",
-    "description": "Awarded a 10-year UAE Golden Residency for consistent academic excellence (valid until 2033)"
+    "description": "Awarded a 10-year UAE Golden Residency for consistent academic excellence (valid until 2033)."
   },
   {
     "title": "Cultural Insight",
     "icon": "fas fa-globe",
-    "description": "Resided in the UAE for over 20 years, gaining strong cultural insight and deep local familiarity"
+    "description": "Resided in the UAE for over 20 years, gaining strong cultural insight and deep local familiarity."
   },
   {
     "title": "Licensed Driver",
     "icon": "fas fa-car",
-    "description": "Held a valid UAE light vehicle license with 3 years of driving experience, ensuring professional mobility"
+    "description": "Held a valid UAE light vehicle license with 3 years of driving experience, ensuring professional mobility."
   }
 ]
