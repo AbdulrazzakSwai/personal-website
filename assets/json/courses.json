@@ -350,13 +350,6 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/216"
   },
   {
-    "title": "Security Incident Reporting",
-    "provider": "Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/security-incident-reporting",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/238"
-  },
-  {
     "title": "Intro to Network Traffic Analysis",
     "provider": "Hack The Box Academy",
     "type": "Defensive Security",
@@ -411,6 +404,13 @@
     "type": "Defensive Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/javascript-deobfuscation",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/41"
+  },
+  {
+    "title": "Security Incident Reporting",
+    "provider": "Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/security-incident-reporting",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/238"
   },
   {
     "title": "SOC Level 1 Capstone",
