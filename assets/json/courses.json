@@ -343,6 +343,13 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Log Analysis",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/log-analysis",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Windows Event Logs & Finding Evil",
     "provider": "Hack The Box Academy",
     "type": "Defensive Security",
