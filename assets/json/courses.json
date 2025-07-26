@@ -273,6 +273,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/218"
   },
   {
+    "title": "Advanced Splunk",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/advanced-splunk",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Introduction to Threat Hunting & Hunting With Elastic",
     "provider": "Hack The Box Academy",
     "type": "Defensive Security",
