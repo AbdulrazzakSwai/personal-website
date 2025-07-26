@@ -61,21 +61,21 @@
     "upcoming": true
   },
   {
+    "title": "Web Fundamentals",
+    "provider": "TryHackMe",
+    "status": "🕐 In Progress",
+    "date": "Expected: August 2025",
+    "progress": 56,
+    "detailsLink": "https://tryhackme.com/path/outline/web",
+    "upcoming": true
+  },
+  {
     "title": "Web Application Penetration Testing",
     "provider": "TryHackMe",
     "status": "🕐 In Progress",
     "date": "Expected: August 2025",
-    "progress": 20,
+    "progress": 28,
     "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
-    "upcoming": true
-  },
-  {
-    "title": "Red Teaming",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "date": "Expected: August 2025",
-    "progress": 9,
-    "detailsLink": "https://tryhackme.com/path/outline/redteaming",
     "upcoming": true
   },
   {
