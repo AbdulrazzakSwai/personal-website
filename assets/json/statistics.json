@@ -1,22 +1,22 @@
 [
   {
     "label": "Achieved Certifications",
-    "value": 4,
+    "value": 5,
     "icon": "fas fa-certificate"
   },
   {
     "label": "Upcoming Certifications",
-    "value": 10,
+    "value": 9,
     "icon": "fas fa-clock"
   },
   {
     "label": "Completed Online Courses",
-    "value": 68,
+    "value": 69,
     "icon": "fas fa-book"
   },
   {
     "label": "Upcoming Online Courses",
-    "value": 27,
+    "value": 26,
     "icon": "fas fa-bookmark"
   },
   {

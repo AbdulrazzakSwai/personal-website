@@ -32,6 +32,16 @@
     "upcoming": false
   },
   {
+    "title": "Junior Penetration Tester",
+    "provider": "TryHackMe",
+    "status": "✅ All Challenges Completed",
+    "date": "July 2025",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
+    "proofLink": "https://tryhackme.com/certificate/THM-I9EYQ3AHN9",
+    "upcoming": false
+  },
+  {
     "title": "SOC Level 1",
     "provider": "TryHackMe",
     "status": "✅ All Challenges Completed",
@@ -40,15 +50,6 @@
     "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
     "proofLink": "https://tryhackme.com/certificate/THM-9XKU9TPVKM",
     "upcoming": false
-  },
-  {
-    "title": "Junior Penetration Tester",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "date": "Expected: July 2025",
-    "progress": 99,
-    "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
-    "upcoming": true
   },
   {
     "title": "SOC Level 2",

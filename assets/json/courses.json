@@ -210,6 +210,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/24"
   },
   {
+    "title": "Privilege Escalation",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/privilege-escalation",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Penetration Testing Process",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
