@@ -65,7 +65,7 @@
     "provider": "TryHackMe",
     "status": "🕐 In Progress",
     "date": "Expected: August 2025",
-    "progress": 17,
+    "progress": 20,
     "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
     "upcoming": true
   },
@@ -74,7 +74,7 @@
     "provider": "TryHackMe",
     "status": "🕐 In Progress",
     "date": "Expected: August 2025",
-    "progress": 4,
+    "progress": 9,
     "detailsLink": "https://tryhackme.com/path/outline/redteaming",
     "upcoming": true
   },
