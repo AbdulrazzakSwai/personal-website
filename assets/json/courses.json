@@ -287,6 +287,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/214"
   },
   {
+    "title": "Advanced ELK",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/advanced-elk",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Introduction to Digital Forensics",
     "provider": "Hack The Box Academy",
     "type": "Defensive Security",
