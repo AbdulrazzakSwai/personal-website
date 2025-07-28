@@ -476,6 +476,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/35"
   },
   {
+    "title": "How the Web Works",
+    "provider": "TryHackMe",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://tryhackme.com/module/how-the-web-works",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Soft Skills for the Job Market",
     "provider": "TCM Security",
     "type": "Soft Skills",
