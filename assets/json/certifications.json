@@ -61,21 +61,21 @@
     "upcoming": true
   },
   {
+    "title": "Web Application Penetration Testing",
+    "provider": "TryHackMe",
+    "status": "🕐 In Progress",
+    "date": "Expected: August 2025",
+    "progress": 31,
+    "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
+    "upcoming": true
+  },
+  {
     "title": "Web Fundamentals",
     "provider": "TryHackMe",
     "status": "🕐 In Progress",
     "date": "Expected: August 2025",
     "progress": 99,
     "detailsLink": "https://tryhackme.com/path/outline/web",
-    "upcoming": true
-  },
-  {
-    "title": "Web Application Penetration Testing",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "date": "Expected: August 2025",
-    "progress": 28,
-    "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
     "upcoming": true
   },
   {
@@ -88,19 +88,10 @@
     "upcoming": true
   },
   {
-    "title": "Certified Bug Bounty Hunter (CBBH)",
-    "provider": "Hack The Box Academy",
-    "status": "🕐 Awaiting Exam",
-    "date": "Expected: December 2025",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
-    "upcoming": true
-  },
-  {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
     "status": "🕐 In Progress",
-    "date": "Expected: January 2026",
+    "date": "Expected: December 2025",
     "progress": 55,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
     "upcoming": true
@@ -109,9 +100,18 @@
     "title": "Certified Defensive Security Analyst (CDSA)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
-    "date": "Expected: May 2026",
+    "date": "Expected: March 2026",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "upcoming": true
+  },
+  {
+    "title": "Certified Bug Bounty Hunter (CBBH)",
+    "provider": "Hack The Box Academy",
+    "status": "🕐 Awaiting Exam",
+    "date": "Expected: May 2026",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
     "upcoming": true
   },
   {
@@ -121,15 +121,6 @@
     "date": "Expected: September 2026",
     "progress": 2,
     "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
-    "upcoming": true
-  },
-  {
-    "title": "Burp Suite Certified Practitioner (BSCP)",
-    "provider": "PortSwigger",
-    "status": "🕐 Upcoming",
-    "date": "Expected: December 2026",
-    "progress": 0,
-    "detailsLink": "https://portswigger.net/web-security/certification",
     "upcoming": true
   }
 ]
