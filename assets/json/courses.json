@@ -378,6 +378,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/81"
   },
   {
+    "title": "Detection Engineering",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/detection-engineering",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Intermediate Network Traffic Analysis",
     "provider": "Hack The Box Academy",
     "type": "Defensive Security",
