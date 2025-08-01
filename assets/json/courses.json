@@ -77,6 +77,13 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Web Hacking Fundamentals",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/web-hacking-1",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Using Web Proxies",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
@@ -196,13 +203,6 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/17"
   },
   {
-    "title": "Bug Bounty Hunting Process",
-    "provider": "Hack The Box Academy",
-    "type": "Offensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/bug-bounty-hunting-process",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/161"
-  },
-  {
     "title": "File Transfers",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
@@ -215,6 +215,13 @@
     "type": "Offensive Security",
     "detailsLink": "https://tryhackme.com/module/privilege-escalation",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Bug Bounty Hunting Process",
+    "provider": "Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/bug-bounty-hunting-process",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/161"
   },
   {
     "title": "Penetration Testing Process",
