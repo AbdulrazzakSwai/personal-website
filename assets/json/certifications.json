@@ -3,7 +3,6 @@
     "title": "Practical SOC Analyst Associate (PSAA)",
     "provider": "TCM Security",
     "status": "✅ Exam Passed (First Try!)",
-    "date": "April 2025",
     "progress": 100,
     "detailsLink": "https://certifications.tcm-sec.com/psaa/",
     "proofLink": "https://certified.tcm-sec.com/833472ca-8415-4843-aec8-53c8368d47d3",
@@ -11,10 +10,36 @@
     "description": "Practical SOC analysis certification focusing on real-world incident response and threat hunting"
   },
   {
+    "title": "SOC Level 1",
+    "provider": "TryHackMe",
+    "status": "✅ All Challenges Completed",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
+    "proofLink": "https://tryhackme.com/certificate/THM-9XKU9TPVKM",
+    "upcoming": false
+  },
+  {
+    "title": "Junior Penetration Tester",
+    "provider": "TryHackMe",
+    "status": "✅ All Challenges Completed",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
+    "proofLink": "https://tryhackme.com/certificate/THM-I9EYQ3AHN9",
+    "upcoming": false
+  },
+  {
+    "title": "Web Application Security (Web Fundamentals)",
+    "provider": "TryHackMe",
+    "status": "✅ All Challenges Completed",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/web",
+    "proofLink": "https://tryhackme.com/certificate/THM-52KJDSLKVX",
+    "upcoming": false
+  },
+  {
     "title": "Responsive Web Design (HTML and CSS)",
     "provider": "freeCodeCamp",
     "status": "✅ All Projects Completed",
-    "date": "May 2025",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
     "proofLink": "https://www.freecodecamp.org/certification/AbdulrazzakSwai/responsive-web-design",
@@ -25,74 +50,15 @@
     "title": "JavaScript Algorithms and Data Structures",
     "provider": "freeCodeCamp",
     "status": "✅ All Projects Completed",
-    "date": "June 2025",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
     "proofLink": "https://www.freecodecamp.org/certification/AbdulrazzakSwai/javascript-algorithms-and-data-structures-v8",
     "upcoming": false
   },
   {
-    "title": "Junior Penetration Tester",
-    "provider": "TryHackMe",
-    "status": "✅ All Challenges Completed",
-    "date": "July 2025",
-    "progress": 100,
-    "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
-    "proofLink": "https://tryhackme.com/certificate/THM-I9EYQ3AHN9",
-    "upcoming": false
-  },
-  {
-    "title": "SOC Level 1",
-    "provider": "TryHackMe",
-    "status": "✅ All Challenges Completed",
-    "date": "July 2025",
-    "progress": 100,
-    "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
-    "proofLink": "https://tryhackme.com/certificate/THM-9XKU9TPVKM",
-    "upcoming": false
-  },
-  {
-    "title": "Web Fundamentals",
-    "provider": "TryHackMe",
-    "status": "✅ All Challenges Completed",
-    "date": "August 2025",
-    "progress": 100,
-    "detailsLink": "https://tryhackme.com/path/outline/web",
-    "proofLink": "https://tryhackme.com/certificate/THM-52KJDSLKVX",
-    "upcoming": false
-  },
-  {
-    "title": "SOC Level 2",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "date": "Expected: August 2025",
-    "progress": 64,
-    "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
-    "upcoming": true
-  },
-  {
-    "title": "Web Application Penetration Testing",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "date": "Expected: August 2025",
-    "progress": 31,
-    "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
-    "upcoming": true
-  },
-  {
-    "title": "Practical Junior Penetration Tester (PJPT)",
-    "provider": "TCM Security",
-    "status": "🕐 Awaiting Exam",
-    "date": "Expected: August 2025",
-    "progress": 100,
-    "detailsLink": "https://certifications.tcm-sec.com/pjpt/",
-    "upcoming": true
-  },
-  {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
     "status": "🕐 In Progress",
-    "date": "Expected: December 2025",
     "progress": 55,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
     "upcoming": true
@@ -101,7 +67,6 @@
     "title": "Certified Defensive Security Analyst (CDSA)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
-    "date": "Expected: March 2026",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
     "upcoming": true
@@ -110,18 +75,40 @@
     "title": "Certified Bug Bounty Hunter (CBBH)",
     "provider": "Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
-    "date": "Expected: May 2026",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
     "upcoming": true
   },
   {
-    "title": "Artificial Intelligence (AI) Red Teamer",
-    "provider": "Hack The Box Academy & Google",
+    "title": "AI Red Teamer",
+    "provider": "Hack The Box Academy and Google",
     "status": "🕐 In Progress",
-    "date": "Expected: September 2026",
     "progress": 2,
     "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
+    "upcoming": true
+  },
+  {
+    "title": "Practical Junior Penetration Tester (PJPT)",
+    "provider": "TCM Security",
+    "status": "🕐 Awaiting Exam",
+    "progress": 100,
+    "detailsLink": "https://certifications.tcm-sec.com/pjpt/",
+    "upcoming": true
+  },
+  {
+    "title": "Web Application Penetration Testing",
+    "provider": "TryHackMe",
+    "status": "🕐 In Progress",
+    "progress": 31,
+    "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
+    "upcoming": true
+  },
+  {
+    "title": "SOC Level 2",
+    "provider": "TryHackMe",
+    "status": "🕐 In Progress",
+    "progress": 69,
+    "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
     "upcoming": true
   }
 ]

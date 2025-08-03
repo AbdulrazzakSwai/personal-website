@@ -455,7 +455,6 @@ function renderCertifications(certifications) {
                     <h6 class="card-title">${index + 1}. ${cert.title}</h6>
                     <p class="card-subtitle">${cert.provider}</p>
                     <p class="text-muted medium">${cert.status}</p>
-                    <p class="text-muted medium">${cert.date}</p>
                     <div class="progress-bar mb-3">
                         <div class="progress-fill" style="width: ${progressPercentage}%"></div>
                         <span class="progress-text">${progressPercentage}%</span>
