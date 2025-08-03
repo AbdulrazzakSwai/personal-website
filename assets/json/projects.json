@@ -20,8 +20,8 @@
     ]
   },
   {
-    "title": "Active Directory (AD) Home Labs (3)",
-    "description": "Designed and deployed 3 Active Directory home labs simulating real enterprise networks with Domain Controllers and client systems.<br>Practiced advanced Active Directory exploitation techniques using popular tools.",
+    "title": "Active Directory Home Labs (3)",
+    "description": "Designed and deployed 3 Active Directory (AD) home labs simulating real enterprise networks with Domain Controllers and client systems.<br>Practiced advanced Active Directory exploitation techniques using popular tools.",
     "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
     "links": [
       { "url": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
