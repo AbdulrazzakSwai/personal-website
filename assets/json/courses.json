@@ -322,11 +322,18 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/237"
   },
   {
-      "title": "Digital Forensics and Incident Response",
-      "provider": "TryHackMe",
-      "type": "Defensive Security",
-      "detailsLink": "https://tryhackme.com/module/digital-forensics-and-incident-response",
-      "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+    "title": "Digital Forensics and Incident Response",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/digital-forensics-and-incident-response",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Incident Response",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/incident-response",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Incident Handling Process",
