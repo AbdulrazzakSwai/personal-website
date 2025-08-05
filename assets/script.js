@@ -127,7 +127,6 @@ function initTypingAnimation() {
         'Cybersecurity Student',
         'Ethical Hacker',
         'Cyber Defense Analyst', 
-        'Web Developer',
         'Continuous Learner'
     ];
 
