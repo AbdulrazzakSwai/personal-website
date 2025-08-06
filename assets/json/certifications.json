@@ -19,6 +19,15 @@
     "upcoming": false
   },
   {
+    "title": "SOC Level 2",
+    "provider": "TryHackMe",
+    "status": "🕐 In Progress",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
+    "proofLink": "https://tryhackme.com/certificate/THM-SMI8BZJYSY",
+    "upcoming": false
+  },
+  {
     "title": "Junior Penetration Tester",
     "provider": "TryHackMe",
     "status": "✅ All Challenges Completed",
@@ -101,14 +110,6 @@
     "status": "🕐 In Progress",
     "progress": 31,
     "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
-    "upcoming": true
-  },
-  {
-    "title": "SOC Level 2",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "progress": 88,
-    "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
     "upcoming": true
   }
 ]

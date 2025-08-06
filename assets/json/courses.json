@@ -350,6 +350,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/227"
   },
   {
+    "title": "Malware Analysis",
+    "provider": "TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/malware-analysis",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Cyber Threat Intelligence",
     "provider": "TryHackMe",
     "type": "Defensive Security",
