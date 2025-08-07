@@ -16,12 +16,12 @@
   },
   {
     "label": "Completed TryHackMe Rooms",
-    "value": 208,
+    "value": 209,
     "icon": "fas fa-shield-alt"
   },
   {
     "label": "Solved Security Challenges",
-    "value": 177,
+    "value": 178,
     "icon": "fas fa-flag"
   },
   {
