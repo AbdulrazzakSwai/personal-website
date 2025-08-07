@@ -1,6 +1,6 @@
 [
   {
-    "label": "Achieved Certifications",
+    "label": "Earned Certifications",
     "value": 7,
     "icon": "fas fa-certificate"
   },
@@ -10,14 +10,14 @@
     "icon": "fas fa-clock"
   },
   {
-    "label": "Completed Online Courses",
+    "label": "Accomplished Online Courses",
     "value": 80,
     "icon": "fas fa-book"
   },
   {
-    "label": "Upcoming Online Courses",
-    "value": 23,
-    "icon": "fas fa-bookmark"
+    "label": "Completed TryHackMe Rooms",
+    "value": 208,
+    "icon": "fas fa-shield-alt"
   },
   {
     "label": "Solved Security Challenges",
@@ -25,17 +25,12 @@
     "icon": "fas fa-flag"
   },
   {
-    "label": "Upcoming Security Challenges",
-    "value": 323,
-    "icon": "fas fa-bullseye"
-  },
-  {
     "label": "Finished Large Scale Projects",
     "value": 9,
     "icon": "fas fa-project-diagram"
   },
   {
-    "label": "Finished Mini Projects",
+    "label": "Built Mini Projects",
     "value": 60,
     "icon": "fas fa-code"
   }
