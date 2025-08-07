@@ -1,5 +1,12 @@
 [
   {
+    "title": "Defending AI",
+    "provider": "TCM Security",
+    "type": "Artificial Intelligence (AI)",
+    "detailsLink": "https://tryhackme.com/module/defensive-ai",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Practical Ethical Hacking - The Complete Course",
     "provider": "TCM Security",
     "type": "Offensive Security",

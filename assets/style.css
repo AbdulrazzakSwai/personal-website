@@ -768,13 +768,18 @@ br {
   margin: 0.25rem 0.25rem 0.25rem 0;
 }
 
-.skill-defensive { 
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+.skill-ai { 
+  background: linear-gradient(135deg, #10b981, #059669);
   color: white;
 }
 
 .skill-offensive { 
   background: linear-gradient(135deg, #dc2626, #b91c1c);
+  color: white;
+}
+
+.skill-defensive { 
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: white;
 }
 

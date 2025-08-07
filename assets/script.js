@@ -535,7 +535,9 @@ function renderCourses(courses, loadMore = false) {
 
         let skillClass = '';
         const type = (course.type || '').toLowerCase();
-        if (type.includes('offensive security')) {
+        if (type.includes('artificial intelligence')) {
+            skillClass = 'skill-ai';
+        } else if (type.includes('offensive security')) {
             skillClass = 'skill-offensive';
         } else if (type.includes('defensive security')) {
             skillClass = 'skill-defensive';
@@ -830,6 +832,7 @@ function updateCourseFilterOptions(courses) {
 
     const fieldCounts = {
         all: courses.length,
+        ai: 0,
         offensive: 0,
         defensive: 0,
         it: 0,
@@ -839,7 +842,9 @@ function updateCourseFilterOptions(courses) {
 
     courses.forEach(course => {
         const type = (course.type || '').toLowerCase();
-        if (type.includes('offensive security')) {
+        if (type.includes('artificial intelligence')) {
+            fieldCounts.ai++;
+        } else if (type.includes('offensive security')) {
             fieldCounts.offensive++;
         } else if (type.includes('defensive security')) {
             fieldCounts.defensive++;
@@ -854,6 +859,7 @@ function updateCourseFilterOptions(courses) {
 
     const options = [
         { value: 'all', label: `All (${fieldCounts.all})` },
+        { value: 'ai', label: `Artificial Intelligence (${fieldCounts.ai})` },
         { value: 'offensive', label: `Offensive Security (${fieldCounts.offensive})` },
         { value: 'defensive', label: `Defensive Security (${fieldCounts.defensive})` },
         { value: 'it', label: `Information Technology (${fieldCounts.it})` },
@@ -893,6 +899,8 @@ function getFilteredCourses(courses) {
     return courses.filter(course => {
         const type = (course.type || '').toLowerCase();
         switch (currentCourseFilter) {
+            case 'ai':
+                return type.includes('artificial intelligence');
             case 'offensive':
                 return type.includes('offensive security');
             case 'defensive':
@@ -902,7 +910,8 @@ function getFilteredCourses(courses) {
             case 'soft':
                 return type.includes('soft skills');
             case 'general':
-                return !type.includes('offensive security') && 
+                return !type.includes('artificial intelligence') &&
+                       !type.includes('offensive security') && 
                        !type.includes('defensive security') && 
                        !type.includes('information technology') && 
                        !type.includes('soft skills');

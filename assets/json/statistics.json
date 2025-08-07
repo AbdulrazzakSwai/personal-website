@@ -11,22 +11,22 @@
   },
   {
     "label": "Completed Online Courses",
-    "value": 79,
+    "value": 80,
     "icon": "fas fa-book"
   },
   {
     "label": "Upcoming Online Courses",
-    "value": 24,
+    "value": 23,
     "icon": "fas fa-bookmark"
   },
   {
     "label": "Solved Security Challenges",
-    "value": 176,
+    "value": 177,
     "icon": "fas fa-flag"
   },
   {
     "label": "Upcoming Security Challenges",
-    "value": 324,
+    "value": 323,
     "icon": "fas fa-bullseye"
   },
   {
