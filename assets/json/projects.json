@@ -60,7 +60,7 @@
   },
   {
     "title": "Legacy Personal Website",
-    "description": "Designed a website that was previously used to showcase my background, education, projects, and more.<br>It is no longer actively maintained.<br>Visit my main website for the latest updates.",
+    "description": "Designed a website that was previously used to showcase my background, education, projects, and more.<br>It is no longer actively maintained; its content is not being updated.<br>Visit my main website for the latest updates.",
     "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
     "links": [
       { "url": "https://abdulrazzakswai.github.io/legacy-website", "title": "My Legacy Personal Website" }

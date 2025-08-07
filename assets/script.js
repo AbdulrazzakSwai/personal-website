@@ -335,7 +335,7 @@ function initStatsAnimation() {
 
 function animateStats() {
     const statNumbers = document.querySelectorAll('.statistics-number');
-    const duration = 1700;
+    const duration = 1800;
     
     statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
