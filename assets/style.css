@@ -963,8 +963,10 @@ footer {
   }
   
   .typed-text {
-    min-width: 200px;
+    min-width: 80px;
     font-size: 1.5rem;
+    overflow: visible;
+    word-break: break-word;
   }
   
   .statistics-number {
@@ -1016,6 +1018,12 @@ footer {
 @media (max-width: 576px) {
   .hero-name {
     font-size: 2.3rem;
+  }
+  
+  .typed-text {
+    min-width: 60px;
+    overflow: visible;
+    word-break: break-word;
   }
   
   .display-4 {
