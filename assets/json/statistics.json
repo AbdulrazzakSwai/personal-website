@@ -6,28 +6,33 @@
   },
   {
     "label": "Upcoming Certifications",
-    "value": 6,
+    "value": 7,
     "icon": "fas fa-clock"
   },
   {
-    "label": "Accomplished Online Courses",
+    "label": "Completed Online Courses",
     "value": 80,
     "icon": "fas fa-book"
   },
   {
-    "label": "Completed TryHackMe Rooms",
+    "label": "Solved TryHackMe Rooms",
     "value": 210,
-    "icon": "fas fa-shield-alt"
+  "icon": "fas fa-door-open"
   },
   {
-  "label": "Handled Security Scenarios",
+    "label": "Handled Security Scenarios",
     "value": 179,
     "icon": "fas fa-flag"
   },
   {
+    "label": "Hacked Networks (Ethically)",
+    "value": 3,
+    "icon": "fas fa-user-secret"
+  },
+  {
     "label": "Finished Large Scale Projects",
     "value": 9,
-    "icon": "fas fa-project-diagram"
+    "icon": "fas fa-rocket"
   },
   {
     "label": "Built Mini Projects",

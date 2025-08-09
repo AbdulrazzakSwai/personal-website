@@ -65,6 +65,14 @@
     "upcoming": false
   },
   {
+    "title": "Offensive Security Certified Professional (OSCP)",
+    "provider": "Offensive Security",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://www.offsec.com/courses/pen-200/",
+    "upcoming": true
+  },
+  {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
     "status": "🕐 In Progress",
