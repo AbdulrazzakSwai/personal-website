@@ -304,27 +304,6 @@ br {
   51%, 100% { opacity: 0; }
 }
 
-.scroll-down {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
-  width: 100%;
-  z-index: 10;
-}
-
-.scroll-down:hover {
-  color: var(--secondary-color);
-  transform: translateY(5px);
-}
-
 .section-line {
   width: 60px;
   height: 4px;
@@ -963,10 +942,8 @@ footer {
   }
   
   .typed-text {
-    min-width: 80px;
+    min-width: 200px;
     font-size: 1.5rem;
-    overflow: visible;
-    word-break: break-word;
   }
   
   .statistics-number {
@@ -1020,12 +997,6 @@ footer {
     font-size: 2.3rem;
   }
   
-  .typed-text {
-    min-width: 60px;
-    overflow: visible;
-    word-break: break-word;
-  }
-  
   .display-4 {
     font-size: 2rem;
   }
@@ -1042,8 +1013,7 @@ footer {
 }
 
 @media print {
-  .navbar,
-  .hero-scroll {
+  .navbar {
     display: none !important;
   }
   
