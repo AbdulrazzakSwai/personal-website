@@ -2,7 +2,7 @@
   {
     "title": "Practical SOC Analyst Associate (PSAA)",
     "provider": "TCM Security",
-    "status": "✅ Exam Passed",
+    "status": "✅ All Tickets Resolved and Reported",
     "progress": 100,
     "detailsLink": "https://certifications.tcm-sec.com/psaa/",
     "proofLink": "https://certified.tcm-sec.com/833472ca-8415-4843-aec8-53c8368d47d3",
@@ -10,27 +10,27 @@
     "description": "Practical SOC analysis certification focusing on real-world incident response and threat hunting"
   },
   {
-    "title": "SOC Level 1",
-    "provider": "TryHackMe",
-    "status": "✅ All Challenges Completed",
-    "progress": 100,
-    "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
-    "proofLink": "https://tryhackme.com/certificate/THM-9XKU9TPVKM",
-    "upcoming": false
-  },
-  {
     "title": "SOC Level 2",
     "provider": "TryHackMe",
-    "status": "✅ All Challenges Completed",
+    "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
     "proofLink": "https://tryhackme.com/certificate/THM-SMI8BZJYSY",
     "upcoming": false
   },
   {
+    "title": "SOC Level 1",
+    "provider": "TryHackMe",
+    "status": "✅ All Security Scenarios Handled",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
+    "proofLink": "https://tryhackme.com/certificate/THM-9XKU9TPVKM",
+    "upcoming": false
+  },
+  {
     "title": "Junior Penetration Tester",
     "provider": "TryHackMe",
-    "status": "✅ All Challenges Completed",
+    "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
     "proofLink": "https://tryhackme.com/certificate/THM-I9EYQ3AHN9",
@@ -39,7 +39,7 @@
   {
     "title": "Web Application Security (Web Fundamentals)",
     "provider": "TryHackMe",
-    "status": "✅ All Challenges Completed",
+    "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/web",
     "proofLink": "https://tryhackme.com/certificate/THM-52KJDSLKVX",
