@@ -16,17 +16,17 @@
   },
   {
     "label": "Solved TryHackMe Rooms",
-    "value": 211,
+    "value": 212,
   "icon": "fas fa-door-open"
   },
   {
     "label": "Handled Security Scenarios",
-    "value": 180,
+    "value": 181,
     "icon": "fas fa-flag"
   },
   {
     "label": "Hacked Enterprise Networks (Ethically)",
-    "value": 4,
+    "value": 5,
     "icon": "fas fa-user-secret"
   },
   {
