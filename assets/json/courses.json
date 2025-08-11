@@ -77,6 +77,20 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/144"
   },
   {
+    "title": "Compromising Active Directory",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/hacking-active-directory",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Privilege Escalation",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/privilege-escalation",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Introduction to Web Hacking",
     "provider": "TryHackMe",
     "type": "Offensive Security",
@@ -215,13 +229,6 @@
     "type": "Offensive Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/file-transfers",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/24"
-  },
-  {
-    "title": "Privilege Escalation",
-    "provider": "TryHackMe",
-    "type": "Offensive Security",
-    "detailsLink": "https://tryhackme.com/module/privilege-escalation",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Bug Bounty Hunting Process",
