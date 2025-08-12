@@ -161,6 +161,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/80"
   },
   {
+    "title": "Authentication",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/authentication",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "File Inclusion",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
