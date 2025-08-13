@@ -113,6 +113,14 @@
     "upcoming": true
   },
   {
+    "title": "Offensive Pentesting",
+    "provider": "TryHackMe",
+    "status": "🕐 In Progress",
+    "progress": 43,
+    "detailsLink": "https://tryhackme.com/path/outline/pentesting",
+    "upcoming": true
+  },
+  {
     "title": "Web Application Penetration Testing",
     "provider": "TryHackMe",
     "status": "🕐 In Progress",
