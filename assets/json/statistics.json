@@ -16,12 +16,12 @@
   },
   {
     "label": "Solved TryHackMe Rooms",
-    "value": 217,
-  "icon": "fas fa-door-open"
+    "value": 218,
+    "icon": "fas fa-door-open"
   },
   {
     "label": "Handled Security Scenarios",
-    "value": 183,
+    "value": 184,
     "icon": "fas fa-flag"
   },
   {
