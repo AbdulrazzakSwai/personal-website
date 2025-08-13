@@ -413,11 +413,11 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/176"
   },
   {
-    "title": "Endpoint Security Monitoring",
-    "provider": "TryHackMe",
+    "title": "Windows Event Logs & Finding Evil",
+    "provider": "Hack The Box Academy",
     "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/endpoint-security-monitoring",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-event-logs--finding-evil",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/216"
   },
   {
     "title": "Log Analysis",
@@ -427,18 +427,11 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
-    "title": "Windows Event Logs & Finding Evil",
-    "provider": "Hack The Box Academy",
+    "title": "Endpoint Security Monitoring",
+    "provider": "TryHackMe",
     "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-event-logs--finding-evil",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/216"
-  },
-  {
-    "title": "Intro to Network Traffic Analysis",
-    "provider": "Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/81"
+    "detailsLink": "https://tryhackme.com/module/endpoint-security-monitoring",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Detection Engineering",
@@ -446,6 +439,13 @@
     "type": "Defensive Security",
     "detailsLink": "https://tryhackme.com/module/detection-engineering",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Intro to Network Traffic Analysis",
+    "provider": "Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/81"
   },
   {
     "title": "Intermediate Network Traffic Analysis",
