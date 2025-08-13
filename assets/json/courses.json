@@ -147,6 +147,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/109"
   },
   {
+    "title": "Injection Attacks",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/injection-attacks",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "File Upload Attacks",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
