@@ -217,6 +217,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/145"
   },
   {
+    "title": "Advanced Server-side Attacks",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/advanced-server-side-attacks",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Session Security",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",

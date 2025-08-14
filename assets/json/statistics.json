@@ -11,17 +11,17 @@
   },
   {
     "label": "Completed Online Courses",
-    "value": 83,
+    "value": 84,
     "icon": "fas fa-book"
   },
   {
     "label": "Solved TryHackMe Rooms",
-    "value": 225,
+    "value": 226,
     "icon": "fas fa-door-open"
   },
   {
     "label": "Handled Security Scenarios",
-    "value": 186,
+    "value": 187,
     "icon": "fas fa-flag"
   },
   {
