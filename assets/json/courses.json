@@ -210,6 +210,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/134"
   },
   {
+    "title": "Advanced Client-side Attacks",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/advanced-client-side-attacks",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Server-side Attacks",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
