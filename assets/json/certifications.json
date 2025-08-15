@@ -37,6 +37,15 @@
     "upcoming": false
   },
   {
+    "title": "Web Application Pentesting",
+    "provider": "TryHackMe",
+    "status": "✅ All Security Scenarios Handled",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
+    "proofLink": "https://tryhackme.com/certificate/THM-XIMJ2UWH8I",
+    "upcoming": false
+  },
+  {
     "title": "Web Application Security (Web Fundamentals)",
     "provider": "TryHackMe",
     "status": "✅ All Security Scenarios Handled",
@@ -118,14 +127,6 @@
     "status": "🕐 In Progress",
     "progress": 43,
     "detailsLink": "https://tryhackme.com/path/outline/pentesting",
-    "upcoming": true
-  },
-  {
-    "title": "Web Application Penetration Testing",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "progress": 99,
-    "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
     "upcoming": true
   }
 ]

@@ -245,6 +245,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/160"
   },
   {
+    "title": "HTTP Request Smuggling",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/http-request-smuggling",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Hacking Wordpress",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
