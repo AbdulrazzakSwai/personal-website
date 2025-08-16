@@ -259,6 +259,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/17"
   },
   {
+    "title": "Basic Computer Exploitation",
+    "provider": "TryHackMe",
+    "type": "Offensive Security",
+    "detailsLink": "https://tryhackme.com/module/basic-computer-exploitation",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "File Transfers",
     "provider": "Hack The Box Academy",
     "type": "Offensive Security",
