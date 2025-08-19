@@ -1,16 +1,16 @@
 [
   {
     "type": "recent",
-    "title": "Offensive Pentesting Certification",
+    "title": "Python Certification",
     "date": "August 2025",
-    "description": "Achieved the Offensive Pentesting certification from TryHackMe after completing 25+ hands-on penetration testing labs.",
+    "description": "Achieved the Scientific Computing with Python certification from freeCodeCamp after completing 15 Python projects.",
     "icon": "fas fa-check"
   },
   {
     "type": "upcoming",
     "title": "Practical Junior Penetration Tester (PJPT) Certification",
     "date": "August 2025 (Expected)",
-    "description": "Preparing for the TCM-Security Practical Junior Penetration Tester (PJPT) certification to validate offensive security proficiency through hands-on exploitation of networks, web applications, and Active Directory in a controlled lab environment.",
+    "description": "Preparing for the TCM-Security Practical Junior Penetration Tester (PJPT) certification to validate offensive security proficiency through hands-on exploitation of networks, web applications, and Active Directory in a simulated enterprise network environment.",
     "icon": "fas fa-clock"
   }
 ]
