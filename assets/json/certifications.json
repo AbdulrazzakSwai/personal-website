@@ -64,23 +64,32 @@
     "upcoming": false
   },
   {
-    "title": "Responsive Web Design (HTML and CSS)",
+    "title": "Scientific Computing with Python",
     "provider": "freeCodeCamp",
     "status": "✅ All Projects Completed",
     "progress": 100,
-    "detailsLink": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
-    "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/responsive-web-design",
-    "upcoming": false,
-    "description": "Comprehensive web design certification covering HTML, CSS, and responsive design principles"
+    "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python",
+    "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/scientific-computing-with-python-v7",
+    "upcoming": false
   },
   {
     "title": "JavaScript Algorithms and Data Structures",
     "provider": "freeCodeCamp",
     "status": "✅ All Projects Completed",
     "progress": 100,
-    "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+    "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8",
     "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/javascript-algorithms-and-data-structures-v8",
     "upcoming": false
+  },
+  {
+    "title": "Responsive Web Design (HTML and CSS)",
+    "provider": "freeCodeCamp",
+    "status": "✅ All Projects Completed",
+    "progress": 100,
+    "detailsLink": "https://www.freecodecamp.org/learn/2022/responsive-web-design",
+    "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/responsive-web-design",
+    "upcoming": false,
+    "description": "Comprehensive web design certification covering HTML, CSS, and responsive design principles"
   },
   {
     "title": "Offensive Security Certified Professional (OSCP)",
