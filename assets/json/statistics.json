@@ -1,12 +1,12 @@
 [
   {
     "label": "Earned Practical Certifications",
-    "value": 8,
+    "value": 9,
     "icon": "fas fa-certificate"
   },
   {
     "label": "Upcoming Practical Certifications",
-    "value": 7,
+    "value": 6,
     "icon": "fas fa-clock"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "label": "Solved TryHackMe Rooms",
-    "value": 252,
+    "value": 256,
     "icon": "fas fa-door-open"
   },
   {

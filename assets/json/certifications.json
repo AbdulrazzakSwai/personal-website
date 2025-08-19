@@ -37,6 +37,15 @@
     "upcoming": false
   },
   {
+    "title": "Offensive Pentesting",
+    "provider": "TryHackMe",
+    "status": "✅ All Security Scenarios Handled",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/pentesting",
+    "proofLink": "https://tryhackme.com/certificate/THM-31IZFES3ZE",
+    "upcoming": false
+  },
+  {
     "title": "Web Application Pentesting",
     "provider": "TryHackMe",
     "status": "✅ All Security Scenarios Handled",
@@ -119,14 +128,6 @@
     "status": "🕐 Awaiting Exam",
     "progress": 100,
     "detailsLink": "https://certifications.tcm-sec.com/pjpt/",
-    "upcoming": true
-  },
-  {
-    "title": "Offensive Pentesting",
-    "provider": "TryHackMe",
-    "status": "🕐 In Progress",
-    "progress": 91,
-    "detailsLink": "https://tryhackme.com/path/outline/pentesting",
     "upcoming": true
   }
 ]
