@@ -92,6 +92,14 @@
     "description": "Comprehensive web design certification covering HTML, CSS, and responsive design principles"
   },
   {
+    "title": "Practical Junior Penetration Tester (PJPT)",
+    "provider": "TCM Security",
+    "status": "🕐 Awaiting Exam",
+    "progress": 100,
+    "detailsLink": "https://certifications.tcm-sec.com/pjpt",
+    "upcoming": true
+  },
+  {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
     "status": "🕐 In Progress",
@@ -121,14 +129,6 @@
     "status": "🕐 In Progress",
     "progress": 2,
     "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
-    "upcoming": true
-  },
-  {
-    "title": "Practical Junior Penetration Tester (PJPT)",
-    "provider": "TCM Security",
-    "status": "🕐 Awaiting Exam",
-    "progress": 100,
-    "detailsLink": "https://certifications.tcm-sec.com/pjpt",
     "upcoming": true
   },
   {
