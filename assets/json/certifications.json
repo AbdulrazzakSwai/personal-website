@@ -92,14 +92,6 @@
     "description": "Comprehensive web design certification covering HTML, CSS, and responsive design principles"
   },
   {
-    "title": "Offensive Security Certified Professional (OSCP)",
-    "provider": "Offensive Security",
-    "status": "🕐 Upcoming",
-    "progress": 0,
-    "detailsLink": "https://www.offsec.com/courses/pen-200/",
-    "upcoming": true
-  },
-  {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "Hack The Box Academy",
     "status": "🕐 In Progress",
@@ -136,7 +128,23 @@
     "provider": "TCM Security",
     "status": "🕐 Awaiting Exam",
     "progress": 100,
-    "detailsLink": "https://certifications.tcm-sec.com/pjpt/",
+    "detailsLink": "https://certifications.tcm-sec.com/pjpt",
+    "upcoming": true
+  },
+  {
+    "title": "Offensive Security Certified Professional (OSCP)",
+    "provider": "Offensive Security",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://www.offsec.com/courses/pen-200",
+    "upcoming": true
+  },
+  {
+    "title": "Burp Suite Certified Practitioner (BSCP)",
+    "provider": "PortSwigger",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://portswigger.net/web-security/certification",
     "upcoming": true
   }
 ]
