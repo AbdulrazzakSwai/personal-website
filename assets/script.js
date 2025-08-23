@@ -747,7 +747,7 @@ function addProjectsViewAllButton() {
     viewAllDiv.className = 'view-more-btn';
     viewAllDiv.innerHTML = `
         <a href="https://github.com/AbdulrazzakSwai?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn">
-            <i class="fab fa-github me-2"></i>View More Projects
+            <i class="fab fa-github me-2"></i>View More
         </a>
     `;
     projectsTab.appendChild(viewAllDiv);

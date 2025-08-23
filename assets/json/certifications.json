@@ -1,7 +1,7 @@
 [
   {
     "title": "Practical SOC Analyst Associate (PSAA)",
-    "provider": "TCM Security",
+  "provider": "By TCM Security",
     "status": "✅ All Tickets Resolved and Reported",
     "progress": 100,
     "detailsLink": "https://certifications.tcm-sec.com/psaa/",
@@ -11,7 +11,7 @@
   },
   {
     "title": "SOC Level 2",
-    "provider": "TryHackMe",
+  "provider": "By TryHackMe",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
@@ -20,7 +20,7 @@
   },
   {
     "title": "SOC Level 1",
-    "provider": "TryHackMe",
+  "provider": "By TryHackMe",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
@@ -29,7 +29,7 @@
   },
   {
     "title": "Junior Penetration Tester",
-    "provider": "TryHackMe",
+  "provider": "By TryHackMe",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
@@ -38,7 +38,7 @@
   },
   {
     "title": "Offensive Pentesting",
-    "provider": "TryHackMe",
+  "provider": "By TryHackMe",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/pentesting",
@@ -47,7 +47,7 @@
   },
   {
     "title": "Web Application Pentesting",
-    "provider": "TryHackMe",
+  "provider": "By TryHackMe",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
@@ -56,7 +56,7 @@
   },
   {
     "title": "Web Application Security (Web Fundamentals)",
-    "provider": "TryHackMe",
+  "provider": "By TryHackMe",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/web",
@@ -65,7 +65,7 @@
   },
   {
     "title": "Scientific Computing with Python",
-    "provider": "freeCodeCamp",
+  "provider": "By freeCodeCamp",
     "status": "✅ All Projects Completed",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python",
@@ -74,7 +74,7 @@
   },
   {
     "title": "JavaScript Algorithms and Data Structures",
-    "provider": "freeCodeCamp",
+  "provider": "By freeCodeCamp",
     "status": "✅ All Projects Completed",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8",
@@ -83,7 +83,7 @@
   },
   {
     "title": "Responsive Web Design (HTML and CSS)",
-    "provider": "freeCodeCamp",
+  "provider": "By freeCodeCamp",
     "status": "✅ All Projects Completed",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/2022/responsive-web-design",
@@ -93,7 +93,7 @@
   },
   {
     "title": "Practical Junior Penetration Tester (PJPT)",
-    "provider": "TCM Security",
+  "provider": "By TCM Security",
     "status": "🕐 Awaiting Exam",
     "progress": 100,
     "detailsLink": "https://certifications.tcm-sec.com/pjpt",
@@ -101,7 +101,7 @@
   },
   {
     "title": "Certified Penetration Testing Specialist (CPTS)",
-    "provider": "Hack The Box Academy",
+  "provider": "By Hack The Box Academy",
     "status": "🕐 In Progress",
     "progress": 55,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
@@ -109,7 +109,7 @@
   },
   {
     "title": "Certified Defensive Security Analyst (CDSA)",
-    "provider": "Hack The Box Academy",
+  "provider": "By Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
@@ -117,7 +117,7 @@
   },
   {
     "title": "Certified Bug Bounty Hunter (CBBH)",
-    "provider": "Hack The Box Academy",
+  "provider": "By Hack The Box Academy",
     "status": "🕐 Awaiting Exam",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
@@ -125,7 +125,7 @@
   },
   {
     "title": "AI Red Teamer",
-    "provider": "Hack The Box Academy and Google",
+  "provider": "By Hack The Box Academy and Google",
     "status": "🕐 In Progress",
     "progress": 2,
     "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
@@ -133,7 +133,7 @@
   },
   {
     "title": "Offensive Security Certified Professional (OSCP)",
-    "provider": "Offensive Security",
+  "provider": "By Offensive Security",
     "status": "🕐 Upcoming",
     "progress": 0,
     "detailsLink": "https://www.offsec.com/courses/pen-200",
@@ -141,7 +141,7 @@
   },
   {
     "title": "Burp Suite Certified Practitioner (BSCP)",
-    "provider": "PortSwigger",
+  "provider": "By PortSwigger",
     "status": "🕐 Upcoming",
     "progress": 0,
     "detailsLink": "https://portswigger.net/web-security/certification",
