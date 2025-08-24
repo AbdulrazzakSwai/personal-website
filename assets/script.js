@@ -124,7 +124,7 @@ function initAnimations() {
 
 function initTypingAnimation() {
     const roles = [
-        'Cybersecurity Professional',
+        'Cybersecurity Specialist',
         'Ethical Hacker',
         'Cyber Defense Analyst', 
         'Continuous Learner'
