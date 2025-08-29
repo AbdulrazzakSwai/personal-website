@@ -936,6 +936,31 @@ footer {
     }
 }
 
+.silver-border-shiny {
+  border: 2.5px solid #C0C0C0;
+  box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
+  position: relative;
+  animation: shiny-silver 2s ease-in-out infinite;
+}
+
+.silver-border-shiny.portfolio-card:hover {
+  transform: none;
+  box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
+  border-color: #C0C0C0;
+}
+
+@keyframes shiny-silver {
+  0% {
+    box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
+  }
+  50% {
+    box-shadow: 0 0 16px 3px #C0C0C099, 0 0 32px 8px #ffffff44 inset;
+  }
+  100% {
+    box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-name {
     font-size: 2.5rem;

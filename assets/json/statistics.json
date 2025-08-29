@@ -6,7 +6,7 @@
   },
   {
     "label": "Upcoming Practical Certifications",
-    "value": 7,
+    "value": 6,
     "icon": "fas fa-clock"
   },
   {
@@ -21,12 +21,12 @@
   },
   {
     "label": "Handled Security Scenarios",
-    "value": 201,
+    "value": 202,
     "icon": "fas fa-flag"
   },
   {
     "label": "Hacked Enterprise Networks (Ethically)",
-    "value": 5,
+    "value": 6,
     "icon": "fas fa-user-secret"
   },
   {

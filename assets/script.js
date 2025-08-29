@@ -444,10 +444,22 @@ function renderCertifications(certifications) {
         const col = document.createElement('div');
         col.className = 'col-lg-4 col-md-6';
         
-        const progressPercentage = cert.progress || (cert.upcoming ? 0 : 100);
-        const isCompleted = progressPercentage === 100 && !cert.upcoming;
-        const cardClass = `card portfolio-card animate-on-scroll ${cert.upcoming ? 'upcoming' : ''} ${isCompleted ? 'golden-border-shiny' : ''}`;
-        
+        const progressPercentage = cert.progress || (cert.finished ? 100 : 0);
+        const isCompleted = progressPercentage === 100 && cert.finished === true;
+        const isPartial = cert.finished === 'partial';
+
+        const borderClass = isCompleted ? 'golden-border-shiny' : (isPartial ? 'silver-border-shiny' : '');
+        const upcomingClass = cert.finished ? '' : 'upcoming';
+        const cardClass = `card portfolio-card animate-on-scroll ${upcomingClass} ${borderClass}`;
+
+        const detailsButtonHtml = cert.detailsLink ? `<a href="${cert.detailsLink}" target="_blank" rel="noopener noreferrer" class="card-btn secondary">View Details</a>` : '';
+        let verifyButtonHtml = '';
+        if (isPartial) {
+            verifyButtonHtml = `<a href="${cert.proofLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify Path Completion</a>`;
+        } else if (cert.proofLink && cert.proofLink !== '#') {
+            verifyButtonHtml = `<a href="${cert.proofLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify</a>`;
+        }
+
         col.innerHTML = `
             <div class="${cardClass}" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body">
@@ -459,8 +471,8 @@ function renderCertifications(certifications) {
                         <span class="progress-text">${progressPercentage}%</span>
                     </div>
                     <div class="d-flex flex-wrap gap-2">
-                        ${cert.detailsLink ? `<a href="${cert.detailsLink}" target="_blank" rel="noopener noreferrer" class="card-btn secondary">View Details</a>` : ''}
-                        ${cert.proofLink && cert.proofLink !== '#' ? `<a href="${cert.proofLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify</a>` : ''}
+                        ${detailsButtonHtml}
+                        ${verifyButtonHtml}
                     </div>
                 </div>
             </div>

@@ -6,8 +6,7 @@
     "progress": 100,
     "detailsLink": "https://certifications.tcm-sec.com/psaa/",
     "proofLink": "https://certified.tcm-sec.com/833472ca-8415-4843-aec8-53c8368d47d3",
-    "upcoming": false,
-    "description": "Practical SOC analysis certification focusing on real-world incident response and threat hunting"
+    "finished": true
   },
   {
     "title": "SOC Level 2",
@@ -16,7 +15,7 @@
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
     "proofLink": "https://tryhackme.com/certificate/THM-SMI8BZJYSY",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "SOC Level 1",
@@ -25,7 +24,7 @@
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
     "proofLink": "https://tryhackme.com/certificate/THM-9XKU9TPVKM",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "Junior Penetration Tester",
@@ -34,7 +33,7 @@
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
     "proofLink": "https://tryhackme.com/certificate/THM-I9EYQ3AHN9",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "Offensive Pentesting",
@@ -43,7 +42,7 @@
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/pentesting",
     "proofLink": "https://tryhackme.com/certificate/THM-31IZFES3ZE",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "Web Application Pentesting",
@@ -52,7 +51,7 @@
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
     "proofLink": "https://tryhackme.com/certificate/THM-XIMJ2UWH8I",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "Web Application Security (Web Fundamentals)",
@@ -61,7 +60,7 @@
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/web",
     "proofLink": "https://tryhackme.com/certificate/THM-52KJDSLKVX",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "Scientific Computing with Python",
@@ -70,7 +69,7 @@
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python",
     "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/scientific-computing-with-python-v7",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "JavaScript Algorithms and Data Structures",
@@ -79,7 +78,7 @@
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8",
     "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/javascript-algorithms-and-data-structures-v8",
-    "upcoming": false
+    "finished": true
   },
   {
     "title": "Responsive Web Design (HTML and CSS)",
@@ -88,16 +87,25 @@
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/2022/responsive-web-design",
     "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/responsive-web-design",
-    "upcoming": false,
-    "description": "Comprehensive web design certification covering HTML, CSS, and responsive design principles"
+    "finished": true
   },
   {
-    "title": "Practical Junior Penetration Tester (PJPT)",
-    "provider": "By TCM Security",
-    "status": "🕐 Awaiting Exam",
+    "title": "Certified Defensive Security Analyst (CDSA)",
+    "provider": "By Hack The Box Academy",
+    "status": "⌛ Path Completed, Awaiting Exam",
     "progress": 100,
-    "detailsLink": "https://certifications.tcm-sec.com/pjpt",
-    "upcoming": true
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/390",
+    "finished": "partial"
+  },
+  {
+    "title": "Certified Bug Bounty Hunter (CBBH)",
+    "provider": "By Hack The Box Academy",
+    "status": "⌛ Path Completed, Awaiting Exam",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/17",
+    "finished": "partial"
   },
   {
     "title": "Certified Penetration Testing Specialist (CPTS)",
@@ -105,23 +113,7 @@
     "status": "🕐 In Progress",
     "progress": 55,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
-    "upcoming": true
-  },
-  {
-    "title": "Certified Defensive Security Analyst (CDSA)",
-    "provider": "By Hack The Box Academy",
-    "status": "🕐 Awaiting Exam",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
-    "upcoming": true
-  },
-  {
-    "title": "Certified Bug Bounty Hunter (CBBH)",
-    "provider": "By Hack The Box Academy",
-    "status": "🕐 Awaiting Exam",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
-    "upcoming": true
+    "finished": false
   },
   {
     "title": "AI Red Teamer",
@@ -129,7 +121,7 @@
     "status": "🕐 In Progress",
     "progress": 2,
     "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
-    "upcoming": true
+    "finished": false
   },
   {
     "title": "Offensive Security Certified Professional (OSCP)",
@@ -137,7 +129,7 @@
     "status": "🕐 Upcoming",
     "progress": 0,
     "detailsLink": "https://www.offsec.com/courses/pen-200",
-    "upcoming": true
+    "finished": false
   },
   {
     "title": "Burp Suite Certified Practitioner (BSCP)",
@@ -145,6 +137,6 @@
     "status": "🕐 Upcoming",
     "progress": 0,
     "detailsLink": "https://portswigger.net/web-security/certification",
-    "upcoming": true
+    "finished": false
   }
 ]

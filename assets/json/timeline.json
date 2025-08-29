@@ -8,9 +8,9 @@
   },
   {
     "type": "upcoming",
-    "title": "Practical Junior Penetration Tester (PJPT) Certification",
-    "date": "September 2025 (Expected)",
-    "description": "Preparing for the TCM-Security Practical Junior Penetration Tester (PJPT) certification to validate offensive security proficiency through hands-on exploitation of networks, web applications, and Active Directory in a simulated enterprise network environment.",
+    "title": "Certified Penetration Testing Specialist (CPTS) Certification",
+    "date": "January 2026 (Expected)",
+    "description": "Preparing for the Hack The Box Certified Penetration Testing Specialist (CPTS) certification to validate offensive security skills through hands-on exploitation of networks, web applications, and Active Directory within a simulated enterprise environment.",
     "icon": "fas fa-clock"
   }
 ]
