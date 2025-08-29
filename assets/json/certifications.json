@@ -124,19 +124,43 @@
     "finished": false
   },
   {
-    "title": "Offensive Security Certified Professional (OSCP)",
-    "provider": "By Offensive Security",
+    "title": "Red Team Analyst (CRTA)",
+    "provider": "By CyberWarfare Labs",
     "status": "🕐 Upcoming",
     "progress": 0,
-    "detailsLink": "https://www.offsec.com/courses/pen-200",
+    "detailsLink": "https://cyberwarfare.live/product/red-team-analyst-crta",
     "finished": false
   },
   {
-    "title": "Burp Suite Certified Practitioner (BSCP)",
-    "provider": "By PortSwigger",
+    "title": "Certified Red Team Professional (CRTP)",
+    "provider": "By Altered Security",
     "status": "🕐 Upcoming",
     "progress": 0,
-    "detailsLink": "https://portswigger.net/web-security/certification",
+    "detailsLink": "https://www.alteredsecurity.com/adlab",
+    "finished": false
+  },
+  {
+    "title": "Certified Red Team Expert (CRTE)",
+    "provider": "By Altered Security",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://www.alteredsecurity.com/redteamlab",
+    "finished": false
+  },
+  {
+    "title": "Certified Red Team Master (CRTM)",
+    "provider": "By Altered Security",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://www.alteredsecurity.com/gcb",
+    "finished": false
+  },
+  {
+    "title": "Certified Evasion Techniques Professional (CETP)",
+    "provider": "By Altered Security",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://www.alteredsecurity.com/evasionlab",
     "finished": false
   }
 ]
