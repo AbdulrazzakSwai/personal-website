@@ -457,7 +457,7 @@ function renderCertifications(certifications) {
         if (isPartial) {
             verifyButtonHtml = `<a href="${cert.proofLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify Path Completion</a>`;
         } else if (cert.proofLink && cert.proofLink !== '#') {
-            verifyButtonHtml = `<a href="${cert.proofLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify</a>`;
+            verifyButtonHtml = `<a href="${cert.proofLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify Completion</a>`;
         }
 
         col.innerHTML = `
@@ -571,7 +571,7 @@ function renderCourses(courses, loadMore = false) {
                     <span class="skill-tag ${skillClass}">${course.type}</span>
                     <div class="d-flex flex-wrap gap-2 mt-3">
                         ${course.detailsLink ? `<a href="${course.detailsLink}" target="_blank" rel="noopener noreferrer" class="card-btn secondary">View Details</a>` : ''}
-                        ${course.certificateLink ? `<a href="${course.certificateLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify</a>` : ''}
+                        ${course.certificateLink ? `<a href="${course.certificateLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify Completion</a>` : ''}
                     </div>
                 </div>
             </div>
