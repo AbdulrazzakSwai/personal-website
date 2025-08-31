@@ -84,6 +84,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/144"
   },
   {
+    "title": "Shells & Payloads",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/shells--payloads",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/115"
+  },
+  {
     "title": "Compromising Active Directory",
     "provider": "By TryHackMe",
     "type": "Offensive Security",
