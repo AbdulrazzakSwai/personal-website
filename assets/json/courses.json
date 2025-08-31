@@ -49,6 +49,13 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Footprinting",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/footprinting",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/112"
+  },
+  {
     "title": "Vulnerability Assessment",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",
