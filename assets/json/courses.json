@@ -105,6 +105,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/116"
   },
   {
+    "title": "Pivoting, Tunneling, and Port Forwarding",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/pivoting-tunneling-and-port-forwarding",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/158"
+  },
+  {
     "title": "Compromising Active Directory",
     "provider": "By TryHackMe",
     "type": "Offensive Security",
