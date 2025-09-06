@@ -112,6 +112,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/158"
   },
   {
+    "title": "Active Directory Enumeration & Attacks",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/active-directory-enumeration--attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/143"
+  },
+  {
     "title": "Compromising Active Directory",
     "provider": "By TryHackMe",
     "type": "Offensive Security",
