@@ -132,6 +132,22 @@
     "finished": false
   },
   {
+    "title": "Certified Multi-Cloud Red Team Analyst (MCRTA)",
+    "provider": "By CyberWarfare Labs",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta",
+    "finished": false
+  },
+  {
+    "title": "Certified Multi-Cloud Blue Team Analyst (MCBTA)",
+    "provider": "By CyberWarfare Labs",
+    "status": "🕐 Upcoming",
+    "progress": 0,
+    "detailsLink": "https://cyberwarfare.live/product/multi-cloud-blue-team-analyst-mcbta",
+    "finished": false
+  },
+  {
     "title": "Certified Red Team Professional (CRTP)",
     "provider": "By Altered Security",
     "status": "🕐 Upcoming",
