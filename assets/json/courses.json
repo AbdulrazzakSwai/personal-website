@@ -105,6 +105,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/116"
   },
   {
+    "title": "Attacking Common Applications",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/attacking-common-applications",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/113"
+  },
+  {
     "title": "Pivoting, Tunneling, and Port Forwarding",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",
