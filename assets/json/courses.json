@@ -133,6 +133,13 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Linux Privilege Escalation",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/linux-privilege-escalation",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/51"
+  },
+  {
     "title": "Privilege Escalation",
     "provider": "By TryHackMe",
     "type": "Offensive Security",
