@@ -336,6 +336,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/24"
   },
   {
+    "title": "Documentation & Reporting",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/documentation--reporting",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/162"
+  },
+  {
     "title": "Bug Bounty Hunting Process",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",
