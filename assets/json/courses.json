@@ -140,6 +140,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/51"
   },
   {
+    "title": "Windows Privilege Escalation",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-privilege-escalation",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/67"
+  },
+  {
     "title": "Privilege Escalation",
     "provider": "By TryHackMe",
     "type": "Offensive Security",
