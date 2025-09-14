@@ -6,12 +6,12 @@
   },
   {
     "label": "Upcoming Practical Certifications",
-    "value": 10,
+    "value": 8,
     "icon": "fas fa-clock"
   },
   {
     "label": "Completed Online Courses",
-    "value": 97,
+    "value": 98,
     "icon": "fas fa-book"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "label": "Handled Security Scenarios",
-    "value": 219,
+    "value": 221,
     "icon": "fas fa-flag"
   },
   {

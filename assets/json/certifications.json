@@ -90,6 +90,15 @@
     "finished": true
   },
   {
+    "title": "Certified Penetration Testing Specialist (CPTS)",
+    "provider": "By Hack The Box Academy",
+    "status": "⌛ Path Completed, Awaiting Exam",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/16",
+    "finished": "partial"
+  },
+  {
     "title": "Certified Defensive Security Analyst (CDSA)",
     "provider": "By Hack The Box Academy",
     "status": "⌛ Path Completed, Awaiting Exam",
@@ -106,14 +115,6 @@
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
     "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/17",
     "finished": "partial"
-  },
-  {
-    "title": "Certified Penetration Testing Specialist (CPTS)",
-    "provider": "By Hack The Box Academy",
-    "status": "🕐 In Progress",
-    "progress": 99,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
-    "finished": false
   },
   {
     "title": "AI Red Teamer",
@@ -153,22 +154,6 @@
     "status": "🕐 Upcoming",
     "progress": 0,
     "detailsLink": "https://www.alteredsecurity.com/adlab",
-    "finished": false
-  },
-  {
-    "title": "Certified Red Team Expert (CRTE)",
-    "provider": "By Altered Security",
-    "status": "🕐 Upcoming",
-    "progress": 0,
-    "detailsLink": "https://www.alteredsecurity.com/redteamlab",
-    "finished": false
-  },
-  {
-    "title": "Certified Red Team Master (CRTM)",
-    "provider": "By Altered Security",
-    "status": "🕐 Upcoming",
-    "progress": 0,
-    "detailsLink": "https://www.alteredsecurity.com/gcb",
     "finished": false
   }
 ]

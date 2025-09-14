@@ -35,8 +35,8 @@
     "links": []
   },
   {
-    "title": "215+ Practical Security Scenarios Handled",
-    "description": "Handled over 215 hands-on cybersecurity scenarios across offensive and defensive security fields, through platforms like TryHackMe and Hack The Box.<br>Participated in Splunk Boss of the SOC (BOTS).",
+    "title": "220+ Practical Security Scenarios Handled",
+    "description": "Handled over 220 hands-on cybersecurity scenarios across offensive and defensive security fields, through platforms like TryHackMe and Hack The Box.<br>Participated in Splunk Boss of the SOC (BOTS).",
     "skills": ["Red Teaming", "Blue Teaming", "Hands-on Security", "Splunk", "Problem Solving"],
     "links": [
       { "url": "https://bots.splunk.com/", "title": "Splunk BOTS" },
