@@ -630,6 +630,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/74"
   },
   {
+    "title": "Introduction to Bash Scripting",
+    "provider": "By Hack The Box Academy",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-bash-scripting",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/21"
+  },
+  {
     "title": "Programming 100: Fundamentals",
     "provider": "By TCM Security",
     "type": "Information Technology (IT)",
