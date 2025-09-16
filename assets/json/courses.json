@@ -322,6 +322,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/17"
   },
   {
+    "title": "Wi-Fi Penetration Testing Basics",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/wi-fi-penetration-testing-basics",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/222"
+  },
+  {
     "title": "Basic Computer Exploitation",
     "provider": "By TryHackMe",
     "type": "Offensive Security",
