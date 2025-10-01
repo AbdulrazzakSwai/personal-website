@@ -108,13 +108,12 @@
     "finished": "partial"
   },
   {
-    "title": "Certified Bug Bounty Hunter (CBBH)",
+    "title": "Certified Web Exploitation Specialist (CWES)",
     "provider": "By Hack The Box Academy",
-    "status": "⌛ Path Completed, Awaiting Exam",
-    "progress": 100,
+    "status": "🕐 In Progress",
+    "progress": 93,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter",
-    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/17",
-    "finished": "partial"
+    "finished": false
   },
   {
     "title": "AI Red Teamer",
