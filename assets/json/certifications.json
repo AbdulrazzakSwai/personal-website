@@ -101,10 +101,11 @@
   {
     "title": "Certified Defensive Security Analyst (CDSA)",
     "provider": "By Hack The Box Academy",
-    "status": "🕐 In Progress",
-    "progress": 99.4,
+    "status": "⌛ Path Completed, Awaiting Exam",
+    "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
-    "finished": false
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/390",
+    "finished": "partial"
   },
   {
     "title": "Certified Web Exploitation Specialist (CWES)",
