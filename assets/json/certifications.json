@@ -146,5 +146,13 @@
     "progress": 0,
     "detailsLink": "https://cyberwarfare.live/product/multi-cloud-blue-team-analyst-mcbta",
     "finished": false
+  },
+  {
+    "title": "McKinsey Forward Program",
+    "provider": "By McKinsey & Company",
+    "status": "🕐 In Progress",
+    "progress": 33,
+    "detailsLink": "https://www.mckinsey.com/forward/overview",
+    "finished": false
   }
 ]
