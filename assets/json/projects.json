@@ -46,7 +46,7 @@
   },
   {
     "title": "Capture the Flag (CTF) Competitions",
-    "description": "42CTF – RedTeam Hacker Academy & 42 Abu Dhabi: Participated in a Capture the Flag event focused on real-world cybersecurity challenges. Gained hands-on experience in offensive security, teamwork, and working under time pressure.<br>Cybersecurity Awareness Day 4.0 CTF – Abu Dhabi University: Engaged in a competitive cybersecurity challenge designed to raise awareness through realistic attack simulations and defensive scenarios. Strengthened skills in threat analysis, forensics, and incident response.",
+    "description": "Participated in multiple Capture the Flag (CTF) events focused on real-world cybersecurity challenges.<br>Gained hands-on experience in offensive and defensive security, teamwork, and working under time pressure.",
     "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
     "links": []
   },
@@ -55,7 +55,7 @@
     "description": "Designed and developed a fully responsive personal website to present my cybersecurity journey, skills, certifications, and projects.<br>Built using HTML, CSS, JavaScript, and Bootstrap.<br>The site features dynamic content loading, smooth animations, interactive UI elements, and a clean, modern design focused on accessibility and user experience.",
     "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
     "links": [
-      { "url": "https://www.abdulrazzakswai.me", "title": "My Personal Website" }
+      { "url": "https://www.abdulrazzakswai.me", "title": "Personal Website" }
     ]
   },
   {
@@ -63,7 +63,7 @@
     "description": "Designed a website that was previously used to showcase my background, education, projects, and more.<br>It is no longer actively maintained; its content is not being updated.<br>Visit my main website for the latest updates.",
     "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
     "links": [
-      { "url": "https://abdulrazzakswai.github.io/legacy-website", "title": "My Legacy Personal Website" }
+      { "url": "https://abdulrazzakswai.github.io/legacy-website", "title": "Legacy Personal Website" }
     ]
   }
 ]
