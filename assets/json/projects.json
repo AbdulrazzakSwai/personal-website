@@ -1,19 +1,19 @@
 [
   {
     "title": "Critical Security Vulnerabilities Discovery",
-    "description": "Discovered and responsibly reported a critical Insecure Direct Object Reference (IDOR) vulnerability in the university's online system, which exposed all students' sensitive data.<br>Identified a second vulnerability that was patched before I had the chance to report it.",
+    "description": "Discovered and responsibly reported a critical Insecure Direct Object Reference (IDOR) vulnerability in the university's online system, which exposed all students' sensitive data.<br><br>Identified a second vulnerability that was patched before I had the chance to report it.",
     "skills": ["Vulnerability Assessment", "Responsible Disclosure", "Web Security", "IDOR"],
     "links": []
   },
   {
     "title": "Leading Cybersecurity Curriculum Reform at Al Ain University",
-    "description": "Led an initiative to modernize the cybersecurity curriculum by shifting from theoretical teaching to a hands-on, practical learning approach.<br>Advocated for integrating real-world labs and gamified platforms such as TryHackMe and Hack The Box.<br>Collaborated closely with the head of cybersecurity and senior faculty members to implement these curriculum enhancements.",
+    "description": "Led an initiative to modernize the cybersecurity curriculum by shifting from theoretical teaching to a hands-on, practical learning approach.<br><br>Advocated for integrating real-world labs and gamified platforms such as TryHackMe and Hack The Box.<br><br>Collaborated closely with the head of cybersecurity and senior faculty members to implement these curriculum enhancements.",
     "skills": ["Curriculum Development", "Advocacy", "Cybersecurity Education", "Practical Learning"],
     "links": []
   },
   {
     "title": "Ultimate Cybersecurity Path",
-    "description": "Created a clear and structured cybersecurity learning path that takes learners from beginner to professional level.<br>Designed its curriculum to cover Presecurity, Cybersecurity Fundamentals, Essential Programming, Primary Cybersecurity Fields, Professional & Advanced Certifications, Specialization, and Soft Skills.<br>Built it on reputable platforms like TryHackMe, Hack The Box, and TCM Security with focus on practicality, affordability, and real-world applications.",
+    "description": "Created a clear and structured cybersecurity learning path that takes learners from beginner to professional level.<br><br>Designed its curriculum to cover Presecurity, Cybersecurity Fundamentals, Essential Programming, Primary Cybersecurity Fields, Professional & Advanced Certifications, Specialization, and Soft Skills.<br><br>Built it on reputable platforms like TryHackMe, Hack The Box, and TCM Security with focus on practicality, affordability, and real-world applications.",
     "skills": ["Curriculum Design", "Educational Planning", "Cybersecurity Mentorship", "Community Engagement"],
     "links": [
       { "url": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path", "title": "Ultimate Cybersecurity Path" }
@@ -21,7 +21,7 @@
   },
   {
     "title": "Active Directory Home Labs (3)",
-    "description": "Designed and deployed 3 Active Directory (AD) home labs simulating real enterprise networks with Domain Controllers and client systems.<br>Practiced advanced Active Directory exploitation techniques using popular tools.",
+    "description": "Designed and deployed 3 Active Directory (AD) home labs simulating real enterprise networks with Domain Controllers and client systems.<br><br>Practiced advanced Active Directory exploitation techniques using popular tools.",
     "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
     "links": [
       { "url": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
@@ -30,29 +30,27 @@
   },
   {
     "title": "Diverse Virtual Machine Lab Environments (25+)",
-    "description": "Built and configured more than 25 virtual machines using VirtualBox, including both Linux and Windows systems.<br>Designed internal networks using NAT to simulate realistic infrastructure for cybersecurity practicing and tool testing.",
+    "description": "Built and configured more than 25 virtual machines using VirtualBox, including both Linux and Windows systems.<br><br>Designed internal networks using NAT to simulate realistic infrastructure for cybersecurity practicing and tool testing.",
     "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
     "links": []
   },
   {
-    "title": "220+ Practical Security Scenarios Handled",
-    "description": "Handled over 220 hands-on cybersecurity scenarios across offensive and defensive security fields, through platforms like TryHackMe and Hack The Box.<br>Participated in Splunk Boss of the SOC (BOTS).",
-    "skills": ["Red Teaming", "Blue Teaming", "Hands-on Security", "Splunk", "Problem Solving"],
+    "title": "Cybersecurity Writeups",
+    "description": "Authored detailed writeups for various machines and challenges, documenting methodologies, tools used, and step-by-step solutions.<br><br>Shared these writeups on my personal blog to help others learn and understand different cybersecurity concepts and techniques.",
+    "skills": ["Technical Writing", "Documentation", "Knowledge Sharing"],
     "links": [
-      { "url": "https://bots.splunk.com/", "title": "Splunk BOTS" },
-      { "url": "https://tryhackme.com/", "title": "TryHackMe" },
-      { "url": "https://app.hackthebox.com/", "title": "Hack The Box" }
+      { "url": "https://cybersecurity-writeups.notion.site/main", "title": "Cybersecurity Writeups" }
     ]
   },
   {
     "title": "Capture the Flag (CTF) Competitions",
-    "description": "Participated in multiple Capture the Flag (CTF) events focused on real-world cybersecurity challenges.<br>Gained hands-on experience in offensive and defensive security, teamwork, and working under time pressure.",
+    "description": "Participated in multiple Capture the Flag (CTF) events focused on real-world cybersecurity challenges.<br><br>Gained hands-on experience in offensive and defensive security, teamwork, and working under time pressure.",
     "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
     "links": []
   },
   {
     "title": "Personal Website",
-    "description": "Designed and developed a fully responsive personal website to present my cybersecurity journey, skills, certifications, and projects.<br>Built using HTML, CSS, JavaScript, and Bootstrap.<br>The site features dynamic content loading, smooth animations, interactive UI elements, and a clean, modern design focused on accessibility and user experience.",
+    "description": "Designed and developed a fully responsive personal website to present my cybersecurity journey, skills, certifications, and projects.<br><br>Built using HTML, CSS, JavaScript, and Bootstrap.<br><br>The site features dynamic content loading, smooth animations, interactive UI elements, and a clean, modern design focused on accessibility and user experience.",
     "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
     "links": [
       { "url": "https://www.abdulrazzakswai.me", "title": "Personal Website" }
@@ -60,7 +58,7 @@
   },
   {
     "title": "Legacy Personal Website",
-    "description": "Designed a website that was previously used to showcase my background, education, projects, and more.<br>It is no longer actively maintained; its content is not being updated.<br>Visit my main website for the latest updates.",
+    "description": "Designed a website that was previously used to showcase my background, education, projects, and more.<br><br>It is no longer actively maintained; its content is not being updated.<br><br>Visit my main website for the latest updates.",
     "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
     "links": [
       { "url": "https://abdulrazzakswai.github.io/legacy-website", "title": "Legacy Personal Website" }

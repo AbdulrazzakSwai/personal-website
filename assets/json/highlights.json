@@ -5,6 +5,11 @@
     "description": "Awarded a 10-year UAE Golden Residency for academic excellence (valid until 2033)."
   },
   {
+    "title": "Hacker Rank on Hack The Box",
+    "icon": "fas fa-cube",
+    "description": "Ranked on the Hacker Rank in the Hack The Box platform, reflecting continuous dedication to cybersecurity skill development and practical problem-solving through real-world cybersecurity challenges."
+  },
+  {
     "title": "Top 1% on TryHackMe",
     "icon": "fas fa-user-shield",
     "description": "Ranked in the top 1% of players on TryHackMe, demonstrating advanced cybersecurity skills and practical problem-solving abilities."
