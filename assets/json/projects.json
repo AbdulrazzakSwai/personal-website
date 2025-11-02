@@ -20,6 +20,14 @@
     ]
   },
   {
+    "title": "Cybersecurity Writeups",
+    "description": "Authored detailed writeups for various machines and challenges, documenting methodologies, tools used, and step-by-step solutions.<br><br>Shared these writeups on my personal blog to help others learn and understand different cybersecurity concepts and techniques.",
+    "skills": ["Technical Writing", "Documentation", "Knowledge Sharing"],
+    "links": [
+      { "url": "https://cybersecurity-writeups.notion.site/main", "title": "Cybersecurity Writeups" }
+    ]
+  },
+  {
     "title": "Active Directory Home Labs (3)",
     "description": "Designed and deployed 3 Active Directory (AD) home labs simulating real enterprise networks with Domain Controllers and client systems.<br><br>Practiced advanced Active Directory exploitation techniques using popular tools.",
     "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
@@ -33,14 +41,6 @@
     "description": "Built and configured more than 25 virtual machines using VirtualBox, including both Linux and Windows systems.<br><br>Designed internal networks using NAT to simulate realistic infrastructure for cybersecurity practicing and tool testing.",
     "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
     "links": []
-  },
-  {
-    "title": "Cybersecurity Writeups",
-    "description": "Authored detailed writeups for various machines and challenges, documenting methodologies, tools used, and step-by-step solutions.<br><br>Shared these writeups on my personal blog to help others learn and understand different cybersecurity concepts and techniques.",
-    "skills": ["Technical Writing", "Documentation", "Knowledge Sharing"],
-    "links": [
-      { "url": "https://cybersecurity-writeups.notion.site/main", "title": "Cybersecurity Writeups" }
-    ]
   },
   {
     "title": "Capture the Flag (CTF) Competitions",
