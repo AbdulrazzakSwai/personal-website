@@ -20,9 +20,14 @@
     "icon": "fas fa-door-open"
   },
   {
-    "label": "Rooted Hack The Box Challenges",
+    "label": "Rooted Hack The Box Labs",
     "value": 20,
     "icon": "fas fa-flag"
+  },
+  {
+    "label": "Published Security Writeups",
+    "value": 4,
+    "icon": "fas fa-file-code"
   },
   {
     "label": "Hacked Enterprise Networks (Ethically)",
