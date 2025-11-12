@@ -15,14 +15,14 @@
     "icon": "fas fa-book"
   },
   {
-    "label": "Solved TryHackMe Rooms",
-    "value": 256,
-    "icon": "fas fa-door-open"
-  },
-  {
     "label": "Rooted Hack The Box Labs",
     "value": 31,
     "icon": "fas fa-flag"
+  },
+  {
+    "label": "Solved TryHackMe Rooms",
+    "value": 256,
+    "icon": "fas fa-door-open"
   },
   {
     "label": "Published Cybersecurity Writeups",
