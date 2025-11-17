@@ -24,7 +24,7 @@
     "description": "Authored detailed writeups for various machines and challenges, documenting methodologies, tools used, and step-by-step solutions.<br><br>Shared these writeups on my personal blog to help others learn and understand different cybersecurity concepts and techniques.",
     "skills": ["Technical Writing", "Documentation", "Knowledge Sharing"],
     "links": [
-      { "url": "https://cybersecurity-writeups.notion.site/main", "title": "Cybersecurity Writeups" }
+      { "url": "https://cybersecurity-writeups.notion.site", "title": "Cybersecurity Writeups" }
     ]
   },
   {
