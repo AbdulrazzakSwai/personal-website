@@ -175,6 +175,13 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Web Attacks",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/web-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/134"
+  },
+  {
     "title": "Using Web Proxies",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",
@@ -273,13 +280,6 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/280"
   },
   {
-    "title": "Web Attacks",
-    "provider": "By Hack The Box Academy",
-    "type": "Offensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/web-attacks",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/134"
-  },
-  {
     "title": "Advanced Client-side Attacks",
     "provider": "By TryHackMe",
     "type": "Offensive Security",
@@ -313,6 +313,13 @@
     "type": "Offensive Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/web-service--api-attacks",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/160"
+  },
+  {
+    "title": "Attacking GraphQL",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/attacking-graphql",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/271"
   },
   {
     "title": "HTTP Request Smuggling",
