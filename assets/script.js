@@ -203,14 +203,33 @@ async function loadAboutData() {
 
 function typeTerminalText(text) {
     const terminalBody = document.getElementById('terminal-body');
+    
+    const lines = text.split(/<br>|\n/);
+    const measureDiv = document.createElement('div');
+    measureDiv.className = 'terminal-text';
+    measureDiv.style.visibility = 'hidden';
+    measureDiv.style.position = 'absolute';
+    measureDiv.style.position = 'static'; 
+    
+    let finalHTML = '';
+    lines.forEach(line => {
+        finalHTML += line + '<div class="content-spacer"></div>';
+    });
+    finalHTML += '<span class="terminal-cursor">|</span>';
+    measureDiv.innerHTML = finalHTML;
+    
+    terminalBody.appendChild(measureDiv);
+    const finalHeight = terminalBody.offsetHeight;
+    terminalBody.style.minHeight = `${finalHeight}px`;
+    terminalBody.removeChild(measureDiv);
+
     const textDiv = document.createElement('div');
     textDiv.className = 'terminal-text';
     terminalBody.appendChild(textDiv);
 
-    const lines = text.split(/<br>|\n/);
     let lineIndex = 0;
     let charIndex = 0;
-    const speed = 25;
+    const speed = 22;
 
     function typeLine() {
         if (lineIndex < lines.length) {
@@ -224,13 +243,19 @@ function typeTerminalText(text) {
                     lineIndex++;
                     charIndex = 0;
                     typeLine();
-                }, 300);
+                }, 400);
             }
         } else {
             const cursor = document.createElement('span');
             cursor.className = 'terminal-cursor';
             cursor.textContent = '|';
             terminalBody.appendChild(cursor);
+            
+
+            setTimeout(() => {
+                terminalBody.style.minHeight = '200px';
+                terminalBody.style.minHeight = 'auto';
+            }, 100);
         }
     }
 
@@ -957,7 +982,7 @@ function initHeroParticles() {
     const ctx = canvas.getContext('2d');
     let width, height;
     let particles = [];
-    let colors = ['#1d4ed8', '#0ea5e9']; // Default colors
+    let colors = ['#1d4ed8', '#0ea5e9'];
     
     const particleCount = window.innerWidth < 768 ? 35 : 70;
     const connectionDistance = 150;
@@ -972,7 +997,6 @@ function initHeroParticles() {
         }
     }
 
-    // Update colors initially and observe changes
     updateColors();
     const observer = new MutationObserver(updateColors);
     observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] });
@@ -1002,7 +1026,6 @@ function initHeroParticles() {
             this.x += this.vx;
             this.y += this.vy;
             
-            // Wrap around edges
             if (this.x < 0) this.x = width;
             else if (this.x > width) this.x = 0;
             
@@ -1024,14 +1047,12 @@ function initHeroParticles() {
     function animate() {
         ctx.clearRect(0, 0, width, height);
         
-        // Update and draw particles
         for (let i = 0; i < particles.length; i++) {
             const p = particles[i];
             p.update();
             p.draw();
         }
         
-        // Draw connections
         for (let i = 0; i < particles.length; i++) {
             const a = particles[i];
             for (let j = i + 1; j < particles.length; j++) {
