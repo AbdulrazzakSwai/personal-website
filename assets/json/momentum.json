@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Retaking CDSA Job Role Path by Hack The Box",
+    "date": "Ongoing",
+    "description": "Currently retaking the Certified Defensive Security Analyst (CDSA) learning path by Hack The Box to reinforce defensive security skills.",
+    "icon": "fas fa-hourglass-half",
+    "badge": "Current Focus"
+  },
+  {
+    "title": "Completed \"API Attacks\" Course and CWES Job Role Path by Hack The Box",
+    "date": "30 Nov 2025",
+    "description": "Finished the last course in the updated Hack The Box Certified Web Exploitation Specialist (CWES) learning path, focusing on API security and web vulnerabilities.",
+    "icon": "fas fa-check-circle",
+    "badge": "Latest Milestone"
+  },
+  {
+    "title": "Documented Intelligence Machine by Hack The Box",
+    "date": "28 Nov 2025",
+    "description": "Solved and documented the Intelligence machine on Hack The Box, upskilling penetration testing and documentation skills.",
+    "icon": "fas fa-history",
+    "badge": "Recent Milestone"
+  }
+]

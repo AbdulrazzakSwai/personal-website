@@ -220,7 +220,7 @@ function typeTerminalText(text) {
                 setTimeout(typeLine, speed);
             } else {
                 setTimeout(() => {
-                    textDiv.innerHTML += '<br>';
+                    textDiv.innerHTML += '<div class="content-spacer"></div>';
                     lineIndex++;
                     charIndex = 0;
                     typeLine();
@@ -288,32 +288,40 @@ async function loadStatistics() {
     }
 }
 
-async function loadTimeline() {
+async function loadAchievements() {
     try {
-        const response = await fetch('assets/json/timeline.json');
-        const timeline = await response.json();
-        const container = document.getElementById('timeline-container');
+        const response = await fetch('assets/json/momentum.json');
+        const achievements = await response.json();
+        const grid = document.getElementById('achievements-grid');
         
-        timeline.forEach((item, index) => {
-            const timelineItem = document.createElement('div');
-            timelineItem.className = `timeline-card ${item.type} animate-on-scroll`;
-            timelineItem.dataset.animation = 'animate-fade-in-up';
-            timelineItem.dataset.delay = (index * 75).toString();
-            timelineItem.innerHTML = `
-                <div class="timeline-badge ${item.type}">
-                    <i class="${item.icon} me-2"></i>
-                    ${item.type === 'recent' ? 'Recent' : 'Upcoming'}
+        achievements.forEach((item, index) => {
+            const col = document.createElement('div');
+            col.className = 'col-lg-4 col-md-6';
+            
+            let badgeClass = 'badge-default';
+            if (index === 0) badgeClass = 'badge-current';
+            else if (index === 1) badgeClass = 'badge-latest';
+            else badgeClass = 'badge-key';
+
+            col.innerHTML = `
+                <div class="achievement-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
+                    <div class="achievement-badge ${badgeClass}">${item.badge}</div>
+                    <div class="achievement-icon">
+                        <i class="${item.icon}"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-date">${item.date}</span>
+                        <h5>${item.title}</h5>
+                        <p>${item.description}</p>
+                    </div>
                 </div>
-                <h4>${item.title}</h4>
-                <p class="timeline-date">${item.date}</p>
-                <p class="timeline-description">${item.description}</p>
             `;
-            container.appendChild(timelineItem);
+            grid.appendChild(col);
         });
         
         initAnimations();
     } catch (error) {
-        console.error('Error loading timeline:', error);
+        console.error('Error loading achievements:', error);
     }
 }
 
@@ -689,7 +697,7 @@ function renderProjects(projects) {
             <div class="card portfolio-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body">
                     <h6 class="card-title">${index + 1}. ${project.title}</h6>
-                    <p class="card-text">${project.description}</p>
+                    <div class="card-text">${project.description}</div>
                     <div class="mb-3">
                         ${project.skills.map(skill => `<span class="skill-tag me-1 mb-1">${skill}</span>`).join('')}
                     </div>
@@ -788,10 +796,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initTypingAnimation();
     initTerminalAnimation();
+    initHeroParticles();
     loadAboutData();
     loadHighlights();
     loadStatistics();
-    loadTimeline();
+    loadAchievements();
     loadCourses();
     loadProjects();
     initPortfolioTabs();
@@ -939,4 +948,123 @@ function renderFilteredCourses() {
     const filteredCourses = getFilteredCourses(dataCache.courses);
     coursesLoaded = 0;
     renderCourses(filteredCourses);
+}
+
+function initHeroParticles() {
+    const canvas = document.getElementById('global-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let particles = [];
+    let colors = ['#1d4ed8', '#0ea5e9']; // Default colors
+    
+    const particleCount = window.innerWidth < 768 ? 35 : 70;
+    const connectionDistance = 150;
+    const moveSpeed = 0.4;
+
+    function updateColors() {
+        const style = getComputedStyle(document.body);
+        const primary = style.getPropertyValue('--primary-color').trim();
+        const secondary = style.getPropertyValue('--secondary-color').trim();
+        if (primary && secondary) {
+            colors = [primary, secondary];
+        }
+    }
+
+    // Update colors initially and observe changes
+    updateColors();
+    const observer = new MutationObserver(updateColors);
+    observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] });
+
+    function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        
+        particles = [];
+        const count = window.innerWidth < 768 ? 35 : 70;
+        for (let i = 0; i < count; i++) {
+            particles.push(new Particle());
+        }
+    }
+    
+    class Particle {
+        constructor() {
+            this.x = Math.random() * width;
+            this.y = Math.random() * height;
+            this.vx = (Math.random() - 0.5) * moveSpeed;
+            this.vy = (Math.random() - 0.5) * moveSpeed;
+            this.size = Math.random() * 2 + 1;
+            this.type = Math.random() > 0.5 ? 0 : 1;
+        }
+        
+        update() {
+            this.x += this.vx;
+            this.y += this.vy;
+            
+            // Wrap around edges
+            if (this.x < 0) this.x = width;
+            else if (this.x > width) this.x = 0;
+            
+            if (this.y < 0) this.y = height;
+            else if (this.y > height) this.y = 0;
+        }
+        
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = colors[this.type];
+            ctx.fill();
+        }
+    }
+    
+    resize();
+    window.addEventListener('resize', resize);
+    
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        
+        // Update and draw particles
+        for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            p.update();
+            p.draw();
+        }
+        
+        // Draw connections
+        for (let i = 0; i < particles.length; i++) {
+            const a = particles[i];
+            for (let j = i + 1; j < particles.length; j++) {
+                const b = particles[j];
+                const dx = a.x - b.x;
+                const dy = a.y - b.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                
+                if (dist < connectionDistance) {
+                    ctx.beginPath();
+                    const opacity = 0.2 * (1 - dist / connectionDistance);
+                    
+                    if (a.type === b.type) {
+                        ctx.strokeStyle = colors[a.type];
+                    } else {
+                        const gradient = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
+                        gradient.addColorStop(0, colors[a.type]);
+                        gradient.addColorStop(1, colors[b.type]);
+                        ctx.strokeStyle = gradient;
+                    }
+                    
+                    ctx.globalAlpha = opacity;
+                    ctx.lineWidth = 1;
+                    ctx.moveTo(a.x, a.y);
+                    ctx.lineTo(b.x, b.y);
+                    ctx.stroke();
+                    ctx.globalAlpha = 1;
+                }
+            }
+        }
+        
+        requestAnimationFrame(animate);
+    }
+    
+    animate();
 }
