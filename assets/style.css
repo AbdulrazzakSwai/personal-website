@@ -261,17 +261,25 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#theme-toggle {
+#theme-toggle,
+#mobile-writeups-btn {
   width: 42px;
   height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle {
   border: 2px solid var(--primary-color);
   background: transparent;
   color: var(--primary-color);
-  transition: all 0.3s ease;
+}
+
+#mobile-writeups-btn {
+  padding: 0; /* Reset padding for fixed size */
 }
 
 #theme-toggle:hover {
@@ -296,6 +304,25 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+
+@media (max-height: 600px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-name {
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .typed-text {
+    font-size: 1.25rem !important;
+    min-width: auto !important;
+    padding: 0.25rem 0.5rem;
+  }
 }
 
 .hero-name {
@@ -543,6 +570,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .achievement-badge {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.5rem;
+    top: 0.75rem;
+    right: 0.75rem;
+    letter-spacing: 0;
+  }
 }
 
 .badge-current {
