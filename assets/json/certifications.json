@@ -110,10 +110,11 @@
   {
     "title": "Certified Web Exploitation Specialist (CWES)",
     "provider": "By Hack The Box Academy",
-    "status": "🕐 In Progress",
-    "progress": 98.2,
+    "status": "⌛ Path Completed, Awaiting Exam",
+    "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist",
-    "finished": false
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/17",
+    "finished": "partial"
   },
   {
     "title": "AI Red Teamer",

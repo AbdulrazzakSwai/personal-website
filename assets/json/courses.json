@@ -315,6 +315,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/160"
   },
   {
+    "title": "API Attacks",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/api-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/268"
+  },
+  {
     "title": "Attacking GraphQL",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",
