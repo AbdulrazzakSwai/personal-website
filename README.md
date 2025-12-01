@@ -9,8 +9,7 @@ Here, you can explore:
 - Certifications and completed courses
 - Projects I have worked on
 - Statistics that reflect my learning progress
-- A timeline of recent and upcoming milestones
-- Easy ways to get in touch with me
+- Ways to get in touch with me
 
 ## Technologies Used
 
