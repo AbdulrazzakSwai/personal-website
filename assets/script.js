@@ -830,12 +830,53 @@ document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
     initPortfolioTabs();
     loadLastUpdated();
+    initDecryptionAnimation();
     
     updateCourseFilterVisibility('certifications');
 
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
     createCourseFilter();
 });
+
+function initDecryptionAnimation() {
+    const headers = document.querySelectorAll('h2');
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:,.<>?";
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                if (target.dataset.decrypted === 'true') return;
+                
+                const originalText = target.innerText;
+                let iteration = 0;
+                
+                const interval = setInterval(() => {
+                    target.innerText = originalText
+                        .split("")
+                        .map((letter, index) => {
+                            if(index < iteration) {
+                                return originalText[index];
+                            }
+                            return letters[Math.floor(Math.random() * letters.length)]
+                        })
+                        .join("");
+                    
+                    if(iteration >= originalText.length){ 
+                        clearInterval(interval);
+                        target.dataset.decrypted = 'true';
+                    }
+                    
+                    iteration += 1 / 3;
+                }, 30);
+                
+                observer.unobserve(target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    headers.forEach(header => observer.observe(header));
+}
 
 function createCourseFilter() {
     let filterContainer = document.getElementById('course-filter-container');
