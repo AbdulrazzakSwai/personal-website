@@ -1,22 +1,22 @@
 [
   {
-    "title": "Retaking CDSA Job Role Path by Hack The Box",
+    "title": "Preparing for HTB CDSA Exam",
     "date": "Ongoing",
-    "description": "Currently retaking the Certified Defensive Security Analyst (CDSA) learning path by Hack The Box to reinforce defensive security skills.",
+    "description": "Currently preparing for the Hack The Box Certified Defensive Security Analyst (CDSA) exam to enhance defensive security skills, through solving Sherlocks and practical defensive security scenarios.",
     "icon": "fas fa-hourglass-half",
     "badge": "Current Focus"
   },
   {
-    "title": "Solved and Documented \"Campfire-1\" Sherlock by Hack The Box",
+    "title": "Solved and Documented \"LogJammer\" Sherlock by Hack The Box",
     "date": "2 Dec 2025",
-    "description": "Solved the 'Campfire-1' Sherlock challenge on Hack The Box and documented the solution process in detail, focusing on digital forensics and incident response.",
+    "description": "Completed the \"LogJammer\" Sherlock by Hack The Box, analyzing Windows Event Logs to investigate a security incident and uncovering the attack chain while documenting the process.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Completed \"API Attacks\" Course and CWES Job Role Path by Hack The Box",
-    "date": "30 Nov 2025",
-    "description": "Finished the last course in the updated Hack The Box Certified Web Exploitation Specialist (CWES) learning path, focusing on API security and web vulnerabilities.",
+    "title": "Solved and Documented \"Campfire-1\" Sherlock by Hack The Box",
+    "date": "2 Dec 2025",
+    "description": "Solved the \"Campfire-1\" Sherlock by Hack The Box and documented the solution process in detail, focusing on digital forensics and incident response.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
