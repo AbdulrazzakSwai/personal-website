@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved and Documented \"LogJammer\" Sherlock by Hack The Box",
-    "date": "2 Dec 2025",
-    "description": "Completed the \"LogJammer\" Sherlock by Hack The Box, analyzing Windows Event Logs to investigate a security incident and uncovering the attack chain while documenting the process.",
+    "title": "Solved and Documented \"CrownJewel-1\" Sherlock by Hack The Box",
+    "date": "3 Dec 2025",
+    "description": "Solved the \"CrownJewel-1\" Sherlock by Hack The Box, which involved parsing MFT records and Windows event logs to investigate a security incident, and documented the entire process in a detailed writeup.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved and Documented \"Campfire-1\" Sherlock by Hack The Box",
+    "title": "Solved and Documented \"LogJammer\" Sherlock by Hack The Box",
     "date": "2 Dec 2025",
-    "description": "Solved the \"Campfire-1\" Sherlock by Hack The Box and documented the solution process in detail, focusing on digital forensics and incident response.",
+    "description": "Completed the \"LogJammer\" Sherlock by Hack The Box, analyzing Windows Event Logs to investigate a security incident and uncovering the attack chain while documenting the process.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
