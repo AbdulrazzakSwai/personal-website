@@ -1083,6 +1083,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   z-index: 9999;
   pointer-events: none;
+  display: none;
 }
 
 .cursor-outline {
@@ -1095,6 +1096,10 @@ body:hover .cursor-outline {
 }
 
 @media (hover: hover) and (pointer: fine) and (min-width: 1025px) {
+  .cursor-dot, .cursor-outline {
+    display: block;
+  }
+
   body {
     cursor: none;
   }
@@ -1104,24 +1109,6 @@ body:hover .cursor-outline {
   #back-to-top,
   #theme-toggle {
     cursor: none !important;
-  }
-}
-
-@media (hover: none), (max-width: 1024px) {
-  .cursor-dot, .cursor-outline {
-    display: none !important;
-  }
-  
-  body {
-    cursor: auto !important;
-  }
-  
-  a, button, .btn, select, .nav-pills .nav-link, #back-to-top, #theme-toggle {
-    cursor: pointer !important;
-  }
-  
-  input, textarea {
-    cursor: auto !important;
   }
 }
 
