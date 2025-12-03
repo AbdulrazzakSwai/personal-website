@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Completed and Documented \"Noxious\" Sherlock by Hack The Box",
-    "date": "3 Dec 2025",
-    "description": "Successfully completed the \"Noxious\" Sherlock by Hack The Box, which focused on network forensics, and documented the entire process in a comprehensive writeup.",
+    "title": "Solved and Documented \"CrownJewel-2\" Sherlock by Hack The Box",
+    "date": "03 Dec 2025",
+    "description": "Successfully solved the \"CrownJewel-2\" Sherlock by Hack The Box, focusing on Active Directory forensics, and documented the process in a detailed writeup.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved and Documented \"CrownJewel-1\" Sherlock by Hack The Box",
-    "date": "3 Dec 2025",
-    "description": "Solved the \"CrownJewel-1\" Sherlock by Hack The Box, which involved parsing MFT records and Windows event logs to investigate a security incident, and documented the entire process in a detailed writeup.",
+    "title": "Completed and Documented \"Noxious\" Sherlock by Hack The Box",
+    "date": "03 Dec 2025",
+    "description": "Successfully completed the \"Noxious\" Sherlock by Hack The Box, which focused on network forensics, and documented the entire process in a comprehensive writeup.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
