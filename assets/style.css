@@ -243,12 +243,23 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.5rem;
     padding: 0.5rem;
     background: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-toggler:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transform: scale(1.05);
+  }
+
+  .navbar-toggler:hover .navbar-toggler-icon {
+    filter: brightness(0);
   }
   
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300f5ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     width: 1.5rem;
     height: 1.5rem;
+    transition: all 0.3s ease;
   }
 }
 
@@ -936,7 +947,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-card:hover .card {
   border-color: var(--primary-color);
-  transform: translateY(-5px);
+}
+
+.contact-card .card:hover {
+  transform: none;
 }
 
 .contact-card.linkedin:hover .card { border-color: #0077b5; }
@@ -980,38 +994,161 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease;
+  pointer-events: none;
+}
+
+.animate-on-scroll.animations-finished {
+  pointer-events: auto;
 }
 
 .animate-fade-in-up {
   opacity: 1 !important;
-  transform: translateY(0) !important;
+  transform: translateY(0);
 }
 
 .animate-fade-in-left {
   opacity: 1 !important;
-  transform: translateX(0) !important;
+  transform: translateX(0);
 }
 
 .animate-fade-in-right {
   opacity: 1 !important;
-  transform: translateX(0) !important;
+  transform: translateX(0);
 }
 
 .animate-scale-in {
   opacity: 1 !important;
-  transform: scale(1) !important;
+  transform: scale(1);
 }
 
-.animate-on-scroll.animate-fade-in-left {
+.animate-on-scroll[data-animation="animate-fade-in-left"] {
   transform: translateX(-30px);
 }
 
-.animate-on-scroll.animate-fade-in-right {
+.animate-on-scroll.animate-fade-in-left {
+  transform: translateX(0);
+}
+
+.animate-on-scroll[data-animation="animate-fade-in-right"] {
   transform: translateX(30px);
 }
 
-.animate-on-scroll.animate-scale-in {
+.animate-on-scroll.animate-fade-in-right {
+  transform: translateX(0);
+}
+
+.animate-on-scroll[data-animation="animate-scale-in"] {
   transform: scale(0.9);
+}
+
+.animate-on-scroll.animate-scale-in {
+  transform: scale(1);
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-color);
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--primary-color);
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-outline {
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+body:hover .cursor-dot,
+body:hover .cursor-outline {
+  opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  
+  a, button, .btn, input, select, textarea, .card,
+  .nav-pills .nav-link,
+  #back-to-top,
+  #theme-toggle {
+    cursor: none !important;
+  }
+}
+
+@media (hover: none) {
+  .cursor-dot, .cursor-outline {
+    display: none;
+  }
+}
+
+body.hovering .cursor-outline {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  border-color: var(--secondary-color);
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: var(--shadow-lg);
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#back-to-top:hover {
+  transform: translateY(-5px);
+}
+
+.tilt-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.tilt-content {
+  transform: translateZ(20px);
 }
 
 footer {

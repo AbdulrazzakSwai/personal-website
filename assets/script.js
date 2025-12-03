@@ -110,6 +110,10 @@ function initAnimations() {
                 
                 setTimeout(() => {
                     element.classList.add(animation);
+                    
+                    setTimeout(() => {
+                        element.classList.add('animations-finished');
+                    }, 600);
                 }, delay);
                 
                 observer.unobserve(element);
@@ -297,7 +301,7 @@ async function loadStatistics() {
             const col = document.createElement('div');
             col.className = 'col-lg-4 col-md-6';
             col.innerHTML = `
-                <div class="statistics-card animate-on-scroll" data-animation="animate-scale-in" data-delay="${index * 75}">
+                <div class="statistics-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                     <i class="${stat.icon}"></i>
                     <div class="statistics-number" data-target="${stat.value}">${stat.value}</div>
                     <div class="statistics-label">${stat.label}</div>
@@ -836,7 +840,139 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
     createCourseFilter();
+    
+    initCustomCursor();
+    initScrollProgress();
+    initBackToTop();
+    initTiltEffect();
 });
+
+function initCustomCursor() {
+    const cursorDot = document.querySelector('[data-cursor-dot]');
+    const cursorOutline = document.querySelector('[data-cursor-outline]');
+    
+    if (!cursorDot || !cursorOutline) return;
+
+    window.addEventListener('mousemove', function(e) {
+        const posX = e.clientX;
+        const posY = e.clientY;
+        
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+        
+        cursorOutline.animate({
+            left: `${posX}px`,
+            top: `${posY}px`
+        }, { duration: 500, fill: "forwards" });
+    });
+
+    const interactiveElements = document.querySelectorAll('a, button, .btn, input, select, textarea');
+    
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            document.body.classList.add('hovering');
+        });
+        el.addEventListener('mouseleave', () => {
+            document.body.classList.remove('hovering');
+        });
+    });
+    
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.addedNodes.length) {
+                mutation.addedNodes.forEach((node) => {
+                    if (node.nodeType === 1) {
+                        const elements = node.querySelectorAll('a, button, .btn, input, select, textarea');
+                        elements.forEach(el => {
+                            el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+                            el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+                        });
+                        if (node.matches('a, button, .btn, input, select, textarea')) {
+                            node.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+                            node.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+                        }
+                    }
+                });
+            }
+        });
+    });
+    
+    observer.observe(document.body, { childList: true, subtree: true });
+}
+
+function initScrollProgress() {
+    const progressBar = document.querySelector('.scroll-progress');
+    if (!progressBar) return;
+
+    window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        progressBar.style.width = scrolled + "%";
+    });
+}
+
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('back-to-top');
+    if (!backToTopBtn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+let currentTiltedCard = null;
+
+function initTiltEffect() {
+    document.addEventListener('mousemove', (e) => {
+        const card = e.target.closest('.card, .highlight-card, .statistics-card, .achievement-card');
+        
+        if (currentTiltedCard && currentTiltedCard !== card) {
+            currentTiltedCard.style.transform = '';
+            currentTiltedCard.style.transition = '';
+            currentTiltedCard = null;
+        }
+        
+        if (!card) return;
+        
+        if (currentTiltedCard !== card) {
+            currentTiltedCard = card;
+        }
+        
+        card.style.transition = 'transform 0.1s ease-out, border-color 0.3s ease, box-shadow 0.3s ease';
+
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -5;
+        const rotateY = ((x - centerX) / centerX) * 5;
+        
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+    
+    document.addEventListener('mouseleave', () => {
+        if (currentTiltedCard) {
+            currentTiltedCard.style.transform = '';
+            currentTiltedCard.style.transition = '';
+            currentTiltedCard = null;
+        }
+    });
+}
 
 function initDecryptionAnimation() {
     const headers = document.querySelectorAll('h2');
