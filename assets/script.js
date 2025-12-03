@@ -936,6 +936,8 @@ let currentTiltedCard = null;
 
 function initTiltEffect() {
     document.addEventListener('mousemove', (e) => {
+        if (window.innerWidth <= 1024) return;
+
         const card = e.target.closest('.card, .highlight-card, .statistics-card, .achievement-card');
         
         if (currentTiltedCard && currentTiltedCard !== card) {

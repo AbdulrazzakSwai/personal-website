@@ -953,6 +953,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: none;
 }
 
+@media (max-width: 1024px) {
+  .contact-card .card:hover {
+    transform: translateY(-5px);
+  }
+}
+
 .contact-card.linkedin:hover .card { border-color: #0077b5; }
 .contact-card.github:hover .card { border-color: #333; }
 .contact-card.whatsapp:hover .card { border-color: #25d366; }
@@ -1088,7 +1094,7 @@ body:hover .cursor-outline {
   opacity: 1;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer: fine) and (min-width: 1025px) {
   body {
     cursor: none;
   }
@@ -1101,9 +1107,21 @@ body:hover .cursor-outline {
   }
 }
 
-@media (hover: none) {
+@media (hover: none), (max-width: 1024px) {
   .cursor-dot, .cursor-outline {
-    display: none;
+    display: none !important;
+  }
+  
+  body {
+    cursor: auto !important;
+  }
+  
+  a, button, .btn, select, .nav-pills .nav-link, #back-to-top, #theme-toggle {
+    cursor: pointer !important;
+  }
+  
+  input, textarea {
+    cursor: auto !important;
   }
 }
 
