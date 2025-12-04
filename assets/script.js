@@ -233,7 +233,7 @@ function typeTerminalText(text) {
 
     let lineIndex = 0;
     let charIndex = 0;
-    const speed = 22;
+    const speed = 13;
 
     function typeLine() {
         if (lineIndex < lines.length) {
