@@ -537,8 +537,10 @@ function renderCertifications(certifications) {
                     <h6 class="card-title">${index + 1}. ${cert.title}</h6>
                     <p class="card-subtitle">${cert.provider}</p>
                     <p class="text-muted medium">${cert.status}</p>
-                    <div class="progress-bar mb-3">
-                        <div class="progress-fill" style="width: ${progressPercentage}%"></div>
+                    <div class="progress-container mb-1">
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: ${progressPercentage}%"></div>
+                        </div>
                         <span class="progress-text">${progressPercentage}%</span>
                     </div>
                     <div class="d-flex flex-wrap gap-2 justify-content-center">
@@ -640,7 +642,7 @@ function renderCourses(courses, loadMore = false) {
                     <h6 class="card-title">${courseIndex}. ${course.title}</h6>
                     <p class="card-subtitle">${course.provider}</p>
                     <span class="skill-tag ${skillClass}">${course.type}</span>
-                    <div class="d-flex flex-wrap gap-2 mt-3">
+                    <div class="d-flex flex-wrap gap-2 mt-3 justify-content-center">
                         ${course.detailsLink ? `<a href="${course.detailsLink}" target="_blank" rel="noopener noreferrer" class="card-btn secondary">View Details</a>` : ''}
                         ${course.certificateLink ? `<a href="${course.certificateLink}" target="_blank" rel="noopener noreferrer" class="card-btn primary">Verify Completion</a>` : ''}
                     </div>
