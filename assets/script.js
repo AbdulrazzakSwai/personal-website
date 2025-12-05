@@ -78,6 +78,15 @@ function initNavigation() {
             }
         });
     });
+
+    document.addEventListener('click', (e) => {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarCollapse.classList.contains('show') && 
+            !navbarCollapse.contains(e.target) && 
+            !navbarToggler.contains(e.target)) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+        }
+    });
 }
 
 window.addEventListener('load', () => {
