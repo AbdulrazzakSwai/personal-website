@@ -1226,78 +1226,7 @@ footer {
   color: var(--text-secondary) !important;
 }
 
-.golden-border-shiny {
-    border: 2.5px solid #FFD700;
-    box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
-    position: relative;
-    animation: shiny-gold 2s ease-in-out infinite;
-}
 
-.golden-border-shiny.portfolio-card:hover {
-  transform: none;
-  box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
-  border-color: #FFD700;
-}
-
-@keyframes shiny-gold {
-    0% {
-        box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
-    }
-    50% {
-        box-shadow: 0 0 16px 3px #FFD70099, 0 0 32px 8px #fff20044 inset;
-    }
-    100% {
-        box-shadow: 0 0 8px 1px #FFD70055, 0 0 20px 4px #fff20022 inset;
-    }
-}
-
-.silver-border-shiny {
-  border: 2.5px solid #475569;
-  box-shadow: 0 0 12px 2px rgba(71, 85, 105, 0.4), 0 0 20px 4px rgba(255, 255, 255, 0.5) inset;
-  position: relative;
-  animation: shiny-silver 2s ease-in-out infinite;
-}
-
-.silver-border-shiny.portfolio-card:hover {
-  transform: none;
-  box-shadow: 0 0 12px 2px rgba(71, 85, 105, 0.4), 0 0 20px 4px rgba(255, 255, 255, 0.5) inset;
-  border-color: #475569;
-}
-
-@keyframes shiny-silver {
-  0% {
-    box-shadow: 0 0 12px 2px rgba(71, 85, 105, 0.4), 0 0 20px 4px rgba(255, 255, 255, 0.5) inset;
-  }
-  50% {
-    box-shadow: 0 0 20px 4px rgba(71, 85, 105, 0.6), 0 0 35px 8px rgba(255, 255, 255, 0.8) inset;
-  }
-  100% {
-    box-shadow: 0 0 12px 2px rgba(71, 85, 105, 0.4), 0 0 20px 4px rgba(255, 255, 255, 0.5) inset;
-  }
-}
-
-[data-theme="dark"] .silver-border-shiny {
-  border: 2.5px solid #C0C0C0;
-  box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
-  animation: shiny-silver-dark 2s ease-in-out infinite;
-}
-
-[data-theme="dark"] .silver-border-shiny.portfolio-card:hover {
-  box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
-  border-color: #C0C0C0;
-}
-
-@keyframes shiny-silver-dark {
-  0% {
-    box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
-  }
-  50% {
-    box-shadow: 0 0 16px 3px #C0C0C099, 0 0 32px 8px #ffffff44 inset;
-  }
-  100% {
-    box-shadow: 0 0 8px 1px #C0C0C055, 0 0 20px 4px #ffffff22 inset;
-  }
-}
 
 @media (max-width: 768px) {
   .hero-name {

@@ -516,12 +516,10 @@ function renderCertifications(certifications) {
         col.className = 'col-lg-4 col-6';
         
         const progressPercentage = cert.progress || (cert.finished ? 100 : 0);
-        const isCompleted = progressPercentage === 100 && cert.finished === true;
         const isPartial = cert.finished === 'partial';
 
-        const borderClass = isCompleted ? 'golden-border-shiny' : (isPartial ? 'silver-border-shiny' : '');
         const upcomingClass = cert.finished ? '' : 'upcoming';
-        const cardClass = `card portfolio-card animate-on-scroll ${upcomingClass} ${borderClass}`;
+        const cardClass = `card portfolio-card animate-on-scroll ${upcomingClass}`;
 
         const detailsButtonHtml = cert.detailsLink ? `<a href="${cert.detailsLink}" target="_blank" rel="noopener noreferrer" class="card-btn secondary">View Details</a>` : '';
         let verifyButtonHtml = '';
