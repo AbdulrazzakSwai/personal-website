@@ -588,16 +588,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
-  .achievement-badge {
-    font-size: 0.6rem;
-    padding: 0.2rem 0.5rem;
-    top: 0.75rem;
-    right: 0.75rem;
-    letter-spacing: 0;
-  }
-}
-
 .badge-current {
   background: linear-gradient(135deg, #38d0ff, #0095ff);
   color: #fff;
@@ -730,6 +720,23 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 1;
 }
 
+.project-card .card-text {
+  margin-bottom: 0.5rem;
+  flex-grow: 0;
+}
+
+.project-card .card-body {
+  justify-content: flex-start;
+}
+
+.portfolio-card .d-flex.justify-content-center {
+  margin-top: auto;
+}
+
+.project-card .d-flex.justify-content-center {
+  margin-top: 0;
+}
+
 .course-filter-container {
   display: none;
   justify-content: center;
@@ -829,8 +836,20 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .mobile-container {
-    max-width: 90% !important;
+    max-width: 96% !important;
     margin: 0 auto;
+  }
+  
+  .achievement-badge {
+    font-size: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    letter-spacing: 0;
+    max-width: 75px;
+    white-space: normal;
+    line-height: 1.1;
+    text-align: center;
   }
 }
 
@@ -916,6 +935,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.25rem;
   text-align: center;
   border: 2px solid;
+  font-size: 0.95rem;
+}
+
+.project-card .card-btn {
+  padding: 0.35rem 0.85rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+  font-size: 0.85rem;
 }
 
 .card-btn.primary {
@@ -1395,5 +1421,125 @@ footer {
   body {
     background: white !important;
     color: black !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .card, 
+  .highlight-card, 
+  .statistics-card, 
+  .achievement-card, 
+  .portfolio-card {
+    padding: 0.75rem !important;
+  }
+
+  .portfolio-card .card-body,
+  .card .card-body {
+    padding: 0.5rem !important;
+  }
+
+  .highlight-card .fas {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .highlight-card h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .highlight-card p {
+    font-size: 0.85rem;
+  }
+
+  .statistics-card .fas {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .statistics-number {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+  .statistics-label {
+    font-size: 0.9rem;
+  }
+
+  .achievement-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  .achievement-card h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .achievement-card p {
+    font-size: 0.85rem;
+  }
+  .achievement-date {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio-card .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .portfolio-card .card-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .portfolio-card .card-text {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  .project-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start !important;
+  }
+  .project-card .card-text {
+    flex-grow: 0;
+  }
+  .project-card .d-flex {
+    justify-content: center;
+  }
+  .project-card .mb-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .skill-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    margin: 0.1rem !important;
+  }
+  .card-btn {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    margin: 0.15rem;
+  }
+  .project-card .card-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    margin: 0.1rem;
+  }
+
+  .contact-icon i {
+    font-size: 2rem !important;
+  }
+  .contact-card .card-title {
+    font-size: 1.1rem;
+  }
+  .contact-card .card-text {
+    font-size: 0.85rem;
+  }
+  .contact-icon {
+    margin-bottom: 0.5rem !important;
   }
 }

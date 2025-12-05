@@ -308,7 +308,7 @@ async function loadHighlights() {
         
         highlights.forEach((highlight, index) => {
             const col = document.createElement('div');
-            col.className = 'col-lg-4 col-md-6';
+            col.className = 'col-lg-4 col-6';
             col.innerHTML = `
                 <div class="highlight-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                     <i class="${highlight.icon}"></i>
@@ -333,7 +333,7 @@ async function loadStatistics() {
         
         statistics.forEach((stat, index) => {
             const col = document.createElement('div');
-            col.className = 'col-lg-4 col-md-6';
+            col.className = 'col-lg-4 col-6';
             col.innerHTML = `
                 <div class="statistics-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                     <i class="${stat.icon}"></i>
@@ -359,7 +359,7 @@ async function loadAchievements() {
         
         achievements.forEach((item, index) => {
             const col = document.createElement('div');
-            col.className = 'col-lg-4 col-md-6';
+            col.className = 'col-lg-4 col-6';
             
             let badgeClass = 'badge-default';
             if (index === 0) badgeClass = 'badge-current';
@@ -513,7 +513,7 @@ function renderCertifications(certifications) {
 
     certifications.forEach((cert, index) => {
         const col = document.createElement('div');
-        col.className = 'col-lg-4 col-md-6';
+        col.className = 'col-lg-4 col-6';
         
         const progressPercentage = cert.progress || (cert.finished ? 100 : 0);
         const isCompleted = progressPercentage === 100 && cert.finished === true;
@@ -541,7 +541,7 @@ function renderCertifications(certifications) {
                         <div class="progress-fill" style="width: ${progressPercentage}%"></div>
                         <span class="progress-text">${progressPercentage}%</span>
                     </div>
-                    <div class="d-flex flex-wrap gap-2">
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
                         ${detailsButtonHtml}
                         ${verifyButtonHtml}
                     </div>
@@ -614,7 +614,7 @@ function renderCourses(courses, loadMore = false) {
 
     coursesToShow.forEach((course, index) => {
         const col = document.createElement('div');
-        col.className = 'col-lg-4 col-md-6';
+        col.className = 'col-lg-4 col-6';
 
         let skillClass = '';
         const type = (course.type || '').toLowerCase();
@@ -747,21 +747,23 @@ function renderProjects(projects) {
 
     projects.forEach((project, index) => {
         const col = document.createElement('div');
-        col.className = 'col-lg-6';
+        col.className = 'col-lg-6 col-6';
 
         const linksHtml = Array.isArray(project.links) && project.links.length > 0
-            ? project.links.map(link => `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="card-btn primary me-2">${link.title}</a>`).join('')
+            ? project.links.map(link => `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="card-btn primary me-1 mb-1">${link.title}</a>`).join('')
             : '';
 
         col.innerHTML = `
-            <div class="card portfolio-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
-                <div class="card-body">
+            <div class="card portfolio-card project-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
+                <div class="card-body d-flex flex-column align-items-center text-center">
                     <h6 class="card-title">${index + 1}. ${project.title}</h6>
                     <div class="card-text">${project.description}</div>
-                    <div class="mb-3">
+                    <div class="skills-container mb-1 d-flex flex-wrap justify-content-center">
                         ${project.skills.map(skill => `<span class="skill-tag me-1 mb-1">${skill}</span>`).join('')}
                     </div>
-                    ${linksHtml}
+                    <div class="links-container d-flex flex-wrap justify-content-center">
+                        ${linksHtml}
+                    </div>
                 </div>
             </div>
         `;
