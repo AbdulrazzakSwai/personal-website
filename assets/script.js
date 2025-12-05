@@ -745,9 +745,6 @@ function renderProjects(projects) {
     const existingPlaceholder = document.getElementById('projects-view-all-placeholder');
     if (existingPlaceholder) existingPlaceholder.remove();
 
-    let cardsLoaded = 0;
-    const totalCards = projects.length;
-
     projects.forEach((project, index) => {
         const col = document.createElement('div');
         col.className = 'col-lg-6';
@@ -769,56 +766,17 @@ function renderProjects(projects) {
             </div>
         `;
         grid.appendChild(col);
-
-        const card = col.querySelector('.portfolio-card');
-        if (card) {
-            const observer = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        cardsLoaded++;
-                        obs.unobserve(entry.target);
-                        if (cardsLoaded === totalCards && placeholder) {
-                            setupPlaceholderObserver();
-                        }
-                    }
-                });
-            }, { threshold: 0.5 });
-            observer.observe(card);
-        }
     });
 
-    let placeholder = null;
     if (projects.length > 0) {
-        placeholder = document.createElement('div');
-        placeholder.id = 'projects-view-all-placeholder';
-        placeholder.style.height = '1px';
-        grid.appendChild(placeholder);
-    }
-
-    function setupPlaceholderObserver() {
-        if (!placeholder) return;
-        const placeholderObserver = new IntersectionObserver((entries, obs2) => {
-            entries.forEach(entry2 => {
-                if (entry2.isIntersecting) {
-                    setTimeout(() => {
-                        addProjectsViewAllButton();
-                        obs2.disconnect();
-                    }, 100);
-                }
-            });
-        }, { threshold: 0.5 });
-        placeholderObserver.observe(placeholder);
-    }
-
-    if (totalCards === 0 || cardsLoaded === totalCards) {
-        setupPlaceholderObserver();
+        addProjectsViewAllButton();
     }
 
     initAnimations();
 }
 
 function addProjectsViewAllButton() {
-    const projectsTab = document.getElementById('projects');
+    const projectsSection = document.getElementById('projects');
 
     const check = document.getElementById('projects-view-all');
     if (check) {
@@ -833,11 +791,24 @@ function addProjectsViewAllButton() {
             <i class="fab fa-github me-2"></i>View More
         </a>
     `;
-    projectsTab.appendChild(viewAllDiv);
     
-    setTimeout(() => {
-        viewAllDiv.classList.add('show');
-    }, 100);
+    const container = projectsSection.querySelector('.container');
+    if (container) {
+        container.appendChild(viewAllDiv);
+    } else {
+        projectsSection.appendChild(viewAllDiv);
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(viewAllDiv);
 }
 
 
