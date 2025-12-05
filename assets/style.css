@@ -841,14 +841,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .achievement-badge {
-    font-size: 0.5rem;
-    padding: 0.2rem 0.5rem;
-    top: 0.5rem;
-    right: 0.5rem;
-    letter-spacing: 0;
-    max-width: 75px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.25rem 0.75rem;
+    letter-spacing: 0.5px;
+    max-width: 100%;
     white-space: normal;
-    line-height: 1.1;
+    line-height: 1.2;
     text-align: center;
   }
 }
