@@ -200,6 +200,28 @@ function initTerminalAnimation() {
     observer.observe(terminalBody);
 }
 
+function reserveTerminalHeight(text) {
+    const terminalBody = document.getElementById('terminal-body');
+    if (!terminalBody) return;
+    
+    const lines = text.split(/<br>|\n/);
+    const measureDiv = document.createElement('div');
+    measureDiv.className = 'terminal-text';
+    measureDiv.style.visibility = 'hidden';
+    
+    let finalHTML = '';
+    lines.forEach(line => {
+        finalHTML += line + '<div class="content-spacer"></div>';
+    });
+    finalHTML += '<span class="terminal-cursor">|</span>';
+    measureDiv.innerHTML = finalHTML;
+    
+    terminalBody.appendChild(measureDiv);
+    const finalHeight = terminalBody.offsetHeight;
+    terminalBody.style.minHeight = `${finalHeight}px`;
+    terminalBody.removeChild(measureDiv);
+}
+
 async function loadAboutData() {
     if (dataCache.about) return dataCache.about;
     
@@ -207,6 +229,9 @@ async function loadAboutData() {
         const response = await fetch('assets/json/about.json');
         const data = await response.json();
         dataCache.about = data;
+        
+        reserveTerminalHeight(data.text);
+        
         return data;
     } catch (error) {
         console.error('Error loading about data:', error);
