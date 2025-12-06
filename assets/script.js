@@ -268,7 +268,8 @@ function typeTerminalText(text) {
     let lineIndex = 0;
     let charIndex = 0;
     
-    const charsPerTick = 1.8; 
+    const isMobile = window.innerWidth <= 768;
+    const charsPerTick = isMobile ? 1.2 : 1.7; 
     let charAccumulator = 0;
 
     function typeLine() {
