@@ -467,8 +467,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: none;
   box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 1024px) {
+  .card:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .card-title {
@@ -490,9 +496,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .highlight-card:hover {
-  transform: translateY(-5px);
+  transform: none;
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .highlight-card:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .highlight-card .fas {
@@ -525,9 +537,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .statistics-card:hover {
-  transform: translateY(-5px);
+  transform: none;
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .statistics-card:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .statistics-card .fas {
@@ -570,9 +588,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .achievement-card:hover {
-  transform: translateY(-5px);
+  transform: none;
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .achievement-card:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .achievement-badge {
@@ -687,9 +711,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio-card:hover {
-  transform: translateY(-5px);
+  transform: none;
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .portfolio-card .card-body {
