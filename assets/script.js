@@ -267,21 +267,35 @@ function typeTerminalText(text) {
 
     let lineIndex = 0;
     let charIndex = 0;
-    const speed = 13;
+    
+    const charsPerTick = 1.8; 
+    let charAccumulator = 0;
 
     function typeLine() {
         if (lineIndex < lines.length) {
             if (charIndex < lines[lineIndex].length) {
-                textDiv.innerHTML += lines[lineIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(typeLine, speed);
+                charAccumulator += charsPerTick;
+                
+                let charsToAdd = '';
+                while (charAccumulator >= 1 && charIndex < lines[lineIndex].length) {
+                    charsToAdd += lines[lineIndex].charAt(charIndex);
+                    charIndex++;
+                    charAccumulator--;
+                }
+                
+                if (charsToAdd) {
+                    textDiv.innerHTML += charsToAdd;
+                }
+                
+                setTimeout(typeLine, 1);
             } else {
                 setTimeout(() => {
                     textDiv.innerHTML += '<div class="content-spacer"></div>';
                     lineIndex++;
                     charIndex = 0;
+                    charAccumulator = 0;
                     typeLine();
-                }, 400);
+                }, 300);
             }
         } else {
             const cursor = document.createElement('span');
