@@ -623,9 +623,6 @@ function renderCourses(courses, loadMore = false) {
     const endIndex = Math.min(coursesLoaded + COURSES_PER_PAGE, courses.length);
     const coursesToShow = courses.slice(startIndex, endIndex);
 
-    let cardsLoaded = 0;
-    const totalCards = coursesToShow.length;
-
     coursesToShow.forEach((course, index) => {
         const col = document.createElement('div');
         col.className = 'col-lg-4 col-6';
@@ -662,43 +659,11 @@ function renderCourses(courses, loadMore = false) {
             </div>
         `;
         grid.appendChild(col);
-
-        const card = col.querySelector('.portfolio-card');
-        if (card) {
-            const observer = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        cardsLoaded++;
-                        obs.unobserve(entry.target);
-                        if (cardsLoaded === totalCards && placeholder) {
-                            const placeholderObserver = new IntersectionObserver((entries2, obs2) => {
-                                entries2.forEach(entry2 => {
-                                    if (entry2.isIntersecting) {
-                                        setTimeout(() => {
-                                            coursesLoaded = endIndex;
-                                            if (coursesLoaded < courses.length) {
-                                                addCoursesViewMoreButton();
-                                            }
-                                            obs2.disconnect();
-                                        }, 100);
-                                    }
-                                });
-                            }, { threshold: 0.5 });
-                            placeholderObserver.observe(placeholder);
-                        }
-                    }
-                });
-            }, { threshold: 0.5 });
-            observer.observe(card);
-        }
     });
 
-    let placeholder = null;
-    if (endIndex < courses.length) {
-        placeholder = document.createElement('div');
-        placeholder.id = 'courses-view-more-placeholder';
-        placeholder.style.height = '1px';
-        grid.appendChild(placeholder);
+    coursesLoaded = endIndex;
+    if (coursesLoaded < courses.length) {
+        addCoursesViewMoreButton();
     }
 
     initAnimations();
@@ -723,9 +688,16 @@ function addCoursesViewMoreButton() {
     
     coursesTab.appendChild(viewMoreDiv);
     
-    setTimeout(() => {
-        viewMoreDiv.classList.add('show');
-    }, 100);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(viewMoreDiv);
 }
 
 function loadMoreCourses() {
