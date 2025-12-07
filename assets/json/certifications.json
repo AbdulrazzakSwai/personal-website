@@ -123,13 +123,5 @@
     "progress": 1.6,
     "detailsLink": "https://academy.hackthebox.com/path/preview/ai-red-teamer",
     "finished": false
-  },
-  {
-    "title": "McKinsey Forward Program",
-    "provider": "By McKinsey & Company",
-    "status": "🕐 In Progress",
-    "progress": 33,
-    "detailsLink": "https://www.credly.com/org/mckinsey-academy/badge/mckinsey-org-forward-program",
-    "finished": false
   }
 ]
