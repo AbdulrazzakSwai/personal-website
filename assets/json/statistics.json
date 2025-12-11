@@ -11,7 +11,7 @@
   },
   {
     "label": "Completed Online Courses",
-    "value": 105,
+    "value": 106,
     "icon": "fas fa-book"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "label": "Solved TryHackMe Rooms",
-    "value": 256,
+    "value": 255,
     "icon": "fas fa-door-open"
   },
   {

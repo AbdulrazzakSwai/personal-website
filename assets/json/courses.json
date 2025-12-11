@@ -1,5 +1,12 @@
 [
   {
+    "title": "Fundamentals of AI",
+    "provider": "By Hack The Box Academy",
+    "type": "Artificial Intelligence (AI)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/fundamentals-of-ai",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/290"
+  },
+  {
     "title": "Defending AI",
     "provider": "By TryHackMe",
     "type": "Artificial Intelligence (AI)",
