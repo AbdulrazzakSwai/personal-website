@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Completed the \"Fundamentals of AI\" Course by Hack The Box Academy",
-    "date": "11 Dec 2025",
-    "description": "Successfully completed the \"Fundamentals of AI\" course by Hack The Box Academy, focusing on foundational concepts in artificial intelligence.",
+    "title": "Solved \"Dream Job-2\" Sherlock by Hack The Box",
+    "date": "17 Dec 2025",
+    "description": "Successfully solved the \"Dream Job-2\" Sherlock by Hack The Box, focusing on malware analysis and threat intelligence.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Completed and Documented \"CrownJewel-2\" Sherlock by Hack The Box",
-    "date": "03 Dec 2025",
-    "description": "Successfully solved the \"CrownJewel-2\" Sherlock by Hack The Box, focusing on Active Directory forensics, and documented the process in a detailed writeup.",
+    "title": "Completed the \"Fundamentals of AI\" Course by Hack The Box Academy",
+    "date": "11 Dec 2025",
+    "description": "Successfully completed the \"Fundamentals of AI\" course by Hack The Box Academy, focusing on foundational concepts in artificial intelligence.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
