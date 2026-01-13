@@ -1,22 +1,22 @@
 [
   {
-    "title": "Preparing for HTB CDSA Exam",
+    "title": "Preparing for HTB CPTS Exam",
     "date": "Ongoing",
-    "description": "Currently preparing for the Hack The Box Certified Defensive Security Analyst (CDSA) exam to enhance defensive security skills, through solving Sherlocks and practical defensive security scenarios.",
+    "description": "Currently preparing for the Hack The Box Certified Penetration Testing Specialist (CPTS) exam to enhance penetration testing skills, through solving practical offensive security labs.",
     "icon": "fas fa-hourglass-half",
     "badge": "Current Focus"
+  },
+  {
+    "title": "Solved \"Heist\" Machine by Hack The Box",
+    "date": "13 Jan 2026",
+    "description": "Solved the \"Heist\" machine by Hack The Box, exploiting leaked credentials to achieve initial access and escalate privileges.",
+    "icon": "fas fa-check-circle",
+    "badge": "Latest Milestone"
   },
   {
     "title": "Solved \"UFO-1\" Sherlock by Hack The Box",
     "date": "24 Dec 2025",
     "description": "Solved the \"UFO-1\" Sherlock by Hack The Box, focusing on APT research and cyber threat intelligence.",
-    "icon": "fas fa-check-circle",
-    "badge": "Latest Milestone"
-  },
-  {
-    "title": "Solved \"PhishNet\" Sherlock by Hack The Box",
-    "date": "17 Dec 2025",
-    "description": "Successfully solved the \"PhishNet\" Sherlock by Hack The Box, focusing on phishing detection and cyber threat intelligence.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
