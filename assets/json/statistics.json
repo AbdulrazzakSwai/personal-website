@@ -38,10 +38,5 @@
     "label": "Finished Large Scale Projects",
     "value": 9,
     "icon": "fas fa-project-diagram"
-  },
-  {
-    "label": "Built Mini Projects",
-    "value": 66,
-    "icon": "fas fa-code"
   }
 ]
