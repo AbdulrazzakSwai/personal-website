@@ -572,6 +572,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+@keyframes pop-emphasis {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.statistics-number.completed {
+  animation: pop-emphasis 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .achievement-card {
   background-color: var(--bg-primary);
   border: 2.5px solid var(--border-color);

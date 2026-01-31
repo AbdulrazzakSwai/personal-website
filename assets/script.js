@@ -439,6 +439,7 @@ function animateStats() {
                 requestAnimationFrame(updateNumber);
             } else {
                 stat.textContent = target;
+                stat.classList.add('completed');
             }
         }
         
