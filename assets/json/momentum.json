@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"Heist\" Machine by Hack The Box",
-    "date": "13 Jan 2026",
-    "description": "Solved the \"Heist\" machine by Hack The Box, exploiting leaked credentials to achieve initial access and escalate privileges.",
+    "title": "Solved \"Search\" Machine by Hack The Box",
+    "date": "31 Jan 2026",
+    "description": "Solved the \"Search\" machine by Hack The Box, a hard difficulty Windows machine focusing on Kerberoasting, password hunting, and gMSA privilege escalation.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"UFO-1\" Sherlock by Hack The Box",
-    "date": "24 Dec 2025",
-    "description": "Solved the \"UFO-1\" Sherlock by Hack The Box, focusing on APT research and cyber threat intelligence.",
+    "title": "Solved and Documented \"Blackfield\" Machine by Hack The Box",
+    "date": "30 Jan 2026",
+    "description": "Solved and Documented the \"Blackfield\" machine by Hack The Box, a hard difficulty Windows machine focusing on ASREPRoasting, LSASS dump analysis, and Backup Operators privilege abuse.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
