@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"Search\" Machine by Hack The Box",
-    "date": "31 Jan 2026",
-    "description": "Solved the \"Search\" machine by Hack The Box, a hard difficulty Windows machine focusing on Kerberoasting, password hunting, and gMSA privilege escalation.",
+    "title": "Solved \"Flight\" Machine by Hack The Box",
+    "date": "2 Feb 2026",
+    "description": "Solved the \"Flight\" machine by Hack The Box, a hard difficulty Windows machine focusing on LFI, password spraying, SMB share exploitation, and DCSync attacks.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved and Documented \"Blackfield\" Machine by Hack The Box",
-    "date": "30 Jan 2026",
-    "description": "Solved and Documented the \"Blackfield\" machine by Hack The Box, a hard difficulty Windows machine focusing on ASREPRoasting, LSASS dump analysis, and Backup Operators privilege abuse.",
+    "title": "Solved \"Search\" Machine by Hack The Box",
+    "date": "31 Jan 2026",
+    "description": "Solved the \"Search\" machine by Hack The Box, a hard difficulty Windows machine focusing on Kerberoasting, password hunting, and gMSA privilege escalation.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
