@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"Flight\" Machine by Hack The Box",
-    "date": "2 Feb 2026",
-    "description": "Solved the \"Flight\" machine by Hack The Box, a hard difficulty Windows machine focusing on LFI, password spraying, SMB share exploitation, and DCSync attacks.",
+    "title": "Solved \"Job\" Machine by Hack The Box",
+    "date": "5 Feb 2026",
+    "description": "Solved \"Job\" machine by Hack The Box, which involved compromising a Windows SMTP server via malicious LibreOffice macros. Escalated to Administrator by abusing IIS webroot write permissions and using SeImpersonate token impersonation.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"Search\" Machine by Hack The Box",
-    "date": "31 Jan 2026",
-    "description": "Solved the \"Search\" machine by Hack The Box, a hard difficulty Windows machine focusing on Kerberoasting, password hunting, and gMSA privilege escalation.",
+    "title": "Solved \"Manager\" Machine by Hack The Box",
+    "date": "4 Feb 2026",
+    "description": "Solved \"Manager\" machine by Hack The Box, which involved exploiting an Active Directory environment via MSSQL password spraying and credential extraction from backups. Achieved Administrator privileges by abusing AD CS Certificate Authority (ESC7).",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
