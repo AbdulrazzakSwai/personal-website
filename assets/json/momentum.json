@@ -7,9 +7,9 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved and Documented \"Telly\" Sherlock by Hack The Box",
+    "title": "Solved \"Telly\" Sherlock by Hack The Box",
     "date": "18 Feb 2026",
-    "description": "Solved and documented \"Telly\" Sherlock by Hack The Box, which involved analyzing a compromised backup server and checking how the attacker got access and what level of damage he did.",
+    "description": "Solved \"Telly\" Sherlock by Hack The Box, which involved analyzing a compromised backup server and checking how the attacker got access and what level of damage he did.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
