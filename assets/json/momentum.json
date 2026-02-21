@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"Telly\" Sherlock by Hack The Box",
-    "date": "18 Feb 2026",
-    "description": "Solved \"Telly\" Sherlock by Hack The Box, which involved analyzing a compromised backup server and checking how the attacker got access and what level of damage he did.",
+    "title": "Solved and Documented \"RomCom\" Sherlock by Hack The Box",
+    "date": "21 Feb 2026",
+    "description": "Solved and documented \"RomCom\" Sherlock by Hack The Box, which involved analyzing a recent WinRAR vulnerability and how it was used to exploit a Windows system.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"Manager\" Machine by Hack The Box",
-    "date": "4 Feb 2026",
-    "description": "Solved \"Manager\" machine by Hack The Box, which involved exploiting an Active Directory environment via MSSQL password spraying and credential extraction from backups. Achieved Administrator privileges by abusing AD CS Certificate Authority (ESC7).",
+    "title": "Solved \"Telly\" Sherlock by Hack The Box",
+    "date": "18 Feb 2026",
+    "description": "Solved \"Telly\" Sherlock by Hack The Box, which involved analyzing a compromised backup server and checking how the attacker got access and what level of damage he did.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
