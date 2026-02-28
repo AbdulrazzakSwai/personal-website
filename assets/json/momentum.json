@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved and Documented \"RomCom\" Sherlock by Hack The Box",
-    "date": "21 Feb 2026",
-    "description": "Solved and documented \"RomCom\" Sherlock by Hack The Box, which involved analyzing a recent WinRAR vulnerability and how it was used to exploit a Windows system.",
+    "title": "Solved and Documented \"NeuroSync-D\" Sherlock by Hack The Box",
+    "date": "28 Feb 2026",
+    "description": "Solved and documented \"NeuroSync-D\" Sherlock by Hack The Box, which involved analyzing a vulnerable Next.js application that got compromised, and identifying the chain of actions that led to remote code execution.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"Telly\" Sherlock by Hack The Box",
-    "date": "18 Feb 2026",
-    "description": "Solved \"Telly\" Sherlock by Hack The Box, which involved analyzing a compromised backup server and checking how the attacker got access and what level of damage he did.",
+    "title": "Solved and Documented \"RomCom\" Sherlock by Hack The Box",
+    "date": "21 Feb 2026",
+    "description": "Solved and documented \"RomCom\" Sherlock by Hack The Box, which involved analyzing a recent WinRAR vulnerability and how it was used to exploit a Windows system.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
