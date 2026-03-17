@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved and Documented \"NeuroSync-D\" Sherlock by Hack The Box",
-    "date": "28 Feb 2026",
-    "description": "Solved and documented \"NeuroSync-D\" Sherlock by Hack The Box, which involved analyzing a vulnerable Next.js application that got compromised, and identifying the chain of actions that led to remote code execution.",
+    "title": "Finished \"Applications of AI in Infosec\" Course by Hack The Box Academy",
+    "date": "18 Mar 2026",
+    "description": "Completed the \"Applications of AI in Infosec\" course by Hack The Box Academy, which involved building three AI-powered security tools (Spam classifier, Network anomaly detector, and Malware classifier).",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved and Documented \"RomCom\" Sherlock by Hack The Box",
-    "date": "21 Feb 2026",
-    "description": "Solved and documented \"RomCom\" Sherlock by Hack The Box, which involved analyzing a recent WinRAR vulnerability and how it was used to exploit a Windows system.",
+    "title": "Solved \"VariaType\" Seasonal Machine by Hack The Box",
+    "date": "17 Mar 2026",
+    "description": "Solved \"VariaType\" Machine by Hack The Box, a medium Linux seasonal machine.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
