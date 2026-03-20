@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"Applications of AI in Infosec\" Course by Hack The Box Academy",
-    "date": "18 Mar 2026",
-    "description": "Completed the \"Applications of AI in Infosec\" course by Hack The Box Academy, which involved building three AI-powered security tools (Spam classifier, Network anomaly detector, and Malware classifier).",
+    "title": "Finished \"Prompt Injection Attacks\" Course by Hack The Box Academy",
+    "date": "20 Mar 2026",
+    "description": "Completed the \"Prompt Injection Attacks\" course by Hack The Box Academy, which involved learning about prompt engineering and defending against prompt injection attacks, in practical scenarios against LLMs.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"VariaType\" Seasonal Machine by Hack The Box",
-    "date": "17 Mar 2026",
-    "description": "Solved \"VariaType\" Machine by Hack The Box, a medium Linux seasonal machine.",
+    "title": "Finished \"Applications of AI in Infosec\" Course by Hack The Box Academy",
+    "date": "18 Mar 2026",
+    "description": "Completed the \"Applications of AI in Infosec\" course by Hack The Box Academy, which involved building three AI-powered security tools (Spam classifier, Network anomaly detector, and Malware classifier).",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }

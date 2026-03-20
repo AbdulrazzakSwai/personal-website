@@ -21,6 +21,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/294"
   },
   {
+    "title": "Prompt Injection Attacks",
+    "provider": "By Hack The Box Academy",
+    "type": "Artificial Intelligence (AI)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/prompt-injection-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/297"
+  },
+  {
     "title": "Defending AI",
     "provider": "By TryHackMe",
     "type": "Artificial Intelligence (AI)",
