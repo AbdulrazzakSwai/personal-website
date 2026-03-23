@@ -28,6 +28,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/297"
   },
   {
+    "title": "LLM Output Attacks",
+    "provider": "By Hack The Box Academy",
+    "type": "Artificial Intelligence (AI)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/llm-output-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/307"
+  },
+  {
     "title": "Defending AI",
     "provider": "By TryHackMe",
     "type": "Artificial Intelligence (AI)",
