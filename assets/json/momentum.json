@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"LLM Output Attacks\" Course by Hack The Box Academy",
-    "date": "23 Mar 2026",
-    "description": "Completed the \"LLM Output Attacks\" course by Hack The Box Academy, which involved learning about various techniques for attacking LLMs to manipulate their outputs, in practical scenarios against LLMs.",
+    "title": "Finished \"AI Data Attacks\" Course by Hack The Box Academy",
+    "date": "31 Mar 2026",
+    "description": "Completed the \"AI Data Attacks\" course by Hack The Box Academy, which involved learning about various techniques for attacking AI systems and targeting its data, in practical scenarios.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"Prompt Injection Attacks\" Course by Hack The Box Academy",
-    "date": "20 Mar 2026",
-    "description": "Completed the \"Prompt Injection Attacks\" course by Hack The Box Academy, which involved learning about prompt engineering and defending against prompt injection attacks, in practical scenarios against LLMs.",
+    "title": "Finished \"LLM Output Attacks\" Course by Hack The Box Academy",
+    "date": "23 Mar 2026",
+    "description": "Completed the \"LLM Output Attacks\" course by Hack The Box Academy, which involved learning about various techniques for attacking LLMs to manipulate their outputs, in practical scenarios against LLMs.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }

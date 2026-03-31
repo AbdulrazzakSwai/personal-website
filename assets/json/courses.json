@@ -35,6 +35,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/307"
   },
   {
+    "title": "AI Data Attacks",
+    "provider": "By Hack The Box Academy",
+    "type": "Artificial Intelligence (AI)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/ai-data-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/302"
+  },
+  {
     "title": "Defending AI",
     "provider": "By TryHackMe",
     "type": "Artificial Intelligence (AI)",
