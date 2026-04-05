@@ -1,5 +1,13 @@
 [
   {
+    "title": "IntelliBlue",
+    "description": "A fully local, AI-powered Security Operations Center (SOC) platform designed for cybersecurity analysts, combining a modern web dashboard with locally-hosted Large Language Models (Llama 3 and 3.2 via Ollama).<div class=\"content-spacer\"></div>Features include automated smart log analysis (SIEM, EDR, PCAP), an interactive conversational SOC AI assistant with context memory, alert triage lifecycle management, PDF report exports, and a real-time dashboard, all running 100% offline securely.",
+    "skills": ["Python", "Flask", "Llama 3", "Ollama", "Security Operations Center (SOC)", "Log Analysis", "Incident Response"],
+    "links": [
+      { "url": "https://github.com/AbdulrazzakSwai/IntelliBlue", "title": "GitHub Repository" }
+    ]
+  },
+  {
     "title": "Critical Security Vulnerabilities Discovery",
     "description": "Discovered and responsibly reported a critical Insecure Direct Object Reference (IDOR) vulnerability in the university's online system, which exposed all students' sensitive data.<div class=\"content-spacer\"></div>Identified a second vulnerability that was patched before I had the chance to report it.",
     "skills": ["Vulnerability Assessment", "Responsible Disclosure", "Web Security", "IDOR"],
