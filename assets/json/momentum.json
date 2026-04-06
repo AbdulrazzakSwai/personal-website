@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"AI Data Attacks\" Course by Hack The Box Academy",
-    "date": "31 Mar 2026",
-    "description": "Completed the \"AI Data Attacks\" course by Hack The Box Academy, which involved learning about various techniques for attacking AI systems and targeting its data, in practical scenarios.",
+    "title": "Finished \"Attacking AI - Application and System\" Course by Hack The Box Academy",
+    "date": "6 April 2026",
+    "description": "Completed the \"Attacking AI - Application and System\" course by Hack The Box Academy, which involved learning about various techniques for attacking AI systems and targeting its applications and underlying systems, in practical scenarios.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"LLM Output Attacks\" Course by Hack The Box Academy",
-    "date": "23 Mar 2026",
-    "description": "Completed the \"LLM Output Attacks\" course by Hack The Box Academy, which involved learning about various techniques for attacking LLMs to manipulate their outputs, in practical scenarios against LLMs.",
+    "title": "Finished \"AI Data Attacks\" Course by Hack The Box Academy",
+    "date": "31 March 2026",
+    "description": "Completed the \"AI Data Attacks\" course by Hack The Box Academy, which involved learning about various techniques for attacking AI systems and targeting its data, in practical scenarios.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
