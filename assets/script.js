@@ -801,8 +801,6 @@ function addProjectsViewAllButton() {
     observer.observe(viewAllDiv);
 }
 
-
-
 async function loadLastUpdated() {
     try {
         const response = await fetch('https://www.abdulrazzakswai.me/assets/json/last-updated.json');
@@ -839,6 +837,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initCustomCursor();
     initScrollProgress();
     initBackToTop();
+    initNavbarScroll();
+    initScrollIndicatorHide();
     initTiltEffect();
 });
 
@@ -1157,10 +1157,21 @@ function initHeroParticles() {
     let width, height;
     let particles = [];
     let colors = ['#1d4ed8', '#0ea5e9'];
+    let mouseX = -1000, mouseY = -1000;
     
-    const particleCount = window.innerWidth < 768 ? 35 : 70;
     const connectionDistance = 150;
     const moveSpeed = 0.4;
+    const mouseRepulsionDist = 120;
+    const mouseRepulsionForce = 0.35;
+
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+    window.addEventListener('mouseleave', () => {
+        mouseX = -1000;
+        mouseY = -1000;
+    });
 
     function updateColors() {
         const style = getComputedStyle(document.body);
@@ -1199,6 +1210,15 @@ function initHeroParticles() {
         update() {
             this.x += this.vx;
             this.y += this.vy;
+
+            const dx = this.x - mouseX;
+            const dy = this.y - mouseY;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < mouseRepulsionDist && dist > 0) {
+                const force = (mouseRepulsionDist - dist) / mouseRepulsionDist * mouseRepulsionForce;
+                this.x += (dx / dist) * force;
+                this.y += (dy / dist) * force;
+            }
             
             if (this.x < 0) this.x = width;
             else if (this.x > width) this.x = 0;
@@ -1262,4 +1282,37 @@ function initHeroParticles() {
     }
     
     animate();
+}
+
+function initNavbarScroll() {
+    const navbar = document.getElementById('mainNavbar');
+    if (!navbar) return;
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+}
+
+function initScrollIndicatorHide() {
+    const indicator = document.getElementById('scroll-indicator');
+    if (!indicator) return;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            indicator.style.opacity = '0';
+            indicator.style.pointerEvents = 'none';
+        } else {
+            indicator.style.opacity = '';
+            indicator.style.pointerEvents = '';
+        }
+    });
 }
