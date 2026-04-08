@@ -898,18 +898,6 @@ h4, h5, h6 {
   position: relative;
 }
 
-.progress-fill::after {
-  content: '';
-  position: absolute;
-  right: -1px; top: 50%;
-  transform: translateY(-50%);
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--secondary-color);
-  box-shadow: 0 0 6px var(--primary-color), 0 0 14px rgba(var(--primary-color-rgb), 0.5);
-  animation: progressPulse 2s ease-in-out infinite;
-}
-
 @keyframes progressPulse {
   0%, 100% { box-shadow: 0 0 4px rgba(var(--primary-color-rgb), 0.4); }
   50% { box-shadow: 0 0 10px var(--primary-color), 0 0 22px rgba(var(--primary-color-rgb), 0.5); }
@@ -1268,7 +1256,6 @@ footer {
   .glitch-text::before, .glitch-text::after { animation: none; display: none; }
   .hero-section::before { animation: none; }
   .achievement-badge { animation: none; }
-  .progress-fill::after { animation: none; }
 }
 
 @media print {
