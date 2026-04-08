@@ -54,7 +54,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Chakra Petch', system-ui, sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
   background-color: var(--bg-base);
@@ -370,7 +370,7 @@ h4, h5, h6 {
 .hero-name { margin-bottom: 2rem; }
 
 .typed-text {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Chakra Petch', system-ui, sans-serif;
   color: var(--primary-color);
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -421,7 +421,7 @@ h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   animation: scrollBounce 2.5s ease-in-out infinite;
   opacity: 0.6;
 }
@@ -478,7 +478,7 @@ h4, h5, h6 {
 
 .terminal-body {
   background-color: #0d1117;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 0.9rem;
   color: #c9d1d9;
   min-height: 200px;
@@ -1033,7 +1033,7 @@ h4, h5, h6 {
 }
 
 .contact-card:hover .card {
-  border-color: rgba(var(--primary-color-rgb), 0.3);
+  border-color: rgba(var(--primary-color-rgb), 0.25);
   box-shadow: var(--card-hover-glow);
 }
 
@@ -1043,18 +1043,13 @@ h4, h5, h6 {
   .contact-card .card:hover { transform: translateY(-5px); }
 }
 
-.contact-card:nth-child(1):hover .card { border-color: #0077b5; box-shadow: 0 0 25px rgba(0, 119, 181, 0.15); }
 .contact-card:nth-child(1):hover .contact-icon i { color: #0077b5 !important; }
 
-.contact-card:nth-child(2):hover .card { border-color: #6e5494; box-shadow: 0 0 25px rgba(110, 84, 148, 0.15); }
-[data-theme="dark"] .contact-card:nth-child(2):hover .card { border-color: #e6edf3; box-shadow: 0 0 25px rgba(230, 237, 243, 0.08); }
 .contact-card:nth-child(2):hover .contact-icon i { color: #6e5494 !important; }
 [data-theme="dark"] .contact-card:nth-child(2):hover .contact-icon i { color: #e6edf3 !important; }
 
-.contact-card:nth-child(3):hover .card { border-color: #9fef00; box-shadow: 0 0 25px rgba(159, 239, 0, 0.12); }
 .contact-card:nth-child(3):hover .contact-icon i { color: #9fef00 !important; }
 
-.contact-card:nth-child(4):hover .card { border-color: #c11111; box-shadow: 0 0 25px rgba(193, 17, 17, 0.12); }
 .contact-card:nth-child(4):hover .contact-icon i { color: #c11111 !important; }
 
 .view-more-btn {
