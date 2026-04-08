@@ -339,6 +339,7 @@ h4, h5, h6 {
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-section::before {
@@ -354,10 +355,10 @@ h4, h5, h6 {
   pointer-events: none;
 }
 
-.hero-section > .container,
-.hero-section > .scroll-indicator {
+.hero-section > .container {
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 @keyframes heroMesh {
@@ -407,36 +408,6 @@ h4, h5, h6 {
   51%, 100% { opacity: 0; }
 }
 
-.scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--text-muted);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-family: 'Chakra Petch', sans-serif;
-  animation: scrollBounce 2.5s ease-in-out infinite;
-  opacity: 0.6;
-}
-
-.scroll-indicator-line {
-  width: 1px;
-  height: 28px;
-  background: linear-gradient(to bottom, var(--primary-color), transparent);
-}
-
-@keyframes scrollBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.6; }
-  50% { transform: translateX(-50%) translateY(8px); opacity: 0.3; }
-}
-
 @media (max-height: 600px) {
   .hero-section {
     min-height: auto;
@@ -445,7 +416,6 @@ h4, h5, h6 {
   }
   .hero-name { font-size: 2rem !important; margin-bottom: 1rem !important; }
   .typed-text { font-size: 1.25rem !important; min-width: auto !important; padding: 0.25rem 0.5rem; }
-  .scroll-indicator { display: none; }
 }
 
 .section-line {
@@ -1258,7 +1228,6 @@ footer {
   .hero-name { font-size: 2.3rem; }
   .display-4 { font-size: 2rem; }
   .highlight-card, .statistics-card, .portfolio-card, .achievement-card { padding: 1.5rem; }
-  .scroll-indicator { bottom: 1.5rem; }
 }
 
 @media (max-width: 768px) {
@@ -1298,7 +1267,6 @@ footer {
   }
   .glitch-text::before, .glitch-text::after { animation: none; display: none; }
   .hero-section::before { animation: none; }
-  .scroll-indicator { animation: none; }
   .achievement-badge { animation: none; }
   .progress-fill::after { animation: none; }
 }
@@ -1306,5 +1274,5 @@ footer {
 @media print {
   .navbar { display: none !important; }
   body { background: white !important; color: black !important; }
-  .scroll-indicator, .scroll-progress, .cursor-dot, .cursor-outline, #back-to-top, #global-canvas { display: none !important; }
+  .scroll-progress, .cursor-dot, .cursor-outline, #back-to-top, #global-canvas { display: none !important; }
 }

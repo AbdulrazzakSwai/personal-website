@@ -838,7 +838,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollProgress();
     initBackToTop();
     initNavbarScroll();
-    initScrollIndicatorHide();
     initTiltEffect();
 });
 
@@ -1299,20 +1298,6 @@ function initNavbarScroll() {
                 ticking = false;
             });
             ticking = true;
-        }
-    });
-}
-
-function initScrollIndicatorHide() {
-    const indicator = document.getElementById('scroll-indicator');
-    if (!indicator) return;
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            indicator.style.opacity = '0';
-            indicator.style.pointerEvents = 'none';
-        } else {
-            indicator.style.opacity = '';
-            indicator.style.pointerEvents = '';
         }
     });
 }
