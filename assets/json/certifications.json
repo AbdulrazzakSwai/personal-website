@@ -1,4 +1,39 @@
 [
+    {
+    "title": "Certified Penetration Testing Specialist (CPTS)",
+    "provider": "By Hack The Box Academy",
+    "status": "⌛ Path Completed, Preparing for Exam",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/16",
+    "finished": "partial"
+  },
+  {
+    "title": "Certified Defensive Security Analyst (CDSA)",
+    "provider": "By Hack The Box Academy",
+    "status": "⌛ Path Completed, Preparing for Exam",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/390",
+    "finished": "partial"
+  },
+  {
+    "title": "Certified Web Exploitation Specialist (CWES)",
+    "provider": "By Hack The Box Academy",
+    "status": "⌛ Path Completed, Preparing for Exam",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/17",
+    "finished": "partial"
+  },
+  {
+    "title": "Certified Offensive AI Expert (COAE)",
+    "provider": "By Hack The Box Academy and Google",
+    "status": "🕐 In Progress",
+    "progress": 71.3,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert",
+    "finished": false
+  },
   {
     "title": "Practical SOC Analyst Associate (PSAA)",
     "provider": "By TCM Security",
@@ -9,21 +44,21 @@
     "finished": true
   },
   {
-    "title": "SOC Level 2",
-    "provider": "By TryHackMe",
-    "status": "✅ All Security Scenarios Handled",
-    "progress": 100,
-    "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
-    "proofLink": "https://tryhackme.com/certificate/THM-SMI8BZJYSY",
-    "finished": true
-  },
-  {
     "title": "SOC Level 1",
     "provider": "By TryHackMe",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
     "proofLink": "https://tryhackme.com/certificate/THM-9XKU9TPVKM",
+    "finished": true
+  },
+  {
+    "title": "SOC Level 2",
+    "provider": "By TryHackMe",
+    "status": "✅ All Security Scenarios Handled",
+    "progress": 100,
+    "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
+    "proofLink": "https://tryhackme.com/certificate/THM-SMI8BZJYSY",
     "finished": true
   },
   {
@@ -72,15 +107,6 @@
     "finished": true
   },
   {
-    "title": "JavaScript Algorithms and Data Structures",
-    "provider": "By freeCodeCamp",
-    "status": "✅ All Projects Completed",
-    "progress": 100,
-    "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8",
-    "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/javascript-algorithms-and-data-structures-v8",
-    "finished": true
-  },
-  {
     "title": "Responsive Web Design (HTML and CSS)",
     "provider": "By freeCodeCamp",
     "status": "✅ All Projects Completed",
@@ -90,38 +116,13 @@
     "finished": true
   },
   {
-    "title": "Certified Penetration Testing Specialist (CPTS)",
-    "provider": "By Hack The Box Academy",
-    "status": "⌛ Path Completed, Preparing for Exam",
+    "title": "JavaScript Algorithms and Data Structures",
+    "provider": "By freeCodeCamp",
+    "status": "✅ All Projects Completed",
     "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
-    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/16",
-    "finished": "partial"
-  },
-  {
-    "title": "Certified Defensive Security Analyst (CDSA)",
-    "provider": "By Hack The Box Academy",
-    "status": "⌛ Path Completed, Preparing for Exam",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
-    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/390",
-    "finished": "partial"
-  },
-  {
-    "title": "Certified Web Exploitation Specialist (CWES)",
-    "provider": "By Hack The Box Academy",
-    "status": "⌛ Path Completed, Preparing for Exam",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist",
-    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/17",
-    "finished": "partial"
-  },
-  {
-    "title": "Certified Offensive AI Expert (COAE)",
-    "provider": "By Hack The Box Academy and Google",
-    "status": "🕐 In Progress",
-    "progress": 71.3,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert",
-    "finished": false
+    "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8",
+    "proofLink": "https://www.freecodecamp.org/certification/abdulrazzakswai/javascript-algorithms-and-data-structures-v8",
+    "finished": true
   }
+
 ]

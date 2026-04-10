@@ -139,7 +139,8 @@ function initTypingAnimation() {
     const roles = [
         'Cybersecurity Specialist',
         'Ethical Hacker',
-        'Cyber Defense Analyst', 
+        'SOC Analyst', 
+        'AI Red Teamer',
         'Continuous Learner'
     ];
 
@@ -890,24 +891,21 @@ function initMobileCardCollapse() {
             toggleBtn.setAttribute('aria-expanded', 'false');
             if (toggleText) toggleText.textContent = 'Details';
         } else {
-            const section = toggleBtn.closest('section');
-            if (section) {
-                section.querySelectorAll('.mobile-collapsible.expanded').forEach(openEl => {
-                    if (openEl === target) return;
-                    openEl.style.maxHeight = openEl.scrollHeight + 'px';
-                    openEl.offsetHeight;
-                    openEl.style.maxHeight = '0px';
-                    openEl.classList.remove('expanded');
-                    const otherBtn = openEl.parentElement.querySelector('.mobile-collapse-toggle') ||
-                                     openEl.closest('.has-collapsible')?.querySelector('.mobile-collapse-toggle');
-                    if (otherBtn) {
-                        otherBtn.classList.remove('active');
-                        otherBtn.setAttribute('aria-expanded', 'false');
-                        const otherText = otherBtn.querySelector('.toggle-text');
-                        if (otherText) otherText.textContent = 'Details';
-                    }
-                });
-            }
+            document.querySelectorAll('.mobile-collapsible.expanded').forEach(openEl => {
+                if (openEl === target) return;
+                openEl.style.maxHeight = openEl.scrollHeight + 'px';
+                openEl.offsetHeight;
+                openEl.style.maxHeight = '0px';
+                openEl.classList.remove('expanded');
+                const otherBtn = openEl.parentElement.querySelector('.mobile-collapse-toggle') ||
+                                 openEl.closest('.has-collapsible')?.querySelector('.mobile-collapse-toggle');
+                if (otherBtn) {
+                    otherBtn.classList.remove('active');
+                    otherBtn.setAttribute('aria-expanded', 'false');
+                    const otherText = otherBtn.querySelector('.toggle-text');
+                    if (otherText) otherText.textContent = 'Details';
+                }
+            });
 
             target.classList.add('expanded');
             target.style.maxHeight = target.scrollHeight + 'px';
