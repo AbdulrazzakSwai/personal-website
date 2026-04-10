@@ -325,10 +325,16 @@ async function loadHighlights() {
             const col = document.createElement('div');
             col.className = 'col-lg-4 col-6';
             col.innerHTML = `
-                <div class="highlight-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
+                <div class="highlight-card has-collapsible animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                     <i class="${highlight.icon}"></i>
                     <h5>${highlight.title}</h5>
-                    <p>${highlight.description}</p>
+                    <div class="mobile-collapsible">
+                        <p>${highlight.description}</p>
+                    </div>
+                    <button class="mobile-collapse-toggle" aria-expanded="false">
+                        <span class="toggle-text">Details</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </button>
                 </div>
             `;
             grid.appendChild(col);
@@ -382,7 +388,7 @@ async function loadAchievements() {
             else badgeClass = 'badge-key';
 
             col.innerHTML = `
-                <div class="achievement-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
+                <div class="achievement-card has-collapsible animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                     <div class="achievement-badge ${badgeClass}">${item.badge}</div>
                     <div class="achievement-icon">
                         <i class="${item.icon}"></i>
@@ -390,7 +396,13 @@ async function loadAchievements() {
                     <div class="achievement-content">
                         <span class="achievement-date">${item.date}</span>
                         <h5>${item.title}</h5>
-                        <p>${item.description}</p>
+                        <div class="mobile-collapsible">
+                            <p>${item.description}</p>
+                        </div>
+                        <button class="mobile-collapse-toggle" aria-expanded="false">
+                            <span class="toggle-text">Details</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
                     </div>
                 </div>
             `;
@@ -742,16 +754,22 @@ function renderProjects(projects) {
             : '';
 
         col.innerHTML = `
-            <div class="card portfolio-card project-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
+            <div class="card portfolio-card project-card has-collapsible animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
                 <div class="card-body d-flex flex-column align-items-center text-center">
                     <h6 class="card-title">${index + 1}. ${project.title}</h6>
-                    <div class="card-text">${project.description}</div>
-                    <div class="skills-container mb-1 d-flex flex-wrap justify-content-center">
-                        ${project.skills.map(skill => `<span class="skill-tag me-1 mb-1">${skill}</span>`).join('')}
+                    <div class="mobile-collapsible">
+                        <div class="card-text">${project.description}</div>
+                        <div class="skills-container mb-1 d-flex flex-wrap justify-content-center">
+                            ${project.skills.map(skill => `<span class="skill-tag me-1 mb-1">${skill}</span>`).join('')}
+                        </div>
+                        <div class="links-container d-flex flex-wrap justify-content-center">
+                            ${linksHtml}
+                        </div>
                     </div>
-                    <div class="links-container d-flex flex-wrap justify-content-center">
-                        ${linksHtml}
-                    </div>
+                    <button class="mobile-collapse-toggle" aria-expanded="false">
+                        <span class="toggle-text">Details</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </button>
                 </div>
             </div>
         `;
@@ -839,7 +857,92 @@ document.addEventListener('DOMContentLoaded', function() {
     initBackToTop();
     initNavbarScroll();
     initTiltEffect();
+    initMobileCardCollapse();
 });
+
+function initMobileCardCollapse() {
+    document.body.addEventListener('click', function(e) {
+        const toggleBtn = e.target.closest('.mobile-collapse-toggle');
+        if (!toggleBtn) return;
+
+        if (window.innerWidth > 768) return;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        const collapsible = toggleBtn.previousElementSibling;
+        let target = collapsible;
+        if (!target || !target.classList.contains('mobile-collapsible')) {
+            const parent = toggleBtn.parentElement;
+            target = parent ? parent.querySelector('.mobile-collapsible') : null;
+        }
+        if (!target) return;
+
+        const isExpanded = target.classList.contains('expanded');
+        const toggleText = toggleBtn.querySelector('.toggle-text');
+
+        if (isExpanded) {
+            target.style.maxHeight = target.scrollHeight + 'px';
+            target.offsetHeight;
+            target.style.maxHeight = '0px';
+            target.classList.remove('expanded');
+            toggleBtn.classList.remove('active');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            if (toggleText) toggleText.textContent = 'Details';
+        } else {
+            const section = toggleBtn.closest('section');
+            if (section) {
+                section.querySelectorAll('.mobile-collapsible.expanded').forEach(openEl => {
+                    if (openEl === target) return;
+                    openEl.style.maxHeight = openEl.scrollHeight + 'px';
+                    openEl.offsetHeight;
+                    openEl.style.maxHeight = '0px';
+                    openEl.classList.remove('expanded');
+                    const otherBtn = openEl.parentElement.querySelector('.mobile-collapse-toggle') ||
+                                     openEl.closest('.has-collapsible')?.querySelector('.mobile-collapse-toggle');
+                    if (otherBtn) {
+                        otherBtn.classList.remove('active');
+                        otherBtn.setAttribute('aria-expanded', 'false');
+                        const otherText = otherBtn.querySelector('.toggle-text');
+                        if (otherText) otherText.textContent = 'Details';
+                    }
+                });
+            }
+
+            target.classList.add('expanded');
+            target.style.maxHeight = target.scrollHeight + 'px';
+            toggleBtn.classList.add('active');
+            toggleBtn.setAttribute('aria-expanded', 'true');
+            if (toggleText) toggleText.textContent = 'Hide';
+
+            const onEnd = () => {
+                if (target.classList.contains('expanded')) {
+                    target.style.maxHeight = 'none';
+                }
+                target.removeEventListener('transitionend', onEnd);
+            };
+            target.addEventListener('transitionend', onEnd);
+        }
+    });
+
+    let wasMobile = window.innerWidth <= 768;
+    window.addEventListener('resize', () => {
+        const isMobile = window.innerWidth <= 768;
+        if (wasMobile && !isMobile) {
+            document.querySelectorAll('.mobile-collapsible').forEach(el => {
+                el.style.maxHeight = '';
+                el.classList.remove('expanded');
+            });
+            document.querySelectorAll('.mobile-collapse-toggle').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-expanded', 'false');
+                const text = btn.querySelector('.toggle-text');
+                if (text) text.textContent = 'Details';
+            });
+        }
+        wasMobile = isMobile;
+    });
+}
 
 function initCustomCursor() {
     const cursorDot = document.querySelector('[data-cursor-dot]');
