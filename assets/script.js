@@ -747,7 +747,7 @@ function renderProjects(projects) {
 
     projects.forEach((project, index) => {
         const col = document.createElement('div');
-        col.className = 'col-lg-6 col-6';
+        col.className = 'col-12 col-md-6 col-lg-6';
 
         const linksHtml = Array.isArray(project.links) && project.links.length > 0
             ? project.links.map(link => `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="card-btn primary me-1 mb-1">${link.title}</a>`).join('')
