@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"AI Evasion - First-Order Attacks\" Course by Hack The Box Academy",
-    "date": "9 April 2026",
-    "description": "Completed the \"AI Evasion - First-Order Attacks\" course by Hack The Box Academy, which involved exploring first-order evasion methods, implementing attacks like FGSM and DeepFool, and evaluating neural network robustness against adversarial vulnerabilities.",
+    "title": "Finished \"AI Evasion - Sparsity Attacks\" Course by Hack The Box Academy",
+    "date": "15 April 2026",
+    "description": "Completed the \"AI Evasion - Sparsity Attacks\" course by Hack The Box Academy, which involved exploring sparsity-based evasion methods and evaluating their effectiveness against neural network models.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"AI Evasion - Foundations\" Course by Hack The Box Academy",
-    "date": "8 April 2026",
-    "description": "Completed the \"AI Evasion - Foundations\" course by Hack The Box Academy, which involved practically learning about various techniques for evading AI systems and understanding their vulnerabilities.",
+    "title": "Finished \"AI Evasion - First-Order Attacks\" Course by Hack The Box Academy",
+    "date": "9 April 2026",
+    "description": "Completed the \"AI Evasion - First-Order Attacks\" course by Hack The Box Academy, which involved exploring first-order evasion methods, implementing attacks like FGSM and DeepFool, and evaluating neural network robustness against adversarial vulnerabilities.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
