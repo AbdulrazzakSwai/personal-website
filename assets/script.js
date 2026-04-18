@@ -8,6 +8,7 @@ const dataCache = {
 let coursesLoaded = 0;
 const COURSES_PER_PAGE = 9;
 let currentCourseFilter = 'all';
+let currentProviderFilter = 'all';
 
 function initTheme() {
     const savedTheme = 'dark';
@@ -479,6 +480,7 @@ function initPortfolioTabs() {
             targetContent.classList.add('show', 'active');
             
             currentCourseFilter = 'all';
+            currentProviderFilter = 'all';
             updateCourseFilterVisibility(targetTab);
             
             loadTabData(targetTab);
@@ -632,6 +634,18 @@ function renderCourses(courses, loadMore = false) {
     const existingViewMore = document.getElementById('courses-view-more');
     if (existingViewMore) {
         existingViewMore.remove();
+    }
+
+    if (courses.length === 0) {
+        grid.innerHTML = `
+            <div class="col-12 text-center py-5 animate-on-scroll" data-animation="animate-fade-in-up">
+                <i class="fas fa-search fa-3x text-muted mb-3" style="opacity: 0.5;"></i>
+                <h5 class="text-muted mb-2">No Courses Found</h5>
+                <p class="text-muted mb-0">No courses match the selected filters. Please try selecting different options.</p>
+            </div>
+        `;
+        initAnimations();
+        return;
     }
 
     const startIndex = coursesLoaded;
@@ -1119,84 +1133,177 @@ function createCourseFilter() {
 
     filterContainer = document.createElement('div');
     filterContainer.id = 'course-filter-container';
-    filterContainer.className = 'course-filter-container';
+    filterContainer.className = 'course-filter-container flex-wrap gap-3';
 
-    const filterWrapper = document.createElement('div');
-    filterWrapper.className = 'course-filter-wrapper';
+    const typeWrapper = document.createElement('div');
+    typeWrapper.className = 'course-filter-wrapper';
 
-    const select = document.createElement('select');
-    select.id = 'course-filter-select';
-    select.className = 'course-filter-select';
+    const typeSelect = document.createElement('select');
+    typeSelect.id = 'course-filter-select';
+    typeSelect.className = 'course-filter-select';
 
-    const arrow = document.createElement('i');
-    arrow.className = 'fas fa-chevron-down course-filter-arrow';
+    const typeArrow = document.createElement('i');
+    typeArrow.className = 'fas fa-chevron-down course-filter-arrow';
 
-    filterWrapper.appendChild(select);
-    filterWrapper.appendChild(arrow);
-    filterContainer.appendChild(filterWrapper);
+    typeWrapper.appendChild(typeSelect);
+    typeWrapper.appendChild(typeArrow);
+
+    const providerWrapper = document.createElement('div');
+    providerWrapper.className = 'course-filter-wrapper';
+
+    const providerSelect = document.createElement('select');
+    providerSelect.id = 'provider-filter-select';
+    providerSelect.className = 'course-filter-select';
+
+    const providerArrow = document.createElement('i');
+    providerArrow.className = 'fas fa-chevron-down course-filter-arrow';
+
+    providerWrapper.appendChild(providerSelect);
+    providerWrapper.appendChild(providerArrow);
+
+    filterContainer.appendChild(typeWrapper);
+    filterContainer.appendChild(providerWrapper);
 
     const coursesTab = document.getElementById('courses');
     const coursesGrid = document.getElementById('courses-grid');
     coursesTab.insertBefore(filterContainer, coursesGrid);
 
-    select.addEventListener('change', (e) => {
+    typeSelect.addEventListener('change', (e) => {
         currentCourseFilter = e.target.value;
         coursesLoaded = 0;
+        if (dataCache.courses) updateCourseFilterOptions(dataCache.courses);
+        renderFilteredCourses();
+    });
+
+    providerSelect.addEventListener('change', (e) => {
+        currentProviderFilter = e.target.value;
+        coursesLoaded = 0;
+        if (dataCache.courses) updateCourseFilterOptions(dataCache.courses);
         renderFilteredCourses();
     });
 }
 
-function updateCourseFilterOptions(courses) {
-    const select = document.getElementById('course-filter-select');
-    if (!select) return;
-
-    const fieldCounts = {
-        all: courses.length,
-        ai: 0,
-        offensive: 0,
-        defensive: 0,
-        it: 0,
-        soft: 0,
-        general: 0
-    };
-
-    courses.forEach(course => {
+function getFilteredCoursesByType(courses) {
+    if (currentCourseFilter === 'all') return courses;
+    return courses.filter(course => {
         const type = (course.type || '').toLowerCase();
-        if (type.includes('artificial intelligence')) {
-            fieldCounts.ai++;
-        } else if (type.includes('offensive security')) {
-            fieldCounts.offensive++;
-        } else if (type.includes('defensive security')) {
-            fieldCounts.defensive++;
-        } else if (type.includes('information technology')) {
-            fieldCounts.it++;
-        } else if (type.includes('soft skills')) {
-            fieldCounts.soft++;
-        } else {
-            fieldCounts.general++;
+        switch (currentCourseFilter) {
+            case 'ai': return type.includes('artificial intelligence');
+            case 'offensive': return type.includes('offensive security');
+            case 'defensive': return type.includes('defensive security');
+            case 'it': return type.includes('information technology');
+            case 'soft': return type.includes('soft skills');
+            case 'general':
+                return !type.includes('artificial intelligence') &&
+                       !type.includes('offensive security') && 
+                       !type.includes('defensive security') && 
+                       !type.includes('information technology') && 
+                       !type.includes('soft skills');
+            default: return true;
         }
     });
+}
 
-    const options = [
-        { value: 'all', label: `All (${fieldCounts.all})` },
-        { value: 'ai', label: `Artificial Intelligence (${fieldCounts.ai})` },
-        { value: 'offensive', label: `Offensive Security (${fieldCounts.offensive})` },
-        { value: 'defensive', label: `Defensive Security (${fieldCounts.defensive})` },
-        { value: 'it', label: `Information Technology (${fieldCounts.it})` },
-        { value: 'soft', label: `Soft Skills (${fieldCounts.soft})` },
-        { value: 'general', label: `General (${fieldCounts.general})` }
+function getFilteredCoursesByProvider(courses) {
+    if (currentProviderFilter === 'all') return courses;
+    return courses.filter(course => {
+        const providerName = (course.provider || '').toLowerCase().replace(/^by\s+/, '').trim();
+        return providerName === currentProviderFilter.toLowerCase();
+    });
+}
+
+function updateCourseFilterOptions(courses) {
+    const typeSelect = document.getElementById('course-filter-select');
+    const providerSelect = document.getElementById('provider-filter-select');
+    if (!typeSelect || !providerSelect) return;
+
+    const coursesForTypeCounts = getFilteredCoursesByProvider(courses);
+    const coursesForProviderCounts = getFilteredCoursesByType(courses);
+
+    const typeCounts = {
+        all: coursesForTypeCounts.length, ai: 0, offensive: 0, defensive: 0, it: 0, soft: 0, general: 0
+    };
+
+    coursesForTypeCounts.forEach(course => {
+        const type = (course.type || '').toLowerCase();
+        if (type.includes('artificial intelligence')) typeCounts.ai++;
+        else if (type.includes('offensive security')) typeCounts.offensive++;
+        else if (type.includes('defensive security')) typeCounts.defensive++;
+        else if (type.includes('information technology')) typeCounts.it++;
+        else if (type.includes('soft skills')) typeCounts.soft++;
+        else typeCounts.general++;
+    });
+
+    const typeOptions = [
+        { value: 'all', label: `All Types (${typeCounts.all})` },
+        { value: 'ai', label: `Artificial Intelligence (${typeCounts.ai})` },
+        { value: 'offensive', label: `Offensive Security (${typeCounts.offensive})` },
+        { value: 'defensive', label: `Defensive Security (${typeCounts.defensive})` },
+        { value: 'it', label: `Information Technology (${typeCounts.it})` },
+        { value: 'soft', label: `Soft Skills (${typeCounts.soft})` },
+        { value: 'general', label: `General (${typeCounts.general})` }
     ];
 
-    select.innerHTML = '';
-
-    options.forEach(option => {
+    typeSelect.innerHTML = '';
+    typeOptions.forEach(option => {
         const optionElement = document.createElement('option');
         optionElement.value = option.value;
         optionElement.textContent = option.label;
         if (option.value === currentCourseFilter) {
             optionElement.selected = true;
         }
-        select.appendChild(optionElement);
+        typeSelect.appendChild(optionElement);
+    });
+
+    const allProviders = new Set();
+    courses.forEach(c => {
+        const p = (c.provider || '').toLowerCase().replace(/^by\s+/, '').trim();
+        if (p) allProviders.add(p);
+    });
+
+    const providerCounts = {};
+    Array.from(allProviders).forEach(p => providerCounts[p] = 0);
+
+    coursesForProviderCounts.forEach(course => {
+        const p = (course.provider || '').toLowerCase().replace(/^by\s+/, '').trim();
+        if (p) {
+            providerCounts[p] = (providerCounts[p] || 0) + 1;
+        }
+    });
+
+    const sortedProviders = Array.from(allProviders).sort((a, b) => {
+        if (providerCounts[b] !== providerCounts[a]) {
+            return providerCounts[b] - providerCounts[a];
+        }
+        return a.localeCompare(b);
+    });
+
+    providerSelect.innerHTML = '';
+    
+    const allProviderOpt = document.createElement('option');
+    allProviderOpt.value = 'all';
+    allProviderOpt.textContent = `All Providers (${coursesForProviderCounts.length})`;
+    if (currentProviderFilter === 'all') allProviderOpt.selected = true;
+    providerSelect.appendChild(allProviderOpt);
+
+    sortedProviders.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p;
+        
+        let displayLabel = p;
+        if (p.includes('hack the box')) {
+            displayLabel = 'Hack The Box Academy';
+        } else if (p.includes('tcm')) {
+            displayLabel = 'TCM Security';
+        } else if (p.includes('tryhackme')) {
+            displayLabel = 'TryHackMe';
+        } else {
+            displayLabel = p.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        }
+        
+        opt.textContent = `${displayLabel} (${providerCounts[p]})`;
+        if (p === currentProviderFilter.toLowerCase()) opt.selected = true;
+        providerSelect.appendChild(opt);
     });
 }
 
@@ -1212,33 +1319,8 @@ function updateCourseFilterVisibility(currentTab) {
 }
 
 function getFilteredCourses(courses) {
-    if (currentCourseFilter === 'all') {
-        return courses;
-    }
-
-    return courses.filter(course => {
-        const type = (course.type || '').toLowerCase();
-        switch (currentCourseFilter) {
-            case 'ai':
-                return type.includes('artificial intelligence');
-            case 'offensive':
-                return type.includes('offensive security');
-            case 'defensive':
-                return type.includes('defensive security');
-            case 'it':
-                return type.includes('information technology');
-            case 'soft':
-                return type.includes('soft skills');
-            case 'general':
-                return !type.includes('artificial intelligence') &&
-                       !type.includes('offensive security') && 
-                       !type.includes('defensive security') && 
-                       !type.includes('information technology') && 
-                       !type.includes('soft skills');
-            default:
-                return true;
-        }
-    });
+    let filtered = getFilteredCoursesByType(courses);
+    return getFilteredCoursesByProvider(filtered);
 }
 
 function renderFilteredCourses() {
