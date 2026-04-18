@@ -70,6 +70,20 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/320"
   },
   {
+    "title": "AI Privacy",
+    "provider": "By Hack The Box Academy",
+    "type": "Artificial Intelligence (AI)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/ai-privacy",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/335"
+  },
+  {
+    "title": "AI Defense",
+    "provider": "By Hack The Box Academy",
+    "type": "Artificial Intelligence (AI)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/ai-defense",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/322"
+  },
+  {
     "title": "Defending AI",
     "provider": "By TryHackMe",
     "type": "Artificial Intelligence (AI)",
