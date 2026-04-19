@@ -36,6 +36,14 @@
     "finished": "partial"
   },
   {
+    "title": "Multi-Cloud Blue Team Analyst (MCBTA)",
+    "provider": "By Cyberwarfare Labs",
+    "status": "⏳ In Progress",
+    "progress": 14.2,
+    "detailsLink": "https://cyberwarfare.live/product/multi-cloud-blue-team-analyst-mcbta/",
+    "finished": false
+  },
+  {
     "title": "Practical SOC Analyst Associate (PSAA)",
     "provider": "By TCM Security",
     "status": "✅ All Tickets Resolved and Reported",
