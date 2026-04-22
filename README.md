@@ -9,7 +9,7 @@ Here, you can explore:
 - **Statistics:** A visual breakdown of my learning progress and achievements
 - **Projects:** Technical projects and contributions highlighting a range of skills
 - **Credentials:** A dynamic tabbed interface displaying my completed Certifications and Courses
-- **Momentum:** Tracking my current focus, ongoing tasks, and recent goals
+- **Momentum:** Track my current focus, ongoing tasks, and recent goals
 - **Get In Touch:** Connect with me via LinkedIn, GitHub, Hack The Box, and TryHackMe
 
 ## ✨ Key Features
