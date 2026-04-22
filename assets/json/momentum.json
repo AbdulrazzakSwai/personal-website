@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"AI Red Teamer\" Path by Hack The Box Academy",
-    "date": "18 April 2026",
-    "description": "Completed the \"AI Red Teamer\" path by Hack The Box Academy, which involved practically learning about AI-driven offensive and defensive techniques.",
+    "title": "Finished \"Setting Up\" Course by Hack The Box Academy",
+    "date": "22 April 2026",
+    "description": "Completed the \"Setting Up\" course by Hack The Box Academy, which involved learning how to set up and configure security environments for penetration testing and defensive operations.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"AI Evasion - Sparsity Attacks\" Course by Hack The Box Academy",
-    "date": "15 April 2026",
-    "description": "Completed the \"AI Evasion - Sparsity Attacks\" course by Hack The Box Academy, which involved exploring sparsity-based evasion methods and evaluating their effectiveness against neural network models.",
+    "title": "Finished \"AI Red Teamer\" Path by Hack The Box Academy",
+    "date": "18 April 2026",
+    "description": "Completed the \"AI Red Teamer\" path by Hack The Box Academy, which involved practically learning about AI-driven offensive and defensive techniques.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
