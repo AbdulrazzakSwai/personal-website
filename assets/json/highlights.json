@@ -1,4 +1,4 @@
-[
+[  
   {
     "title": "10-Year UAE Golden Residency",
     "icon": "fas fa-medal",
@@ -23,6 +23,11 @@
     "title": "Practical Certifications Focus",
     "icon": "fas fa-tools",
     "description": "Proudly avoiding \"HR Filter\" theoretical certifications. Only seeking hands-on, practical cybersecurity certifications."
+  },
+  {
+    "title": "AI Security and Hacking Expertise",
+    "icon": "fas fa-robot",
+    "description": "Proficient in both offensive and defensive AI techniques, having practically completed the AI Red Teamer path by Hack The Box alongside specialized AI security coursework by TryHackMe."
   },
   {
     "title": "University Honor List Recognition (3 Times)",
