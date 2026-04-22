@@ -72,6 +72,8 @@ function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     
+    if (!navbarCollapse) return;
+
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (navbarCollapse.classList.contains('show')) {
@@ -181,6 +183,7 @@ function initTypingAnimation() {
 
 function initTerminalAnimation() {
     const terminalBody = document.getElementById('terminal-body');
+    if (!terminalBody) return;
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -322,6 +325,7 @@ async function loadHighlights() {
         const response = await fetch('assets/json/highlights.json');
         const highlights = await response.json();
         const grid = document.getElementById('highlights-grid');
+        if (!grid) return;
         
         highlights.forEach((highlight, index) => {
             const col = document.createElement('div');
@@ -353,6 +357,7 @@ async function loadStatistics() {
         const response = await fetch('assets/json/statistics.json');
         const statistics = await response.json();
         const grid = document.getElementById('statistics-grid');
+        if (!grid) return;
         
         statistics.forEach((stat, index) => {
             const col = document.createElement('div');
@@ -379,6 +384,7 @@ async function loadAchievements() {
         const response = await fetch('assets/json/momentum.json');
         const achievements = await response.json();
         const grid = document.getElementById('achievements-grid');
+        if (!grid) return;
         
         achievements.forEach((item, index) => {
             const col = document.createElement('div');
@@ -540,6 +546,7 @@ async function loadCertifications() {
 
 function renderCertifications(certifications) {
     const grid = document.getElementById('certifications-grid');
+    if (!grid) return;
     grid.innerHTML = '';
 
     certifications.forEach((cert, index) => {
@@ -621,6 +628,7 @@ async function loadCourses(loadMore = false) {
 
 function renderCourses(courses, loadMore = false) {
     const grid = document.getElementById('courses-grid');
+    if (!grid) return;
 
     if (!loadMore) {
         grid.innerHTML = '';
@@ -753,6 +761,7 @@ async function loadProjects() {
 
 function renderProjects(projects) {
     const grid = document.getElementById('projects-grid');
+    if (!grid) return;
     grid.innerHTML = '';
 
     const existingViewMore = document.getElementById('projects-view-all');
@@ -1166,6 +1175,7 @@ function createCourseFilter() {
 
     const coursesTab = document.getElementById('courses');
     const coursesGrid = document.getElementById('courses-grid');
+    if (!coursesTab || !coursesGrid) return;
     coursesTab.insertBefore(filterContainer, coursesGrid);
 
     typeSelect.addEventListener('change', (e) => {
