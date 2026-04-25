@@ -749,6 +749,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/87"
   },
   {
+    "title": "Linux Fundamentals",
+    "provider": "By Hack The Box Academy",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/linux-fundamentals",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/18"
+  },
+  {
     "title": "Introduction to Windows Command Line",
     "provider": "By Hack The Box Academy",
     "type": "Information Technology (IT)",
