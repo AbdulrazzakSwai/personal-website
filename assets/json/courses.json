@@ -742,13 +742,6 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/74"
   },
   {
-    "title": "Setting Up",
-    "provider": "By Hack The Box Academy",
-    "type": "Information Technology (IT)",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/setting-up",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/87"
-  },
-  {
     "title": "Linux Fundamentals",
     "provider": "By Hack The Box Academy",
     "type": "Information Technology (IT)",
@@ -803,6 +796,13 @@
     "type": "Information Technology (IT)",
     "detailsLink": "https://tryhackme.com/module/how-the-web-works",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Setting Up",
+    "provider": "By Hack The Box Academy",
+    "type": "Information Technology (IT)",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/setting-up",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/87"
   },
   {
     "title": "Soft Skills for the Job Market",
