@@ -9,6 +9,8 @@ let coursesLoaded = 0;
 const COURSES_PER_PAGE = 9;
 let currentCourseFilter = 'all';
 let currentProviderFilter = 'all';
+let currentCertFilter = 'all';
+let currentCertProviderFilter = 'all';
 
 function initTheme() {
     const savedTheme = 'dark';
@@ -487,7 +489,10 @@ function initPortfolioTabs() {
             
             currentCourseFilter = 'all';
             currentProviderFilter = 'all';
+            currentCertFilter = 'all';
+            currentCertProviderFilter = 'all';
             updateCourseFilterVisibility(targetTab);
+            updateCertFilterVisibility(targetTab);
             
             loadTabData(targetTab);
         });
@@ -530,7 +535,10 @@ async function loadTabData(tabName) {
 async function loadCertifications() {
     try {
         if (dataCache.certifications) {
-            renderCertifications(dataCache.certifications);
+            createCertFilter();
+            updateCertFilterOptions(dataCache.certifications);
+            const filteredCerts = getFilteredCerts(dataCache.certifications);
+            renderCertifications(filteredCerts);
             return;
         }
 
@@ -538,7 +546,10 @@ async function loadCertifications() {
         const certifications = await response.json();
         
         dataCache.certifications = certifications;
-        renderCertifications(certifications);
+        createCertFilter();
+        updateCertFilterOptions(certifications);
+        const filteredCerts = getFilteredCerts(certifications);
+        renderCertifications(filteredCerts);
     } catch (error) {
         console.error('Error loading certifications:', error);
     }
@@ -548,6 +559,18 @@ function renderCertifications(certifications) {
     const grid = document.getElementById('certifications-grid');
     if (!grid) return;
     grid.innerHTML = '';
+    
+    if (certifications.length === 0) {
+        grid.innerHTML = `
+            <div class="col-12 text-center py-5 animate-on-scroll" data-animation="animate-fade-in-up">
+                <i class="fas fa-search fa-3x text-muted mb-3" style="opacity: 0.5;"></i>
+                <h5 class="text-muted mb-2">No Certifications Found</h5>
+                <p class="text-muted mb-0">No certifications match the selected filters. Please try selecting different options.</p>
+            </div>
+        `;
+        initAnimations();
+        return;
+    }
 
     certifications.forEach((cert, index) => {
         const col = document.createElement('div');
@@ -555,6 +578,22 @@ function renderCertifications(certifications) {
         
         const progressPercentage = cert.progress || (cert.finished ? 100 : 0);
         const isPartial = cert.finished === 'partial';
+
+        let skillClass = '';
+        const type = (cert.type || '').toLowerCase();
+        if (type.includes('artificial intelligence')) {
+            skillClass = 'skill-ai';
+        } else if (type.includes('offensive security')) {
+            skillClass = 'skill-offensive';
+        } else if (type.includes('defensive security')) {
+            skillClass = 'skill-defensive';
+        } else if (type.includes('information technology')) {
+            skillClass = 'skill-it';
+        } else if (type.includes('soft skills')) {
+            skillClass = 'skill-soft';
+        } else {
+            skillClass = 'skill-general';
+        }
 
         const upcomingClass = cert.finished ? '' : 'upcoming';
         const cardClass = `card portfolio-card animate-on-scroll ${upcomingClass}`;
@@ -572,7 +611,8 @@ function renderCertifications(certifications) {
                 <div class="card-body">
                     <h6 class="card-title">${index + 1}. ${cert.title}</h6>
                     <p class="card-subtitle">${cert.provider}</p>
-                    <p class="text-muted medium">${cert.status}</p>
+                    ${cert.type ? `<span class="skill-tag mb-2 d-inline-block ${skillClass}">${cert.type}</span>` : ''}
+                    <p class="text-muted medium mt-2">${cert.status}</p>
                     <div class="progress-container mb-1">
                         <div class="progress-track">
                             <div class="progress-fill" style="width: ${progressPercentage}%"></div>
@@ -870,11 +910,13 @@ document.addEventListener('DOMContentLoaded', function() {
     initPortfolioTabs();
     loadLastUpdated();
     initDecryptionAnimation();
-    
-    updateCourseFilterVisibility('certifications');
 
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
     createCourseFilter();
+    createCertFilter();
+    
+    updateCourseFilterVisibility('certifications');
+    updateCertFilterVisibility('certifications');
     
     initCustomCursor();
     initScrollProgress();
@@ -1244,21 +1286,27 @@ function updateCourseFilterOptions(courses) {
         else typeCounts.general++;
     });
 
-    const typeOptions = [
-        { value: 'all', label: `All Types (${typeCounts.all})` },
-        { value: 'ai', label: `Artificial Intelligence (${typeCounts.ai})` },
-        { value: 'offensive', label: `Offensive Security (${typeCounts.offensive})` },
-        { value: 'defensive', label: `Defensive Security (${typeCounts.defensive})` },
-        { value: 'it', label: `Information Technology (${typeCounts.it})` },
-        { value: 'soft', label: `Soft Skills (${typeCounts.soft})` },
-        { value: 'general', label: `General (${typeCounts.general})` }
+    let typeOptions = [
+        { value: 'ai', label: `Artificial Intelligence`, count: typeCounts.ai },
+        { value: 'offensive', label: `Offensive Security`, count: typeCounts.offensive },
+        { value: 'defensive', label: `Defensive Security`, count: typeCounts.defensive },
+        { value: 'it', label: `Information Technology`, count: typeCounts.it },
+        { value: 'soft', label: `Soft Skills`, count: typeCounts.soft },
+        { value: 'general', label: `General`, count: typeCounts.general }
     ];
+
+    typeOptions.sort((a, b) => {
+        if (b.count !== a.count) return b.count - a.count;
+        return a.label.localeCompare(b.label);
+    });
+
+    typeOptions.unshift({ value: 'all', label: `All Types`, count: typeCounts.all });
 
     typeSelect.innerHTML = '';
     typeOptions.forEach(option => {
         const optionElement = document.createElement('option');
         optionElement.value = option.value;
-        optionElement.textContent = option.label;
+        optionElement.textContent = `${option.label} (${option.count})`;
         if (option.value === currentCourseFilter) {
             optionElement.selected = true;
         }
@@ -1339,6 +1387,225 @@ function renderFilteredCourses() {
     const filteredCourses = getFilteredCourses(dataCache.courses);
     coursesLoaded = 0;
     renderCourses(filteredCourses);
+}
+
+function createCertFilter() {
+    let filterContainer = document.getElementById('cert-filter-container');
+    if (filterContainer) {
+        return;
+    }
+
+    filterContainer = document.createElement('div');
+    filterContainer.id = 'cert-filter-container';
+    
+    const certsTabActive = document.getElementById('certifications') && document.getElementById('certifications').classList.contains('active');
+    filterContainer.className = `course-filter-container flex-wrap gap-3 ${certsTabActive ? 'show' : ''}`;
+
+    const typeWrapper = document.createElement('div');
+    typeWrapper.className = 'course-filter-wrapper';
+
+    const typeSelect = document.createElement('select');
+    typeSelect.id = 'cert-type-filter-select';
+    typeSelect.className = 'course-filter-select';
+
+    const typeArrow = document.createElement('i');
+    typeArrow.className = 'fas fa-chevron-down course-filter-arrow';
+
+    typeWrapper.appendChild(typeSelect);
+    typeWrapper.appendChild(typeArrow);
+
+    const providerWrapper = document.createElement('div');
+    providerWrapper.className = 'course-filter-wrapper';
+
+    const providerSelect = document.createElement('select');
+    providerSelect.id = 'cert-provider-filter-select';
+    providerSelect.className = 'course-filter-select';
+
+    const providerArrow = document.createElement('i');
+    providerArrow.className = 'fas fa-chevron-down course-filter-arrow';
+
+    providerWrapper.appendChild(providerSelect);
+    providerWrapper.appendChild(providerArrow);
+
+    filterContainer.appendChild(typeWrapper);
+    filterContainer.appendChild(providerWrapper);
+
+    const certsTab = document.getElementById('certifications');
+    const certsGrid = document.getElementById('certifications-grid');
+    if (!certsTab || !certsGrid) return;
+    certsTab.insertBefore(filterContainer, certsGrid);
+
+    typeSelect.addEventListener('change', (e) => {
+        currentCertFilter = e.target.value;
+        if (dataCache.certifications) updateCertFilterOptions(dataCache.certifications);
+        renderFilteredCerts();
+    });
+
+    providerSelect.addEventListener('change', (e) => {
+        currentCertProviderFilter = e.target.value;
+        if (dataCache.certifications) updateCertFilterOptions(dataCache.certifications);
+        renderFilteredCerts();
+    });
+}
+
+function getFilteredCertsByType(certs) {
+    if (currentCertFilter === 'all') return certs;
+    return certs.filter(cert => {
+        const type = (cert.type || '').toLowerCase();
+        switch (currentCertFilter) {
+            case 'ai': return type.includes('artificial intelligence');
+            case 'offensive': return type.includes('offensive security');
+            case 'defensive': return type.includes('defensive security');
+            case 'it': return type.includes('information technology');
+            case 'soft': return type.includes('soft skills');
+            case 'general':
+                return !type.includes('artificial intelligence') &&
+                       !type.includes('offensive security') && 
+                       !type.includes('defensive security') && 
+                       !type.includes('information technology') && 
+                       !type.includes('soft skills');
+            default: return true;
+        }
+    });
+}
+
+function getFilteredCertsByProvider(certs) {
+    if (currentCertProviderFilter === 'all') return certs;
+    return certs.filter(cert => {
+        let providerName = (cert.provider || '').toLowerCase().replace(/^by\s+/, '').trim();
+        if (providerName.includes('hack the box')) {
+            providerName = 'hack the box academy';
+        }
+        return providerName === currentCertProviderFilter.toLowerCase();
+    });
+}
+
+function updateCertFilterOptions(certs) {
+    const typeSelect = document.getElementById('cert-type-filter-select');
+    const providerSelect = document.getElementById('cert-provider-filter-select');
+    if (!typeSelect || !providerSelect) return;
+
+    const certsForTypeCounts = getFilteredCertsByProvider(certs);
+    const certsForProviderCounts = getFilteredCertsByType(certs);
+
+    const typeCounts = {
+        all: certsForTypeCounts.length, ai: 0, offensive: 0, defensive: 0, it: 0
+    };
+
+    certsForTypeCounts.forEach(cert => {
+        const type = (cert.type || '').toLowerCase();
+        if (type.includes('artificial intelligence')) typeCounts.ai++;
+        else if (type.includes('offensive security')) typeCounts.offensive++;
+        else if (type.includes('defensive security')) typeCounts.defensive++;
+        else if (type.includes('information technology')) typeCounts.it++;
+    });
+
+    let typeOptions = [
+        { value: 'ai', label: `Artificial Intelligence`, count: typeCounts.ai },
+        { value: 'offensive', label: `Offensive Security`, count: typeCounts.offensive },
+        { value: 'defensive', label: `Defensive Security`, count: typeCounts.defensive },
+        { value: 'it', label: `Information Technology`, count: typeCounts.it }
+    ];
+
+    typeOptions.sort((a, b) => {
+        if (b.count !== a.count) return b.count - a.count;
+        return a.label.localeCompare(b.label);
+    });
+
+    typeOptions.unshift({ value: 'all', label: `All Types`, count: typeCounts.all });
+
+    typeSelect.innerHTML = '';
+    typeOptions.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.value = option.value;
+        optionElement.textContent = `${option.label} (${option.count})`;
+        if (option.value === currentCertFilter) {
+            optionElement.selected = true;
+        }
+        typeSelect.appendChild(optionElement);
+    });
+
+    const allProviders = new Set();
+    certs.forEach(c => {
+        let p = (c.provider || '').toLowerCase().replace(/^by\s+/, '').trim();
+        if (p.includes('hack the box')) {
+            p = 'hack the box academy';
+        }
+        if (p) allProviders.add(p);
+    });
+
+    const providerCounts = {};
+    Array.from(allProviders).forEach(p => providerCounts[p] = 0);
+
+    certsForProviderCounts.forEach(cert => {
+        let p = (cert.provider || '').toLowerCase().replace(/^by\s+/, '').trim();
+        if (p.includes('hack the box')) {
+            p = 'hack the box academy';
+        }
+        if (p) {
+            providerCounts[p] = (providerCounts[p] || 0) + 1;
+        }
+    });
+
+    const sortedProviders = Array.from(allProviders).sort((a, b) => {
+        if (providerCounts[b] !== providerCounts[a]) {
+            return providerCounts[b] - providerCounts[a];
+        }
+        return a.localeCompare(b);
+    });
+
+    providerSelect.innerHTML = '';
+    
+    const allProviderOpt = document.createElement('option');
+    allProviderOpt.value = 'all';
+    allProviderOpt.textContent = `All Providers (${certsForProviderCounts.length})`;
+    if (currentCertProviderFilter === 'all') allProviderOpt.selected = true;
+    providerSelect.appendChild(allProviderOpt);
+
+    sortedProviders.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p;
+        
+        let displayLabel = p;
+        if (p.includes('hack the box')) {
+            displayLabel = 'Hack The Box Academy';
+        } else if (p.includes('tcm')) {
+            displayLabel = 'TCM Security';
+        } else if (p.includes('tryhackme')) {
+            displayLabel = 'TryHackMe';
+        } else if (p.includes('freecodecamp')) {
+            displayLabel = 'freeCodeCamp';
+        } else {
+            displayLabel = p.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        }
+        
+        opt.textContent = `${displayLabel} (${providerCounts[p]})`;
+        if (p === currentCertProviderFilter.toLowerCase()) opt.selected = true;
+        providerSelect.appendChild(opt);
+    });
+}
+
+function updateCertFilterVisibility(currentTab) {
+    const filterContainer = document.getElementById('cert-filter-container');
+    if (!filterContainer) return;
+
+    if (currentTab === 'certifications') {
+        filterContainer.classList.add('show');
+    } else {
+        filterContainer.classList.remove('show');
+    }
+}
+
+function getFilteredCerts(certs) {
+    let filtered = getFilteredCertsByType(certs);
+    return getFilteredCertsByProvider(filtered);
+}
+
+function renderFilteredCerts() {
+    if (!dataCache.certifications) return;
+    
+    const filteredCerts = getFilteredCerts(dataCache.certifications);
+    renderCertifications(filteredCerts);
 }
 
 function initHeroParticles() {

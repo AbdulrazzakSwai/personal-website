@@ -1,7 +1,8 @@
 [
-    {
+  {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
     "status": "⌛ Path Completed, Preparing for Exam",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
@@ -11,6 +12,7 @@
   {
     "title": "Certified Defensive Security Analyst (CDSA)",
     "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
     "status": "⌛ Path Completed, Preparing for Exam",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
@@ -20,6 +22,7 @@
   {
     "title": "Certified Web Exploitation Specialist (CWES)",
     "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
     "status": "⌛ Path Completed, Preparing for Exam",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist",
@@ -29,6 +32,7 @@
   {
     "title": "Certified Offensive AI Expert (COAE)",
     "provider": "By Hack The Box Academy and Google",
+    "type": "Artificial Intelligence (AI)",
     "status": "⌛ Path Completed, Preparing for Exam",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert",
@@ -38,6 +42,7 @@
   {
     "title": "Multi-Cloud Blue Team Analyst (MCBTA)",
     "provider": "By Cyberwarfare Labs",
+    "type": "Defensive Security",
     "status": "⏳ In Progress",
     "progress": 57.14,
     "detailsLink": "https://cyberwarfare.live/product/multi-cloud-blue-team-analyst-mcbta/",
@@ -46,6 +51,7 @@
   {
     "title": "Practical SOC Analyst Associate (PSAA)",
     "provider": "By TCM Security",
+    "type": "Defensive Security",
     "status": "✅ All Tickets Resolved and Reported",
     "progress": 100,
     "detailsLink": "https://certifications.tcm-sec.com/psaa/",
@@ -53,8 +59,18 @@
     "finished": true
   },
   {
+    "title": "AI Security",
+    "provider": "By TryHackMe",
+    "type": "Artificial Intelligence (AI)",
+    "status": "⌛ In Progress",
+    "progress": 18,
+    "detailsLink": "https://tryhackme.com/path/outline/aisecurity",
+    "finished": false
+  },
+  {
     "title": "SOC Level 1",
     "provider": "By TryHackMe",
+    "type": "Defensive Security",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel1",
@@ -64,6 +80,7 @@
   {
     "title": "SOC Level 2",
     "provider": "By TryHackMe",
+    "type": "Defensive Security",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/soclevel2",
@@ -73,6 +90,7 @@
   {
     "title": "Junior Penetration Tester",
     "provider": "By TryHackMe",
+    "type": "Offensive Security",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/jrpenetrationtester",
@@ -82,6 +100,7 @@
   {
     "title": "Offensive Pentesting",
     "provider": "By TryHackMe",
+    "type": "Offensive Security",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/pentesting",
@@ -91,6 +110,7 @@
   {
     "title": "Web Application Pentesting",
     "provider": "By TryHackMe",
+    "type": "Offensive Security",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/webapppentesting",
@@ -100,6 +120,7 @@
   {
     "title": "Web Application Security (Web Fundamentals)",
     "provider": "By TryHackMe",
+    "type": "Offensive Security",
     "status": "✅ All Security Scenarios Handled",
     "progress": 100,
     "detailsLink": "https://tryhackme.com/path/outline/web",
@@ -109,6 +130,7 @@
   {
     "title": "Scientific Computing with Python",
     "provider": "By freeCodeCamp",
+    "type": "Information Technology",
     "status": "✅ All Projects Completed",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/scientific-computing-with-python",
@@ -118,6 +140,7 @@
   {
     "title": "Responsive Web Design (HTML and CSS)",
     "provider": "By freeCodeCamp",
+    "type": "Information Technology",
     "status": "✅ All Projects Completed",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/2022/responsive-web-design",
@@ -127,6 +150,7 @@
   {
     "title": "JavaScript Algorithms and Data Structures",
     "provider": "By freeCodeCamp",
+    "type": "Information Technology",
     "status": "✅ All Projects Completed",
     "progress": 100,
     "detailsLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8",
