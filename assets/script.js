@@ -527,6 +527,7 @@ async function loadTabData(tabName) {
                 await loadProjects();
                 break;
         }
+        setTimeout(updateScrollProgress, 100);
     } catch (error) {
         console.error(`Error loading ${tabName}:`, error);
     }
@@ -1060,16 +1061,18 @@ function initCustomCursor() {
     observer.observe(document.body, { childList: true, subtree: true });
 }
 
-function initScrollProgress() {
+function updateScrollProgress() {
     const progressBar = document.querySelector('.scroll-progress');
     if (!progressBar) return;
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+    progressBar.style.width = scrolled + "%";
+}
 
-    window.addEventListener('scroll', () => {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        progressBar.style.width = scrolled + "%";
-    });
+function initScrollProgress() {
+    window.addEventListener('scroll', updateScrollProgress);
+    window.addEventListener('resize', updateScrollProgress);
 }
 
 function initBackToTop() {
@@ -1187,7 +1190,9 @@ function createCourseFilter() {
     filterContainer.className = 'course-filter-container flex-wrap gap-3';
 
     const typeWrapper = document.createElement('div');
-    typeWrapper.className = 'course-filter-wrapper';
+    typeWrapper.className = 'course-filter-wrapper animate-on-scroll';
+    typeWrapper.setAttribute('data-animation', 'animate-fade-in-up');
+    typeWrapper.setAttribute('data-delay', '100');
 
     const typeSelect = document.createElement('select');
     typeSelect.id = 'course-filter-select';
@@ -1200,7 +1205,9 @@ function createCourseFilter() {
     typeWrapper.appendChild(typeArrow);
 
     const providerWrapper = document.createElement('div');
-    providerWrapper.className = 'course-filter-wrapper';
+    providerWrapper.className = 'course-filter-wrapper animate-on-scroll';
+    providerWrapper.setAttribute('data-animation', 'animate-fade-in-up');
+    providerWrapper.setAttribute('data-delay', '150');
 
     const providerSelect = document.createElement('select');
     providerSelect.id = 'provider-filter-select';
@@ -1216,7 +1223,9 @@ function createCourseFilter() {
     filterContainer.appendChild(providerWrapper);
 
     const resetBtn = document.createElement('button');
-    resetBtn.className = 'course-filter-reset';
+    resetBtn.className = 'course-filter-reset animate-on-scroll';
+    resetBtn.setAttribute('data-animation', 'animate-fade-in-up');
+    resetBtn.setAttribute('data-delay', '200');
     resetBtn.title = 'Reset Filters';
     resetBtn.textContent = 'Reset';
     resetBtn.addEventListener('click', () => {
@@ -1248,6 +1257,8 @@ function createCourseFilter() {
         if (dataCache.courses) updateCourseFilterOptions(dataCache.courses);
         renderFilteredCourses();
     });
+
+    initAnimations();
 }
 
 function getFilteredCoursesByType(courses) {
@@ -1386,6 +1397,13 @@ function updateCourseFilterVisibility(currentTab) {
 
     if (currentTab === 'courses') {
         filterContainer.classList.add('show');
+        const animatedElements = filterContainer.querySelectorAll('.animate-on-scroll');
+        animatedElements.forEach(el => {
+            el.classList.remove('animate-fade-in-up', 'animate-fade-in-up', 'animate-scale-in', 'animations-finished');
+        });
+        setTimeout(() => {
+            initAnimations();
+        }, 50);
     } else {
         filterContainer.classList.remove('show');
     }
@@ -1402,6 +1420,7 @@ function renderFilteredCourses() {
     const filteredCourses = getFilteredCourses(dataCache.courses);
     coursesLoaded = 0;
     renderCourses(filteredCourses);
+    setTimeout(updateScrollProgress, 50);
 }
 
 function createCertFilter() {
@@ -1417,7 +1436,9 @@ function createCertFilter() {
     filterContainer.className = `course-filter-container flex-wrap gap-3 ${certsTabActive ? 'show' : ''}`;
 
     const typeWrapper = document.createElement('div');
-    typeWrapper.className = 'course-filter-wrapper';
+    typeWrapper.className = 'course-filter-wrapper animate-on-scroll';
+    typeWrapper.setAttribute('data-animation', 'animate-fade-in-up');
+    typeWrapper.setAttribute('data-delay', '100');
 
     const typeSelect = document.createElement('select');
     typeSelect.id = 'cert-type-filter-select';
@@ -1430,7 +1451,9 @@ function createCertFilter() {
     typeWrapper.appendChild(typeArrow);
 
     const providerWrapper = document.createElement('div');
-    providerWrapper.className = 'course-filter-wrapper';
+    providerWrapper.className = 'course-filter-wrapper animate-on-scroll';
+    providerWrapper.setAttribute('data-animation', 'animate-fade-in-up');
+    providerWrapper.setAttribute('data-delay', '150');
 
     const providerSelect = document.createElement('select');
     providerSelect.id = 'cert-provider-filter-select';
@@ -1446,7 +1469,9 @@ function createCertFilter() {
     filterContainer.appendChild(providerWrapper);
 
     const resetBtn = document.createElement('button');
-    resetBtn.className = 'course-filter-reset';
+    resetBtn.className = 'course-filter-reset animate-on-scroll';
+    resetBtn.setAttribute('data-animation', 'animate-fade-in-up');
+    resetBtn.setAttribute('data-delay', '200');
     resetBtn.title = 'Reset Filters';
     resetBtn.textContent = 'Reset';
     resetBtn.addEventListener('click', () => {
@@ -1475,6 +1500,8 @@ function createCertFilter() {
         if (dataCache.certifications) updateCertFilterOptions(dataCache.certifications);
         renderFilteredCerts();
     });
+
+    initAnimations();
 }
 
 function getFilteredCertsByType(certs) {
@@ -1620,6 +1647,13 @@ function updateCertFilterVisibility(currentTab) {
 
     if (currentTab === 'certifications') {
         filterContainer.classList.add('show');
+        const animatedElements = filterContainer.querySelectorAll('.animate-on-scroll');
+        animatedElements.forEach(el => {
+            el.classList.remove('animate-fade-in-up', 'animate-fade-in-up', 'animate-scale-in', 'animations-finished');
+        });
+        setTimeout(() => {
+            initAnimations();
+        }, 50);
     } else {
         filterContainer.classList.remove('show');
     }
@@ -1635,6 +1669,7 @@ function renderFilteredCerts() {
     
     const filteredCerts = getFilteredCerts(dataCache.certifications);
     renderCertifications(filteredCerts);
+    setTimeout(updateScrollProgress, 50);
 }
 
 function initHeroParticles() {

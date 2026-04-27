@@ -796,7 +796,6 @@ h4, h5, h6 {
 
 .course-filter-select {
   background: var(--glass-bg);
-  backdrop-filter: blur(8px);
   border: 2px solid var(--border-color);
   color: var(--text-primary);
   padding: 0.75rem 2.5rem 0.75rem 1rem;
@@ -846,7 +845,6 @@ h4, h5, h6 {
 
 .course-filter-reset {
   background: var(--glass-bg);
-  backdrop-filter: blur(8px);
   border: 2px solid var(--border-color);
   color: var(--text-primary);
   border-radius: 0.75rem;
@@ -1372,3 +1370,5 @@ footer {
   body { background: white !important; color: black !important; }
   .scroll-progress, .cursor-dot, .cursor-outline, #back-to-top, #global-canvas { display: none !important; }
 }
+
+
