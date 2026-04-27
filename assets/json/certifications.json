@@ -1,5 +1,25 @@
 [
   {
+    "title": "Certified Offensive AI Expert (COAE)",
+    "provider": "By Hack The Box Academy and Google",
+    "type": "Artificial Intelligence (AI)",
+    "status": "⌛ Path Completed, Preparing for Exam",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/418",
+    "finished": "partial"
+  },
+  {
+    "title": "Certified Defensive Security Analyst (CDSA)",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "status": "⌛ Path Completed, Preparing for Exam",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
+    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/390",
+    "finished": "partial"
+  },
+  {
     "title": "Certified Penetration Testing Specialist (CPTS)",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",
@@ -17,26 +37,6 @@
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-web-exploitation-specialist",
     "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/17",
-    "finished": "partial"
-  },
-  {
-    "title": "Certified Defensive Security Analyst (CDSA)",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "status": "⌛ Path Completed, Preparing for Exam",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
-    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/390",
-    "finished": "partial"
-  },
-  {
-    "title": "Certified Offensive AI Expert (COAE)",
-    "provider": "By Hack The Box Academy and Google",
-    "type": "Artificial Intelligence (AI)",
-    "status": "⌛ Path Completed, Preparing for Exam",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert",
-    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/418",
     "finished": "partial"
   },
   {

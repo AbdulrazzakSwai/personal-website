@@ -91,6 +91,244 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Security Operations (SOC) 101",
+    "provider": "By TCM Security",
+    "type": "Defensive Security",
+    "detailsLink": "https://tcm-sec.com/academy/security-operations-soc-101/",
+    "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_SOC-101.png"
+  },
+  {
+    "title": "Security Monitoring & SIEM Fundamentals",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/security-monitoring--siem-fundamentals",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/211"
+  },
+  {
+    "title": "Security Information and Event Management (SIEM)",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/security-information-event-management",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Detecting Windows Attacks with Splunk",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/detecting-windows-attacks-with-splunk",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/233"
+  },
+  {
+    "title": "Understanding Log Sources & Investigating with Splunk",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/understanding-log-sources--investigating-with-splunk",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/218"
+  },
+  {
+    "title": "Advanced Splunk",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/advanced-splunk",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Threat Emulation",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/threat-emulation",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Threat Hunting",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/threat-hunting",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Introduction to Threat Hunting & Hunting With Elastic",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-threat-hunting--hunting-with-elastic",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/214"
+  },
+  {
+    "title": "Advanced ELK",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/advanced-elk",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Introduction to Digital Forensics",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/237"
+  },
+  {
+    "title": "Digital Forensics and Incident Response",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/digital-forensics-and-incident-response",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Incident Response",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/incident-response",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Incident Handling Process",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/incident-handling-process",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/148"
+  },
+  {
+    "title": "Introduction to Malware Analysis",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/227"
+  },
+  {
+    "title": "Malware Analysis",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/malware-analysis",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Cyber Threat Intelligence",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/cyber-threat-intelligence",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "YARA & Sigma for SOC Analysts",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/yara--sigma-for-soc-analysts",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/234"
+  },
+  {
+    "title": "Cyber Defense Frameworks",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/cyber-defence-frameworks",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Windows Attacks & Defense",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-attacks--defense",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/176"
+  },
+  {
+    "title": "Windows Event Logs & Finding Evil",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-event-logs--finding-evil",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/216"
+  },
+  {
+    "title": "Log Analysis",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/log-analysis",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Endpoint Security Monitoring",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/endpoint-security-monitoring",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Detection Engineering",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/detection-engineering",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Intro to Network Traffic Analysis",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/81"
+  },
+  {
+    "title": "Intermediate Network Traffic Analysis",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/intermediate-network-traffic-analysis",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/229"
+  },
+  {
+    "title": "Network Security and Traffic Analysis",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/network-security-and-traffic-analysis",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Wireshark",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/wireshark",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Working with IDS/IPS",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/working-with-idsips",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/226"
+  },
+  {
+    "title": "Snort",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/snort",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Phishing",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/phishing",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "JavaScript Deobfuscation",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/javascript-deobfuscation",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/41"
+  },
+  {
+    "title": "Security Incident Reporting",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/security-incident-reporting",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/238"
+  },
+  {
+    "title": "SOC Level 1 Capstone",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/soclevel1-capstone",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Practical Ethical Hacking - The Complete Course",
     "provider": "By TCM Security",
     "type": "Offensive Security",
@@ -488,244 +726,6 @@
     "type": "Offensive Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/getting-started",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/77"
-  },
-  {
-    "title": "Security Operations (SOC) 101",
-    "provider": "By TCM Security",
-    "type": "Defensive Security",
-    "detailsLink": "https://tcm-sec.com/academy/security-operations-soc-101/",
-    "certificateLink": "https://www.abdulrazzakswai.me/assets/courses-certificates/TCM-Security_SOC-101.png"
-  },
-  {
-    "title": "Security Monitoring & SIEM Fundamentals",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/security-monitoring--siem-fundamentals",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/211"
-  },
-  {
-    "title": "Security Information and Event Management (SIEM)",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/security-information-event-management",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Detecting Windows Attacks with Splunk",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/detecting-windows-attacks-with-splunk",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/233"
-  },
-  {
-    "title": "Understanding Log Sources & Investigating with Splunk",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/understanding-log-sources--investigating-with-splunk",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/218"
-  },
-  {
-    "title": "Advanced Splunk",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/advanced-splunk",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Threat Emulation",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/threat-emulation",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Threat Hunting",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/threat-hunting",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Introduction to Threat Hunting & Hunting With Elastic",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-threat-hunting--hunting-with-elastic",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/214"
-  },
-  {
-    "title": "Advanced ELK",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/advanced-elk",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Introduction to Digital Forensics",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-digital-forensics",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/237"
-  },
-  {
-    "title": "Digital Forensics and Incident Response",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/digital-forensics-and-incident-response",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Incident Response",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/incident-response",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Incident Handling Process",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/incident-handling-process",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/148"
-  },
-  {
-    "title": "Introduction to Malware Analysis",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-malware-analysis",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/227"
-  },
-  {
-    "title": "Malware Analysis",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/malware-analysis",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Cyber Threat Intelligence",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/cyber-threat-intelligence",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "YARA & Sigma for SOC Analysts",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/yara--sigma-for-soc-analysts",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/234"
-  },
-  {
-    "title": "Cyber Defense Frameworks",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/cyber-defence-frameworks",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Windows Attacks & Defense",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-attacks--defense",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/176"
-  },
-  {
-    "title": "Windows Event Logs & Finding Evil",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/windows-event-logs--finding-evil",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/216"
-  },
-  {
-    "title": "Log Analysis",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/log-analysis",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Endpoint Security Monitoring",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/endpoint-security-monitoring",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Detection Engineering",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/detection-engineering",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Intro to Network Traffic Analysis",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/81"
-  },
-  {
-    "title": "Intermediate Network Traffic Analysis",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/intermediate-network-traffic-analysis",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/229"
-  },
-  {
-    "title": "Network Security and Traffic Analysis",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/network-security-and-traffic-analysis",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Wireshark",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/wireshark",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Working with IDS/IPS",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/working-with-idsips",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/226"
-  },
-  {
-    "title": "Snort",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/snort",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "Phishing",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/phishing",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
-    "title": "JavaScript Deobfuscation",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/javascript-deobfuscation",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/41"
-  },
-  {
-    "title": "Security Incident Reporting",
-    "provider": "By Hack The Box Academy",
-    "type": "Defensive Security",
-    "detailsLink": "https://academy.hackthebox.com/course/preview/security-incident-reporting",
-    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/238"
-  },
-  {
-    "title": "SOC Level 1 Capstone",
-    "provider": "By TryHackMe",
-    "type": "Defensive Security",
-    "detailsLink": "https://tryhackme.com/module/soclevel1-capstone",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Practical Help Desk",
