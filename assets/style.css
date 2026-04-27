@@ -814,12 +814,14 @@ h4, h5, h6 {
 .course-filter-select:hover {
   border-color: var(--primary-color);
   box-shadow: 0 0 10px rgba(var(--primary-color-rgb), 0.1);
+  color: var(--primary-color);
 }
 
 .course-filter-select:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.15);
+  color: var(--primary-color);
 }
 
 .course-filter-arrow {
