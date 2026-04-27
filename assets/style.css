@@ -848,9 +848,9 @@ h4, h5, h6 {
 }
 
 @media (max-width: 576px) {
-  .course-filter-container { padding: 0.5rem 0; margin-bottom: 1.5rem; flex-direction: column; width: 100%; }
-  .course-filter-wrapper { width: 100%; }
-  .course-filter-select { width: 100%; font-size: 0.85rem; padding: 0.5rem 1.8rem 0.5rem 0.6rem; }
+  .course-filter-container { padding: 0.5rem 0; margin-bottom: 1.5rem; flex-direction: column; align-items: center; }
+  .course-filter-wrapper { width: auto; max-width: 100%; }
+  .course-filter-select { width: calc(max-content + 1.5rem); max-width: 100%; font-size: 0.85rem; padding: 0.5rem 1.8rem 0.5rem 0.6rem; }
   .course-filter-arrow { right: 0.6rem; }
 }
 
