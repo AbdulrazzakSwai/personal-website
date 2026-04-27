@@ -1215,6 +1215,21 @@ function createCourseFilter() {
     filterContainer.appendChild(typeWrapper);
     filterContainer.appendChild(providerWrapper);
 
+    const resetBtn = document.createElement('button');
+    resetBtn.className = 'course-filter-reset';
+    resetBtn.title = 'Reset Filters';
+    resetBtn.textContent = 'Reset';
+    resetBtn.addEventListener('click', () => {
+        currentCourseFilter = 'all';
+        currentProviderFilter = 'all';
+        typeSelect.value = 'all';
+        providerSelect.value = 'all';
+        coursesLoaded = 0;
+        if (dataCache.courses) updateCourseFilterOptions(dataCache.courses);
+        renderFilteredCourses();
+    });
+    filterContainer.appendChild(resetBtn);
+
     const coursesTab = document.getElementById('courses');
     const coursesGrid = document.getElementById('courses-grid');
     if (!coursesTab || !coursesGrid) return;
@@ -1429,6 +1444,20 @@ function createCertFilter() {
 
     filterContainer.appendChild(typeWrapper);
     filterContainer.appendChild(providerWrapper);
+
+    const resetBtn = document.createElement('button');
+    resetBtn.className = 'course-filter-reset';
+    resetBtn.title = 'Reset Filters';
+    resetBtn.textContent = 'Reset';
+    resetBtn.addEventListener('click', () => {
+        currentCertFilter = 'all';
+        currentCertProviderFilter = 'all';
+        typeSelect.value = 'all';
+        providerSelect.value = 'all';
+        if (dataCache.certifications) updateCertFilterOptions(dataCache.certifications);
+        renderFilteredCerts();
+    });
+    filterContainer.appendChild(resetBtn);
 
     const certsTab = document.getElementById('certifications');
     const certsGrid = document.getElementById('certifications-grid');

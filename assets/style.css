@@ -842,6 +842,31 @@ h4, h5, h6 {
   padding: 0.5rem;
 }
 
+.course-filter-reset {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 0.75rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.course-filter-reset:hover,
+.course-filter-reset:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(var(--primary-color-rgb), 0.1);
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .course-filter-select { width: 240px; max-width: 100%; font-size: 0.9rem; padding: 0.6rem 2rem 0.6rem 0.8rem; }
   .course-filter-arrow { right: 0.8rem; font-size: 0.8rem; }
