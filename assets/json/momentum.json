@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"Setting Up\" Course by Hack The Box Academy",
-    "date": "22 April 2026",
-    "description": "Completed the \"Setting Up\" course by Hack The Box Academy, which involved learning how to set up and configure security environments for penetration testing and defensive operations.",
+    "title": "Finished \"AI Fundamentals\" Course by TryHackMe",
+    "date": "27 April 2026",
+    "description": "Completed the \"AI Fundamentals\" course by TryHackMe, which involved learning the basic concepts of artificial intelligence and their security implications.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"AI Red Teamer\" Path by Hack The Box Academy",
-    "date": "18 April 2026",
-    "description": "Completed the \"AI Red Teamer\" path by Hack The Box Academy, which involved practically learning about AI-driven offensive and defensive techniques.",
+    "title": "Finished \"Setting Up\" Course by Hack The Box Academy",
+    "date": "22 April 2026",
+    "description": "Completed the \"Setting Up\" course by Hack The Box Academy, which involved learning how to set up and configure security environments for penetration testing and defensive operations.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }

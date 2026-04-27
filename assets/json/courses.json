@@ -2,91 +2,98 @@
   {
     "title": "Fundamentals of AI",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/fundamentals-of-ai",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/290"
   },
   {
     "title": "Applications of AI in Infosec",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/applications-of-ai-in-infosec",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/292"
   },
   {
     "title": "Introduction to Red Teaming AI",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/introduction-to-red-teaming-ai",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/294"
   },
   {
     "title": "Prompt Injection Attacks",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/prompt-injection-attacks",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/297"
   },
   {
     "title": "LLM Output Attacks",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/llm-output-attacks",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/307"
   },
   {
     "title": "AI Data Attacks",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/ai-data-attacks",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/302"
   },
   {
     "title": "Attacking AI - Application and System",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/attacking-ai---application-and-system",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/315"
   },
   {
     "title": "AI Evasion - Foundations",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/ai-evasion---foundations",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/318"
   },
   {
     "title": "AI Evasion - First-Order Attacks",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/ai-evasion---first-order-attacks",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/319"
   },
   {
     "title": "AI Evasion - Sparsity Attacks",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/ai-evasion---sparsity-attacks",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/320"
   },
   {
     "title": "AI Privacy",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/ai-privacy",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/335"
   },
   {
     "title": "AI Defense",
     "provider": "By Hack The Box Academy",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://academy.hackthebox.com/course/preview/ai-defense",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/322"
   },
   {
+    "title": "AI Fundamentals",
+    "provider": "By TryHackMe",
+    "type": "Artificial Intelligence",
+    "detailsLink": "https://tryhackme.com/module/ai-fundamentals",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Defending AI",
     "provider": "By TryHackMe",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "detailsLink": "https://tryhackme.com/module/defensive-ai",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },

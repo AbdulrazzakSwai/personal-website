@@ -2,7 +2,7 @@
   {
     "title": "Certified Offensive AI Expert (COAE)",
     "provider": "By Hack The Box Academy and Google",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "status": "⌛ Path Completed, Preparing for Exam",
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert",
@@ -61,9 +61,9 @@
   {
     "title": "AI Security",
     "provider": "By TryHackMe",
-    "type": "Artificial Intelligence (AI)",
+    "type": "Artificial Intelligence",
     "status": "⌛ In Progress",
-    "progress": 18,
+    "progress": 24,
     "detailsLink": "https://tryhackme.com/path/outline/aisecurity",
     "finished": false
   },
