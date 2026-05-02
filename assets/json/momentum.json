@@ -1,22 +1,22 @@
 [
   {
-    "title": "Working on MCBTA Certification by Cyberwarfare Labs",
+    "title": "Working on \"AI Security\" Certification by TryHackMe",
     "date": "Ongoing",
-    "description": "Currently preparing for the Multi-Cloud Blue Team Analyst (MCBTA) certification to enhance cloud security skills, through solving practical blue team security labs.",
+    "description": "Currently working on the AI Security certification by TryHackMe to develop skills in securing artificial intelligence systems.",
     "icon": "fas fa-hourglass-half",
     "badge": "Current Focus"
+  },
+  {
+    "title": "Finished \"Secure AI Systems\" Course by TryHackMe",
+    "date": "02 May 2026",
+    "description": "Completed the \"Secure AI Systems\" course by TryHackMe, which involved understanding how AI systems are architected and how to assess their security posture.",
+    "icon": "fas fa-check-circle",
+    "badge": "Latest Milestone"
   },
   {
     "title": "Finished \"AI Fundamentals\" Course by TryHackMe",
     "date": "27 April 2026",
     "description": "Completed the \"AI Fundamentals\" course by TryHackMe, which involved learning the basic concepts of artificial intelligence and their security implications.",
-    "icon": "fas fa-check-circle",
-    "badge": "Latest Milestone"
-  },
-  {
-    "title": "Finished \"Setting Up\" Course by Hack The Box Academy",
-    "date": "22 April 2026",
-    "description": "Completed the \"Setting Up\" course by Hack The Box Academy, which involved learning how to set up and configure security environments for penetration testing and defensive operations.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }

@@ -1,5 +1,12 @@
 [
   {
+    "title": "AI Fundamentals",
+    "provider": "By TryHackMe",
+    "type": "Artificial Intelligence",
+    "detailsLink": "https://tryhackme.com/module/ai-fundamentals",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Fundamentals of AI",
     "provider": "By Hack The Box Academy",
     "type": "Artificial Intelligence",
@@ -84,17 +91,17 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/322"
   },
   {
-    "title": "AI Fundamentals",
-    "provider": "By TryHackMe",
-    "type": "Artificial Intelligence",
-    "detailsLink": "https://tryhackme.com/module/ai-fundamentals",
-    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
-  },
-  {
     "title": "Defending AI",
     "provider": "By TryHackMe",
     "type": "Artificial Intelligence",
     "detailsLink": "https://tryhackme.com/module/defensive-ai",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
+    "title": "Secure AI Systems",
+    "provider": "By TryHackMe",
+    "type": "Artificial Intelligence",
+    "detailsLink": "https://tryhackme.com/module/secure-ai-systems",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
