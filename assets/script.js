@@ -475,6 +475,10 @@ function initPortfolioTabs() {
 
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
+            if (btn.classList.contains('active')) {
+                return;
+            }
+            
             const targetTab = btn.getAttribute('data-tab');
             
             tabContents.forEach(content => {
