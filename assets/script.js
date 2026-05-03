@@ -1516,13 +1516,13 @@ function getFilteredCertsByType(certs) {
             case 'ai': return type.includes('artificial intelligence');
             case 'offensive': return type.includes('offensive security');
             case 'defensive': return type.includes('defensive security');
-            case 'it': return type.includes('information technology');
+            case 'programming': return type.includes('programming');
             case 'soft': return type.includes('soft skills');
             case 'general':
                 return !type.includes('artificial intelligence') &&
                        !type.includes('offensive security') && 
                        !type.includes('defensive security') && 
-                       !type.includes('information technology') && 
+                       !type.includes('programming') && 
                        !type.includes('soft skills');
             default: return true;
         }
@@ -1549,7 +1549,7 @@ function updateCertFilterOptions(certs) {
     const certsForProviderCounts = getFilteredCertsByType(certs);
 
     const typeCounts = {
-        all: certsForTypeCounts.length, ai: 0, offensive: 0, defensive: 0, it: 0
+        all: certsForTypeCounts.length, ai: 0, offensive: 0, defensive: 0, programming: 0
     };
 
     certsForTypeCounts.forEach(cert => {
@@ -1557,14 +1557,14 @@ function updateCertFilterOptions(certs) {
         if (type.includes('artificial intelligence')) typeCounts.ai++;
         else if (type.includes('offensive security')) typeCounts.offensive++;
         else if (type.includes('defensive security')) typeCounts.defensive++;
-        else if (type.includes('information technology')) typeCounts.it++;
+        else if (type.includes('programming')) typeCounts.programming++;
     });
 
     let typeOptions = [
         { value: 'ai', label: `Artificial Intelligence`, count: typeCounts.ai },
         { value: 'offensive', label: `Offensive Security`, count: typeCounts.offensive },
         { value: 'defensive', label: `Defensive Security`, count: typeCounts.defensive },
-        { value: 'it', label: `Information Technology`, count: typeCounts.it }
+        { value: 'programming', label: `Programming`, count: typeCounts.programming }
     ];
 
     typeOptions.sort((a, b) => {
