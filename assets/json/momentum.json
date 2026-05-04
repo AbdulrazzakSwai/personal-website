@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"Secure AI Systems\" Course by TryHackMe",
-    "date": "02 May 2026",
-    "description": "Completed the \"Secure AI Systems\" course by TryHackMe, which involved understanding how AI systems are architected and how to assess their security posture.",
+    "title": "Finished \"Core SOC Solutions\" Course by TryHackMe",
+    "date": "04 May 2026",
+    "description": "Completed the \"Core SOC Solutions\" course by TryHackMe, which involved practically learning about different tools used in security operations.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"AI Fundamentals\" Course by TryHackMe",
-    "date": "27 April 2026",
-    "description": "Completed the \"AI Fundamentals\" course by TryHackMe, which involved learning the basic concepts of artificial intelligence and their security implications.",
+    "title": "Finished \"Secure AI Systems\" Course by TryHackMe",
+    "date": "02 May 2026",
+    "description": "Completed the \"Secure AI Systems\" course by TryHackMe, which involved understanding how AI systems are architected and how to assess their security posture.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }

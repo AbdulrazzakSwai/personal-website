@@ -329,6 +329,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/41"
   },
   {
+    "title": "Core SOC Solutions",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/core-soc-solutions",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Security Incident Reporting",
     "provider": "By Hack The Box Academy",
     "type": "Defensive Security",
