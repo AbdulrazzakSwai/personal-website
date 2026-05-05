@@ -287,6 +287,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/229"
   },
   {
+    "title": "Network Traffic Analysis",
+    "provider": "By TryHackMe",
+    "type": "Defensive Security",
+    "detailsLink": "https://tryhackme.com/module/network-traffic-analysis",
+    "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
+  },
+  {
     "title": "Network Security and Traffic Analysis",
     "provider": "By TryHackMe",
     "type": "Defensive Security",

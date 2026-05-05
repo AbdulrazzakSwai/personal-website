@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"Core SOC Solutions\" Course by TryHackMe",
-    "date": "04 May 2026",
-    "description": "Completed the \"Core SOC Solutions\" course by TryHackMe, which involved practically learning about different tools used in security operations.",
+    "title": "Finished \"Network Traffic Analysis\" Course by TryHackMe",
+    "date": "05 May 2026",
+    "description": "Completed the \"Network Traffic Analysis\" course by TryHackMe, which involved learning how to analyze and interpret network traffic for security purposes.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"Secure AI Systems\" Course by TryHackMe",
-    "date": "02 May 2026",
-    "description": "Completed the \"Secure AI Systems\" course by TryHackMe, which involved understanding how AI systems are architected and how to assess their security posture.",
+    "title": "Finished \"Core SOC Solutions\" Course by TryHackMe",
+    "date": "04 May 2026",
+    "description": "Completed the \"Core SOC Solutions\" course by TryHackMe, which involved practically learning about different tools used in security operations.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
