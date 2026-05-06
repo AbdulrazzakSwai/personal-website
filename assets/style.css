@@ -1029,15 +1029,6 @@ h4, h5, h6 {
   .contact-card .card:hover { transform: translateY(-5px); }
 }
 
-.contact-card:nth-child(1):hover .contact-icon i { color: #0077b5 !important; }
-
-.contact-card:nth-child(2):hover .contact-icon i { color: #6e5494 !important; }
-[data-theme="dark"] .contact-card:nth-child(2):hover .contact-icon i { color: #e6edf3 !important; }
-
-.contact-card:nth-child(3):hover .contact-icon i { color: #9fef00 !important; }
-
-.contact-card:nth-child(4):hover .contact-icon i { color: #c11111 !important; }
-
 .view-more-btn {
   text-align: center;
   margin-top: 2rem;
