@@ -13,16 +13,22 @@ let currentCertFilter = 'all';
 let currentCertProviderFilter = 'all';
 
 function initTheme() {
-    const savedTheme = 'dark';
-    document.body.setAttribute('data-theme', savedTheme);
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
     updateThemeIcon(savedTheme);
 }
 
 function toggleTheme() {
-    const currentTheme = document.body.getAttribute('data-theme');
+    const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.body.setAttribute('data-theme', newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
     updateThemeIcon(newTheme);
+    
+    if (newTheme === 'light') {
+        localStorage.setItem('theme', 'light');
+    } else {
+        localStorage.removeItem('theme');
+    }
 }
 
 function updateThemeIcon(theme) {
@@ -1711,7 +1717,7 @@ function initHeroParticles() {
 
     updateColors();
     const observer = new MutationObserver(updateColors);
-    observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
     function resize() {
         width = canvas.width = window.innerWidth;

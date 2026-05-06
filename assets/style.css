@@ -20,7 +20,7 @@
   --glow-secondary: rgba(14, 165, 233, 0.08);
   --card-hover-glow: 0 0 20px rgba(0, 85, 255, 0.12), 0 8px 32px rgba(0,0,0,0.06);
   --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  --shimmer-color: rgba(0, 0, 0, 0.018);
+  --shimmer-color: rgba(0, 0, 0, 0.04);
   --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
