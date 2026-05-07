@@ -958,6 +958,7 @@ h4, h5, h6 {
 .skill-defensive { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white !important; border-color: transparent; }
 .skill-it { background: linear-gradient(135deg, #d97706, #b45309); color: white !important; border-color: transparent; }
 .skill-soft { background: linear-gradient(135deg, #7c3aed, #6d28d9); color: white !important; border-color: transparent; }
+.skill-programming { background: linear-gradient(135deg, #0f766e, #115e59); color: white !important; border-color: transparent; }
 .skill-general { background: linear-gradient(135deg, #6b7280, #4b5563); color: white !important; border-color: transparent; }
 
 .btn {

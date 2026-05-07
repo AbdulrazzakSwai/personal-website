@@ -602,6 +602,8 @@ function renderCertifications(certifications) {
             skillClass = 'skill-it';
         } else if (type.includes('soft skills')) {
             skillClass = 'skill-soft';
+        } else if (type.includes('programming')) {
+            skillClass = 'skill-programming';
         } else {
             skillClass = 'skill-general';
         }
