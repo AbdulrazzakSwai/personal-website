@@ -1,22 +1,22 @@
 [
   {
-    "title": "Working on \"AI Security\" Certification by TryHackMe",
+    "title": "Preparing for HTB CDSA 7-Day Practical Exam",
     "date": "Ongoing",
-    "description": "Currently working on the AI Security certification by TryHackMe to develop skills in securing artificial intelligence systems.",
+    "description": "Preparing for the Hack The Box Certified Defensive Security Analyst (HTB CDSA) 7-day practical exam to strengthen my expertise in defensive security and incident response.",
     "icon": "fas fa-hourglass-half",
     "badge": "Current Focus"
   },
   {
     "title": "Finished \"Network Traffic Analysis\" Course by TryHackMe",
     "date": "05 May 2026",
-    "description": "Completed the \"Network Traffic Analysis\" course by TryHackMe, which involved learning how to analyze and interpret network traffic for security purposes.",
+    "description": "Completed the \"Network Traffic Analysis\" course by TryHackMe which involved learning how to analyze and interpret network traffic for security purposes.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
     "title": "Finished \"Core SOC Solutions\" Course by TryHackMe",
     "date": "04 May 2026",
-    "description": "Completed the \"Core SOC Solutions\" course by TryHackMe, which involved practically learning about different tools used in security operations.",
+    "description": "Completed the \"Core SOC Solutions\" course by TryHackMe which involved practically learning about different tools used in security operations.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
