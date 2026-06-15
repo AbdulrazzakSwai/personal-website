@@ -40,15 +40,6 @@
     "finished": "partial"
   },
   {
-    "title": "Multi-Cloud Blue Team Analyst (MCBTA)",
-    "provider": "By Cyberwarfare Labs",
-    "type": "Defensive Security",
-    "status": "⏳ In Progress",
-    "progress": 57.14,
-    "detailsLink": "https://cyberwarfare.live/product/multi-cloud-blue-team-analyst-mcbta/",
-    "finished": false
-  },
-  {
     "title": "Practical SOC Analyst Associate (PSAA)",
     "provider": "By TCM Security",
     "type": "Defensive Security",
@@ -57,15 +48,6 @@
     "detailsLink": "https://certifications.tcm-sec.com/psaa/",
     "proofLink": "https://certified.tcm-sec.com/833472ca-8415-4843-aec8-53c8368d47d3",
     "finished": true
-  },
-  {
-    "title": "AI Security",
-    "provider": "By TryHackMe",
-    "type": "Artificial Intelligence",
-    "status": "⌛ In Progress",
-    "progress": 44,
-    "detailsLink": "https://tryhackme.com/path/outline/aisecurity",
-    "finished": false
   },
   {
     "title": "SOC Level 1",
