@@ -431,6 +431,51 @@ async function loadAchievements() {
     }
 }
 
+async function loadBooks() {
+    try {
+        const response = await fetch('assets/json/books.json');
+        const books = await response.json();
+        const grid = document.getElementById('books-grid');
+        if (!grid) return;
+        
+        books.forEach((book, index) => {
+            const col = document.createElement('div');
+            col.className = 'col-lg-8 col-12';
+            
+            const tagsHtml = book.tags.map(tag => `<span class="book-tag">${tag}</span>`).join('');
+            const linkHtml = book.link ? `
+                <div class="mt-auto text-start pt-3">
+                    <a href="${book.link}" target="_blank" rel="noopener noreferrer" class="book-link d-inline-flex align-items-center">
+                        <i class="fas fa-external-link-alt me-2"></i>More details
+                    </a>
+                </div>` : '';
+            
+            col.innerHTML = `
+                <div class="book-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
+                    <div class="book-open">
+                        <div class="book-page left-page">
+                            <h4 class="book-title">${book.title}</h4>
+                            <p class="book-author">${book.author}</p>
+                        </div>
+                        <div class="book-page right-page d-flex flex-column">
+                            <p class="book-summary mb-3">${book.summary}</p>
+                            <div class="book-tags mb-3">
+                                ${tagsHtml}
+                            </div>
+                            ${linkHtml}
+                        </div>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(col);
+        });
+        
+        initAnimations();
+    } catch (error) {
+        console.error('Error loading books:', error);
+    }
+}
+
 function initStatsAnimation() {
     const statNumbers = document.querySelectorAll('.statistics-number');
     
@@ -827,7 +872,7 @@ function renderProjects(projects) {
         col.className = 'col-12 col-md-6 col-lg-6';
 
         const linksHtml = Array.isArray(project.links) && project.links.length > 0
-            ? project.links.map(link => `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="card-btn primary me-1 mb-1">${link.title}</a>`).join('')
+            ? project.links.map(link => `<a href="${link.link}" target="_blank" rel="noopener noreferrer" class="card-btn primary me-1 mb-1">${link.title}</a>`).join('')
             : '';
 
         col.innerHTML = `
@@ -917,6 +962,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadAboutData();
     loadHighlights();
     loadStatistics();
+    loadBooks();
     loadAchievements();
     loadCourses();
     loadProjects();
@@ -1113,7 +1159,7 @@ function initTiltEffect() {
     document.addEventListener('mousemove', (e) => {
         if (window.innerWidth <= 1024) return;
 
-        const card = e.target.closest('.card, .highlight-card, .statistics-card, .achievement-card');
+        const card = e.target.closest('.card, .highlight-card, .statistics-card, .achievement-card, .book-open');
         
         if (currentTiltedCard && currentTiltedCard !== card) {
             currentTiltedCard.style.transform = '';

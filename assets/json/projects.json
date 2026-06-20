@@ -4,7 +4,7 @@
     "description": "A fully local, AI-powered Security Operations Center (SOC) platform designed for cybersecurity analysts, combining a modern web dashboard with locally-hosted Large Language Models (Llama 3 and 3.2 via Ollama).<div class=\"content-spacer\"></div>Features include automated smart log analysis (SIEM, EDR, PCAP), an interactive conversational SOC AI assistant with context memory, alert triage lifecycle management, PDF report exports, and a real-time dashboard, all running 100% offline securely.",
     "skills": ["AI", "LLM", "Ollama", "Python", "Security Operations Center (SOC)", "Log Analysis", "Incident Response"],
     "links": [
-      { "url": "https://github.com/AbdulrazzakSwai/IntelliBlue", "title": "IntelliBlue on GitHub" }
+      { "link": "https://github.com/AbdulrazzakSwai/IntelliBlue", "title": "IntelliBlue on GitHub" }
     ]
   },
   {
@@ -24,7 +24,7 @@
     "description": "Created a clear and structured cybersecurity learning path that takes learners from beginner to professional level.<div class=\"content-spacer\"></div>Designed its curriculum to cover Presecurity, Cybersecurity Fundamentals, Essential Programming, Primary Cybersecurity Fields, Professional & Advanced Certifications, Specialization, and Soft Skills.<div class=\"content-spacer\"></div>Built it on reputable platforms like TryHackMe, Hack The Box, and TCM Security with focus on practicality, affordability, and real-world applications.",
     "skills": ["Curriculum Design", "Educational Planning", "Cybersecurity Mentorship", "Community Engagement"],
     "links": [
-      { "url": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path", "title": "Ultimate Cybersecurity Path" }
+      { "link": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path", "title": "Ultimate Cybersecurity Path" }
     ]
   },
   {
@@ -32,7 +32,7 @@
     "description": "Authored detailed writeups for various machines and challenges, documenting methodologies, tools used, and step-by-step solutions.<div class=\"content-spacer\"></div>Shared these writeups on my personal blog to help others learn and understand different cybersecurity concepts and techniques.",
     "skills": ["Technical Writing", "Documentation", "Knowledge Sharing"],
     "links": [
-      { "url": "https://cybersecurity-writeups.notion.site", "title": "Cybersecurity Writeups" }
+      { "link": "https://cybersecurity-writeups.notion.site", "title": "Cybersecurity Writeups" }
     ]
   },
   {
@@ -40,8 +40,8 @@
     "description": "Designed and deployed 3 Active Directory (AD) home labs simulating real enterprise networks with Domain Controllers and client systems.<div class=\"content-spacer\"></div>Practiced advanced Active Directory exploitation techniques using popular tools.",
     "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
     "links": [
-      { "url": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
-      { "url": "https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course", "title": "AD Hacking Course" }
+      { "link": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
+      { "link": "https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course", "title": "AD Hacking Course" }
     ]
   },
   {
@@ -61,7 +61,7 @@
     "description": "Designed and developed a fully responsive personal website to present my cybersecurity journey, skills, certifications, and projects.<div class=\"content-spacer\"></div>Built using HTML, CSS, JavaScript, and Bootstrap.<div class=\"content-spacer\"></div>The site features dynamic content loading, smooth animations, interactive UI elements, and a clean, modern design focused on accessibility and user experience.",
     "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
     "links": [
-      { "url": "https://www.abdulrazzakswai.me", "title": "Personal Website" }
+      { "link": "https://www.abdulrazzakswai.me", "title": "Personal Website" }
     ]
   },
   {
@@ -69,7 +69,7 @@
     "description": "Designed a website that was previously used to showcase my background, education, projects, and more.<div class=\"content-spacer\"></div>It is no longer actively maintained; its content is not being updated.<div class=\"content-spacer\"></div>Visit my main website for the latest updates.",
     "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
     "links": [
-      { "url": "https://abdulrazzakswai.github.io/legacy-website", "title": "Legacy Personal Website" }
+      { "link": "https://abdulrazzakswai.github.io/legacy-website", "title": "Legacy Personal Website" }
     ]
   }
 ]
