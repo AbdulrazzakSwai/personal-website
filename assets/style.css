@@ -840,6 +840,7 @@ h4, h5, h6 {
   color: var(--text-muted);
   font-weight: 500;
   font-size: 1.1rem;
+  margin-bottom: 0;
 }
 
 .book-summary {
