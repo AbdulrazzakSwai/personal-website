@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"Network Traffic Analysis\" Course by TryHackMe",
-    "date": "05 May 2026",
-    "description": "Completed the \"Network Traffic Analysis\" course by TryHackMe which involved learning how to analyze and interpret network traffic for security purposes.",
+    "title": "Solved \"DanaBot\" Lab by CyberDefenders",
+    "date": "20 June 2026",
+    "description": "Solved the \"DanaBot\" lab by CyberDefenders which involved analyzing DanaBot malware spread in a network environment.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"Core SOC Solutions\" Course by TryHackMe",
-    "date": "04 May 2026",
-    "description": "Completed the \"Core SOC Solutions\" course by TryHackMe which involved practically learning about different tools used in security operations.",
+    "title": "Solved \"FakeGPT\" Lab by CyberDefenders",
+    "date": "19 June 2026",
+    "description": "Solved the \"FakeGPT\" lab by CyberDefenders which involved analyzing a malicious browser extension claiming to be an AI assistant.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
