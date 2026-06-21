@@ -3,14 +3,21 @@
     "title": "Atomic Habits",
     "author": "James Clear",
     "summary": "An exploration of human behavior that provides a practical framework for building positive routines and breaking negative ones through incremental, daily changes.",
-    "link": "https://jamesclear.com/atomic-habits",
+    "link": "https://www.goodreads.com/book/show/42603095-atomic-habits",
     "tags": ["Habits", "Self-Help", "Growth"]
   },
   {
     "title": "Dopamine Nation",
     "author": "Dr. Anna Lembke",
     "summary": "A deep dive into the neuroscience of reward, offering actionable strategies to manage consumption and find sustainable balance in a highly stimulating world.",
-    "link": "https://www.annalembke.com/dopamine-nation",
+    "link": "https://www.goodreads.com/book/show/55723020-dopamine-nation",
     "tags": ["Psychology", "Health", "Balance"]
+  },
+  {
+    "title": "Men Are from Mars, Women Are from Venus",
+    "author": "John Gray",
+    "summary": "A classic guide to understanding gender communication differences, offering practical strategies to improve relationships and emotional intelligence.",
+    "link": "https://www.goodreads.com/book/show/1277.Men_are_from_Mars_Women_are_from_Venus",
+    "tags": ["Psychology", "Relationships", "Communication"]
   }
 ]
