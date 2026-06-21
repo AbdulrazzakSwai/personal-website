@@ -35,8 +35,8 @@
     "icon": "fas fa-door-open"
   },
   {
-    "label": "Investigated CyberDefenders Labs",
-    "value": 3,
+    "label": "Investigated CyberDefenders Incidents",
+    "value": 4,
     "icon": "fas fa-microscope"
   },
   {
