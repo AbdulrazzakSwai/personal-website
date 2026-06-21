@@ -43,5 +43,10 @@
     "label": "Finished Large Scale Projects",
     "value": 10,
     "icon": "fas fa-project-diagram"
+  },
+  {
+    "label": "Read Productivity Books",
+    "value": 2,
+    "icon": "fas fa-book-reader"
   }
 ]
