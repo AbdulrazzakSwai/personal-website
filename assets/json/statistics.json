@@ -1,5 +1,10 @@
 [
   {
+    "label": "Finished Large Scale Projects",
+    "value": 10,
+    "icon": "fas fa-project-diagram"
+  },
+  {
     "label": "Earned Practical Certifications",
     "value": 10,
     "icon": "fas fa-certificate"
@@ -13,6 +18,11 @@
     "label": "Completed Online Courses",
     "value": 124,
     "icon": "fas fa-book"
+  },
+  {
+    "label": "Hacked Enterprise Networks (Ethically)",
+    "value": 6,
+    "icon": "fas fa-user-secret"
   },
   {
     "label": "Rooted Hack The Box Labs",
@@ -33,16 +43,6 @@
     "label": "Published Cybersecurity Writeups",
     "value": 30,
     "icon": "fas fa-file-code"
-  },
-  {
-    "label": "Hacked Enterprise Networks (Ethically)",
-    "value": 6,
-    "icon": "fas fa-user-secret"
-  },
-  {
-    "label": "Finished Large Scale Projects",
-    "value": 10,
-    "icon": "fas fa-project-diagram"
   },
   {
     "label": "Read Productivity Books",
