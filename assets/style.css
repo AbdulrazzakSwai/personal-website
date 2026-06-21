@@ -783,7 +783,7 @@ h4, h5, h6 {
   display: flex;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  border-radius: 8px;
+  border-radius: 16px;
   box-shadow: var(--shadow-md);
   overflow: hidden;
   height: 100%;
@@ -809,23 +809,41 @@ h4, h5, h6 {
 }
 
 .book-page.left-page {
-  border-right: 2px solid var(--border-color);
-  background: linear-gradient(90deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 90%, rgba(0,0,0,0.05) 100%);
+  border-right: 1px solid var(--border-color);
+  margin-right: 1px;
+  background: linear-gradient(90deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.22) 100%);
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 [data-theme="dark"] .book-page.left-page {
-  background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, transparent 10%, transparent 90%, rgba(255,255,255,0.02) 100%);
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.book-page.left-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 12px;
+  height: 42px;
+  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color)); 
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 82%, 0% 100%);
+  filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.25));
+  z-index: 5;
 }
 
 .book-page.right-page {
-  background: linear-gradient(-90deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 90%, rgba(0,0,0,0.05) 100%);
+  border-left: 1px solid var(--border-color);
+  margin-left: 1px;
+  background: linear-gradient(-90deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.22) 100%);
 }
 
 [data-theme="dark"] .book-page.right-page {
-  background: linear-gradient(-90deg, rgba(0,0,0,0.2) 0%, transparent 10%, transparent 90%, rgba(255,255,255,0.02) 100%);
+  border-left: 1px solid rgba(255, 255, 255, 0.03);
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.2) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.45) 100%);
 }
 
 .book-title {
@@ -855,13 +873,15 @@ h4, h5, h6 {
 }
 
 .book-tag {
-  background: var(--glow-primary);
+  display: inline-block;
+  background: transparent;
   color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   padding: 0.25rem 0.75rem;
-  border-radius: 50rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0.25rem 0.25rem 0.25rem 0;
 }
 
 .book-link {
@@ -880,23 +900,42 @@ h4, h5, h6 {
 @media (max-width: 768px) {
   .book-open {
     flex-direction: column;
+    border-radius: 12px;
   }
   .book-page.left-page {
     border-right: none;
-    border-bottom: 2px solid var(--border-color);
+    margin-right: 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1px;
     padding: 1.5rem;
     min-height: 150px;
-    background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 90%, rgba(0,0,0,0.05) 100%);
+    background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.22) 100%);
   }
   [data-theme="dark"] .book-page.left-page {
-    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 10%, transparent 90%, rgba(255,255,255,0.02) 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.45) 100%);
+  }
+  .book-page.left-page::before {
+    left: auto;
+    right: 24px;
+    top: 0;
   }
   .book-page.right-page {
+    border-left: none;
+    margin-left: 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 1px;
     padding: 1.5rem;
-    background: linear-gradient(0deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 90%, rgba(0,0,0,0.05) 100%);
+    background: linear-gradient(0deg, rgba(var(--primary-color-rgb), 0.05) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.22) 100%);
   }
   [data-theme="dark"] .book-page.right-page {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2) 0%, transparent 10%, transparent 90%, rgba(255,255,255,0.02) 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, transparent 10%, transparent 94%, rgba(0, 0, 0, 0.45) 100%);
+  }
+  .book-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    margin: 0.1rem !important;
   }
 }
 
