@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"Red Stealer\" Lab by CyberDefenders",
-    "date": "21 June 2026",
-    "description": "Solved the \"Red Stealer\" lab by CyberDefenders which involved performing threat intelligence on a given malware hash to identify its characteristics.",
+    "title": "Solved \"IcedID\" Lab by CyberDefenders",
+    "date": "22 June 2026",
+    "description": "Solved the \"IcedID\" lab by CyberDefenders which involved performing threat intelligence analysis on a given malware hash.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"DanaBot\" Lab by CyberDefenders",
-    "date": "20 June 2026",
-    "description": "Solved the \"DanaBot\" lab by CyberDefenders which involved analyzing DanaBot malware spread in a network environment.",
+    "title": "Solved \"Red Stealer\" Lab by CyberDefenders",
+    "date": "21 June 2026",
+    "description": "Solved the \"Red Stealer\" lab by CyberDefenders which involved performing threat intelligence on a given malware hash to identify its characteristics.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
