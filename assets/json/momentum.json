@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"IcedID\" Lab by CyberDefenders",
-    "date": "22 June 2026",
-    "description": "Solved the \"IcedID\" lab by CyberDefenders which involved performing threat intelligence analysis on a given malware hash.",
+    "title": "Solved \"Web Investigation\" Lab by CyberDefenders",
+    "date": "23 June 2026",
+    "description": "Analyzed network traces (PCAP) of a web application compromise to reconstruct the attacker's timeline and understand their exact steps within the network.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"Red Stealer\" Lab by CyberDefenders",
-    "date": "21 June 2026",
-    "description": "Solved the \"Red Stealer\" lab by CyberDefenders which involved performing threat intelligence on a given malware hash to identify its characteristics.",
+    "title": "Solved \"IcedID\" Lab by CyberDefenders",
+    "date": "22 June 2026",
+    "description": "Performed threat intelligence and OSINT analysis on a malware hash to extract key indicators of compromise (IOCs).",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
