@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"Web Investigation\" Lab by CyberDefenders",
-    "date": "23 June 2026",
-    "description": "Analyzed network traces (PCAP) of a web application compromise to reconstruct the attacker's timeline and understand their exact steps within the network.",
+    "title": "Solved \"PsExec Hunt\" Lab by CyberDefenders",
+    "date": "24 June 2026",
+    "description": "Analyzed SMB traffic and IDS alerts within a PCAP file to trace suspicious PsExec lateral movement, identifying compromised systems, exposed credentials, and targeted administrative shares.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"IcedID\" Lab by CyberDefenders",
-    "date": "22 June 2026",
-    "description": "Performed threat intelligence and OSINT analysis on a malware hash to extract key indicators of compromise (IOCs).",
+    "title": "Solved \"Web Investigation\" Lab by CyberDefenders",
+    "date": "23 June 2026",
+    "description": "Analyzed network traces (PCAP) of a web application compromise to reconstruct the attacker's timeline and understand their exact steps within the network.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
