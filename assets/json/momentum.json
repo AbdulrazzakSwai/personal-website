@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved \"PsExec Hunt\" Lab by CyberDefenders",
-    "date": "24 June 2026",
-    "description": "Analyzed SMB traffic and IDS alerts within a PCAP file to trace suspicious PsExec lateral movement, identifying compromised systems, exposed credentials, and targeted administrative shares.",
+    "title": "Solved \"Oski\" Lab by CyberDefenders",
+    "date": "25 June 2026",
+    "description": "Analyzed a malicious PPT file on Any.run sandbox reports to map out an Oski stealer infection and its behavior. Identified C2 infrastructure, RC4 decryption keys, and MITRE ATT&CK techniques.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"Web Investigation\" Lab by CyberDefenders",
-    "date": "23 June 2026",
-    "description": "Analyzed network traces (PCAP) of a web application compromise to reconstruct the attacker's timeline and understand their exact steps within the network.",
+    "title": "Solved \"PsExec Hunt\" Lab by CyberDefenders",
+    "date": "24 June 2026",
+    "description": "Analyzed SMB traffic and IDS alerts within a PCAP file to trace suspicious PsExec lateral movement, identifying compromised systems, exposed credentials, and targeted administrative shares.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
