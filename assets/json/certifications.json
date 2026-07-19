@@ -1,5 +1,15 @@
 [
   {
+    "title": "Certified Penetration Testing Specialist (CPTS)",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "status": "✅ Certified: All Domains Compromised & Reported",
+    "progress": 100,
+    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
+    "proofLink": "https://www.credly.com/badges/30b4a226-1bc6-46a7-96f2-3bfbd413cdd3/public_url",
+    "finished": "true"
+  },
+  {
     "title": "Certified Offensive AI Expert (COAE)",
     "provider": "By Hack The Box Academy and Google",
     "type": "Artificial Intelligence",
@@ -17,16 +27,6 @@
     "progress": 100,
     "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-defensive-security-analyst",
     "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/390",
-    "finished": "partial"
-  },
-  {
-    "title": "Certified Penetration Testing Specialist (CPTS)",
-    "provider": "By Hack The Box Academy",
-    "type": "Offensive Security",
-    "status": "⌛ Path Completed, Preparing for Exam",
-    "progress": 100,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist",
-    "proofLink": "https://academy.hackthebox.com/achievement/1545227/path/16",
     "finished": "partial"
   },
   {

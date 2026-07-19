@@ -6,12 +6,12 @@
   },
   {
     "label": "Earned Practical Certifications",
-    "value": 10,
+    "value": 11,
     "icon": "fas fa-certificate"
   },
   {
     "label": "Upcoming Practical Certifications",
-    "value": 4,
+    "value": 3,
     "icon": "fas fa-clock"
   },
   {
