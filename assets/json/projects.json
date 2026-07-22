@@ -2,74 +2,150 @@
   {
     "title": "IntelliBlue: AI-Powered SOC Platform",
     "description": "A fully local, AI-powered Security Operations Center (SOC) platform designed for cybersecurity analysts, combining a modern web dashboard with locally-hosted Large Language Models (Llama 3 and 3.2 via Ollama).<div class=\"content-spacer\"></div>Features include automated smart log analysis (SIEM, EDR, PCAP), an interactive conversational SOC AI assistant with context memory, alert triage lifecycle management, PDF report exports, and a real-time dashboard, all running 100% offline securely.",
-    "skills": ["AI", "LLM", "Ollama", "Python", "Security Operations Center (SOC)", "Log Analysis", "Incident Response"],
+    "skills": [
+      "AI",
+      "LLM",
+      "Ollama",
+      "Python",
+      "Security Operations Center (SOC)",
+      "Log Analysis",
+      "Incident Response"
+    ],
     "links": [
-      { "link": "https://github.com/AbdulrazzakSwai/IntelliBlue", "title": "IntelliBlue on GitHub" }
+      {
+        "link": "https://github.com/AbdulrazzakSwai/IntelliBlue",
+        "title": "IntelliBlue on GitHub"
+      }
     ]
   },
   {
     "title": "Critical Security Vulnerabilities Discovery",
     "description": "Discovered and responsibly reported a critical Insecure Direct Object Reference (IDOR) vulnerability in the university's online system, which exposed all students' sensitive data.<div class=\"content-spacer\"></div>Identified a second vulnerability that was patched before I had the chance to report it.",
-    "skills": ["Vulnerability Assessment", "Responsible Disclosure", "Web Security", "IDOR"],
+    "skills": [
+      "Vulnerability Assessment",
+      "Responsible Disclosure",
+      "Web Security",
+      "IDOR"
+    ],
     "links": []
   },
   {
     "title": "Leading Cybersecurity Curriculum Reform at Al Ain University",
     "description": "Led an initiative to modernize the cybersecurity curriculum by shifting from theoretical teaching to a hands-on, practical learning approach.<div class=\"content-spacer\"></div>Advocated for integrating real-world labs and gamified platforms such as TryHackMe and Hack The Box.<div class=\"content-spacer\"></div>Collaborated closely with the head of cybersecurity and senior faculty members to implement these curriculum enhancements.",
-    "skills": ["Curriculum Development", "Advocacy", "Cybersecurity Education", "Practical Learning"],
+    "skills": [
+      "Curriculum Development",
+      "Advocacy",
+      "Cybersecurity Education",
+      "Practical Learning"
+    ],
     "links": []
   },
   {
     "title": "Ultimate Cybersecurity Path",
     "description": "Created a clear and structured cybersecurity learning path that takes learners from beginner to professional level.<div class=\"content-spacer\"></div>Designed its curriculum to cover Presecurity, Cybersecurity Fundamentals, Essential Programming, Primary Cybersecurity Fields, Professional & Advanced Certifications, Specialization, and Soft Skills.<div class=\"content-spacer\"></div>Built it on reputable platforms like TryHackMe, Hack The Box, and TCM Security with focus on practicality, affordability, and real-world applications.",
-    "skills": ["Curriculum Design", "Educational Planning", "Cybersecurity Mentorship", "Community Engagement"],
+    "skills": [
+      "Curriculum Design",
+      "Educational Planning",
+      "Cybersecurity Mentorship",
+      "Community Engagement"
+    ],
     "links": [
-      { "link": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path", "title": "Ultimate Cybersecurity Path" }
+      {
+        "link": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path",
+        "title": "Ultimate Cybersecurity Path"
+      }
     ]
   },
   {
     "title": "Cybersecurity Writeups",
     "description": "Authored detailed writeups for various machines and challenges, documenting methodologies, tools used, and step-by-step solutions.<div class=\"content-spacer\"></div>Shared these writeups on my personal blog to help others learn and understand different cybersecurity concepts and techniques.",
-    "skills": ["Technical Writing", "Documentation", "Knowledge Sharing"],
+    "skills": [
+      "Technical Writing",
+      "Documentation",
+      "Knowledge Sharing"
+    ],
     "links": [
-      { "link": "https://cybersecurity-writeups.notion.site", "title": "Cybersecurity Writeups" }
+      {
+        "link": "https://www.abdulrazzakswai.me/blog/writeups",
+        "title": "Cybersecurity Writeups"
+      }
     ]
   },
   {
     "title": "Active Directory Home Labs (3)",
     "description": "Designed and deployed 3 Active Directory (AD) home labs simulating real enterprise networks with Domain Controllers and client systems.<div class=\"content-spacer\"></div>Practiced advanced Active Directory exploitation techniques using popular tools.",
-    "skills": ["Active Directory", "Lab Setup", "Virtual Machines", "VirtualBox"],
+    "skills": [
+      "Active Directory",
+      "Lab Setup",
+      "Virtual Machines",
+      "VirtualBox"
+    ],
     "links": [
-      { "link": "https://academy.tcm-sec.com/p/practical-help-desk", "title": "AD Lab Building Course" },
-      { "link": "https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course", "title": "AD Hacking Course" }
+      {
+        "link": "https://academy.tcm-sec.com/p/practical-help-desk",
+        "title": "AD Lab Building Course"
+      },
+      {
+        "link": "https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course",
+        "title": "AD Hacking Course"
+      }
     ]
   },
   {
     "title": "Diverse Virtual Machine Lab Environments (25+)",
     "description": "Built and configured more than 25 virtual machines using VirtualBox, including both Linux and Windows systems.<div class=\"content-spacer\"></div>Designed internal networks using NAT to simulate realistic infrastructure for cybersecurity practicing and tool testing.",
-    "skills": ["Virtualization", "Lab Design", "OS Configuration", "Security Testing"],
+    "skills": [
+      "Virtualization",
+      "Lab Design",
+      "OS Configuration",
+      "Security Testing"
+    ],
     "links": []
   },
   {
     "title": "Capture the Flag (CTF) Competitions",
     "description": "Participated in multiple Capture the Flag (CTF) events focused on real-world cybersecurity challenges.<div class=\"content-spacer\"></div>Gained hands-on experience in offensive and defensive security, teamwork, and working under time pressure.",
-    "skills": ["Team Work", "Work Under Time Pressure", "Threat Analysis", "Forensics", "Incident Response"],
+    "skills": [
+      "Team Work",
+      "Work Under Time Pressure",
+      "Threat Analysis",
+      "Forensics",
+      "Incident Response"
+    ],
     "links": []
   },
   {
     "title": "Personal Website",
     "description": "Designed and developed a fully responsive personal website to present my cybersecurity journey, skills, certifications, and projects.<div class=\"content-spacer\"></div>Built using HTML, CSS, JavaScript, and Bootstrap.<div class=\"content-spacer\"></div>The site features dynamic content loading, smooth animations, interactive UI elements, and a clean, modern design focused on accessibility and user experience.",
-    "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
+    "skills": [
+      "Web Development",
+      "HTML/CSS",
+      "JavaScript",
+      "Responsive Design",
+      "UI/UX"
+    ],
     "links": [
-      { "link": "https://www.abdulrazzakswai.me", "title": "Personal Website" }
+      {
+        "link": "https://www.abdulrazzakswai.me",
+        "title": "Personal Website"
+      }
     ]
   },
   {
     "title": "Legacy Personal Website",
     "description": "Designed a website that was previously used to showcase my background, education, projects, and more.<div class=\"content-spacer\"></div>It is no longer actively maintained; its content is not being updated.<div class=\"content-spacer\"></div>Visit my main website for the latest updates.",
-    "skills": ["Web Development", "HTML/CSS", "JavaScript", "Responsive Design", "UI/UX"],
+    "skills": [
+      "Web Development",
+      "HTML/CSS",
+      "JavaScript",
+      "Responsive Design",
+      "UI/UX"
+    ],
     "links": [
-      { "link": "https://abdulrazzakswai.github.io/legacy-website", "title": "Legacy Personal Website" }
+      {
+        "link": "https://abdulrazzakswai.github.io/legacy-website",
+        "title": "Legacy Personal Website"
+      }
     ]
   }
 ]

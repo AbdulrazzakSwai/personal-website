@@ -3349,6 +3349,11 @@ figcaption {
   transform: translateY(-3px);
 }
 
+.blog-hero-sidebar-card .card-title {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.55rem !important;
+}
+
 .blog-stat-badge {
   display: inline-flex;
   align-items: center;

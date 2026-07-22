@@ -689,7 +689,7 @@ function renderHeroTopSidebar(pageName) {
           ${renderMetaChips(latest, { hideLink: true })}
         </div>
 
-        <h3 class="card-title h5 fw-bold mb-2">
+        <h3 class="card-title h5 fw-bold mt-3 mb-3">
           <a href="${latestUrl}" class="text-decoration-none text-reset hover-primary">${escapeHtml(latest.title)}</a>
         </h3>
 
