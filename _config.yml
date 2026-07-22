@@ -1,0 +1,59 @@
+title: Abdulrazzak Swai
+description: Abdulrazzak Swai's personal website and cybersecurity blog.
+
+collections:
+  writeups:
+    output: true
+    permalink: /blog/writeups/:slug/
+  exam_reviews:
+    output: true
+    permalink: /blog/exam-reviews/:slug/
+  security_research:
+    output: true
+    permalink: /blog/security-research/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: writeups
+    values:
+      layout: blog-post
+      nav_active: writeups
+      blog_section: writeups
+      section_label: Writeups
+      section_icon: fas fa-layer-group
+      section_description: Platform-specific walkthroughs and solved labs.
+  - scope:
+      path: ""
+      type: exam_reviews
+    values:
+      layout: blog-post
+      nav_active: exam_reviews
+      blog_section: exam-reviews
+      section_label: Exam Reviews
+      section_icon: fas fa-certificate
+      section_description: Certification and assessment writeups.
+  - scope:
+      path: ""
+      type: security_research
+    values:
+      layout: blog-post
+      nav_active: security_research
+      blog_section: security-research
+      section_label: Security Research
+      section_icon: fas fa-microscope
+      section_description: Research notes, deep dives, and analysis.
+
+exclude:
+  - GemFile
+  - Gemfile
+  - GemFile.lock
+  - Gemfile.lock
+  - gemfile.local
+  - README.md
+  - readme.md
+  - patch.rb
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - .sass-cache

@@ -12,6 +12,26 @@ let currentProviderFilter = 'all';
 let currentCertFilter = 'all';
 let currentCertProviderFilter = 'all';
 
+async function fetchJson(path) {
+    const filename = path.split('/').pop();
+    const urlsToTry = [
+        path,
+        '/' + path,
+        'assets/json/' + filename,
+        '/assets/json/' + filename,
+        '../assets/json/' + filename,
+        '../../assets/json/' + filename,
+        'https://www.abdulrazzakswai.me/assets/json/' + filename
+    ];
+    for (const url of [...new Set(urlsToTry)]) {
+        try {
+            const res = await fetch(url);
+            if (res.ok) return await res.json();
+        } catch (e) {}
+    }
+    throw new Error(`Could not load JSON from ${path}`);
+}
+
 function initTheme() {
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
@@ -239,8 +259,7 @@ async function loadAboutData() {
     if (dataCache.about) return dataCache.about;
     
     try {
-        const response = await fetch('assets/json/about.json');
-        const data = await response.json();
+        const data = await fetchJson('assets/json/about.json');
         dataCache.about = data;
         
         reserveTerminalHeight(data.text);
@@ -330,8 +349,7 @@ function typeTerminalText(text) {
 
 async function loadHighlights() {
     try {
-        const response = await fetch('assets/json/highlights.json');
-        const highlights = await response.json();
+        const highlights = await fetchJson('assets/json/highlights.json');
         const grid = document.getElementById('highlights-grid');
         if (!grid) return;
         
@@ -362,8 +380,7 @@ async function loadHighlights() {
 
 async function loadStatistics() {
     try {
-        const response = await fetch('assets/json/statistics.json');
-        const statistics = await response.json();
+        const statistics = await fetchJson('assets/json/statistics.json');
         const grid = document.getElementById('statistics-grid');
         if (!grid) return;
         
@@ -389,8 +406,7 @@ async function loadStatistics() {
 
 async function loadAchievements() {
     try {
-        const response = await fetch('assets/json/momentum.json');
-        const achievements = await response.json();
+        const achievements = await fetchJson('assets/json/momentum.json');
         const grid = document.getElementById('achievements-grid');
         if (!grid) return;
         
@@ -433,8 +449,7 @@ async function loadAchievements() {
 
 async function loadBooks() {
     try {
-        const response = await fetch('assets/json/books.json');
-        const books = await response.json();
+        const books = await fetchJson('assets/json/books.json');
         const grid = document.getElementById('books-grid');
         if (!grid) return;
         
@@ -598,8 +613,7 @@ async function loadCertifications() {
             return;
         }
 
-        const response = await fetch('assets/json/certifications.json');
-        const certifications = await response.json();
+        const certifications = await fetchJson('assets/json/certifications.json');
         
         dataCache.certifications = certifications;
         createCertFilter();
@@ -708,8 +722,7 @@ async function loadCourses(loadMore = false) {
             return;
         }
         
-        const response = await fetch('assets/json/courses.json');
-        const courses = await response.json();
+        const courses = await fetchJson('assets/json/courses.json');
         
         dataCache.courses = courses;
         if (!loadMore) {
@@ -847,8 +860,7 @@ async function loadProjects() {
             return;
         }
 
-        const response = await fetch('assets/json/projects.json');
-        const projects = await response.json();
+        const projects = await fetchJson('assets/json/projects.json');
         
         dataCache.projects = projects;
         renderProjects(projects);
@@ -943,9 +955,7 @@ function addProjectsViewAllButton() {
 
 async function loadLastUpdated() {
     try {
-        const response = await fetch('https://www.abdulrazzakswai.me/assets/json/last-updated.json');
-        if (!response.ok) throw new Error('Network response not ok');
-        const data = await response.json();
+        const data = await fetchJson('assets/json/last-updated.json');
         document.getElementById('last-updated').textContent = `Last updated on ${data.date}`;
     } catch (error) {
         console.error('Failed to load update info', error);
@@ -1285,7 +1295,7 @@ function createCourseFilter() {
     resetBtn.setAttribute('data-animation', 'animate-fade-in-up');
     resetBtn.setAttribute('data-delay', '200');
     resetBtn.title = 'Reset Filters';
-    resetBtn.textContent = 'Reset';
+    resetBtn.innerHTML = '<i class="fas fa-rotate-left me-1"></i> Reset';
     resetBtn.addEventListener('click', () => {
         currentCourseFilter = 'all';
         currentProviderFilter = 'all';
@@ -1531,7 +1541,7 @@ function createCertFilter() {
     resetBtn.setAttribute('data-animation', 'animate-fade-in-up');
     resetBtn.setAttribute('data-delay', '200');
     resetBtn.title = 'Reset Filters';
-    resetBtn.textContent = 'Reset';
+    resetBtn.innerHTML = '<i class="fas fa-rotate-left me-1"></i> Reset';
     resetBtn.addEventListener('click', () => {
         currentCertFilter = 'all';
         currentCertProviderFilter = 'all';

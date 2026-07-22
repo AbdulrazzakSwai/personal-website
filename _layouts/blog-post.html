@@ -1,0 +1,70 @@
+---
+layout: blog-page
+---
+<article class="blog-post-layout">
+  <section class="blog-hero py-5 section-spacing">
+    <div class="container mobile-container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 animate-on-scroll" data-animation="animate-fade-in-up">
+          <div class="blog-panel">
+            <div class="blog-kicker"><i class="{{ page.section_icon | default: 'fas fa-book-open' }}"></i> {{ page.section_label | default: 'Blog post' }}</div>
+            <h1 class="display-4 fw-bold mb-3">{{ page.title }}</h1>
+            <div class="blog-meta-row mb-3">
+              <span class="blog-date-chip"><i class="far fa-calendar me-1"></i>{{ page.date | date: "%b %-d, %Y" }}</span>
+              {% if page.platform %}<span class="blog-meta-chip"><i class="fas fa-layer-group me-1"></i>{{ page.platform }}</span>{% endif %}
+              {% if page.type %}<span class="blog-meta-chip"><i class="fas fa-folder-tree me-1"></i>{{ page.type }}</span>{% endif %}
+              {% if page.os %}
+                {% assign os_lower = page.os | downcase %}
+                <span class="blog-meta-chip"><i class="{% if os_lower contains 'window' %}fab fa-windows{% elsif os_lower contains 'linux' %}fab fa-linux{% else %}fas fa-desktop{% endif %} me-1"></i>{{ page.os }}</span>
+              {% endif %}
+              {% if page.difficulty %}
+                {% assign diff_lower = page.difficulty | downcase %}
+                {% assign diff_class = '' %}
+                {% if diff_lower contains 'very-easy' or diff_lower contains 'very easy' %}{% assign diff_class = 'blog-diff-very-easy' %}
+                {% elsif diff_lower contains 'easy' %}{% assign diff_class = 'blog-diff-easy' %}
+                {% elsif diff_lower contains 'medium' %}{% assign diff_class = 'blog-diff-medium' %}
+                {% elsif diff_lower contains 'hard' %}{% assign diff_class = 'blog-diff-hard' %}
+                {% elsif diff_lower contains 'insane' %}{% assign diff_class = 'blog-diff-insane' %}
+                {% endif %}
+                <span class="blog-meta-chip {{ diff_class }}"><i class="fas fa-tachometer-alt me-1"></i>{{ page.difficulty }}</span>
+              {% endif %}
+              {% if page.link %}<a href="{{ page.link }}" target="_blank" rel="noopener noreferrer" class="blog-meta-chip blog-link-chip"><i class="fas fa-external-link-alt me-1"></i>Lab Link</a>{% endif %}
+            </div>
+            {% if page.summary %}<p class="lead text-muted mb-3">{{ page.summary }}</p>{% endif %}
+            {% if page.tags and page.tags.size > 0 %}
+            <div class="blog-tag-row">
+              {% for tag in page.tags %}
+              <span class="blog-tag-chip">#{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light-section section-spacing">
+    <div class="container mobile-container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-lg-4 col-xl-3 order-1 order-lg-2">
+          <aside class="blog-toc-sidebar">
+            <div class="blog-toc-card card">
+              <div class="blog-toc-header">
+                <i class="fas fa-list-ul me-2"></i>Table of Contents
+              </div>
+              <nav id="blog-toc-nav" class="blog-toc-nav"></nav>
+            </div>
+          </aside>
+        </div>
+        <div class="col-12 col-lg-8 col-xl-9 order-2 order-lg-1">
+          <article class="blog-content-card card">
+            <div class="card-body text-start align-items-stretch">
+              {{ content }}
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
