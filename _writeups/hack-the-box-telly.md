@@ -151,7 +151,7 @@ Wireshark gives the feature of downloading files captured in the packet capture,
 
 Let’s save the file and check its contents using `sqlite3`:
 
-```
+```bash
 $ file credit-cards-25-blackfriday.db 
 credit-cards-25-blackfriday.db: SQLite 3.x database, last written using SQLite version 3046001, file counter 7, database pages 3, cookie 0x7, schema 4, UTF-8, version-valid-for 7
 
@@ -176,7 +176,7 @@ So the third column represents the credit card number.
 
 Let’s check its value associated with the specific user:
 
-```
+```bash
 sqlite> select * from purchases;
 1|alex.morgan@gmail.com|4539682995824395|2025-11-27|Wireless earbuds
 2|sam.taylor@hotmail.com|5424187310928476|2025-11-28|Laptop
