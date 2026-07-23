@@ -751,13 +751,6 @@ function renderLandingPage() {
 
   const categories = [
     {
-      key: 'ultimate-cybersecurity-path',
-      title: 'Learning Path',
-      description: 'A comprehensive, step-by-step practical roadmap from beginner to expert in cybersecurity.',
-      icon: 'fas fa-route',
-      metaLabel: 'Practical Roadmap'
-    },
-    {
       key: 'writeups',
       title: 'Writeups',
       description: 'Platform-specific walkthroughs grouped by platform, type, and topic.',
@@ -774,6 +767,13 @@ function renderLandingPage() {
       title: 'Security Research',
       description: 'Deep dives, analysis, and research notes on security topics.',
       icon: 'fas fa-microscope'
+    },
+    {
+      key: 'ultimate-cybersecurity-path',
+      title: 'Learning Path',
+      description: 'A comprehensive, step-by-step practical roadmap from beginner to expert in cybersecurity.',
+      icon: 'fas fa-route',
+      metaLabel: 'Practical Roadmap'
     }
   ];
 
