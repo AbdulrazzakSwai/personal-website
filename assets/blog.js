@@ -770,7 +770,7 @@ function renderLandingPage() {
     },
     {
       key: 'ultimate-cybersecurity-path',
-      title: 'Learning Path',
+      title: 'Cybersecurity Path',
       description: 'A comprehensive, step-by-step practical roadmap from beginner to expert in cybersecurity.',
       icon: 'fas fa-route',
       metaLabel: 'Practical Roadmap'
