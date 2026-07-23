@@ -51,7 +51,7 @@
     ],
     "links": [
       {
-        "link": "https://abdulrazzakswai.github.io/ultimate-cybersecurity-path",
+        "link": "/blog/ultimate-cybersecurity-path",
         "title": "Ultimate Cybersecurity Path"
       }
     ]
@@ -66,7 +66,7 @@
     ],
     "links": [
       {
-        "link": "https://www.abdulrazzakswai.me/blog/writeups",
+        "link": "/blog/writeups",
         "title": "Cybersecurity Writeups"
       }
     ]
@@ -126,7 +126,7 @@
     ],
     "links": [
       {
-        "link": "https://www.abdulrazzakswai.me",
+        "link": "/",
         "title": "Personal Website"
       }
     ]

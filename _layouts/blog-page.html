@@ -52,12 +52,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             {% assign active_nav = page.nav_active | default: page.category %}
-            {% if page.url contains '/blog/writeups/' or page.category == 'writeups' %}{% assign active_nav = 'writeups'
-            %}{% endif %}
-            {% if page.url contains '/blog/exam-reviews/' or page.category == 'exam-reviews' or page.category ==
-            'exam_reviews' %}{% assign active_nav = 'exam_reviews' %}{% endif %}
-            {% if page.url contains '/blog/security-research/' or page.category == 'security-research' or page.category
-            == 'security_research' %}{% assign active_nav = 'security_research' %}{% endif %}
+            {% if page.url contains '/blog/writeups/' or page.category == 'writeups' %}{% assign active_nav = 'writeups' %}{% endif %}
+            {% if page.url contains '/blog/exam-reviews/' or page.category == 'exam-reviews' or page.category == 'exam_reviews' %}{% assign active_nav = 'exam_reviews' %}{% endif %}
+            {% if page.url contains '/blog/security-research/' or page.category == 'security-research' or page.category == 'security_research' %}{% assign active_nav = 'security_research' %}{% endif %}
+            {% if page.url contains '/blog/ultimate-cybersecurity-path' or page.nav_active == 'cybersecurity_path' %}{% assign active_nav = 'cybersecurity_path' %}{% endif %}
             <a class="nav-link {% if active_nav == 'landing' or active_nav == 'home' %}active{% endif %}"
               href="/blog/">Home</a>
             <a class="nav-link {% if active_nav == 'writeups' %}active{% endif %}" href="/blog/writeups/">Writeups</a>
@@ -65,6 +63,8 @@
               href="/blog/exam-reviews/">Exam Reviews</a>
             <a class="nav-link {% if active_nav == 'security_research' or active_nav == 'security-research' %}active{% endif %}"
               href="/blog/security-research/">Security Research</a>
+            <a class="nav-link {% if active_nav == 'cybersecurity_path' %}active{% endif %}"
+              href="/blog/ultimate-cybersecurity-path/">Cybersecurity Path</a>
           </ul>
         </div>
       </div>

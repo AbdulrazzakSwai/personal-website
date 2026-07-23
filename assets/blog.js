@@ -48,6 +48,8 @@ function setActiveNavLink() {
     activeSection = '/blog/exam-reviews';
   } else if (currentPath.includes('/blog/security-research') || urlCategory === 'security-research' || urlCategory === 'security_research' || bodyPage === 'security-research') {
     activeSection = '/blog/security-research';
+  } else if (currentPath.includes('/blog/ultimate-cybersecurity-path') || bodyPage === 'cybersecurity_path' || bodyPage === 'ultimate-cybersecurity-path') {
+    activeSection = '/blog/ultimate-cybersecurity-path';
   } else if (bodyPage === 'post') {
     const slug = params.get('post') || params.get('file');
     if (slug && blogState.posts.length) {
@@ -411,24 +413,32 @@ function initWriteupTagFilter() {
 
 let currentTiltedCard = null;
 
+function resetTiltCard(cardToReset) {
+  if (!cardToReset) return;
+  cardToReset.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease';
+  cardToReset.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+  setTimeout(() => {
+    if (cardToReset !== currentTiltedCard) {
+      cardToReset.style.transform = '';
+      cardToReset.style.transition = '';
+    }
+  }, 500);
+}
+
 function initTiltEffect() {
   document.addEventListener('mousemove', (e) => {
     if (window.innerWidth <= 1024) return;
 
-    const card = e.target.closest('.card:not(.blog-content-card):not(.blog-toc-card), .blog-featured-card, .blog-category-card, .blog-archive-card, .blog-post-card, .blog-group-card, .blog-panel');
+    const card = e.target.closest('.card:not(.blog-content-card):not(.blog-toc-card), .blog-featured-card, .blog-category-card, .blog-archive-card, .blog-post-card, .blog-group-card, .blog-panel, .path-hero-banner');
 
     if (currentTiltedCard && currentTiltedCard !== card) {
-      currentTiltedCard.style.transform = '';
-      currentTiltedCard.style.transition = '';
+      resetTiltCard(currentTiltedCard);
       currentTiltedCard = null;
     }
 
     if (!card) return;
 
-    if (currentTiltedCard !== card) {
-      currentTiltedCard = card;
-    }
-
+    currentTiltedCard = card;
     card.style.transition = 'transform 0.1s ease-out, border-color 0.3s ease, box-shadow 0.3s ease';
 
     const rect = card.getBoundingClientRect();
@@ -446,8 +456,7 @@ function initTiltEffect() {
 
   document.addEventListener('mouseleave', () => {
     if (currentTiltedCard) {
-      currentTiltedCard.style.transform = '';
-      currentTiltedCard.style.transition = '';
+      resetTiltCard(currentTiltedCard);
       currentTiltedCard = null;
     }
   });
@@ -742,34 +751,47 @@ function renderLandingPage() {
 
   const categories = [
     {
+      key: 'ultimate-cybersecurity-path',
+      title: 'Learning Path',
+      description: 'A comprehensive, step-by-step practical roadmap from beginner to expert in cybersecurity.',
+      icon: 'fas fa-route',
+      metaLabel: 'Practical Roadmap'
+    },
+    {
       key: 'writeups',
       title: 'Writeups',
-      description: 'Platform-specific walkthroughs grouped by platform, type, and topic.'
+      description: 'Platform-specific walkthroughs grouped by platform, type, and topic.',
+      icon: 'fas fa-layer-group'
     },
     {
       key: 'exam-reviews',
       title: 'Exam Reviews',
-      description: 'Certification and assessment notes with practical takeaways.'
+      description: 'Certification and assessment notes with practical takeaways.',
+      icon: 'fas fa-certificate'
     },
     {
       key: 'security-research',
       title: 'Security Research',
-      description: 'Deep dives, analysis, and research notes on security topics.'
+      description: 'Deep dives, analysis, and research notes on security topics.',
+      icon: 'fas fa-microscope'
     }
   ];
 
   categoryGrid.innerHTML = categories.map((category, index) => {
-    const count = blogState.posts.filter(post => post.category === category.key).length;
+    const isPath = category.key === 'ultimate-cybersecurity-path';
+    const count = category.metaLabel || `${blogState.posts.filter(post => post.category === category.key).length} publications`;
+    const icon = category.icon || 'fas fa-bookmark';
+    const url = isPath ? '/blog/ultimate-cybersecurity-path/' : routeForCategory(category.key);
     return `
-      <div class="col-lg-4 col-md-6">
+      <div class="col-xl-3 col-lg-6 col-md-6">
         <article class="blog-category-card card h-100 animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
           <div class="card-body">
             <div class="blog-meta-row mb-2">
-              <span class="blog-meta-chip"><i class="fas fa-bookmark me-1"></i>${count} publications</span>
+              <span class="blog-meta-chip"><i class="${icon} me-1"></i>${count}</span>
             </div>
             <h3 class="card-title">${category.title}</h3>
             <p class="card-text">${category.description}</p>
-            <a href="${routeForCategory(category.key)}" class="card-btn primary mt-auto">Open section</a>
+            <a href="${url}" class="card-btn primary mt-auto">Open section</a>
           </div>
         </article>
       </div>
