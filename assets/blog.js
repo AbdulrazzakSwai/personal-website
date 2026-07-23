@@ -1446,12 +1446,10 @@ async function loadBlogPosts() {
   }
 
   const urlsToTry = [
-    BLOG_DATA_URL,
-    'assets/json/blog/posts.json',
     '/assets/json/blog/posts.json',
+    'assets/json/blog/posts.json',
     '../assets/json/blog/posts.json',
-    '../../assets/json/blog/posts.json',
-    'https://www.abdulrazzakswai.me/assets/json/blog/posts.json'
+    '../../assets/json/blog/posts.json'
   ];
 
   for (const url of uniqueSorted(urlsToTry)) {

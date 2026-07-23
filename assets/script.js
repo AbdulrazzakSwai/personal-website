@@ -17,11 +17,10 @@ async function fetchJson(path) {
     const urlsToTry = [
         path,
         '/' + path,
-        'assets/json/' + filename,
         '/assets/json/' + filename,
+        'assets/json/' + filename,
         '../assets/json/' + filename,
-        '../../assets/json/' + filename,
-        'https://www.abdulrazzakswai.me/assets/json/' + filename
+        '../../assets/json/' + filename
     ];
     for (const url of [...new Set(urlsToTry)]) {
         try {
