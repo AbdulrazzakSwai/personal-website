@@ -3085,7 +3085,7 @@ figcaption {
 .blog-content-card h2 {
   font-size: 1.75rem;
   font-weight: 700;
-  margin-top: 2.5rem;
+  margin-top: 1.8rem;
   margin-bottom: 1.25rem;
   padding-bottom: 0.5rem;
   color: var(--text-primary);
@@ -3497,14 +3497,39 @@ figcaption {
   background: rgba(2, 132, 199, 0.1) !important;
 }
 
-.blog-toc-link.toc-level-3 {
+.blog-toc-link.toc-level-1 {
+  padding-left: 0.65rem;
+  font-weight: 650;
+  font-size: 0.83rem;
+}
+
+.blog-toc-link.toc-level-2 {
   padding-left: 1.35rem;
-  font-size: 0.79rem;
+  font-weight: 500;
+  font-size: 0.80rem;
+  opacity: 0.95;
+}
+
+.blog-toc-link.toc-level-3 {
+  padding-left: 2.05rem;
+  font-size: 0.77rem;
   opacity: 0.9;
 }
 
 .blog-toc-link.toc-level-4 {
-  padding-left: 2rem;
-  font-size: 0.76rem;
+  padding-left: 2.75rem;
+  font-size: 0.74rem;
   opacity: 0.85;
+}
+
+.blog-toc-link.toc-level-5 {
+  padding-left: 3.35rem;
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+
+.blog-toc-link.toc-level-6 {
+  padding-left: 3.95rem;
+  font-size: 0.70rem;
+  opacity: 0.75;
 }

@@ -1211,7 +1211,7 @@ function initTableOfContents() {
 
   if (!tocNav || !articleContent) return;
 
-  const headings = Array.from(articleContent.querySelectorAll('h1, h2, h3, h4')).filter(h => {
+  const headings = Array.from(articleContent.querySelectorAll('h1, h2, h3, h4, h5, h6')).filter(h => {
     return !h.classList.contains('display-4') && !h.classList.contains('display-5') && !h.closest('.blog-hero');
   });
 
@@ -1222,14 +1222,20 @@ function initTableOfContents() {
 
   if (tocSidebar) tocSidebar.style.display = 'block';
 
+  const minLevel = headings.reduce((min, h) => {
+    const lvl = parseInt(h.tagName.replace(/h/i, ''), 10) || 1;
+    return lvl < min ? lvl : min;
+  }, 6);
+
   let navHtml = '';
   headings.forEach((heading, idx) => {
     if (!heading.id) {
       heading.id = slugifyText(heading.textContent) || `section-${idx}`;
     }
 
-    const tagName = heading.tagName.toLowerCase();
-    const levelClass = tagName === 'h3' ? 'toc-level-3' : (tagName === 'h4' ? 'toc-level-4' : 'toc-level-2');
+    const lvl = parseInt(heading.tagName.replace(/h/i, ''), 10) || 1;
+    const relLevel = Math.min(6, Math.max(1, lvl - minLevel + 1));
+    const levelClass = `toc-level-${relLevel}`;
     const cleanText = heading.textContent.replace(/#+$/, '').trim();
 
     navHtml += `<a href="#${heading.id}" class="blog-toc-link ${levelClass}" data-target="${heading.id}">${escapeHtml(cleanText)}</a>`;
