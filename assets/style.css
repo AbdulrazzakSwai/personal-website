@@ -350,7 +350,8 @@ h6 {
 }
 
 #theme-toggle,
-#mobile-writeups-btn {
+#mobile-writeups-btn,
+#mobile-portfolio-btn {
   width: 42px;
   height: 42px;
   display: flex;
@@ -366,7 +367,8 @@ h6 {
   color: var(--primary-color);
 }
 
-#mobile-writeups-btn {
+#mobile-writeups-btn,
+#mobile-portfolio-btn {
   padding: 0;
 }
 

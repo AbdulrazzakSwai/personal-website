@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Successfully Passed HTB CPTS 10-Day Practical Exam",
-    "date": "19 July 2026",
-    "description": "Successfully passed the Hack The Box Certified Penetration Testing Specialist (HTB CPTS) 10-day practical exam, demonstrating practical proficiency in penetration testing and reporting.",
+    "title": "Solved and Documented \"Telly\" Lab by Hack The Box",
+    "date": "23 July 2026",
+    "description": "Successfully Solved and Documented \"Telly\" Lab by Hack The Box, which involved analyzing network PCAP artifacts to investigate a backup server compromise.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved \"Oski\" Lab by CyberDefenders",
-    "date": "25 June 2026",
-    "description": "Analyzed a malicious PPT file on Any.run sandbox reports to map out an Oski stealer infection and its behavior. Identified C2 infrastructure, RC4 decryption keys, and MITRE ATT&CK techniques.",
+    "title": "Successfully Passed HTB CPTS 10-Day Practical Exam",
+    "date": "19 July 2026",
+    "description": "Successfully passed the Hack The Box Certified Penetration Testing Specialist (HTB CPTS) 10-day practical exam, demonstrating practical proficiency in penetration testing and reporting.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }

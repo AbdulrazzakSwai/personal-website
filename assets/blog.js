@@ -110,25 +110,38 @@ function initNavigation() {
   const navbarCollapse = document.querySelector('.navbar-collapse');
   const navbarToggler = document.querySelector('.navbar-toggler');
 
-  if (!navbarCollapse || !navbarToggler || typeof bootstrap === 'undefined') {
-    return;
-  }
+  if (navbarCollapse && navbarToggler) {
+    const getCollapseInstance = () => {
+      if (typeof bootstrap !== 'undefined' && bootstrap.Collapse) {
+        return bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false });
+      }
+      return null;
+    };
 
-  const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false });
+    document.querySelectorAll('.navbar .nav-link, .navbar .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+          const instance = getCollapseInstance();
+          if (instance) {
+            instance.hide();
+          } else {
+            navbarCollapse.classList.remove('show');
+          }
+        }
+      });
+    });
 
-  document.querySelectorAll('.navbar .nav-link, .navbar .btn').forEach(link => {
-    link.addEventListener('click', () => {
-      if (navbarCollapse.classList.contains('show')) {
-        collapseInstance.hide();
+    document.addEventListener('click', (e) => {
+      if (!navbarCollapse.classList.contains('show')) return;
+      if (navbarCollapse.contains(e.target) || navbarToggler.contains(e.target)) return;
+      const instance = getCollapseInstance();
+      if (instance) {
+        instance.hide();
+      } else {
+        navbarCollapse.classList.remove('show');
       }
     });
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!navbarCollapse.classList.contains('show')) return;
-    if (navbarCollapse.contains(e.target) || navbarToggler.contains(e.target)) return;
-    collapseInstance.hide();
-  });
+  }
 }
 
 function initScrollProgress() {
