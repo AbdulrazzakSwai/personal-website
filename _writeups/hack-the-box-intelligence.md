@@ -324,7 +324,7 @@ Nice, one PDF contains a default password.
 
 ### Extracting List of Usernames
 
-By running `exiftool` on any PDF, an interesting notice is identified:
+By running `exiftool` on any of the downloaded PDFs, an interesting notice is identified:
 
 ```bash
 $ exiftool 2020-01-01-upload.pdf
