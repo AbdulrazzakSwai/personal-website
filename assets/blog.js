@@ -811,7 +811,7 @@ function renderLandingPage() {
               <h3 class="card-title">${escapeHtml(post.title)}</h3>
               <p class="card-text">${escapeHtml(post.excerpt)}</p>
               <div class="blog-tag-row">${renderTagChips((post.tags || []).slice(0, 4))}</div>
-              <a href="${postUrl}" class="card-btn secondary mt-auto">Read post</a>
+              <a href="${postUrl}" class="card-btn secondary mt-auto">Read publication</a>
             </div>
           </article>
         </div>
