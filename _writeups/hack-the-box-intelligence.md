@@ -320,7 +320,7 @@ NewInt<REDACTED>
 After logging in please change your password as soon as possible.
 ```
 
-Nice, one PDF contained a default password.
+Nice, one PDF contains a default password.
 
 ### Extracting List of Usernames
 
