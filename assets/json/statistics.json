@@ -36,12 +36,12 @@
   },
   {
     "label": "Investigated CyberDefenders Incidents",
-    "value": 8,
+    "value": 9,
     "icon": "fas fa-microscope"
   },
   {
     "label": "Published Cybersecurity Writeups",
-    "value": 27,
+    "value": 28,
     "icon": "fas fa-file-code"
   },
   {
