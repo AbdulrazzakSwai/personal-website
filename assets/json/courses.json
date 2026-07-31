@@ -315,6 +315,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/226"
   },
   {
+    "title": "Threat Hunting with IPS/IDS",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/threat-hunting-with-ipsids",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/327"
+  },
+  {
     "title": "Snort",
     "provider": "By TryHackMe",
     "type": "Defensive Security",
