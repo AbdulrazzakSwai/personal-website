@@ -168,6 +168,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/214"
   },
   {
+    "title": "Threat Hunting for Ransomware Attacks",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/threat-hunting-for-ransomware-attacks",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/338"
+  },
+  {
     "title": "Advanced ELK",
     "provider": "By TryHackMe",
     "type": "Defensive Security",
