@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Finished \"Threat Hunting for Ransomware Attacks\" Course by Hack The Box Academy",
-    "date": "01 August 2026",
-    "description": "Successfully completed the \"Threat Hunting for Ransomware Attacks\" course by Hack The Box Academy, gaining practical knowledge in identifying and mitigating ransomware threats.",
+    "title": "Solved and Documented \"Tusk Infostealer\" Lab by CyberDefenders",
+    "date": "02 August 2026",
+    "description": "Successfully analyzed and documented \"Tusk Infostealer\" Lab by CyberDefenders, enhancing skills in Cyber Threat Intelligence.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Finished \"Threat Hunting with IPS/IDS\" Course by Hack The Box Academy",
-    "date": "31 July 2026",
-    "description": "Successfully completed the \"Threat Hunting with IPS/IDS\" course by Hack The Box Academy, enhancing skills in analysing and responding to threats using Intrusion Prevention and Detection Systems.",
+    "title": "Finished \"Threat Hunting for Ransomware Attacks\" Course by Hack The Box Academy",
+    "date": "01 August 2026",
+    "description": "Successfully completed the \"Threat Hunting for Ransomware Attacks\" course by Hack The Box Academy, gaining practical knowledge in identifying and mitigating ransomware threats.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
