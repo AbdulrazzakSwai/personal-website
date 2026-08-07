@@ -175,6 +175,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/338"
   },
   {
+    "title": "Threat Hunting with DNS",
+    "provider": "By Hack The Box Academy",
+    "type": "Defensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/threat-hunting-with-dns",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/337"
+  },
+  {
     "title": "Advanced ELK",
     "provider": "By TryHackMe",
     "type": "Defensive Security",
