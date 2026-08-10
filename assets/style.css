@@ -391,6 +391,8 @@ h6 {
 .hero-section {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
+  padding: 5rem 0 3rem 0;
   background: transparent;
   overflow: hidden;
   display: flex;
@@ -440,7 +442,9 @@ h6 {
 }
 
 .hero-name {
-  margin-bottom: 2rem;
+  font-size: clamp(2.2rem, 5vw + 1rem, 4.5rem);
+  margin-bottom: clamp(1rem, 2.5vw, 2rem);
+  line-height: 1.15;
 }
 
 .typed-text {
@@ -453,9 +457,9 @@ h6 {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   display: inline-block;
-  min-width: 250px;
+  min-width: clamp(200px, 30vw, 280px);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 2.5vw, 2.25rem);
   position: relative;
 }
 
@@ -489,24 +493,7 @@ h6 {
   }
 }
 
-@media (max-height: 600px) {
-  .hero-section {
-    min-height: auto;
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-  }
 
-  .hero-name {
-    font-size: 2rem !important;
-    margin-bottom: 1rem !important;
-  }
-
-  .typed-text {
-    font-size: 1.25rem !important;
-    min-width: auto !important;
-    padding: 0.25rem 0.5rem;
-  }
-}
 
 .section-line {
   width: 60px;
@@ -1924,15 +1911,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero-name {
-    font-size: 2.5rem;
-  }
-
-  .typed-text {
-    min-width: 200px;
-    font-size: 1.5rem;
-  }
-
   .statistics-number {
     font-size: 2.5rem;
   }
@@ -1949,31 +1927,7 @@ footer {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hero-name {
-    font-size: 3.5rem;
-  }
-
-  .typed-text {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .hero-name {
-    font-size: 4rem;
-  }
-
-  .typed-text {
-    font-size: 2rem;
-  }
-}
-
 @media (max-width: 576px) {
-  .hero-name {
-    font-size: 2.3rem;
-  }
-
   .display-4 {
     font-size: 2rem;
   }
