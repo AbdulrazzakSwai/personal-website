@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Completed \"Threat Hunting with DNS\" Course by Hack The Box Academy",
-    "date": "07 August 2026",
-    "description": "Successfully completed \"Threat Hunting with DNS\" course by Hack The Box Academy, enhancing practical skills in analyzing DNS logs to proactively detect threats.",
+    "title": "Solved and Documented \"Recollection\" Lab by Hack The Box",
+    "date": "11 August 2026",
+    "description": "Successfully analyzed and documented \"Recollection\" Lab by Hack The Box, which involved analyzing a memory dump to trace a cyber attack.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved and Documented \"Tusk Infostealer\" Lab by CyberDefenders",
-    "date": "02 August 2026",
-    "description": "Successfully analyzed and documented \"Tusk Infostealer\" Lab by CyberDefenders, enhancing skills in Cyber Threat Intelligence.",
+    "title": "Completed \"Threat Hunting with DNS\" Course by Hack The Box Academy",
+    "date": "07 August 2026",
+    "description": "Successfully completed \"Threat Hunting with DNS\" course by Hack The Box Academy, enhancing practical skills in analyzing DNS logs to proactively detect threats.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
