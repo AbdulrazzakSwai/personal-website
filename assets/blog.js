@@ -570,7 +570,7 @@ function renderMetaChips(post, options = {}) {
 function getUploadTypeLabel(category) {
   if (category === 'writeups') return 'Writeup';
   if (category === 'exam-reviews' || category === 'exam_reviews') return 'Exam Review';
-  if (category === 'security-research' || category === 'security_research') return 'Security Research';
+  if (category === 'security-research' || category === 'security_research') return 'Cyber & AI Research';
   return 'Upload';
 }
 
@@ -585,13 +585,13 @@ function renderEmptyState(type, detail) {
 
   if (type === 'security-research' || type === 'security_research') {
     icon = 'fas fa-microscope';
-    sectionLabel = 'Security Research';
-    title = 'No Security Research Published Yet';
-    description = 'Original vulnerability research, novel exploitation analyses, and threat detection whitepapers will appear here soon.';
+    sectionLabel = 'Cyber & AI Research';
+    title = 'No Cyber & AI Research Published Yet';
+    description = 'Vulnerability research, AI security analyses, novel exploitation studies, and threat detection whitepapers will appear here soon.';
   } else if (type === 'security-research-filtered') {
     icon = 'fas fa-tags';
-    sectionLabel = 'Security Research Filter';
-    title = detail ? `No Security Research Matches "#${escapeHtml(detail)}"` : 'No Matching Research Found';
+    sectionLabel = 'Cyber & AI Research Filter';
+    title = detail ? `No Cyber & AI Research Matches "#${escapeHtml(detail)}"` : 'No Matching Research Found';
     description = 'Try selecting a different topic tag or searching for another keyword to view published research notes.';
     isFiltered = true;
   } else if (type === 'exam-reviews' || type === 'exam_reviews') {
@@ -669,7 +669,7 @@ function renderHeroTopSidebar(pageName) {
     readBtnText = 'Read latest review';
   } else if (pageName === 'security-research' || pageName === 'security_research') {
     targetPosts = sortedPosts.filter(p => p.category === 'security-research');
-    typeLabel = 'Security Research';
+    typeLabel = 'Cyber & AI Research';
     icon = 'fas fa-microscope';
     readBtnText = 'Read latest research';
   } else {
@@ -757,16 +757,16 @@ function renderLandingPage() {
       icon: 'fas fa-layer-group'
     },
     {
+      key: 'security-research',
+      title: 'Cyber & AI Research',
+      description: 'Deep dives, vulnerability analysis, and AI security research notes.',
+      icon: 'fas fa-microscope'
+    },
+    {
       key: 'exam-reviews',
       title: 'Exam Reviews',
       description: 'Certification and assessment notes with practical takeaways.',
       icon: 'fas fa-certificate'
-    },
-    {
-      key: 'security-research',
-      title: 'Security Research',
-      description: 'Deep dives, analysis, and research notes on security topics.',
-      icon: 'fas fa-microscope'
     },
     {
       key: 'ultimate-cybersecurity-path',

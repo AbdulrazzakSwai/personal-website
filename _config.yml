@@ -40,9 +40,9 @@ defaults:
       layout: blog-post
       nav_active: security_research
       blog_section: security-research
-      section_label: Security Research
+      section_label: Cyber & AI Research
       section_icon: fas fa-microscope
-      section_description: Research notes, deep dives, and analysis.
+      section_description: Cyber & AI research notes, deep dives, and analysis.
 
 exclude:
   - GemFile
