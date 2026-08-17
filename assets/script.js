@@ -1,5 +1,6 @@
-let statsAnimated = false;
+﻿let statsAnimated = false;
 const dataCache = {
+    education: null,
     certifications: null,
     courses: null,
     projects: null,
@@ -344,6 +345,109 @@ function typeTerminalText(text) {
     }
 
     typeLine();
+}
+
+async function loadEducation() {
+    try {
+        const container = document.getElementById('education-container');
+        if (!container) return;
+
+        let data = {
+            degree: {
+                institution: "Al Ain University",
+                degreeTitle: "Bachelor's Degree (Graduate), Cybersecurity",
+                program: "Bachelor of Science in Cybersecurity",
+                period: "Sep 2022 – May 2026",
+                grade: "3.8 / 4.0 (Cumulative)",
+                honors: "University Honor List (3 Times)",
+                certificate: {
+                    title: "Bachelor of Science in Cybersecurity - Al Ain University",
+                    description: "Official degree certificate for the Bachelor of Science in Cybersecurity from Al Ain University, issued upon successful completion of the program requirements in May 2026.",
+                    image: "/assets/images/education/Bach-Degree-Certificate.png"
+                }
+            }
+        };
+
+        try {
+            const fetched = await fetchJson('assets/json/education.json');
+            if (fetched) data = fetched;
+        } catch (e) {}
+
+        dataCache.education = data;
+        const degree = data.degree;
+
+        container.innerHTML = `
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-10">
+                    <div class="card portfolio-card education-main-card animate-on-scroll" data-animation="animate-fade-in-up" data-animation-mobile="animate-fade-in-up">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="education-header mb-4 pb-4 border-bottom text-center text-md-start">
+                                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start gap-2 mb-2">
+                                    <h3 class="education-institution-name mb-0">${degree.institution}</h3>
+                                    <span class="education-verified-badge"><i class="fas fa-check-circle me-1"></i>Accredited</span>
+                                </div>
+                                <h4 class="education-degree-name mb-2">${degree.degreeTitle}</h4>
+                                <p class="education-program-subtitle text-muted mb-3">
+                                    <i class="fas fa-graduation-cap text-primary me-2"></i>${degree.program}
+                                </p>
+                                <div class="education-meta-row d-flex flex-wrap align-items-center justify-content-center justify-content-md-start gap-2">
+                                    <span class="education-meta-chip">
+                                        <i class="fas fa-calendar-alt text-primary"></i>
+                                        <span>${degree.period}</span>
+                                    </span>
+                                    <span class="education-gpa-chip">
+                                        <i class="fas fa-star"></i>
+                                        <span>Grade: ${degree.grade.replace('Grade: ', '')}</span>
+                                    </span>
+                                    <span class="education-meta-chip">
+                                        <i class="fas fa-trophy text-primary"></i>
+                                        <span>University Honor List (3 Times)</span>
+                                    </span>
+                                    <span class="education-meta-chip">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <span>United Arab Emirates</span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="education-cert-box rounded-4 p-3 p-md-4">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-12 col-md-5 col-lg-4 text-center">
+                                        <div class="education-cert-thumb-wrapper" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#certificateModal" title="Click to view full certificate">
+                                            <img src="${degree.certificate.image}" alt="${degree.certificate.title}" class="img-fluid rounded-3 education-cert-thumbnail" loading="lazy">
+                                            <div class="education-cert-thumb-overlay">
+                                                <i class="fas fa-search-plus fa-2x mb-1"></i>
+                                                <span class="fw-bold small">Preview Certificate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-7 col-lg-8 text-center text-md-start">
+                                        <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-2">
+                                            <span class="education-cert-kicker"><i class="fas fa-certificate me-1"></i>Official Degree Certificate</span>
+                                        </div>
+                                        <h5 class="education-cert-title mb-2">${degree.certificate.title}</h5>
+                                        <p class="education-cert-description text-muted mb-4">${degree.certificate.description}</p>
+                                        <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                                            <button type="button" class="card-btn primary" data-bs-toggle="modal" data-bs-target="#certificateModal">
+                                                <i class="fas fa-eye me-2"></i>View Certificate
+                                            </button>
+                                            <a href="${degree.certificate.image}" target="_blank" rel="noopener noreferrer" class="card-btn secondary">
+                                                <i class="fas fa-external-link-alt me-2"></i>Full Image
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        initAnimations();
+    } catch (error) {
+        console.error('Error loading education:', error);
+    }
 }
 
 async function loadHighlights() {
@@ -969,6 +1073,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initTerminalAnimation();
     initHeroParticles();
     loadAboutData();
+    loadEducation();
     loadHighlights();
     loadStatistics();
     loadBooks();
@@ -1168,7 +1273,7 @@ function initTiltEffect() {
     document.addEventListener('mousemove', (e) => {
         if (window.innerWidth <= 1024) return;
 
-        const card = e.target.closest('.card, .highlight-card, .statistics-card, .achievement-card, .book-open');
+        const card = e.target.closest('.card, .highlight-card, .statistics-card, .achievement-card, .book-open, .education-main-card, .education-honor-card');
         
         if (currentTiltedCard && currentTiltedCard !== card) {
             currentTiltedCard.style.transform = '';
