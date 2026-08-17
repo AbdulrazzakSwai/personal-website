@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --primary-color: #0055ff;
   --secondary-color: #0ea5e9;
   --accent-color: #7c3aed;
@@ -284,6 +284,25 @@ h6 {
     box-shadow: var(--shadow-lg);
     z-index: 1000;
     backdrop-filter: blur(var(--glass-blur));
+    max-height: calc(100vh - 100%);
+    max-height: calc(100dvh - 100%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+  }
+
+  .navbar-nav-container .navbar-collapse::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .navbar-nav-container .navbar-collapse::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .navbar-nav-container .navbar-collapse::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
   }
 
   .navbar-nav {
@@ -340,12 +359,29 @@ h6 {
   }
 }
 
-@media (max-height: 500px) {
+@media (max-width: 1024px) and (orientation: landscape), (max-height: 550px) {
+  .navbar-nav-container .navbar-collapse {
+    max-height: calc(100vh - 100%);
+    max-height: calc(100dvh - 100%);
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 0.75rem;
+    padding: 0.75rem 1rem !important;
+  }
+
   .nav-link {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1;
-    padding: 0;
+    margin: 0 !important;
+    font-size: 0.88rem !important;
+    line-height: 1.2 !important;
+    padding: 0.45rem 0.75rem !important;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
