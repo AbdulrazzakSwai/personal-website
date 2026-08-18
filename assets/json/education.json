@@ -1,0 +1,15 @@
+﻿{
+  "degree": {
+    "institution": "Al Ain University",
+    "degreeTitle": "Bachelor's Degree (Graduate), Cybersecurity",
+    "program": "Bachelor of Science in Cybersecurity",
+    "period": "Sep 2022 – May 2026",
+    "grade": "3.8 / 4.0 (Cumulative)",
+    "honors": "University Honor List (3 Times)",
+    "certificate": {
+      "title": "Bachelor of Science in Cybersecurity - Al Ain University",
+      "description": "Official degree certificate for the Bachelor of Science in Cybersecurity from Al Ain University, issued upon successful completion of the program requirements in May 2026.",
+      "image": "/assets/images/education/Bach-Degree-Certificate.png"
+    }
+  }
+}

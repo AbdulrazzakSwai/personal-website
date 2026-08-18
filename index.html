@@ -63,6 +63,7 @@
           <ul class="navbar-nav">
             <a class="nav-link active" href="#hero">Home</a>
             <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#education">Education</a>
             <a class="nav-link" href="#highlights">Highlights</a>
             <a class="nav-link" href="#statistics">Statistics</a>
             <a class="nav-link" href="#projects">Projects</a>
@@ -144,14 +145,30 @@
     </div>
   </section>
 
-  <section id="highlights" class="py-5 section-spacing">
+  <section id="education" class="py-5 section-spacing">
+    <div class="container mobile-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
+            <h2 class="display-4 fw-bold mb-3">Education</h2>
+            <div class="section-line mx-auto mb-3"></div>
+            <p class="lead text-muted">Review my academic background, degree credentials, and university recognitions</p>
+          </div>
+        </div>
+      </div>
+      <div id="education-container">
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights" class="py-5 bg-light-section section-spacing">
     <div class="container mobile-container">
       <div class="row">
         <div class="col-12">
           <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
             <h2 class="display-4 fw-bold mb-3">Highlights</h2>
             <div class="section-line mx-auto mb-3"></div>
-            <p class="lead text-muted">Key milestones and recognitions in my journey</p>
+            <p class="lead text-muted">Explore key milestones and recognitions in my journey</p>
           </div>
         </div>
       </div>
@@ -160,14 +177,14 @@
     </div>
   </section>
 
-  <section id="statistics" class="py-5 bg-light-section section-spacing">
+  <section id="statistics" class="py-5 section-spacing">
     <div class="container mobile-container">
       <div class="row">
         <div class="col-12">
           <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
             <h2 class="display-4 fw-bold mb-3">Statistics</h2>
             <div class="section-line mx-auto mb-3"></div>
-            <p class="lead text-muted">Numbers that showcase my continuous learning journey</p>
+            <p class="lead text-muted">Examine numbers that showcase my continuous learning journey</p>
           </div>
         </div>
       </div>
@@ -176,7 +193,7 @@
     </div>
   </section>
 
-  <section id="projects" class="py-5 section-spacing">
+  <section id="projects" class="py-5 bg-light-section section-spacing">
     <div class="container mobile-container">
       <div class="row">
         <div class="col-12">
@@ -192,7 +209,7 @@
     </div>
   </section>
 
-  <section id="credentials" class="py-5 bg-light-section section-spacing">
+  <section id="credentials" class="py-5 section-spacing">
     <div class="container mobile-container">
       <div class="row">
         <div class="col-12">
@@ -236,14 +253,14 @@
     </div>
   </section>
 
-  <section id="library" class="py-5 section-spacing">
+  <section id="library" class="py-5 bg-light-section section-spacing">
     <div class="container mobile-container">
       <div class="row">
         <div class="col-12">
           <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
             <h2 class="display-4 fw-bold mb-3">Library</h2>
             <div class="section-line mx-auto mb-3"></div>
-            <p class="lead text-muted">A collection of productivity books I've read that shape my mindset and continuous
+            <p class="lead text-muted">Browse a collection of productivity books I've read that shape my mindset and continuous
               learning</p>
           </div>
         </div>
@@ -253,7 +270,7 @@
     </div>
   </section>
 
-  <section id="achievements" class="py-5 bg-light-section section-spacing">
+  <section id="achievements" class="py-5 section-spacing">
     <div class="container mobile-container">
       <div class="row">
         <div class="col-12">
@@ -269,14 +286,14 @@
     </div>
   </section>
 
-  <section id="contact" class="py-5 section-spacing">
+  <section id="contact" class="py-5 bg-light-section section-spacing">
     <div class="container mobile-container">
       <div class="row">
         <div class="col-12">
           <div class="text-center mb-5 animate-on-scroll" data-animation="animate-fade-in-up">
             <h2 class="display-4 fw-bold mb-3">Get In Touch</h2>
             <div class="section-line mx-auto mb-3"></div>
-            <p class="lead text-muted">Contact me and discover more about my journey</p>
+            <p class="lead text-muted">Connect with me and discover more about my journey</p>
           </div>
         </div>
       </div>
@@ -366,6 +383,45 @@
       <p class="mb-0" id="last-updated"></p>
     </div>
   </footer>
+
+  <div class="modal fade certificate-modal" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content certificate-modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="d-flex align-items-center">
+            <div class="cert-modal-header-icon me-2">
+              <i class="fas fa-graduation-cap text-primary"></i>
+            </div>
+            <div>
+              <h5 class="modal-title fw-bold mb-0" id="certificateModalLabel">Bachelor of Science in Cybersecurity</h5>
+              <span class="text-muted small">Al Ain University &bull; Conferred May 2026</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3 p-md-4 text-center">
+          <div class="certificate-modal-img-container">
+            <img src="/assets/images/education/Bach-Degree-Certificate.png" alt="Bachelor of Science in Cybersecurity - Al Ain University Degree Certificate" class="img-fluid certificate-modal-img rounded-3">
+          </div>
+          <div class="certificate-modal-caption mt-3 text-start">
+            <p class="text-secondary small mb-0"><i class="fas fa-info-circle text-primary me-1"></i> Official degree certificate for the Bachelor of Science in Cybersecurity from Al Ain University, issued upon successful completion of the program requirements in May 2026.</p>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0 justify-content-between flex-wrap gap-2">
+          <div class="d-flex align-items-center text-success small">
+            <i class="fas fa-shield-alt me-1"></i>
+            <span>Verified Degree Certificate &bull; GPA 3.8 / 4.0</span>
+          </div>
+          <div class="d-flex gap-2">
+            <a href="/assets/images/education/Bach-Degree-Certificate.png" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-external-link-alt me-1"></i> Open Full Image
+            </a>
+            <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
