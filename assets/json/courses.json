@@ -511,6 +511,13 @@
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
+    "title": "Active Directory LDAP",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/active-directory-ldap",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/22"
+  },
+  {
     "title": "Linux Privilege Escalation",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",

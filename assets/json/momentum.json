@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Solved and Documented \"Recollection\" Lab by Hack The Box",
-    "date": "11 August 2026",
-    "description": "Successfully analyzed and documented \"Recollection\" Lab by Hack The Box, which involved analyzing a memory dump to trace a cyber attack.",
+    "title": "Completed \"Active Directory LDAP\" Course by Hack The Box Academy",
+    "date": "22 August 2026",
+    "description": "Successfully completed the \"Active Directory LDAP\" course by Hack The Box Academy, enhancing practical skills in authenticated and unauthenticated LDAP enumeration of Active Directory environments.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Completed \"Threat Hunting with DNS\" Course by Hack The Box Academy",
-    "date": "07 August 2026",
-    "description": "Successfully completed \"Threat Hunting with DNS\" course by Hack The Box Academy, enhancing practical skills in analyzing DNS logs to proactively detect threats.",
+    "title": "Solved and Documented \"Recollection\" Lab by Hack The Box",
+    "date": "11 August 2026",
+    "description": "Successfully analyzed and documented \"Recollection\" Lab by Hack The Box, which involved analyzing a memory dump to trace a cyber attack.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
