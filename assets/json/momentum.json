@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Completed \"Active Directory LDAP\" Course by Hack The Box Academy",
-    "date": "22 August 2026",
-    "description": "Successfully completed the \"Active Directory LDAP\" course by Hack The Box Academy, enhancing practical skills in authenticated and unauthenticated LDAP enumeration of Active Directory environments.",
+    "title": "Completed \"Active Directory PowerView\" Course by Hack The Box Academy",
+    "date": "24 August 2026",
+    "description": "Successfully completed the \"Active Directory PowerView\" course by Hack The Box Academy, enhancing practical skills in PowerView and SharpView usage for Active Directory enumeration.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Solved and Documented \"Recollection\" Lab by Hack The Box",
-    "date": "11 August 2026",
-    "description": "Successfully analyzed and documented \"Recollection\" Lab by Hack The Box, which involved analyzing a memory dump to trace a cyber attack.",
+    "title": "Completed \"Active Directory LDAP\" Course by Hack The Box Academy",
+    "date": "22 August 2026",
+    "description": "Successfully completed the \"Active Directory LDAP\" course by Hack The Box Academy, enhancing practical skills in authenticated and unauthenticated LDAP enumeration of Active Directory environments.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
