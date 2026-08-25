@@ -525,6 +525,13 @@
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/68"
   },
   {
+    "title": "Active Directory BloodHound",
+    "provider": "By Hack The Box Academy",
+    "type": "Offensive Security",
+    "detailsLink": "https://academy.hackthebox.com/course/preview/active-directory-bloodhound",
+    "certificateLink": "https://academy.hackthebox.com/achievement/1545227/69"
+  },
+  {
     "title": "Linux Privilege Escalation",
     "provider": "By Hack The Box Academy",
     "type": "Offensive Security",
