@@ -1295,26 +1295,21 @@ function initTableOfContents() {
   });
 
   function updateActiveToC() {
-    const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 60);
     let activeHeading = null;
+    const targetThreshold = 120;
 
-    if (isAtBottom && headings.length) {
-      activeHeading = headings[headings.length - 1];
-    } else {
-      const targetThreshold = 120;
-      for (let i = headings.length - 1; i >= 0; i--) {
-        const top = headings[i].getBoundingClientRect().top;
-        if (top <= targetThreshold) {
-          activeHeading = headings[i];
-          break;
-        }
+    for (let i = headings.length - 1; i >= 0; i--) {
+      const top = headings[i].getBoundingClientRect().top;
+      if (top <= targetThreshold) {
+        activeHeading = headings[i];
+        break;
       }
+    }
 
-      if (!activeHeading && headings.length) {
-        const firstTop = headings[0].getBoundingClientRect().top;
-        if (firstTop >= 0 && firstTop < window.innerHeight * 0.6) {
-          activeHeading = headings[0];
-        }
+    if (!activeHeading && headings.length) {
+      const firstTop = headings[0].getBoundingClientRect().top;
+      if (firstTop >= 0 && firstTop < window.innerHeight * 0.6) {
+        activeHeading = headings[0];
       }
     }
 
