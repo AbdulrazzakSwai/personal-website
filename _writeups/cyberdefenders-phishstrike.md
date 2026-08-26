@@ -4,6 +4,7 @@ date: 2026-07-25
 summary: "A Medium Linux defensive lab focusing on threat intelligence analysis of a spoofed phishing email (194-PhishStrike.eml). Header and link inspection reveals SPF/DKIM authentication failures, multi-stage payload delivery links (CoinMiner, BitRAT, AsyncRAT), autorun registry persistence, an obfuscated PowerShell execution delay, and C2 infrastructure communicating over custom domains and Telegram bot exfiltration channels."
 platform: "CyberDefenders"
 type: "Defensive Lab"
+os: "Linux"
 difficulty: "Medium"
 link: "https://cyberdefenders.org/blueteam-ctf-challenges/phishstrike/"
 tags:
@@ -12,6 +13,9 @@ tags:
   - bitrat
   - coinminer
   - cyberchef
+  - cyberdefenders
+  - linux
+  - medium
   - phishing
   - urlhaus
   - virustotal

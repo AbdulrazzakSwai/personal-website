@@ -15,6 +15,8 @@ tags:
   - bloodhound-ce-python
   - diskshadow
   - evil-winrm
+  - hard
+  - htb
   - impacket-getnpusers
   - impacket-secretsdump
   - john
@@ -30,6 +32,7 @@ tags:
   - shadow-copy
   - smbclient
   - unix2dos
+  - windows
 ---
 
 ### Executive Summary

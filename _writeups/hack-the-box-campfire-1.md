@@ -11,9 +11,12 @@ tags:
   - active-directory
   - dfir
   - event-viewer
+  - htb
   - kerberoasting
   - pecmd
   - timeline-explorer
+  - very-easy
+  - windows
 ---
 
 ### Executive Summary

@@ -10,8 +10,11 @@ link: "https://app.hackthebox.com/sherlocks/Telly"
 tags:
   - cve-2026-24061
   - dfir
+  - htb
+  - linux
   - sqlite
   - telnet
+  - very-easy
   - wireshark
 ---
 

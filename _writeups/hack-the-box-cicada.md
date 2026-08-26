@@ -11,7 +11,9 @@ tags:
   - active-directory
   - credentials-in-descriptions
   - credentials-in-public-shares
+  - easy
   - evil-winrm
+  - htb
   - impacket-lookupsid
   - impacket-secretsdump
   - netexec
@@ -21,6 +23,7 @@ tags:
   - sam
   - sebackupprivilege
   - smbclient
+  - windows
 ---
 
 ### Nmap Scan

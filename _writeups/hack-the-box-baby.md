@@ -11,7 +11,9 @@ tags:
   - active-directory
   - credentials-in-descriptions
   - diskshadow
+  - easy
   - evil-winrm
+  - htb
   - impacket-secretsdump
   - ldap-enumeration
   - netexec
@@ -26,6 +28,7 @@ tags:
   - smbpasswd
   - unix2dos
   - web
+  - windows
 ---
 
 ### Nmap Scan

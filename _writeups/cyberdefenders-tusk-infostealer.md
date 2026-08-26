@@ -8,8 +8,11 @@ difficulty: "Easy"
 os: "Linux"
 link: "https://cyberdefenders.org/blueteam-ctf-challenges/tusk-infostealer/"
 tags:
+  - cyberdefenders
   - danabot
   - dropbox
+  - easy
+  - linux
   - stealc
   - threat-intel
   - tusk-infostealer

@@ -561,7 +561,7 @@ function renderMetaChips(post, options = {}) {
     post.type ? `<span class="blog-meta-chip"><i class="fas fa-folder-tree me-1"></i>${escapeHtml(post.type)}</span>` : '',
     post.os ? `<span class="blog-meta-chip"><i class="${osIcon} me-1"></i>${escapeHtml(post.os)}</span>` : '',
     post.difficulty ? `<span class="blog-meta-chip ${diffClass}"><i class="fas fa-tachometer-alt me-1"></i>${escapeHtml(post.difficulty)}</span>` : '',
-    (post.link && !options.hideLink) ? `<a href="${escapeHtml(post.link)}" target="_blank" rel="noopener noreferrer" class="blog-meta-chip blog-link-chip"><i class="fas fa-external-link-alt me-1"></i>Lab Link</a>` : ''
+    (post.link && !options.hideLink) ? `<a href="${escapeHtml(post.link)}" target="_blank" rel="noopener noreferrer" class="blog-meta-chip blog-link-chip"><i class="fas fa-external-link-alt me-1"></i>${(post.category === 'exam-reviews' || post.category === 'exam_reviews') ? 'Certification Link' : 'Lab Link'}</a>` : ''
   ];
 
   return chips.filter(Boolean).join('');
@@ -1301,12 +1301,19 @@ function initTableOfContents() {
     if (isAtBottom && headings.length) {
       activeHeading = headings[headings.length - 1];
     } else {
-      const targetThreshold = window.innerHeight * 0.45;
+      const targetThreshold = 120;
       for (let i = headings.length - 1; i >= 0; i--) {
         const top = headings[i].getBoundingClientRect().top;
         if (top <= targetThreshold) {
           activeHeading = headings[i];
           break;
+        }
+      }
+
+      if (!activeHeading && headings.length) {
+        const firstTop = headings[0].getBoundingClientRect().top;
+        if (firstTop >= 0 && firstTop < window.innerHeight * 0.6) {
+          activeHeading = headings[0];
         }
       }
     }

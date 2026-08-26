@@ -10,8 +10,11 @@ link: "https://app.hackthebox.com/sherlocks/Noxious"
 tags:
   - active-directory
   - dfir
+  - htb
   - john
   - llmnr-poisoning
+  - very-easy
+  - windows
   - wireshark
 ---
 

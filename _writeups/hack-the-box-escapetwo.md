@@ -15,9 +15,11 @@ tags:
   - certipy-ad
   - credentials-in-configuration-files
   - credentials-in-public-shares
+  - easy
   - esc4
   - evil-winrm
   - hexeditor
+  - htb
   - impacket-dacledit
   - impacket-mssqlclient
   - impacket-owneredit
@@ -29,6 +31,7 @@ tags:
   - pth-net
   - reverse-shell
   - smbclient
+  - windows
   - xp-cmdshell
   - xxd
 ---

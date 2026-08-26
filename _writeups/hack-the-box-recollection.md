@@ -9,9 +9,12 @@ difficulty: "Easy"
 link: "https://app.hackthebox.com/sherlocks/Recollection"
 tags:
   - digital-forensics
+  - easy
+  - htb
   - memory-forensics
   - virustotal
   - volatility
+  - windows
 ---
 
 ## Executive Summary

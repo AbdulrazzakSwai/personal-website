@@ -17,15 +17,18 @@ tags:
   - certipy-ad
   - esc9
   - evil-winrm
+  - htb
   - impacket-dacledit
   - impacket-owneredit
   - john
   - kerberoasting
+  - medium
   - net-rpc
   - netexec
   - nmap
   - shadow-credentials
   - targetedkerberoasting-py
+  - windows
 ---
 
 ### Provided Information

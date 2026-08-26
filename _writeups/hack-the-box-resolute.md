@@ -15,8 +15,10 @@ tags:
   - dnscmd
   - evil-winrm
   - hidden-files
+  - htb
   - impacket-smbserver
   - lolbas
+  - medium
   - metasploit
   - msfvenom
   - netexec
@@ -26,6 +28,7 @@ tags:
   - reverse-shell
   - rpcclient
   - sc
+  - windows
 ---
 
 ### Provided Information

@@ -9,7 +9,9 @@ difficulty: "Medium"
 link: "https://app.hackthebox.com/machines/Media"
 tags:
   - file-upload-attacks
+  - htb
   - john
+  - medium
   - nmap
   - ntlm-stealing
   - ntlm-theft
@@ -20,6 +22,7 @@ tags:
   - tcbelevation
   - web
   - web-shell
+  - windows
   - winpeas
 ---
 

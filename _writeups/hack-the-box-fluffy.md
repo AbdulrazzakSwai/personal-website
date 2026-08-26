@@ -16,13 +16,16 @@ tags:
   - bloodyad
   - certipy-ad
   - cve-2025-24071
+  - easy
   - esc16
   - evil-winrm
   - hashcat
+  - htb
   - netexec
   - nmap
   - responder
   - smbclient
+  - windows
 ---
 
 ### Provided Information

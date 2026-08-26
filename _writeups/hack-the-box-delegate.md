@@ -19,11 +19,13 @@ tags:
   - dcsync
   - dnstool
   - evil-winrm
+  - htb
   - impacket-addcomputer
   - impacket-secretsdump
   - john
   - kerberoasting
   - krbrelayx
+  - medium
   - netexec
   - nmap
   - printerbug
@@ -32,6 +34,7 @@ tags:
   - smbclient
   - targetedkerberoasting-py
   - unconstrained-delegation
+  - windows
 ---
 
 ### Nmap Scan

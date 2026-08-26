@@ -18,12 +18,14 @@ tags:
   - dcsync
   - evil-winrm
   - hashcat
+  - htb
   - impacket-changepassword
   - impacket-describeticket
   - impacket-getst
   - impacket-gettgt
   - impacket-rbcd
   - maq-is-0
+  - medium
   - net-rpc
   - netexec
   - nmap
@@ -34,6 +36,7 @@ tags:
   - sharphound
   - smbclient
   - veracrypt
+  - windows
 ---
 
 ### Provided Information

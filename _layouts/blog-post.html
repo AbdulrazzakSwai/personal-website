@@ -28,7 +28,7 @@ layout: blog-page
                 {% endif %}
                 <span class="blog-meta-chip {{ diff_class }}"><i class="fas fa-tachometer-alt me-1"></i>{{ page.difficulty }}</span>
               {% endif %}
-              {% if page.link %}<a href="{{ page.link }}" target="_blank" rel="noopener noreferrer" class="blog-meta-chip blog-link-chip"><i class="fas fa-external-link-alt me-1"></i>Lab Link</a>{% endif %}
+              {% if page.link %}<a href="{{ page.link }}" target="_blank" rel="noopener noreferrer" class="blog-meta-chip blog-link-chip"><i class="fas fa-external-link-alt me-1"></i>{% if page.blog_section == 'exam-reviews' or page.collection == 'exam_reviews' %}Certification Link{% else %}Lab Link{% endif %}</a>{% endif %}
             </div>
             {% if page.summary %}<p class="lead text-muted mb-3">{{ page.summary }}</p>{% endif %}
             {% if page.tags and page.tags.size > 0 %}

@@ -21,8 +21,10 @@ tags:
   - exiftool
   - gmsadumper-py
   - hidden-files
+  - htb
   - impacket-getst
   - john
+  - medium
   - netexec
   - nmap
   - password-spraying
@@ -30,6 +32,7 @@ tags:
   - responder
   - smbclient
   - web
+  - windows
 ---
 
 ### Provided Information

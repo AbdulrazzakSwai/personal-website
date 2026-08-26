@@ -22,15 +22,18 @@ tags:
   - esc15
   - evil-winrm
   - gmsadumper-py
+  - htb
   - impacket-dacledit
   - impacket-owneredit
   - john
+  - medium
   - netexec
   - nmap
   - pth-net
   - rusthound-ce
   - sharphound
   - targetedkerberoasting-py
+  - windows
 ---
 
 ### Provided Information

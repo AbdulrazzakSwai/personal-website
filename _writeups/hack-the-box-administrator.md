@@ -16,8 +16,10 @@ tags:
   - bloodhound-ce-python
   - dcsync
   - evil-winrm
+  - htb
   - impacket-secretsdump
   - john
+  - medium
   - net-rpc
   - netexec
   - nmap
@@ -25,6 +27,7 @@ tags:
   - pwsafe2john
   - rusthound-ce
   - targetedkerberoasting-py
+  - windows
 ---
 
 ### Provided Information

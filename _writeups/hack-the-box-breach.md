@@ -11,11 +11,13 @@ tags:
   - active-directory
   - file-upload-attacks
   - g-potato
+  - htb
   - impacket-getuserspns
   - impacket-lookupsid
   - impacket-mssqlclient
   - impacket-ticketer
   - john
+  - medium
   - mssql-xp-cmdshell
   - netcat
   - netexec
@@ -28,6 +30,7 @@ tags:
   - seimpersonateprivilege
   - silver-ticket
   - smbclient
+  - windows
 ---
 
 ### Provided Information

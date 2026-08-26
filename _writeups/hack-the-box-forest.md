@@ -16,7 +16,9 @@ tags:
   - bloodhound-ce-python
   - bloodyad
   - dcsync
+  - easy
   - evil-winrm
+  - htb
   - impacket-dacledit
   - impacket-getnpusers
   - impacket-secretsdump
@@ -24,6 +26,7 @@ tags:
   - nmap
   - null-guest-authentication
   - rpcclient
+  - windows
 ---
 
 ### Nmap Scan

@@ -11,7 +11,9 @@ tags:
   - active-directory
   - credentials-in-powershell-history
   - credentials-in-public-shares
+  - easy
   - evil-winrm
+  - htb
   - john
   - laps
   - laps-readers-group
@@ -20,6 +22,7 @@ tags:
   - openssl
   - pfx2john
   - smbclient
+  - windows
   - zip2john
 ---
 

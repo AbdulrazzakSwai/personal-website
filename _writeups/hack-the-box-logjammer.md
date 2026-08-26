@@ -10,9 +10,12 @@ link: "https://app.hackthebox.com/sherlocks/LogJammer"
 tags:
   - active-directory
   - dfir
+  - easy
   - event-viewer
   - firewall-altering
+  - htb
   - scheduled-tasks
+  - windows
 ---
 
 ### Executive Summary

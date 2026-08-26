@@ -13,12 +13,15 @@ tags:
   - bloodhound-ce-python
   - cpassword
   - credentials-in-public-shares
+  - easy
+  - htb
   - impacket-getuserspns
   - john
   - kerberoasting
   - netexec
   - nmap
   - smbclient
+  - windows
 ---
 
 ### Nmap Scan

@@ -10,7 +10,10 @@ link: "https://app.hackthebox.com/sherlocks/NeuroSync-D"
 tags:
   - cve-2025-29927
   - dfir
+  - easy
+  - htb
   - lfi
+  - linux
   - ssrf
 ---
 

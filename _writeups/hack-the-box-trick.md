@@ -12,7 +12,10 @@ tags:
   - cve-2024-8081
   - cve-2024-8567
   - dig
+  - easy
+  - htb
   - lfi
+  - linux
   - log-poisoning
   - mail-inclusion
   - nmap

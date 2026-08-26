@@ -11,10 +11,13 @@ tags:
   - active-directory
   - dfir
   - event-viewer
+  - htb
   - mftecmd
   - ntds-dit
   - shadow-copy
   - timeline-explorer
+  - very-easy
+  - windows
 ---
 
 ### Executive Summary

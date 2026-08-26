@@ -10,10 +10,13 @@ link: "https://app.hackthebox.com/sherlocks/RomCom"
 tags:
   - cve-2025-8088
   - dfir
+  - htb
   - mftecmd
   - path-traversal
   - shortcut-modification
   - timeline-explorer
+  - very-easy
+  - windows
 ---
 
 ### Executive Summary

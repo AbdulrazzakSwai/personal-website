@@ -18,16 +18,19 @@ tags:
   - dpapi-credentials
   - evil-winrm
   - hashcat
+  - htb
   - impacket-dpapi
   - impacket-smbserver
   - keepass2john
   - keepassxc
+  - medium
   - net-rpc
   - netexec
   - nmap
   - password-spraying
   - rpcclient
   - smbclient
+  - windows
 ---
 
 ### Provided Information
