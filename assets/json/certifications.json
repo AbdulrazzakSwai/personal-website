@@ -10,15 +10,6 @@
     "finished": "true"
   },
   {
-    "title": "Certified Active Directory Pentesting Expert (CAPE)",
-    "provider": "By Hack The Box Academy",
-    "type": "Offensive Security",
-    "status": "⏱️ In Progress",
-    "progress": 28.1,
-    "detailsLink": "https://academy.hackthebox.com/preview/certifications/htb-certified-active-directory-pentesting-expert",
-    "finished": "false"
-  },
-  {
     "title": "Certified Offensive AI Expert (COAE)",
     "provider": "By Hack The Box Academy and Google",
     "type": "Artificial Intelligence",
