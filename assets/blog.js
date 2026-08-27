@@ -1123,6 +1123,38 @@ function parseMarkdownToHtml(md) {
 
   html = html.replace(/<(?!\/?(h[1-6]|p|div|span|button|pre|code|blockquote|ul|ol|li|i|a|figcaption|strong|em|table|thead|tbody|tr|th|td)\b)[^>]*>/g, (m) => escapeHtml(m));
 
+  html = html.replace(/(?:^\|[^\r\n]+\|\r?\n(?:\|(?:\s*:?-+:?\s*\|)+\r?\n)(?:\|[^\r\n]+\|\r?\n?)+)/gm, (tableMarkdown) => {
+    const rows = tableMarkdown.trim().split(/\r?\n/);
+    if (rows.length < 2) return tableMarkdown;
+
+    const parseRow = (rowStr) => {
+      const cells = rowStr.split('|').slice(1, -1);
+      return cells.map(c => c.trim());
+    };
+
+    const headerCells = parseRow(rows[0]);
+    const bodyRows = rows.slice(2);
+
+    let tableHtml = '<div class="blog-table-container"><table class="blog-table"><thead><tr>';
+    headerCells.forEach(cell => {
+      tableHtml += `<th>${cell}</th>`;
+    });
+    tableHtml += '</tr></thead><tbody>';
+
+    bodyRows.forEach(rowStr => {
+      if (!rowStr.trim()) return;
+      const cells = parseRow(rowStr);
+      tableHtml += '<tr>';
+      cells.forEach(cell => {
+        tableHtml += `<td>${cell}</td>`;
+      });
+      tableHtml += '</tr>';
+    });
+
+    tableHtml += '</tbody></table></div>';
+    return tableHtml;
+  });
+
   html = html.replace(/^### (.*$)/gim, '<h3 class="fw-bold mt-4 mb-2">$1</h3>');
   html = html.replace(/^## (.*$)/gim, '<h2 class="fw-bold mt-5 mb-3">$1</h2>');
   html = html.replace(/^# (.*$)/gim, '<h1 class="fw-bold mt-5 mb-3">$1</h1>');
@@ -1142,14 +1174,19 @@ function parseMarkdownToHtml(md) {
   const processed = [];
   let inPre = false;
   let inUl = false;
+  let inTable = false;
 
   for (let line of lines) {
-    if (line.includes('<div class="blog-terminal-window')) inPre = true;
-    if (line.includes('</div>') && inPre && !line.includes('<div')) inPre = false;
+    if (line.includes('<div class="blog-terminal-window') || line.includes('<pre')) inPre = true;
+    if ((line.includes('</div>') || line.includes('</pre>')) && inPre && !line.includes('<div') && !line.includes('<pre')) inPre = false;
     if (line.includes('<ul')) inUl = true;
     if (line.includes('</ul>')) inUl = false;
+    if (line.includes('<table') || line.includes('<div class="blog-table-container')) inTable = true;
+    if ((line.includes('</table>') || line.includes('</div>')) && inTable) {
+      if (!line.includes('<table') && !line.includes('<div class="blog-table-container')) inTable = false;
+    }
 
-    if (!inPre && !inUl && line.trim() !== '' && !line.trim().startsWith('<') && !line.trim().endsWith('>')) {
+    if (!inPre && !inUl && !inTable && line.trim() !== '' && !line.trim().startsWith('<') && !line.trim().endsWith('>')) {
       processed.push(`<p class="mb-3">${line.trim()}</p>`);
     } else {
       processed.push(line);
@@ -1157,6 +1194,18 @@ function parseMarkdownToHtml(md) {
   }
 
   return processed.join('\n');
+}
+
+function initResponsiveTables() {
+  const tables = document.querySelectorAll('.blog-content-card table, .blog-shell table, .blog-article-body table');
+  tables.forEach(table => {
+    if (table.closest('.blog-table-container') || table.closest('.table-responsive')) return;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'blog-table-container';
+    table.parentNode.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
 }
 
 function initCodeCopyButtons() {
@@ -1430,6 +1479,7 @@ async function renderPostPage() {
   initAnimations();
   initCodeCopyButtons();
   initCodeExpandableBlocks();
+  initResponsiveTables();
   initTableOfContents();
 }
 
@@ -1507,6 +1557,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBlog();
   initCodeCopyButtons();
   initCodeExpandableBlocks();
+  initResponsiveTables();
   initTableOfContents();
 
   const themeToggle = document.getElementById('theme-toggle');
@@ -1517,5 +1568,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('load', () => {
   initCodeExpandableBlocks();
+  initResponsiveTables();
   initTableOfContents();
 });
