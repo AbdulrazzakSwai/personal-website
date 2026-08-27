@@ -1452,7 +1452,8 @@ h6 {
   border-color: transparent;
 }
 
-.skill-general {
+.skill-general,
+.skill-generic {
   background: linear-gradient(135deg, #6b7280, #4b5563);
   color: white !important;
   border-color: transparent;

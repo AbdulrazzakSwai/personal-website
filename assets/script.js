@@ -1,4 +1,4 @@
-﻿let statsAnimated = false;
+let statsAnimated = false;
 const dataCache = {
     education: null,
     certifications: null,
@@ -1443,12 +1443,15 @@ function getFilteredCoursesByType(courses) {
             case 'defensive': return type.includes('defensive security');
             case 'it': return type.includes('information technology');
             case 'soft': return type.includes('soft skills');
+            case 'generic':
             case 'general':
-                return !type.includes('artificial intelligence') &&
-                       !type.includes('offensive security') && 
-                       !type.includes('defensive security') && 
-                       !type.includes('information technology') && 
-                       !type.includes('soft skills');
+                return type.includes('generic') ||
+                       type.includes('general') ||
+                       (!type.includes('artificial intelligence') &&
+                        !type.includes('offensive security') && 
+                        !type.includes('defensive security') && 
+                        !type.includes('information technology') && 
+                        !type.includes('soft skills'));
             default: return true;
         }
     });
@@ -1471,7 +1474,7 @@ function updateCourseFilterOptions(courses) {
     const coursesForProviderCounts = getFilteredCoursesByType(courses);
 
     const typeCounts = {
-        all: coursesForTypeCounts.length, ai: 0, offensive: 0, defensive: 0, it: 0, soft: 0, general: 0
+        all: coursesForTypeCounts.length, ai: 0, offensive: 0, defensive: 0, it: 0, soft: 0, generic: 0
     };
 
     coursesForTypeCounts.forEach(course => {
@@ -1481,7 +1484,7 @@ function updateCourseFilterOptions(courses) {
         else if (type.includes('defensive security')) typeCounts.defensive++;
         else if (type.includes('information technology')) typeCounts.it++;
         else if (type.includes('soft skills')) typeCounts.soft++;
-        else typeCounts.general++;
+        else typeCounts.generic++;
     });
 
     let typeOptions = [
@@ -1490,7 +1493,7 @@ function updateCourseFilterOptions(courses) {
         { value: 'defensive', label: `Defensive Security`, count: typeCounts.defensive },
         { value: 'it', label: `Information Technology`, count: typeCounts.it },
         { value: 'soft', label: `Soft Skills`, count: typeCounts.soft },
-        { value: 'general', label: `General`, count: typeCounts.general }
+        { value: 'generic', label: `Generic Security`, count: typeCounts.generic }
     ];
 
     typeOptions.sort((a, b) => {

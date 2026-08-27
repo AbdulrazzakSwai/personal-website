@@ -891,21 +891,21 @@
   {
     "title": "Introduction to Cyber Security",
     "provider": "By TryHackMe",
-    "type": "General",
+    "type": "Generic Security",
     "detailsLink": "https://tryhackme.com/module/introduction-to-cyber-security",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Start Your Cyber Security Journey",
     "provider": "By TryHackMe",
-    "type": "General",
+    "type": "Generic Security",
     "detailsLink": "https://tryhackme.com/module/start-your-cyber-security-journey",
     "certificateLink": "https://tryhackme.com/p/AbdulrazzakSwai"
   },
   {
     "title": "Intro to Academy",
     "provider": "By Hack The Box Academy",
-    "type": "General",
+    "type": "Generic Security",
     "detailsLink": "https://academy.hackthebox.com/course/preview/intro-to-academy",
     "certificateLink": "https://academy.hackthebox.com/achievement/1545227/15"
   }
