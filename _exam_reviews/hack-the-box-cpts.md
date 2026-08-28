@@ -4,13 +4,13 @@ date: 2026-08-26
 summary: "A comprehensive guide and transparent day-by-day walkthrough of passing the Hack The Box Certified Penetration Testing Specialist (CPTS) on the first attempt with 85 points. Covers preparation strategy across two passes of HTB Academy, pivoting with Ligolo-ng, active directory enumeration, note-taking architecture, and commercial-grade reporting under pressure."
 platform: "Hack The Box"
 type: "Exam Review"
-difficulty: "Hard"
+difficulty: "Medium"
 link: "https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist"
 tags:
   - active-directory
   - cpts
   - exam-review
-  - hack-the-box
+  - htb
   - htb-academy
   - ligolo-ng
   - methodology

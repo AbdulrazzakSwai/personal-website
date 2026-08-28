@@ -807,7 +807,7 @@ function renderLandingPage() {
         <div class="col-lg-4 col-md-6">
           <article class="blog-archive-card card h-100 animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
             <div class="card-body">
-              <div class="blog-meta-row">${renderMetaChips(post)}</div>
+              <div class="blog-meta-row">${renderMetaChips(post, { hideLink: true })}</div>
               <h3 class="card-title">${escapeHtml(post.title)}</h3>
               <p class="card-text">${escapeHtml(post.excerpt)}</p>
               <div class="blog-tag-row">${renderTagChips((post.tags || []).slice(0, 4))}</div>
@@ -951,7 +951,7 @@ function renderArchivePage(category) {
         <div class="col-12 col-md-6">
           <article class="blog-post-card card animate-on-scroll h-100" data-animation="animate-fade-in-up" data-delay="${index * 65}">
             <div class="card-body d-flex flex-column">
-              <div class="blog-meta-row">${renderMetaChips(post)}</div>
+              <div class="blog-meta-row">${renderMetaChips(post, { hideLink: true })}</div>
               <h3 class="card-title mt-2 mb-2">${escapeHtml(post.title)}</h3>
               <p class="card-text text-muted mb-2">${escapeHtml(post.excerpt)}</p>
               <div class="blog-tag-row mb-3">${renderTagChips(post.tags || [])}</div>
