@@ -7,16 +7,16 @@
     "badge": "Current Focus"
   },
   {
-    "title": "Completed \"Active Directory BloodHound\" Course by Hack The Box Academy",
-    "date": "25 August 2026",
-    "description": "Successfully completed the \"Active Directory BloodHound\" course by Hack The Box Academy, improving hands-on skills in BloodHound usage for Active Directory and Azure enumeration.",
+    "title": "Solved and Documented \"Busqueda\" Machine on Hack The Box",
+    "date": "29 August 2026",
+    "description": "Successfully solved and documented the Hack The Box Busqueda machine, which involved exploiting CVE-2023-43364, recovering Git credentials, and abusing sudo privileges for root access.",
     "icon": "fas fa-check-circle",
     "badge": "Latest Milestone"
   },
   {
-    "title": "Completed \"Active Directory PowerView\" Course by Hack The Box Academy",
-    "date": "24 August 2026",
-    "description": "Successfully completed the \"Active Directory PowerView\" course by Hack The Box Academy, enhancing practical skills in PowerView and SharpView usage for Active Directory enumeration.",
+    "title": "Completed \"Active Directory BloodHound\" Course by Hack The Box Academy",
+    "date": "25 August 2026",
+    "description": "Successfully completed the \"Active Directory BloodHound\" course by Hack The Box Academy, improving hands-on skills in BloodHound usage for Active Directory and Azure enumeration.",
     "icon": "fas fa-history",
     "badge": "Recent Milestone"
   }
