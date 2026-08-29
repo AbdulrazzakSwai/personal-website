@@ -110,7 +110,7 @@ At the footer of the website, it is clearly mentioned that the website uses `Sea
 
 <figcaption class="blog-image-caption">Figure 5</figcaption>
 
-Which, after a quick search, suffers from a critical RCE vulnearbility:
+Which, after a quick search, is discovered to be suffering from a critical RCE vulnerability:
 
 ![Figure 6](/assets/images/writeups/hack-the-box-busqueda/hack-the-box-busqueda-fig-6.png)
 
