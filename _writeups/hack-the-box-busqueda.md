@@ -326,9 +326,9 @@ Let’s try the found passwords against the administrator account:
 
 <figcaption class="blog-image-caption">Figure 11</figcaption>
 
-## Exploiting a Vulnerable Script
-
 The pair of credentials `administrator`:`yuiu1hoiu4i5ho1uh` authenticated me successfully, and there is a private administrator repository called `scripts`.
+
+## Exploiting a Vulnerable Script
 
 This repository seems to hold the scripts contents of all files related to the `system-checkup` file:
 
@@ -342,7 +342,7 @@ The most important script to enumerate is the main script, `system-checkup.py`. 
 
 <figcaption class="blog-image-caption">Figure 13</figcaption>
 
-When the script is provided with the `full-checkup` argument, it calls the above `else` logic. However, notice that this logic calls the `full-checkup.sh` file from the current directory, not from an absolute directory.
+When the script is provided with the `full-checkup` argument, it calls the `else` logic shown above. However, notice that this logic calls the `full-checkup.sh` file from the current directory, not from an absolute directory.
 
 This means any file named `full-checkup.sh` in the current working directory will be executed, even if it is malicious.
 
