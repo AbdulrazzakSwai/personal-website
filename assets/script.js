@@ -1501,7 +1501,7 @@ function updateCourseFilterOptions(courses) {
         return a.label.localeCompare(b.label);
     });
 
-    typeOptions.unshift({ value: 'all', label: `All Types`, count: typeCounts.all });
+    typeOptions.unshift({ value: 'all', label: `All Fields`, count: typeCounts.all });
 
     typeSelect.innerHTML = '';
     typeOptions.forEach(option => {
@@ -1743,7 +1743,7 @@ function updateCertFilterOptions(certs) {
         return a.label.localeCompare(b.label);
     });
 
-    typeOptions.unshift({ value: 'all', label: `All Types`, count: typeCounts.all });
+    typeOptions.unshift({ value: 'all', label: `All Fields`, count: typeCounts.all });
 
     typeSelect.innerHTML = '';
     typeOptions.forEach(option => {
