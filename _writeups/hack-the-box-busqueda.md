@@ -296,7 +296,7 @@ f84a6b33fb5a   mysql:8              "docker-entrypoint.s…"   3 years ago   Up 
 The `mysql_db` container seems interesting. Let’s inspect it (command syntax was provided by Gemini):
 
 ```bash
-svc@busqueda:~$ sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect '{{json .}}' mysql_db | jq
+svc@busqueda:~$ sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect '{% raw %}{{json .}}{% endraw %}' mysql_db | jq
 <SNIP>
     "Env": [
       "MYSQL_ROOT_PASSWORD=jI86kGUuj87guWr3RyF",
