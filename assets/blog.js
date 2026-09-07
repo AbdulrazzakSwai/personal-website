@@ -569,7 +569,7 @@ function renderMetaChips(post, options = {}) {
 
 function getUploadTypeLabel(category) {
   if (category === 'writeups') return 'Writeup';
-  if (category === 'exam-reviews' || category === 'exam_reviews') return 'Exam Review';
+  if (category === 'exam-reviews' || category === 'exam_reviews') return 'Certification Review';
   if (category === 'security-research' || category === 'security_research') return 'Cyber & AI Research';
   return 'Upload';
 }
@@ -596,13 +596,13 @@ function renderEmptyState(type, detail) {
     isFiltered = true;
   } else if (type === 'exam-reviews' || type === 'exam_reviews') {
     icon = 'fas fa-certificate';
-    sectionLabel = 'Exam Reviews';
-    title = 'No Exam Reviews Published Yet';
+    sectionLabel = 'Certification Reviews';
+    title = 'No Certification Reviews Published Yet';
     description = 'Certification assessments, lab prep strategies, and exam timeline breakdowns will be published here.';
   } else if (type === 'exam-reviews-filtered') {
     icon = 'fas fa-tags';
-    sectionLabel = 'Exam Reviews Filter';
-    title = detail ? `No Exam Reviews Match "#${escapeHtml(detail)}"` : 'No Matching Exam Reviews Found';
+    sectionLabel = 'Certification Reviews Filter';
+    title = detail ? `No Certification Reviews Match "#${escapeHtml(detail)}"` : 'No Matching Certification Reviews Found';
     description = 'Try selecting a different topic tag or searching for another keyword to view published certification notes.';
     isFiltered = true;
   } else if (type === 'writeups') {
@@ -664,7 +664,7 @@ function renderHeroTopSidebar(pageName) {
     readBtnText = 'Read latest writeup';
   } else if (pageName === 'exam-reviews' || pageName === 'exam_reviews') {
     targetPosts = sortedPosts.filter(p => p.category === 'exam-reviews');
-    typeLabel = 'Exam Review';
+    typeLabel = 'Certification Review';
     icon = 'fas fa-certificate';
     readBtnText = 'Read latest review';
   } else if (pageName === 'security-research' || pageName === 'security_research') {
@@ -764,7 +764,7 @@ function renderLandingPage() {
     },
     {
       key: 'exam-reviews',
-      title: 'Exam Reviews',
+      title: 'Certification Reviews',
       description: 'Certification and assessment notes with practical takeaways.',
       icon: 'fas fa-certificate'
     },

@@ -30,7 +30,7 @@ defaults:
       layout: blog-post
       nav_active: exam_reviews
       blog_section: exam-reviews
-      section_label: Exam Reviews
+      section_label: Certification Reviews
       section_icon: fas fa-certificate
       section_description: Certification and assessment writeups.
   - scope:

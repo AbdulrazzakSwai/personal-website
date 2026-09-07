@@ -40,9 +40,9 @@
     "icon": "fas fa-microscope"
   },
   {
-    "label": "Published Cybersecurity Writeups",
-    "value": 31,
-    "icon": "fas fa-file-code"
+    "label": "Published Blog Articles",
+    "value": 33,
+    "icon": "fas fa-pen-nib"
   },
   {
     "label": "Read Productivity Books",
