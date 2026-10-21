@@ -54,7 +54,7 @@ For years, the standard default for breaking into offensive security has been th
 | **Exam Duration** | **10 Days** (Exploitation + Reporting) | **24 Hours** (Exploitation) + 24 Hours (Report) |
 | **Format** | Multi-domain enterprise simulation | Standalone hosts + small Active Directory set |
 | **Material Access** | **Keep the 28 modules forever** (Tier-unlocked) | Time-limited lab access (subscription-dependent) |
-| **Cost** | $210 (voucher includes 2 attempts) + as low as ~$40 for the 28 Academy modules (via Student Plan at $8/mo) | ~$1,700+ (Course + 2 attempts package) |
+| **Cost** | $210 (voucher includes 2 attempts) + as low as ~$40 for the 28 Academy modules (via Student Plan at $10/mo) | ~$1,700+ (Course + 2 attempts package) |
 | **Realism** | Mimics a real-world multi-day client engagement | Time-pressured speedrun |
 
 The single biggest advantage of HTB Academy is ownership: once you unlock and complete the **Penetration Tester Job Role Path** (28 modules), the material, interactive cheatsheets, and command breakdowns remain accessible on your account permanently.
