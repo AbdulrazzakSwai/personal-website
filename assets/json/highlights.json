@@ -1,47 +1,27 @@
-[  
+[
   {
     "title": "10-Year UAE Golden Residency",
     "icon": "fas fa-medal",
-    "description": "Awarded a 10-year UAE Golden Residency for academic excellence (valid until 2033)."
+    "description": "Awarded for exceptional academic achievement. Grants 10 years of self-sponsored residency in the UAE. Valid until 2033."
   },
   {
-    "title": "Top 1% on HTB Academy and Grandmaster Rank Across All HTB Environments",
+    "title": "Top 1% HTB Academy & Grandmaster Rank",
     "icon": "fas fa-cube",
-    "description": "Ranked in the top 1% of players on Hack The Box (HTB) Academy and held the \"Grandmaster\" rank across all HTB platforms, reflecting continuous dedication to cybersecurity skill development and practical problem-solving through real-world challenges."
+    "description": "Ranked in the top 1% of players on Hack The Box Academy and achieved Grandmaster rank across HTB environments."
   },
   {
-    "title": "Top 1% on TryHackMe",
+    "title": "Top 1% Globally on TryHackMe",
     "icon": "fas fa-user-shield",
-    "description": "Ranked in the top 1% of players on TryHackMe, demonstrating advanced cybersecurity skills and practical problem-solving abilities."
+    "description": "Ranked among the top 1% of users worldwide on TryHackMe."
   },
   {
-    "title": "Daily Skills Development",
-    "icon": "fas fa-graduation-cap",
-    "description": "Dedicating 6 hours daily for learning and practicing, completing a new course every 3 days, solving a new security challenge every day, and progressing consistently from certification to certification."
-  },
-  {
-    "title": "Practical Certifications Focus",
-    "icon": "fas fa-tools",
-    "description": "Proudly avoiding \"HR Filter\" theoretical certifications. Only seeking hands-on, practical cybersecurity certifications."
-  },
-  {
-    "title": "AI Security and Hacking Expertise",
+    "title": "AI Security Expertise",
     "icon": "fas fa-robot",
     "description": "Demonstrated proficiency in both offensive and defensive AI techniques, having practically completed the AI Red Teamer path by Hack The Box Academy alongside specialized AI security coursework by TryHackMe."
   },
   {
-    "title": "University Honor List Recognition (3 Times)",
+    "title": "University Honor List (3x Recipient)",
     "icon": "fas fa-trophy",
-    "description": "Recognized on the University Honor List for 3 consecutive semesters for outstanding academic performance in Cybersecurity."
-  },
-  {
-    "title": "Cultural Insight",
-    "icon": "fas fa-globe",
-    "description": "Resided in the UAE for over 21 years, gaining strong cultural insight and deep local familiarity."
-  },
-  {
-    "title": "Licensed Driver",
-    "icon": "fas fa-car",
-    "description": "Held a valid UAE light vehicle license with 4 years of driving experience, ensuring professional mobility."
+    "description": "Recognized three times by Al Ain University for outstanding academic performance and exceptional commitment to Cybersecurity."
   }
 ]

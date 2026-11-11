@@ -507,93 +507,6 @@ async function loadStatistics() {
     }
 }
 
-async function loadAchievements() {
-    try {
-        const achievements = await fetchJson('assets/json/momentum.json');
-        const grid = document.getElementById('achievements-grid');
-        if (!grid) return;
-        
-        achievements.forEach((item, index) => {
-            const col = document.createElement('div');
-            col.className = 'col-lg-4 col-6';
-            
-            let badgeClass = 'badge-default';
-            if (index === 0) badgeClass = 'badge-current';
-            else if (index === 1) badgeClass = 'badge-latest';
-            else badgeClass = 'badge-key';
-
-            col.innerHTML = `
-                <div class="achievement-card has-collapsible animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
-                    <div class="achievement-badge ${badgeClass}">${item.badge}</div>
-                    <div class="achievement-icon">
-                        <i class="${item.icon}"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <span class="achievement-date">${item.date}</span>
-                        <h5>${item.title}</h5>
-                        <div class="mobile-collapsible">
-                            <p>${item.description}</p>
-                        </div>
-                        <button class="mobile-collapse-toggle" aria-expanded="false">
-                            <span class="toggle-text">Details</span>
-                            <i class="fas fa-chevron-down toggle-icon"></i>
-                        </button>
-                    </div>
-                </div>
-            `;
-            grid.appendChild(col);
-        });
-        
-        initAnimations();
-    } catch (error) {
-        console.error('Error loading achievements:', error);
-    }
-}
-
-async function loadBooks() {
-    try {
-        const books = await fetchJson('assets/json/books.json');
-        const grid = document.getElementById('books-grid');
-        if (!grid) return;
-        
-        books.forEach((book, index) => {
-            const col = document.createElement('div');
-            col.className = 'col-lg-8 col-12';
-            
-            const tagsHtml = book.tags.map(tag => `<span class="book-tag">${tag}</span>`).join('');
-            const linkHtml = book.link ? `
-                <div class="mt-auto text-start pt-3">
-                    <a href="${book.link}" target="_blank" rel="noopener noreferrer" class="book-link d-inline-flex align-items-center">
-                        <i class="fas fa-external-link-alt me-2"></i>More details
-                    </a>
-                </div>` : '';
-            
-            col.innerHTML = `
-                <div class="book-card animate-on-scroll" data-animation="animate-fade-in-up" data-delay="${index * 75}">
-                    <div class="book-open">
-                        <div class="book-page left-page">
-                            <h4 class="book-title">${book.title}</h4>
-                            <p class="book-author">${book.author}</p>
-                        </div>
-                        <div class="book-page right-page d-flex flex-column">
-                            <p class="book-summary mb-3">${book.summary}</p>
-                            <div class="book-tags mb-3">
-                                ${tagsHtml}
-                            </div>
-                            ${linkHtml}
-                        </div>
-                    </div>
-                </div>
-            `;
-            grid.appendChild(col);
-        });
-        
-        initAnimations();
-    } catch (error) {
-        console.error('Error loading books:', error);
-    }
-}
-
 function initStatsAnimation() {
     const statNumbers = document.querySelectorAll('.statistics-number');
     
@@ -1076,8 +989,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadEducation();
     loadHighlights();
     loadStatistics();
-    loadBooks();
-    loadAchievements();
     loadCourses();
     loadProjects();
     initPortfolioTabs();
@@ -1273,7 +1184,7 @@ function initTiltEffect() {
     document.addEventListener('mousemove', (e) => {
         if (window.innerWidth <= 1024) return;
 
-        const card = e.target.closest('.card, .highlight-card, .statistics-card, .achievement-card, .book-open, .education-main-card, .education-honor-card');
+        const card = e.target.closest('.card, .highlight-card, .statistics-card, .education-main-card, .education-honor-card');
         
         if (currentTiltedCard && currentTiltedCard !== card) {
             currentTiltedCard.style.transform = '';

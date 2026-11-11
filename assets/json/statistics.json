@@ -1,7 +1,7 @@
 [
   {
     "label": "Finished Large Scale Projects",
-    "value": 10,
+    "value": 4,
     "icon": "fas fa-project-diagram"
   },
   {
@@ -18,11 +18,6 @@
     "label": "Completed Online Courses",
     "value": 130,
     "icon": "fas fa-book"
-  },
-  {
-    "label": "Hacked Enterprise Networks (Ethically)",
-    "value": 7,
-    "icon": "fas fa-user-secret"
   },
   {
     "label": "Rooted Hack The Box Labs",
@@ -43,10 +38,5 @@
     "label": "Published Blog Articles",
     "value": 33,
     "icon": "fas fa-pen-nib"
-  },
-  {
-    "label": "Read Productivity Books",
-    "value": 3,
-    "icon": "fas fa-book-reader"
   }
 ]
